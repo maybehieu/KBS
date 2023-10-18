@@ -9,6 +9,7 @@
         etc: trời mới chuyển mùa, thời tiết thay đổi, trởi trở rét, ... <- khi được yêu cầu nói về thời tiết
         - chuyển đổi các dữ liệu trên (trời chuyển mùa, thời tiết thay đổi) -> 1 cụm từ nhất định, cố định (thay đổi thời tiết, ...)
         - yêu cầu: giữ được NỘI DUNG của các cụm từ được chuyển đổi, không gây mất mát thông tin quá nhiều
+        - yêu cầu 2: câu/ cụm từ không để chữ hoa, toàn bộ chữ thường
         - note: tìm thêm các câu/ cụm liên quan đến cụm từ sẽ được chuyển đổi để tăng tính đa dạng, chỉ cần đồng nghĩa với những câu/ cụm từ đã được sử dụng
     - phần điều trị của mỗi bệnh: chưa xác định được cách chia (do mỗi bệnh có thể có nhiều cách chữa)
         hướng: 1 list các object, mỗi object là một cách chữa, chứa 1 list các yêu cầu, mô tả về cách chữa đó
