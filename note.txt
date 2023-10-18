@@ -1,2 +1,16 @@
 - preprocess thời gian ủ bệnh
+    - ý tưởng: là một luật (if-else) biến đổi mốc thời gian mà người dùng nhập vào về một giá trị mà có thể kiểm tra được trong code
+    - etc: bệnh A có thời gian ủ bệnh 4-48h (Q: triệu chứng xuất hiện từ khi nào? bao lâu? -> A: xuất hiện từ ngày ... (case này có thể chưa cần
+    tính đến do sẽ đẻ thêm if-else), xuất hiện từ 2 ngày trước (convert ra giờ), xuất hiện từ 4 tiếng trước...)
+    -> convert hay preprocess để chuyển về dạng int,... để so sánh với dữ liệu được lưu trong database bệnh <- dữ liệu được lưu cũng cần phải lưu ý
 - chia các thuộc tính của database cần generalized <- cần preprocess dữ liệu người dùng nhập vào
+    - cách generalize dữ liệu: 
+        - lấy context là 1 câu dữ liệu người dùng nhập vào HOẶC nhiều cụm từ
+        etc: trời mới chuyển mùa, thời tiết thay đổi, trởi trở rét, ... <- khi được yêu cầu nói về thời tiết
+        - chuyển đổi các dữ liệu trên (trời chuyển mùa, thời tiết thay đổi) -> 1 cụm từ nhất định, cố định (thay đổi thời tiết, ...)
+        - yêu cầu: giữ được NỘI DUNG của các cụm từ được chuyển đổi, không gây mất mát thông tin quá nhiều
+        - note: tìm thêm các câu/ cụm liên quan đến cụm từ sẽ được chuyển đổi để tăng tính đa dạng, chỉ cần đồng nghĩa với những câu/ cụm từ đã được sử dụng
+    - phần điều trị của mỗi bệnh: chưa xác định được cách chia (do mỗi bệnh có thể có nhiều cách chữa)
+        hướng: 1 list các object, mỗi object là một cách chữa, chứa 1 list các yêu cầu, mô tả về cách chữa đó
+- thuốc.json: tìm thêm detail về thuốc -> phục vụ cho 1 kịch bản khả thi, KHÔNG phục vụ cho 2 database bệnh, database thuốc sử dụng cho kịch bản riêng
+    - note: trong db thuốc này cần ít nhất chứa đủ các loại thuốc đã được đề cập đến trong các loại bệnh trong db bệnh

@@ -1,0 +1,26 @@
+{
+    "Gia súc": [
+        {
+            "Riêng": [
+                "thay đổi thời tiết",
+                "thời tiết thất thường",
+                "thời tiết không đẹp",
+                "chuyển mùa",
+                "giao mùa"
+            ],
+            "Chung": "thay đổi thời tiết"
+        }
+    ],
+    "Gia cầm": [
+        {
+            "Riêng": [
+                "thay đổi thời tiết",
+                "thời tiết thất thường",
+                "thời tiết không đẹp",
+                "chuyển mùa",
+                "giao mùa"
+            ],
+            "Chung": "thay đổi thời tiết"
+        }
+    ]
+}
