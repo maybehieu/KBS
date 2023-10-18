@@ -1,0 +1,2 @@
+- preprocess thời gian ủ bệnh
+- chia các thuộc tính của database cần generalized <- cần preprocess dữ liệu người dùng nhập vào
