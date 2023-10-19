@@ -1,6 +1,22 @@
 import json
 import os
 import sys
+from utils import tokenizer
+
+
+class DiseasesDiagnosis:
+    def __init__(self, cattle_db, poultry_db, generalized_db) -> None:
+        self.cattle = cattle_db
+        self.poultry = poultry_db
+        self.ref_dict = generalized_db
+
+
+class DiseasesInformation:
+    pass
+
+
+class MedicineInformation:
+    pass
 
 
 class ChatbotController:
@@ -58,10 +74,10 @@ class ChatbotController:
         print("Dừng hệ thống.")
 
     def symptom_based_diagnose(self):
-        pass
+        print("Bạn đã chọn sử dụng chức năng chẩn đoán bệnh thú y")
 
     def get_disease_information(self):
-        pass
+        print("2")
 
     def get_medicine_information(self):
-        pass
+        print("3")

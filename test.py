@@ -1,3 +1,8 @@
-from controller.handler import ChatbotController
+# from controller.handler import ChatbotController
 
-bot = ChatbotController()
+# bot = ChatbotController()
+# bot.main_process()
+
+
+def tfidf():
+    pass
