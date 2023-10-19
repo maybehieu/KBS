@@ -1,27 +1,25 @@
-{
-    "Gia súc": [
-        {
-            "Tên": "Bệnh tụ huyết trùng",
-            "Cá thể": [
-                "Lợn",
-                "Trâu",
-                "Bò"
-            ],
-            "Mô tả": "Là bệnh truyền nhiễm do vi khuẩn tụ huyết trùng gây ra, bệnh nguy hiểm, có tỉ lệ chết cao",
-            "Nguyên nhân": [
-                "Do vi khuẩn Pasteurella multocida có sẵn trong niêm mạc mũi và hạch amidan gây ra"
-            ],
-            "Yếu tố môi trường": [
-                "thay đổi thời tiết"
-            ],
-            "Triệu chứng": [
-                "6-48",
-                ""
-            ],
-            "Điều trị": [
-                {}
-            ],
-            "Phòng bệnh": []
-        }
-    ]
-}
+[
+    {
+        "Tên": "Bệnh tụ huyết trùng",
+        "Cá thể": [
+            "Lợn",
+            "Trâu",
+            "Bò"
+        ],
+        "Mô tả": "Là bệnh truyền nhiễm do vi khuẩn tụ huyết trùng gây ra, bệnh nguy hiểm, có tỉ lệ chết cao",
+        "Nguyên nhân": [
+            "Do vi khuẩn Pasteurella multocida có sẵn trong niêm mạc mũi và hạch amidan gây ra"
+        ],
+        "Yếu tố môi trường": [
+            "thay đổi thời tiết"
+        ],
+        "Triệu chứng": [
+            "6-48",
+            ""
+        ],
+        "Điều trị": [
+            {}
+        ],
+        "Phòng bệnh": []
+    }
+]
