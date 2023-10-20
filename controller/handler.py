@@ -4,11 +4,18 @@ import sys
 from utils import tokenizer
 
 
+
+
 class DiseasesDiagnosis:
     def __init__(self, cattle_db, poultry_db, generalized_db) -> None:
         self.cattle = cattle_db
         self.poultry = poultry_db
         self.ref_dict = generalized_db
+
+    def init_convert_phrase_database(self, generalized_db):
+        
+        pass
+        
 
 
 class DiseasesInformation:
