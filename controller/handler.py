@@ -4,18 +4,79 @@ import sys
 from utils import tokenizer
 
 
-
-
 class DiseasesDiagnosis:
-    def __init__(self, cattle_db, poultry_db, generalized_db) -> None:
+    def __init__(
+        self, cattle_db, poultry_db, r_cattle_db, r_poultry_db, generalized_db
+    ) -> None:
+        # global variables
         self.cattle = cattle_db
         self.poultry = poultry_db
+        self.r_cattle = r_cattle_db
+        self.r_poultry = r_poultry_db
         self.ref_dict = generalized_db
+        self.cattle_species = ["lợn", "bò", "dê"]
+        self.poultry_species = ["gà", "vịt"]
+        self.agree_resp = ["đồng ý", "yes", "y", "dong y", "có", "co"]
+        self.disagree_resp = ["không", "khong", "no"]
 
-    def init_convert_phrase_database(self, generalized_db):
-        
-        pass
-        
+        # instance variables
+        self.current_animal = ""
+        self.current_species = ""
+
+    def check_species_db(self, inp=""):
+        if inp in self.cattle_species:
+            return "cattle"
+        if inp in self.poultry_species:
+            return "poultry"
+        return "none"
+
+    def check_user_agree(self, inp=""):
+        if inp in self.agree_resp:
+            return True
+        if any(word in inp for word in self.agree_resp):
+            return True
+        if inp in self.disagree_resp:
+            return False
+        if any(word in inp for word in self.disagree_resp):
+            return False
+        return None
+
+    def main_process(self):
+        print("Bạn đã chọn sử dụng chức năng chẩn đoán bệnh thú y")
+        print(
+            "Đầu tiên, có thể cho tôi biết con vật mà bạn đang cần chẩn đoán bệnh? (VD: lợn, bò, gà...)"
+        )
+        self.current_animal = input().lower()
+        self.current_species = self.check_species_db(self.current_animal)
+        # warn user
+        if self.current_species == "none":
+            print(
+                "Loài vật bạn cần chẩn đoán không có dữ liệu trong cơ sở dữ liệu chúng tôi, nhưng tôi sẽ cố hết sức để giúp đỡ trong khả năng của mình"
+            )
+            u_in = input("Bạn có muốn tiếp tục? ")
+            # exit if needed
+            if self.check_user_agree(u_in) == None:
+                if not self.check_user_agree(
+                    input(
+                        "Tôi không hiểu câu trả lời của bạn, hãy phản hồi theo dạng có/không: "
+                    )
+                ):
+                    print("Xin cảm ơn!")
+                    return
+            if self.check_user_agree(u_in) == False:
+                print("Xin cảm ơn!")
+                return
+        # continue
+        print(
+            f'Xác định thông tin ban đầu của con vật: {self.current_animal.capitalize()}, là {"Gia súc" if self.current_species == "cattle" else "Gia cầm"}'
+        )
+        # thực hiện hỏi yếu tố môi trường
+
+        # thực hiện hỏi triệu chứng
+
+        # thực hiện tính toán tìm case
+
+        # tiền xử lý
 
 
 class DiseasesInformation:
@@ -36,7 +97,10 @@ class ChatbotController:
             self.medicine_database = json.loads(f.read())
         with open(r"database\convert.json", "r", encoding="utf8") as f:
             self.generalized_database = json.loads(f.read())
-
+        with open(r"database\r_cattle.json", "r", encoding="utf8") as f:
+            self.r_cattle_database = json.loads(f.read())
+        with open(r"database\r_poultry.json", "r", encoding="utf8") as f:
+            self.r_poultry_database = json.loads(f.read())
         # options for user
         self.convo_options = [
             "1. Chẩn đoán bệnh thú y dựa theo triệu chứng",
@@ -81,7 +145,7 @@ class ChatbotController:
         print("Dừng hệ thống.")
 
     def symptom_based_diagnose(self):
-        print("Bạn đã chọn sử dụng chức năng chẩn đoán bệnh thú y")
+        pass
 
     def get_disease_information(self):
         print("2")
