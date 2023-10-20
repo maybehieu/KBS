@@ -1,26 +1,26 @@
 {
-    "Gia súc": [
+    "Cattle": [
         {
-            "Riêng": [
+            "Distinct": [
                 "thay đổi thời tiết",
                 "thời tiết thất thường",
                 "thời tiết không đẹp",
                 "chuyển mùa",
                 "giao mùa"
             ],
-            "Chung": "thay đổi thời tiết"
+            "General": "thay đổi thời tiết"
         }
     ],
-    "Gia cầm": [
+    "Poultry": [
         {
-            "Riêng": [
+            "Distinct": [
                 "thay đổi thời tiết",
                 "thời tiết thất thường",
                 "thời tiết không đẹp",
                 "chuyển mùa",
                 "giao mùa"
             ],
-            "Chung": "thay đổi thời tiết"
+            "General": "thay đổi thời tiết"
         }
     ]
 }

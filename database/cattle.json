@@ -1,25 +1,25 @@
 [
     {
-        "Tên": "Bệnh tụ huyết trùng",
-        "Cá thể": [
+        "Name": "Bệnh tụ huyết trùng",
+        "Species": [
             "Lợn",
             "Trâu",
             "Bò"
         ],
-        "Mô tả": "Là bệnh truyền nhiễm do vi khuẩn tụ huyết trùng gây ra, bệnh nguy hiểm, có tỉ lệ chết cao",
-        "Nguyên nhân": [
+        "Description": "Là bệnh truyền nhiễm do vi khuẩn tụ huyết trùng gây ra, bệnh nguy hiểm, có tỉ lệ chết cao",
+        "Causes": [
             "Do vi khuẩn Pasteurella multocida có sẵn trong niêm mạc mũi và hạch amidan gây ra"
         ],
-        "Yếu tố môi trường": [
+        "EnvFactors": [
             "thay đổi thời tiết"
         ],
-        "Triệu chứng": [
+        "Symptoms": [
             "6-48",
             ""
         ],
-        "Điều trị": [
+        "Treatments": [
             {}
         ],
-        "Phòng bệnh": []
+        "Prevention": []
     }
 ]
