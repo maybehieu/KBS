@@ -1,26 +1,59 @@
 {
-    "Cattle": [
+    "cattle": [
         {
-            "Distinct": [
+            "distinct": [
                 "thay đổi thời tiết",
                 "thời tiết thất thường",
                 "thời tiết không đẹp",
                 "chuyển mùa",
                 "giao mùa"
             ],
-            "General": "thay đổi thời tiết"
+            "general": "thay đổi thời tiết"
+        },
+        {
+            "distinct": [
+                "nhiệt độ cao",
+                "nóng bức",
+                ""
+            ],
+            "general": "nhiệt độ cao"
+        },
+        {
+            "distinct": [
+                "độ ẩm cao",
+                "nồm",
+                "ẩm",
+                "mưa"
+            ],
+            "general": "độ ẩm cao"
+        },
+        {
+            "distinct": [
+                "vận chuyển",
+                "chuyển chuồng",
+                ""
+            ],
+            "general": "vận chuyển"
+        },
+        {
+            "distinct": [
+                "chật chội",
+                "bé",
+                "hẹp"
+            ],
+            "general": "chật chội"
         }
     ],
-    "Poultry": [
+    "poultry": [
         {
-            "Distinct": [
+            "distinct": [
                 "thay đổi thời tiết",
                 "thời tiết thất thường",
                 "thời tiết không đẹp",
                 "chuyển mùa",
                 "giao mùa"
             ],
-            "General": "thay đổi thời tiết"
+            "general": "thay đổi thời tiết"
         }
     ]
 }

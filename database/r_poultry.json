@@ -1,23 +1,22 @@
 [
     {
-        "Name": "",
-        "Species": [],
-        "Mô tả": "",
-        "Description": [
+        "name": "",
+        "species": [],
+        "description": [
             ""
         ],
-        "Causes": [
+        "causes": [
             ""
         ],
-        "EnvFactors": [
+        "envfactors": [
             ""
         ],
-        "Symptoms": [
+        "symptoms": [
             ""
         ],
-        "Treatments": [
+        "treatments": [
             {}
         ],
-        "Prevention": []
+        "prevention": []
     }
 ]
