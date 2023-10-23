@@ -46,15 +46,58 @@
             "thay đổi thời tiết"
         ],
         "symptoms": [
-            "6-48",
-            "Thể quá cấp tính: lợn chết nhanh, không biểu hiện triệu chứng lâm sàng hoặc lợn sẽ nằm và sốt cao trước khi chết",
-            "Thể cấp tính:",
-            "Lợn sốt cao (40.5-42), trong 2-3 ngày đầu không ăn, lười vận động, ủ rũ, nằm chồng đống, thích nằm chỗ có bóng râm hoặc gần nước.",
-            "Lợn có biểu hiện đau vùng bụng, lưng cong, di chuyển bất thường, một số vùng da trắng như vành tai, đuôi, cẳng chân, vùng ngực và bụng chuyển đỏ hoặc màu sẫm xanh tím.",
-            "1-2 ngày trước khi con vật chết: có triệu chứng thần kinh, di chuyển không vững, thở gấp, khó thở hoặc có bọt lẫn máu ở mũi, viêm mắt, nôn mửa, tiêu chảy đôi khi lẫn máu hoặc táo bón, phân có chất nhầy và máu.",
-            "Lợn chết trong vòng 6-13 ngày hoặc 20 ngày",
-            "Lợn mang thai có thể sảy thai",
-            "Thể á cấp tính: lợn sốt nhẹ, hoặc sốt lúc tăng lúc giảm, giảm ăn, sụt cân, ủ rũ, ho khó thở, viêm khớp, đi lại khó khăn, lợn mang thai sẽ sảy thai, lợn chết trong vòng 15-45 ngày"
+            {
+                "desc": [
+                    "6-48"
+                ],
+                "note": "Chung",
+                "score": 0.0
+            },
+            {
+                "desc": [
+                    "chết nhanh",
+                    "mệt mỏi",
+                    "sốt cao"
+                ],
+                "note": "Thể quá cấp tính:",
+                "score": 0.0
+            },
+            {
+                "desc": [
+                    "sốt cao", 
+                    "không ăn",
+                    "mệt mỏi",
+                    "thích nằm chỗ có bóng râm",
+                    "đau vùng bụng",
+                    "lưng cong",
+                    "di chuyển bất thường", 
+                    "da đổi màu | vành tai, đuôi, cẳng chân, vùng ngực và bụng",
+                    "thần kinh",
+                    "khó thở",
+                    "viêm mắt",
+                    "nôn mửa",
+                    "tiêu chảy",
+                    "phân có chất nhầy và máu",
+                    "chết | 6-13",
+                    "sảy thai"
+                ],
+                "note": "Thể cấp tính:",
+                "score": 0.0
+            },
+            {
+                "desc": [
+                    "sốt nhẹ",
+                    "không ăn",
+                    "mệt mỏi",
+                    "khó thở",
+                    "sụt cân",
+                    "đi lại khó khăn",
+                    "sảy thai",
+                    "chết | 15-45"
+                ],
+                "note": "Thể á cấp tính",
+                "score": 0.0
+            }
         ],
         "treatments": [
             "Hiện nay chưa có vắc xin phòng bệnh hiệu quả và thuốc điều trị đặc hiệu cho bệnh dịch tả lợn"
