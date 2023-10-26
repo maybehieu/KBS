@@ -51,7 +51,11 @@ class ChatbotController:
         ]
 
         # init logic controller
-        self.diagnose = DiseasesDiagnosis(self.cattle_database, self.poultry_database, self.r_cattle_database, self.r_poultry_database, self.generalized_database)
+        self.diagnose = DiseasesDiagnosis(self.cattle_database, self.poultry_database, 
+                                          self.r_cattle_database, self.r_poultry_database, self.generalized_database)
+        self.disease = DiseasesInformation(self.cattle_database, self.poultry_database, self.r_cattle_database,
+                                           self.r_poultry_database, self.generalized_database)
+        self.medicine = MedicineInformation()
 
     def main_process(self):
         # loop every process until special condition (user asks to stop)
@@ -60,11 +64,14 @@ class ChatbotController:
             u_input = input()
             u_input = self.check_master_convo(u_input)
             if u_input == 1:
-                self.symptom_based_diagnose()
+                # self.symptom_based_diagnose()
+                self.diagnose.main_process()
             elif u_input == 2:
-                self.get_disease_information()
+                # self.get_disease_information()
+                self.disease.main_process()
             elif u_input == 3:
-                self.get_medicine_information()
+                # self.get_medicine_information()
+                self.medicine.main_process()
             elif u_input == 0:
                 self.print_end_convo()
                 break
