@@ -20,3 +20,6 @@
 
 - define thông tin cơ bản của bệnh (cho kịch bản 2)
     - bao gồm những gì
+
+- preprocessor cho phần nhận yêu cầu từ người dùng?
+    - phân tích câu: 'cho tôi toàn bộ thông tin về ...' -> ?
