@@ -18,19 +18,25 @@
             "chật chội"
         ],
         "symptoms": [
-            "6-48",
-            "sốt cao",
-            "run rẩy",
-            "chán ăn",
-            "mệt mỏi",
-            "da đổi màu",
-            "khó thở"
+            {
+                "desc": [
+                    "6-48",
+                    "sốt cao",
+                    "run rẩy",
+                    "chán ăn",
+                    "mệt mỏi",
+                    "da đổi màu",
+                    "khó thở"
+                ],
+                "note": "Chung",
+                "score": 0.0
+            }
         ],
         "treatments": [
-            "Dưới đây là hướng dẫn điều trị cho heo bằng sử dụng các loại kháng sinh và thuốc trợ lực cùng với việc trộn kháng sinh cho toàn bộ heo trong trại bằng MG 200 Premix: SHOTAPEN LA: Tiêm 1ml cho mỗi 10kg trọng lượng của heo. Tiêm lại sau 48-72 giờ. AMPI-KANA: Sử dụng 1 lọ có liều 1 gram cho mỗi 50kg trọng lượng của heo. Chia làm hai lần tiêm trong một ngày và duy trì điều trị trong 3-5 ngày. HAMMOGEN: Tiêm 1ml vào cơ bắp cho mỗi 10kg trọng lượng của heo mỗi ngày. Duy trì điều trị trong 3-5 ngày. GENTAMOX INJ: Tiêm 1ml vào cơ bắp cho mỗi 10-15kg trọng lượng của heo mỗi ngày. Duy trì điều trị trong 3-5 ngày. MACAVET: Tiêm 1ml cho mỗi 7-10kg trọng lượng của heo mỗi ngày. Duy trì điều trị trong 3-5 ngày. LINSPEC 5/10: Tiêm 1ml cho mỗi 7-10kg trọng lượng của heo mỗi ngày. Duy trì điều trị trong 3-5 ngày. Để hạ sốt và tăng sức đề kháng cho heo, sử dụng các thuốc trợ lực sau đây: Vit.B-complex CATOSAL CATOVET ANAZIN C Cuối cùng, để trộn kháng sinh cho toàn bộ heo trong trại, sử dụng MG 200 Premix với liều 1kg thuốc cho mỗi 2 tấn thức ăn, duy trì trong 10 ngày. Lưu ý rằng việc sử dụng các loại thuốc này nên được thực hiện dưới sự hướng dẫn của một chuyên gia thú y hoặc bác sĩ thú y để đảm bảo rằng điều trị được thực hiện đúng cách và an toàn cho sức kháng của heo"
+            "Dưới đây là hướng dẫn điều trị cho heo bằng sử dụng các loại kháng sinh và thuốc trợ lực cùng với việc trộn kháng sinh cho toàn bộ heo trong trại bằng MG 200 Premix:\nSHOTAPEN LA: Tiêm 1ml cho mỗi 10kg trọng lượng của heo. Tiêm lại sau 48-72 giờ.\nAMPI-KANA: Sử dụng 1 lọ có liều 1 gram cho mỗi 50kg trọng lượng của heo. Chia làm hai lần tiêm trong một ngày và duy trì điều trị trong 3-5 ngày.\nHAMMOGEN: Tiêm 1ml vào cơ bắp cho mỗi 10kg trọng lượng của heo mỗi ngày. Duy trì điều trị trong 3-5 ngày.\nGENTAMOX INJ: Tiêm 1ml vào cơ bắp cho mỗi 10-15kg trọng lượng của heo mỗi ngày. Duy trì điều trị trong 3-5 ngày.\nMACAVET: Tiêm 1ml cho mỗi 7-10kg trọng lượng của heo mỗi ngày. Duy trì điều trị trong 3-5 ngày.\nLINSPEC 5/10: Tiêm 1ml cho mỗi 7-10kg trọng lượng của heo mỗi ngày. Duy trì điều trị trong 3-5 ngày.\nĐể hạ sốt và tăng sức đề kháng cho heo, sử dụng các thuốc trợ lực sau đây:\nVit.B-complex\nCATOSAL\nCATOVET\nANAZIN C\nCuối cùng, để trộn kháng sinh cho toàn bộ heo trong trại, sử dụng MG 200 Premix với liều 1kg thuốc cho mỗi 2 tấn thức ăn, duy trì trong 10 ngày.\nLưu ý rằng việc sử dụng các loại thuốc này nên được thực hiện dưới sự hướng dẫn của một chuyên gia thú y hoặc bác sĩ thú y để đảm bảo rằng điều trị được thực hiện đúng cách và an toàn cho sức kháng của heo."
         ],
         "prevention": [
-            "Để phòng ngừa bệnh tụ huyết trùng (hoặc Salmonellosis) trên heo, bạn cần tuân thủ các biện pháp quản lý và giám sát sức khỏe của đàn heo. Dưới đây là một số cách để phòng tránh bệnh tụ huyết trùng trên heo: Vệ sinh và quản lý môi trường: Đảm bảo sạch sẽ và khô ráo trong chuồng và khu vực nuôi heo. Loại bỏ phân và vật thải thường xuyên. Điều này giúp ngăn ngừa sự phát triển của vi khuẩn Salmonella trong môi trường. Kiểm tra nguồn nuôi: Hãy đảm bảo rằng thức ăn, nước uống và nguồn cung cấp đều an toàn và không bị nhiễm bệnh. Mua heo từ nguồn tin cậy và không nên chấp nhận heo có dấu hiệu bệnh. Kiểm soát nhiễm khuẩn: Hãy thực hiện các biện pháp kiểm soát nhiễm khuẩn thích hợp, chẳng hạn như rửa tay thường xuyên và đảm bảo nhân viên và những người tiếp xúc với heo không truyền nhiễm khuẩn từ heo sang. Phòng chống căn bệnh: Đảm bảo heo được tiêm phòng đúng lịch trình và tiêm vắc xin phòng bệnh, nếu có. Giám sát sức khỏe: Theo dõi sức khỏe của heo thường xuyên. Nếu phát hiện bất kỳ dấu hiệu bệnh hoặc triệu chứng lâm sàng, hãy tách heo bệnh ra khỏi đàn để ngăn sự lây lan của bệnh. Quản lý đàn heo: Tách biệt các nhóm heo ở các độ tuổi khác nhau để tránh lây lan bệnh giữa các đàn. Điều này cũng giúp giảm áp lực nhiễm khuẩn trong môi trường. Chẩn đoán và điều trị sớm: Nếu bạn nghi ngờ có trường hợp bệnh tụ huyết trùng, hãy thực hiện xét nghiệm và chẩn đoán sớm, sau đó thực hiện điều trị thích hợp dưới sự hướng dẫn của một chuyên gia thú y. Tuân thủ quy định y tế thú y: Luôn tuân thủ các quy định và hướng dẫn y tế thú y địa phương và quốc gia. Nhớ rằng bệnh tụ huyết trùng có thể ảnh hưởng đến sức kháng và tăng chi phí nuôi heo. Việc thực hiện các biện pháp phòng ngừa là quan trọng để duy trì sức khỏe của đàn heo và tăng hiệu suất chăn nuôi. "
+            "Để phòng ngừa bệnh tụ huyết trùng (hoặc Salmonellosis) trên heo, bạn cần tuân thủ các biện pháp quản lý và giám sát sức khỏe của đàn heo. Dưới đây là một số cách để phòng tránh bệnh tụ huyết trùng trên heo:\nVệ sinh và quản lý môi trường: Đảm bảo sạch sẽ và khô ráo trong chuồng và khu vực nuôi heo. Loại bỏ phân và vật thải thường xuyên. Điều này giúp ngăn ngừa sự phát triển của vi khuẩn Salmonella trong môi trường.\nKiểm tra nguồn nuôi: Hãy đảm bảo rằng thức ăn, nước uống và nguồn cung cấp đều an toàn và không bị nhiễm bệnh. Mua heo từ nguồn tin cậy và không nên chấp nhận heo có dấu hiệu bệnh.\nKiểm soát nhiễm khuẩn: Hãy thực hiện các biện pháp kiểm soát nhiễm khuẩn thích hợp, chẳng hạn như rửa tay thường xuyên và đảm bảo nhân viên và những người tiếp xúc với heo không truyền nhiễm khuẩn từ heo sang.\nPhòng chống căn bệnh: Đảm bảo heo được tiêm phòng đúng lịch trình và tiêm vắc xin phòng bệnh, nếu có.\nGiám sát sức khỏe: Theo dõi sức khỏe của heo thường xuyên. Nếu phát hiện bất kỳ dấu hiệu bệnh hoặc triệu chứng lâm sàng, hãy tách heo bệnh ra khỏi đàn để ngăn sự lây lan của bệnh.\nQuản lý đàn heo: Tách biệt các nhóm heo ở các độ tuổi khác nhau để tránh lây lan bệnh giữa các đàn. Điều này cũng giúp giảm áp lực nhiễm khuẩn trong môi trường.\nChẩn đoán và điều trị sớm: Nếu bạn nghi ngờ có trường hợp bệnh tụ huyết trùng, hãy thực hiện xét nghiệm và chẩn đoán sớm, sau đó thực hiện điều trị thích hợp dưới sự hướng dẫn của một chuyên gia thú y.\nTuân thủ quy định y tế thú y: Luôn tuân thủ các quy định và hướng dẫn y tế thú y địa phương và quốc gia.\nNhớ rằng bệnh tụ huyết trùng có thể ảnh hưởng đến sức kháng và tăng chi phí nuôi heo. Việc thực hiện các biện pháp phòng ngừa là quan trọng để duy trì sức khỏe của đàn heo và tăng hiệu suất chăn nuôi."
         ]
     },
     {
@@ -103,7 +109,7 @@
             "Hiện nay chưa có vắc xin phòng bệnh hiệu quả và thuốc điều trị đặc hiệu cho bệnh dịch tả lợn"
         ],
         "prevention": [
-            "Hiện nay chưa có vắc xin phòng bệnh hiệu quả và thuốc điều trị đặc hiệu được bệnh Dịch tả lợn châu phi, vì vậy đối với người chăn nuôi giải pháp chăn nuôi an toàn sinh học, thực hiện các biện pháp phòng bệnh tổng hợp, đồng bộ, là giải pháp hữu hiệu duy nhất hiện nay đối với phòng, chống bệnh DTLCP. - Tăng cường chỉ đạo chăn nuôi an toàn sinh học, thực hành chăn nuôi tốt; xây dựng cơ sở, chuỗi cơ sở và vùng an toàn dịch bệnh. - Định kỳ tổ chức vệ sinh, khử trùng, tiêu độc tại các khu vực chăn nuôi, các chợ, điểm buôn bán, giết mổ lợn và các sản phẩm của lợn bằng vôi bột hoặc hóa chất; hằng ngày thực hiện vệ sinh, khử trùng tiêu độc sau mỗi buổi họp chợ, mỗi ca giết mổ lợn; vệ sinh, khử trùng, tiêu độc đối với người, phương tiện ra vào khu vực chăn nuôi theo đúng quy trình kỹ thuật chăn nuôi, vệ sinh phòng dịch. Tiêu diệt ve, ruồi, muỗi và các côn trùng khác. - Tiêm phòng đầy đủ vắc xin phòng bệnh cho lợn như: Vắcxin dịch tả lợn, Tụ huyết trùng, Tai xanh, Lở mồm long móng…cho từng loại lợn và từng lứa tuổi phù hợp. - Nghiêm cấm mọi hình thức vận chuyển, buôn bán, giết mổ, tiêu thụ lợn, sản phẩm của lợn không rõ nguồn gốc, lợn bị bệnh. - Tổ chức thông tin, tuyên truyền phổ biến rộng rãi đến tất cả thú y cơ sở, người chăn nuôi và toàn dân về bệnh DTLCP để tuyên truyền, đưa tin về tình hình dịch bệnh và các biện pháp phòng, chống bệnh DTLCP. - Tăng cường theo dõi, giám sát lâm sàng đối với các đàn lợn; kịp thời phát hiện, cách ly và lấy mẫu xét nghiệm đối với lợn bị bệnh, nghi bị bệnh. - Đàn lợn khi phát hiện nghi nhiễm, mắc bệnh Dịch tả lợn châu phi cần lấy mẫu xét nghiệm xác định nguyên nhân bệnh, nếu xác định dương tính, không thực hiện điều trị lợn bệnh, lợn nghi mắc bệnh; cần báo cáo ngay chính quyền địa phương và thú y cơ sở để tiêu hủy sớm toàn bộ đàn lợn, thực hiện vệ sinh, khử trùng tiêu độc, áp dụng các biện pháp an toàn sinh học."
+            "Hiện nay chưa có vắc xin phòng bệnh hiệu quả và thuốc điều trị đặc hiệu được bệnh Dịch tả lợn châu phi, vì vậy đối với người chăn nuôi giải pháp chăn nuôi an toàn sinh học, thực hiện các biện pháp phòng bệnh tổng hợp, đồng bộ, là giải pháp hữu hiệu duy nhất hiện nay đối với phòng, chống bệnh DTLCP. - Tăng cường chỉ đạo chăn nuôi an toàn sinh học, thực hành chăn nuôi tốt; xây dựng cơ sở, chuỗi cơ sở và vùng an toàn dịch bệnh.\n - Định kỳ tổ chức vệ sinh, khử trùng, tiêu độc tại các khu vực chăn nuôi, các chợ, điểm buôn bán, giết mổ lợn và các sản phẩm của lợn bằng vôi bột hoặc hóa chất; hằng ngày thực hiện vệ sinh, khử trùng tiêu độc sau mỗi buổi họp chợ, mỗi ca giết mổ lợn; vệ sinh, khử trùng, tiêu độc đối với người, phương tiện ra vào khu vực chăn nuôi theo đúng quy trình kỹ thuật chăn nuôi, vệ sinh phòng dịch. Tiêu diệt ve, ruồi, muỗi và các côn trùng khác.\n - Tiêm phòng đầy đủ vắc xin phòng bệnh cho lợn như: Vắcxin dịch tả lợn, Tụ huyết trùng, Tai xanh, Lở mồm long móng…cho từng loại lợn và từng lứa tuổi phù hợp.\n - Nghiêm cấm mọi hình thức vận chuyển, buôn bán, giết mổ, tiêu thụ lợn, sản phẩm của lợn không rõ nguồn gốc, lợn bị bệnh.\n - Tổ chức thông tin, tuyên truyền phổ biến rộng rãi đến tất cả thú y cơ sở, người chăn nuôi và toàn dân về bệnh DTLCP để tuyên truyền, đưa tin về tình hình dịch bệnh và các biện pháp phòng, chống bệnh DTLCP.\n - Tăng cường theo dõi, giám sát lâm sàng đối với các đàn lợn; kịp thời phát hiện, cách ly và lấy mẫu xét nghiệm đối với lợn bị bệnh, nghi bị bệnh.\n - Đàn lợn khi phát hiện nghi nhiễm, mắc bệnh Dịch tả lợn châu phi cần lấy mẫu xét nghiệm xác định nguyên nhân bệnh, nếu xác định dương tính, không thực hiện điều trị lợn bệnh, lợn nghi mắc bệnh; cần báo cáo ngay chính quyền địa phương và thú y cơ sở để tiêu hủy sớm toàn bộ đàn lợn, thực hiện vệ sinh, khử trùng tiêu độc, áp dụng các biện pháp an toàn sinh học."
         ]
     },
     {
@@ -119,17 +125,27 @@
             "thay đổi thời tiết"
         ],
         "symptoms": [
-            "Thời gian nung bệnh từ 2-4 ngày, đến 21 ngày",
-            "Sốt cao liên tục 40-41.5 độ, chảy dãi, xuất hiện mụn nước ở vùng quanh móng chân, bàn chân, kẽ móng, sau đó phát triển thành mảng lớn, vỡ ra, tạo vết loét",
-            "Ngại vận động, hay nằm, ăn ít",
-            "Bệnh nặng, lợn có thể di chuyển bằng đầu gối, xây xát đầu gối",
-            "Ở lợn nái, mụn có thể mọc ở núm vú, mụn vỡ tạo lở loét có thể gây viêm vú. Lợn mẹ không cho con bú vì đau, lợn nái mang thai sẽ sảy thai"
+            {
+                "desc": [
+                    "2-4",
+                    "sốt cao",
+                    "chảy dãi",
+                    "mụn nước | móng chân, bàn chân, kẽ móng, sau đó phát triển thành mảng lớn, vỡ ra, tạo vết loét",
+                    "mệt mỏi",
+                    "ăn ít",
+                    "di chuyển bằng đầu gối",
+                    "xây xát đầu gối",
+                    "sảy thai"
+                ],
+                "note": "Chung",
+                "score": 0.0
+            }
         ],
         "treatments": [
-            "Chưa có thuốc điều trị đặc hiệu, cần điều trị các mụn mủ, các vết loét để ngừa phụ nhiễm Điều trị tại chỗ: Rửa các vết loét ở miệng, lưỡi, chân, móng, bầu vú bằng một trong các dung dịch như nước muối, acid citric 1% hoặc thuốc tím 1%, phèn chua 2% (hoặc dùng khế, chanh vắt lấy nước, nhúng vào vải gạc sạch rồi rửa nhẹ lên vết loét ở miệng, lưỡi ngày 2 lần). Sau khi rửa sạch các mụn mủ ở vú, chân bằng nước muối, lau khô, rồi dùng thuốc Bio-Blue Spray để xịt vào vết thương. Điều trị toàn thân: Sử dụng B.Complex, Vitamin C để tăng cường sức đề kháng. Điều trị nhiễm khuẩn thứ phát bằng một trong các kháng sinh như Penicillin. Amoxicillin, Lincomycin,… từ 3 – 5 ngày Nếu thú bị suy nhược thì nên kết hợp truyền thêm Glucose 5%. Nhốt thú ở chuồng sạch và khô ráo, nên có tấm lót để thú không bị đau chân. Cho ăn thức ăn mềm để dễ nhai và dễ tiêu hóa. Nếu điều trị đúng cách và chăm sóc tốt, thú sẽ lành bệnh sau 10 – 15 ngày."
+            "Chưa có thuốc điều trị đặc hiệu, cần điều trị các mụn mủ, các vết loét để ngừa phụ nhiễm. Điều trị tại chỗ:\nRửa các vết loét ở miệng, lưỡi, chân, móng, bầu vú bằng một trong các dung dịch như nước muối, acid citric 1% hoặc thuốc tím 1%, phèn chua 2% (hoặc dùng khế, chanh vắt lấy nước, nhúng vào vải gạc sạch rồi rửa nhẹ lên vết loét ở miệng, lưỡi ngày 2 lần). Sau khi rửa sạch các mụn mủ ở vú, chân bằng nước muối, lau khô, rồi dùng thuốc Bio-Blue Spray để xịt vào vết thương.\nĐiều trị toàn thân:\nSử dụng B.Complex, Vitamin C để tăng cường sức đề kháng.\nĐiều trị nhiễm khuẩn thứ phát bằng một trong các kháng sinh như Penicillin. Amoxicillin, Lincomycin,… từ 3 – 5 ngày\nNếu thú bị suy nhược thì nên kết hợp truyền thêm Glucose 5%.\nNhốt thú ở chuồng sạch và khô ráo, nên có tấm lót để thú không bị đau chân.\nCho ăn thức ăn mềm để dễ nhai và dễ tiêu hóa.\nNếu điều trị đúng cách và chăm sóc tốt, thú sẽ lành bệnh sau 10 – 15 ngày."
         ],
         "prevention": [
-            "Phòng bệnh bằng vắc-xin: Đối với heo con không có kháng thể LMLM hoặc từ mẹ không được tiêm phòng, tiêm phòng lần đầu vào lúc 2 tuần tuổi trở lên. Nếu thời gian nuôi thú hơn 6 tháng, tiêm 2 mũi cách nhau 4 -5 tuần. Với heo có kháng thể LMLM hoặc từ mẹ đã được tiêm vắc-xin LMLM, tiêm phòng mũi đầu vào lúc 2,5 tháng tuổi. Trong các vùng có nguy cơ nhiễm cao, tiêm toàn đàn vào lúc 2 tuần tuổi với heo từ mẹ chưa tiêm vắc-xin và 2 tháng với heo con từ mẹ đã được tiêm vắc-xin và nhắc lại sau 4 -5 tuần. Tái chủng 6 tháng một lần. Hàng ngày vệ sinh, chuồng trại. Phát quang bụi rậm để xua đuổi côn trùng ngoài tự nhiên. Định kỳ tiêu độc, khử trùng bằng thuốc sát trùng, rắc vôi bột tại các lối vào khu vực chăn nuôi, khu vực cống rãnh, nơi thoát nước thải."
+            "Phòng bệnh bằng vắc-xin: Đối với heo con không có kháng thể LMLM hoặc từ mẹ không được tiêm phòng, tiêm phòng lần đầu vào lúc 2 tuần tuổi trở lên. Nếu thời gian nuôi thú hơn 6 tháng, tiêm 2 mũi cách nhau 4 -5 tuần. Với heo có kháng thể LMLM hoặc từ mẹ đã được tiêm vắc-xin LMLM, tiêm phòng mũi đầu vào lúc 2,5 tháng tuổi. Trong các vùng có nguy cơ nhiễm cao, tiêm toàn đàn vào lúc 2 tuần tuổi với heo từ mẹ chưa tiêm vắc-xin và 2 tháng với heo con từ mẹ đã được tiêm vắc-xin và nhắc lại sau 4 -5 tuần. Tái chủng 6 tháng một lần. \nHàng ngày vệ sinh, chuồng trại. \nPhát quang bụi rậm để xua đuổi côn trùng ngoài tự nhiên. \nĐịnh kỳ tiêu độc, khử trùng bằng thuốc sát trùng, rắc vôi bột tại các lối vào khu vực chăn nuôi, khu vực cống rãnh, nơi thoát nước thải."
         ]
     },
     {
@@ -142,36 +158,65 @@
             "Do vi khuẩn Erysipelothiix Rhusiopathiae gây ra, còn được gọi là trực trùng thổ nhưỡng, có nhiều trong đất, nước, phân"
         ],
         "envfactors": [
-            "Điều kiện chăn nuôi không có chuồng trại, nuôi thả lan, nuôi có chuồng nhưng nền chống bằng đất",
-            "Điều kiện chăm sóc nuôi dưỡng kém không vệ sinh thường xuyên, chuồng trại bị mưa tạt, gió lùa",
-            "Thức ăn, nước uống không vệ sinh"
+            "Điều kiện chuồng trại",
+            "Điều kiện vệ sinh",
+            "Điều kiện thức ăn",
+            "thay đổi thời tiết"
         ],
         "symptoms": [
-            "Thời gian ủ bệnh khác nhau từ 1-8 ngày, tuỳ vào độc lực và các yếu tố thúc đẩy",
-            "Thể quá cấp:",
-            "Gắn liền với việc san đàn, chuyển chuồng, vận chuyển xa hoặc ở các trại chăn nuôi ẩm thấp, tối tăm, ngột ngạt, sử dụng nước ao tù trong chăn nuôi",
-            "Bệnh xảy ra đột ngột với triệu chứng sốt nhanh và rất cao 42 độ",
-            "Lợn hết sức mệt mỏi, da trắng bệch, bệnh chỉ kéo dài từ vài giờ đến một ngày và lợn chết",
-            "Thể cấp tính:",
-            "Xuất hiện ở lợn vỗ béo 3-5 tháng tuổi, dưới tác động trực tiếp của các yếu tố stress như nóng, ngột ngạt ẩm thấp, vận chuyển, thay đổi thời tiết, thức ăn, nước uống đột ngột hoặc lợn khát lâu do thiếu nước",
-            "Bệnh xảy ra đột ngột với triệu chứng sốt nhanh và rất cao 42-43 độ",
-            "Lợn suy sụp nhanh, bỏ ăn, nằm bẹp",
-            "Lợn có thể nôn mửa, phản xạ nôn mửa, bí đái, bí ỉa, viêm mí mắt, yếu chân và phần mông sau",
-            "Sau 2-3 ngày xuất hiện từng đám đỏ ở khắp da (vùng lưng, vai và da mềm như bụng, bẹn háng, tai, cổ,...). Khi ấn tay mạnh vào các đám da đỏ thì màu đỏ biến mất, trở nên tái nhợt trong thời gian rất ngắn rồi trở đỏ trở lại",
-            "Lợn thở dốc khó khăn, tim đập mạnh, các đám da đỏ chuyển màu sang thâm",
-            "Thể mãn tính: ",
-            "Các nốt son (đóng dấu đỏ, vùng đỏ) chuyển thành các nốt viêm loét hoại tử da điển hình ở lưng, hai bên vai, mông và chân",
-            "Lợn bệnh từ từ hạ sốt từ 42-43 xuống 41-41.5 hoặc thấp hơn",
-            "Các nốt loét da có hình vuông, hình bình hành, hình thoi, ít khi có hình tròn, với kích thước từ 1 đến 10 cm2. Các nốt dấu có thể liền dính lại với nhau tạo thành mảng lớn",
-            "Các nốt viêm hoại tử da có thể tạo vảy nâu, dễ bong tróc",
-            "Lợn bệnh có thể thở dốc khó khăn, da phần mõm, tai, bụng bị tím tái do lợn bị viêm tim",
-            "Lợn bệnh có thể đi lại khó khăn, khi đứng thường có dáng khom khom, mông cong lên do lợn bị viêm khớp"
+            {
+                "desc": [
+                    "1-8"
+                ],
+                "note": "Chung",
+                "score": 0.0
+            },
+            {
+                "desc": [
+                    "sốt cao",
+                    "mệt mỏi",
+                    "da trắng bệch",
+                    "chết"
+                ],
+                "note": "Thể quá cấp tính:",
+                "score": 0.0
+            },
+            {
+                "desc": [
+                    "sốt cao",
+                    "không ăn",
+                    "mệt mỏi",
+                    "nôn mửa", 
+                    "bí vệ sinh", 
+                    "viêm mí mắt", 
+                    "yếu chân và phần mông sau",
+                    "đỏ ở khắp da | vùng lưng, vai và da mềm như bụng, bẹn háng, tai, cổ.",
+                    "khó thở", 
+                    "tim đập mạnh", 
+                    "da đổi màu"
+                ],
+                "note": "Thể cấp tính:",
+                "score": 0.0
+            },
+            {
+                "desc": [
+                    "nốt viêm loét hoại tử da | lưng, hai bên vai, mông và chân",
+                    "sốt nhẹ",
+                    "da vảy nâu, dễ bong tróc",
+                    "khó thở",
+                    "da bị tím tái | mõm, tai, bụng",
+                    "đi lại khó khăn",
+                    "dáng khom khom",
+                    "mông cong lên"
+                ],
+                "note": "Thể mãn tính",
+                "score": 0.0
+            }
         ],
         "treatments": [
-            "Thể quá cấp và cấp tính: cần dùng kháng huyết thanh hoặc kháng thể được sản xuất từ máu của ngựa, kết hợp với kháng sinh để điều trị mới thu được kết quả. Kháng huyết thanh đóng dấu có thể tiêm dưới da, tiêm bắp hoặc tiêm ven với liều 1 - 1,5 ml/1kgP Kháng sinh thường dùng là các loại có tác dụng chủ yếu vi khuẩn Gram dương là: Penicillin, Ampicillin, Amoxycillin, Cloxacillin, Ceftiofur, Fosfomycin, Gentamycin. Chúng có thể dùng riêng rẽ nhưng khi kết hợp thì hiệu quả điều trị tốt hơn nhiều. Đặc biệt các loại thuốc có tác dụng kéo dài đạt hiệu quả điều trị rất cao bệnh đóng dấu là: T. Amoxycol, T. Amoxigen, Vidan T, T. Enteron, T. Gastron, T. Diatrizon, Linco-Gen L. A. 15%, Macavet. Dùng tiêm bắp: 1ml/8- 10kgP/lần. Ngày tiêm 2 lần, tiêm 3- 4 ngày chắc chắn bệnh sẽ khỏi. Kết quả điều trị sẽ rất cao nếu buổi sáng ta tiêm một loại thuốc, buổi chiều ta dùng loại khác theo những phác đồ sau: Phác đồ 1: Tiêm bắp: Sáng: T.Gastron 1ml/10kgP Chiều: T.enteron 1ml/10kgP Phác đồ 2: Tiêm bắp: Sáng: Vidan.T 1ml/10kgP Chiều: T.Amoxigen 1ml/10kgP Thuốc dùng 3 ngày liên tục bệnh sẽ khỏi. Phác đồ 3: Sáng: Macavet 1ml/10kgP Chiều: Linco-Gen L.A 1ml/10kgP Phác đồ 4: Sáng: Ceftiofur 1ml/12kgP Chiều: Amoxigen 1ml/10kgP"
-        ],
+            "Thể quá cấp và cấp tính: cần dùng kháng huyết thanh hoặc kháng thể được sản xuất từ máu của ngựa, kết hợp với kháng sinh để điều trị mới thu được kết quả.\nKháng huyết thanh đóng dấu có thể tiêm dưới da, tiêm bắp hoặc tiêm ven với liều 1 - 1,5 ml/1kgP\nKháng sinh thường dùng là các loại có tác dụng chủ yếu vi khuẩn Gram dương là: Penicillin, Ampicillin, Amoxycillin, Cloxacillin, Ceftiofur, Fosfomycin, Gentamycin. Chúng có thể dùng riêng rẽ nhưng khi kết hợp thì hiệu quả điều trị tốt hơn nhiều.\nĐặc biệt các loại thuốc có tác dụng kéo dài đạt hiệu quả điều trị rất cao bệnh đóng dấu là: T. Amoxycol, T. Amoxigen, Vidan T, T. Enteron, T. Gastron, T. Diatrizon, Linco-Gen L. A. 15%, Macavet. Dùng tiêm bắp: 1ml/8- 10kgP/lần. Ngày tiêm 2 lần, tiêm 3- 4 ngày chắc chắn bệnh sẽ khỏi.\nKết quả điều trị sẽ rất cao nếu buổi sáng ta tiêm một loại thuốc, buổi chiều ta dùng loại khác theo những phác đồ sau:\nPhác đồ 1: Tiêm bắp:\nSáng: T.Gastron 1ml/10kgP\nChiều: T.enteron 1ml/10kgP\nPhác đồ 2: Tiêm bắp:\nSáng: Vidan.T 1ml/10kgP\nChiều: T.Amoxigen 1ml/10kgP\nThuốc dùng 3 ngày liên tục bệnh sẽ khỏi.\nPhác đồ 3:\nSáng: Macavet 1ml/10kgP\nChiều: Linco-Gen L.A 1ml/10kgP\nPhác đồ 4:\nSáng: Ceftiofur 1ml/12kgP\nChiều: Amoxigen 1ml/10kgP"        ],
         "prevention": [
-            "Phòng bệnh bằng vắc xin được áp dụng riêng rẽ cho lợn thịt và lợn giống. Lợn cai sữa sẽ được tiêm lần 1 lúc 35-45 ngày tuổi và tiêm nhắc lại sau 2 tuần, miễn dịch kéo dài từ 3-6 tháng đủ cho một đời lợn thịt. Đối với lợn giống cần phải tiêm định kỳ 2-3 lần/ năm, lợn nái tiêm trước khi đẻ 15 ngày và lợn đực trước khi phối giống 15 ngày. Phòng bệnh bằng biện pháp vệ sinh thú y, các công tác vệ sinh trong chăn nuôi cần được áp dụng và thực hiện đầy đủ, thường xuyên và nghiêm túc."
+            "Phòng bệnh bằng vắc xin được áp dụng riêng rẽ cho lợn thịt và lợn giống. Lợn cai sữa sẽ được tiêm lần 1 lúc 35-45 ngày tuổi và tiêm nhắc lại sau 2 tuần, miễn dịch kéo dài từ 3-6 tháng đủ cho một đời lợn thịt. Đối với lợn giống cần phải tiêm định kỳ 2-3 lần/ năm, lợn nái tiêm trước khi đẻ 15 ngày và lợn đực trước khi phối giống 15 ngày.\nPhòng bệnh bằng biện pháp vệ sinh thú y, các công tác vệ sinh trong chăn nuôi cần được áp dụng và thực hiện đầy đủ, thường xuyên và nghiêm túc."
         ]
     },
     {
@@ -184,19 +229,26 @@
             "Do vi khuẩn E. coli gây ra"
         ],
         "envfactors": [
-            "Chăm sóc heo mẹ kém, chuồng trại ẩm ướt",
-            "Lợn thiếu máu và thiếu vitamin",
-            "Thay đổi thức ăn, chuồng nuôi, thời tiết bất lợi, nhiệt độ độ ẩm thay đổi làm sức đề kháng của heo con suy giảm"
+            "chuồng trại ẩm ướt",
+            "thay đổi thức ăn",
+            "thay đổi chuồng nuôi", 
+            "thời tiết bất lợi",
+            "nhiệt độ thay đổi",
+            "độ ẩm thay đổi"
         ],
         "symptoms": [
-            "Những con to, con đầu đàn, ăn tốt nhất trong đàn bị trước",
-            "Một số lợn chết nhanh, chết đột ngột",
-            "Phù mí mắt có trước, sau đó xuất hiện phù mặt, phù đầu",
-            "Tiếng kêu khác, lạ do phù vùng hầu chèn ép vào dây thanh quản",
-            "Có biểu hiện thần kinh: mất thăng bằng, đi lảo đảo, ngã, liệt, lúc gần chết có hiện tượng co giật bơi chèo",
-            "Lợn bệnh ít sốt hoặc sốt nhẹ, không kéo dài",
-            "Xuất hiện hiện tượng tiêu chảy ở ngày 3-4, phân lỏng có màu vàng xám hoặc trắng, có chất nhầy, lẫn máu, mùi hôi tanh"
-            
+            {
+                "desc": [
+                    "chết nhanh",
+                    "Phù |mí mắt, mặt, đầu",
+                    "Tiếng kêu thay đổi",
+                    "thần kinh",
+                    "sốt nhẹ",
+                    "tiêu chảy"
+                ],
+                "note": "Chung",
+                "score": 0.0
+            }
         ],
         "treatments": [
             "Cần thiết nhất cắt giảm lượng thức ăn cho heo Tiêm lại kháng thể ecoli hoặc đa kháng thể cho heo Cho tổng đàn uống men lacto để cân bằng lại hệ vi sinh vật đường ruột Tăng cường miễn dịch tự nhiên cho lợn bằng cách trộn men tiêu hoá, amox-colis để phòng bệnh định kỳ vào thức ăn"
