@@ -29,6 +29,82 @@ def get_similar_animals(inp=""):
     }
     return similar[inp]
 
+class ChatbotController:
+    def __init__(self) -> None:
+        with open(r"database\cattle.json", "r", encoding="utf8") as f:
+            self.cattle_database = json.loads(f.read())
+        with open(r"database\poultry.json", "r", encoding="utf8") as f:
+            self.poultry_database = json.loads(f.read())
+        with open(r"database\medicine.json", "r", encoding="utf8") as f:
+            self.medicine_database = json.loads(f.read())
+        with open(r"database\convert.json", "r", encoding="utf8") as f:
+            self.generalized_database = json.loads(f.read())
+        with open(r"database\r_cattle.json", "r", encoding="utf8") as f:
+            self.r_cattle_database = json.loads(f.read())
+        with open(r"database\r_poultry.json", "r", encoding="utf8") as f:
+            self.r_poultry_database = json.loads(f.read())
+        # options for user
+        self.convo_options = [
+            "1. Chẩn đoán bệnh thú y dựa theo triệu chứng",
+            "2. Tìm kiếm thông tin về bệnh thú y",
+            "3. Tìm kiếm thông tin về thuốc thú y",
+        ]
+
+        # init logic controller
+        self.diagnose = DiseasesDiagnosis(self.cattle_database, self.poultry_database, 
+                                          self.r_cattle_database, self.r_poultry_database, self.generalized_database)
+        self.disease = DiseasesInformation(self.cattle_database, self.poultry_database, self.r_cattle_database,
+                                           self.r_poultry_database, self.generalized_database)
+        self.medicine = MedicineInformation()
+
+    def main_process(self):
+        # loop every process until special condition (user asks to stop)
+        while True:
+            self.print_start_convo()
+            u_input = input()
+            u_input = self.check_master_convo(u_input)
+            if u_input == 1:
+                # self.symptom_based_diagnose()
+                self.diagnose.main_process()
+            elif u_input == 2:
+                # self.get_disease_information()
+                self.disease.main_process()
+            elif u_input == 3:
+                # self.get_medicine_information()
+                self.medicine.main_process()
+            elif u_input == 0:
+                self.print_end_convo()
+                break
+
+        print("Dừng hệ thống.")
+
+    def print_start_convo(self):
+        print(
+            "Xin chào bạn đến với hệ thống chatbot tư vấn khám chữa bệnh thú y. Vui lòng chọn một lựa chọn phía dưới"
+        )
+        print("\n".join(self.convo_options))
+
+    def print_end_convo(self):
+        print("Cảm ơn bạn đã sử dụng hệ thống, hẹn gặp lại!")
+
+    def check_master_convo(self, user_input=""):
+        end_convo_words = ["kết thúc", "ket thuc", "thoat", "end", "quit", "exit"]
+        try:
+            opt = int(user_input)
+            return opt
+        except:
+            if user_input.lower() in end_convo_words:
+                return 0
+
+    def symptom_based_diagnose(self):
+        pass
+
+    def get_disease_information(self):
+        print("2")
+
+    def get_medicine_information(self):
+        print("3")
+
 
 class Disease:
     def __init__(self, j = {}, index=-1) -> None:
@@ -36,36 +112,43 @@ class Disease:
         self.species = j['species']
         self.description = j['description']
         self.causes = j['causes']
-        self.environment_factors = j['evnfactors']
-        self.symptoms = j['symptoms']
         self.treatments = j['treatments']
         self.prevention = j['prevention']
 
+        # will be redefined
+        self.environment_factors = j['evnfactors']
+        self.environment_factors_score = []
+        self.symptoms = j['symptoms']
+        self.symptoms_score = []
+        
         self.index = index
 
-    def get_name(self):
-        return self.name
+    def process_symptoms(self):
+        pass
 
-    def get_species(self):
-        return self.species
+    def process_envfacs(self):
+        pass
 
-    def get_description(self):
-        return self.description
+    def print_species(self):
+        print(self.species)
 
-    def get_causes(self):
-        return self.causes
+    def print_description(self):
+        print(self.description)
 
-    def get_environment_factors(self):
-        return self.environment_factors
+    def print_causes(self):
+        print(self.causes)
 
-    def get_symptoms(self):
-        return self.symptoms
+    def print_environment_factors(self):
+        print(self.environment_factors)
 
-    def get_treatments(self):
-        return self.treatments
+    def print_symptoms(self):
+        print(self.symptoms)
 
-    def get_prevention(self):
-        return self.prevention
+    def print_treatments(self):
+        print(self.treatments)
+
+    def print_prevention(self):
+        print(self.prevention)
     
     def get_index(self):
         return self.index
@@ -76,6 +159,9 @@ class Disease:
         print(f'- Các loài có thể bị nhiễm: {self.species}')
         print(f'Số thứ tự: {self.index}')
         # có thể in thêm các triệu chứng nổi bật, sẽ code thêm khi database có thêm phần trọng số
+
+    def print_all(self):
+        print(self.name + " all")
     
 
 
@@ -238,17 +324,36 @@ class DiseasesInformation:
                 break
             # khoá bệnh người dùng chọn
             self.current_pick_disease = self.current_avail_diseases[int(u_in)]
-            print(f'Bạn đã chọn bệnh {self.current_pick_disease.get_name()}, để chọn bệnh khác, vui lòng nhập "kết thúc"')
+            print(f'Bạn đã chọn bệnh {self.current_pick_disease.name}, để chọn bệnh khác, vui lòng nhập "kết thúc"')
             print('Lưu ý rằng tôi không quá giỏi khi phân tích ngữ nghĩa, vì vậy sử dụng các từ gợi ý tôi đưa ra có thể giúp tôi trợ giúp bạn dễ hơn')
             # hỏi đáp từng câu
             current_context = ''
             while True:
-                u_in = input('Bạn muốn biết thông tin gì về bệnh? (nguyên nhân, triệu chứng, cách điều trị, cách phòng bệnh) ')
-                # this is where i left
-                pass
+                # cần (?) preprocess tách ngữ cảnh
+                u_in = input('Bạn muốn biết thông tin gì về bệnh? (nguyên nhân, mô tả, triệu chứng, cách điều trị, cách phòng bệnh, toàn bộ) ')
+                if "nguyên nhân" in u_in.lower().strip():
+                    print(f'Dưới đây là các nguyên nhân gây nên bệnh {self.current_pick_disease.name}')
+                    self.current_pick_disease.print_causes()
+                if "mô tả" in u_in.lower().strip():
+                    print(f'Dưới đây là phần mô tả của bệnh {self.current_pick_disease.name}')
+                    self.current_pick_disease.print_description()
+                if "triệu chứng" in u_in.lower().strip():
+                    print(f'Dưới đây là các triệu chứng của bệnh {self.current_pick_disease.name}')
+                    self.current_pick_disease.print_symptoms()
+                if "điều trị" in u_in.lower().strip():
+                    print(f'Dưới đây là các phương pháp điều trị bệnh {self.current_pick_disease.name}')
+                    self.current_pick_disease.print_treatments()
+                if "phòng bệnh" in u_in.lower().strip():
+                    print(f'Dưới đây là các phương pháp phòng chống bệnh {self.current_pick_disease.name}')
+                    self.current_pick_disease.print_prevention()
+                if "toàn bộ" in u_in.lower().strip():
+                    print(f'Dưới đây là toàn bộ thông tin liên quan tới bệnh {self.current_pick_disease.name}')
+                    self.current_pick_disease.print_all()
+                if "kết thúc" in u_in.lower().strip():
+                    print(f'Bạn đã chọn dừng tiếp nhận thông tin về bệnh {self.current_pick_disease.name}')
+                    break
+        print('Cảm ơn bạn đã sử dụng dịch vụ tra cứu thông tin bệnh thú y')
 
-
-        
 
     def get_avail_diseases(self):
         if self.current_species == 'cattle':
@@ -292,69 +397,3 @@ class MedicineInformation:
         print("Bạn đã chọn sử dụng chức năng tìm kiếm thông tin thuốc thú y")
         pass
 
-
-class ChatbotController:
-    def __init__(self) -> None:
-        with open(r"database\cattle.json", "r", encoding="utf8") as f:
-            self.cattle_database = json.loads(f.read())
-        with open(r"database\poultry.json", "r", encoding="utf8") as f:
-            self.poultry_database = json.loads(f.read())
-        with open(r"database\medicine.json", "r", encoding="utf8") as f:
-            self.medicine_database = json.loads(f.read())
-        with open(r"database\convert.json", "r", encoding="utf8") as f:
-            self.generalized_database = json.loads(f.read())
-        with open(r"database\r_cattle.json", "r", encoding="utf8") as f:
-            self.r_cattle_database = json.loads(f.read())
-        with open(r"database\r_poultry.json", "r", encoding="utf8") as f:
-            self.r_poultry_database = json.loads(f.read())
-        # options for user
-        self.convo_options = [
-            "1. Chẩn đoán bệnh thú y dựa theo triệu chứng",
-            "2. Tìm kiếm thông tin về bệnh thú y",
-            "3. Tìm kiếm thông tin về thuốc thú y",
-        ]
-
-    def main_process(self):
-        # loop every process until special condition (user asks to stop)
-        while True:
-            self.print_start_convo()
-            u_input = input()
-            u_input = self.check_master_convo(u_input)
-            if u_input == 1:
-                self.symptom_based_diagnose()
-            elif u_input == 2:
-                self.get_disease_information()
-            elif u_input == 3:
-                self.get_medicine_information()
-            elif u_input == 0:
-                self.print_end_convo()
-                break
-
-        print("Dừng hệ thống.")
-
-    def print_start_convo(self):
-        print(
-            "Xin chào bạn đến với hệ thống chatbot tư vấn khám chữa bệnh thú y. Vui lòng chọn một lựa chọn phía dưới"
-        )
-        print("\n".join(self.convo_options))
-
-    def print_end_convo(self):
-        print("Cảm ơn bạn đã sử dụng hệ thống, hẹn gặp lại!")
-
-    def check_master_convo(self, user_input=""):
-        end_convo_words = ["kết thúc", "ket thuc", "thoat", "end", "quit", "exit"]
-        try:
-            opt = int(user_input)
-            return opt
-        except:
-            if user_input.lower() in end_convo_words:
-                return 0
-
-    def symptom_based_diagnose(self):
-        pass
-
-    def get_disease_information(self):
-        print("2")
-
-    def get_medicine_information(self):
-        print("3")
