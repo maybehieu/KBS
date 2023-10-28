@@ -1,25 +1,519 @@
 [
     {
-        "Name": "Bệnh tụ huyết trùng",
-        "Species": [
-            "Lợn",
-            "Trâu",
-            "Bò"
+        "name": "Bệnh tụ huyết trùng",
+        "species": [
+            "lợn",
+            "trâu",
+            "bò"
         ],
-        "Description": "Là bệnh truyền nhiễm do vi khuẩn tụ huyết trùng gây ra, bệnh nguy hiểm, có tỉ lệ chết cao",
-        "Causes": [
+        "description": "Là bệnh truyền nhiễm do vi khuẩn tụ huyết trùng gây ra, bệnh nguy hiểm, có tỉ lệ chết cao",
+        "causes": [
             "Do vi khuẩn Pasteurella multocida có sẵn trong niêm mạc mũi và hạch amidan gây ra"
         ],
-        "EnvFactors": [
+        "envfactors": [
+            "thay đổi thời tiết",
+            "nhiệt độ cao",
+            "độ ẩm cao",
+            "vận chuyển",
+            "chật chội"
+        ],
+        "symptoms": [
+            "6-48",
+            "sốt cao",
+            "run rẩy",
+            "chán ăn",
+            "mệt mỏi",
+            "da đổi màu",
+            "khó thở"
+        ],
+        "treatments": [
+            "Dưới đây là hướng dẫn điều trị cho heo bằng sử dụng các loại kháng sinh và thuốc trợ lực cùng với việc trộn kháng sinh cho toàn bộ heo trong trại bằng MG 200 Premix:\nSHOTAPEN LA: Tiêm 1ml cho mỗi 10kg trọng lượng của heo. Tiêm lại sau 48-72 giờ.\nAMPI-KANA: Sử dụng 1 lọ có liều 1 gram cho mỗi 50kg trọng lượng của heo. Chia làm hai lần tiêm trong một ngày và duy trì điều trị trong 3-5 ngày.\nHAMMOGEN: Tiêm 1ml vào cơ bắp cho mỗi 10kg trọng lượng của heo mỗi ngày. Duy trì điều trị trong 3-5 ngày.\nGENTAMOX INJ: Tiêm 1ml vào cơ bắp cho mỗi 10-15kg trọng lượng của heo mỗi ngày. Duy trì điều trị trong 3-5 ngày.\nMACAVET: Tiêm 1ml cho mỗi 7-10kg trọng lượng của heo mỗi ngày. Duy trì điều trị trong 3-5 ngày.\nLINSPEC 5/10: Tiêm 1ml cho mỗi 7-10kg trọng lượng của heo mỗi ngày. Duy trì điều trị trong 3-5 ngày.\nĐể hạ sốt và tăng sức đề kháng cho heo, sử dụng các thuốc trợ lực sau đây:\nVit.B-complex\nCATOSAL\nCATOVET\nANAZIN C\nCuối cùng, để trộn kháng sinh cho toàn bộ heo trong trại, sử dụng MG 200 Premix với liều 1kg thuốc cho mỗi 2 tấn thức ăn, duy trì trong 10 ngày.\nLưu ý rằng việc sử dụng các loại thuốc này nên được thực hiện dưới sự hướng dẫn của một chuyên gia thú y hoặc bác sĩ thú y để đảm bảo rằng điều trị được thực hiện đúng cách và an toàn cho sức kháng của heo."
+        ],
+        "prevention": [
+            "Để phòng ngừa bệnh tụ huyết trùng (hoặc Salmonellosis) trên heo, bạn cần tuân thủ các biện pháp quản lý và giám sát sức khỏe của đàn heo. Dưới đây là một số cách để phòng tránh bệnh tụ huyết trùng trên heo:\nVệ sinh và quản lý môi trường: Đảm bảo sạch sẽ và khô ráo trong chuồng và khu vực nuôi heo. Loại bỏ phân và vật thải thường xuyên. Điều này giúp ngăn ngừa sự phát triển của vi khuẩn Salmonella trong môi trường.\nKiểm tra nguồn nuôi: Hãy đảm bảo rằng thức ăn, nước uống và nguồn cung cấp đều an toàn và không bị nhiễm bệnh. Mua heo từ nguồn tin cậy và không nên chấp nhận heo có dấu hiệu bệnh.\nKiểm soát nhiễm khuẩn: Hãy thực hiện các biện pháp kiểm soát nhiễm khuẩn thích hợp, chẳng hạn như rửa tay thường xuyên và đảm bảo nhân viên và những người tiếp xúc với heo không truyền nhiễm khuẩn từ heo sang.\nPhòng chống căn bệnh: Đảm bảo heo được tiêm phòng đúng lịch trình và tiêm vắc xin phòng bệnh, nếu có.\nGiám sát sức khỏe: Theo dõi sức khỏe của heo thường xuyên. Nếu phát hiện bất kỳ dấu hiệu bệnh hoặc triệu chứng lâm sàng, hãy tách heo bệnh ra khỏi đàn để ngăn sự lây lan của bệnh.\nQuản lý đàn heo: Tách biệt các nhóm heo ở các độ tuổi khác nhau để tránh lây lan bệnh giữa các đàn. Điều này cũng giúp giảm áp lực nhiễm khuẩn trong môi trường.\nChẩn đoán và điều trị sớm: Nếu bạn nghi ngờ có trường hợp bệnh tụ huyết trùng, hãy thực hiện xét nghiệm và chẩn đoán sớm, sau đó thực hiện điều trị thích hợp dưới sự hướng dẫn của một chuyên gia thú y.\nTuân thủ quy định y tế thú y: Luôn tuân thủ các quy định và hướng dẫn y tế thú y địa phương và quốc gia.\nNhớ rằng bệnh tụ huyết trùng có thể ảnh hưởng đến sức kháng và tăng chi phí nuôi heo. Việc thực hiện các biện pháp phòng ngừa là quan trọng để duy trì sức khỏe của đàn heo và tăng hiệu suất chăn nuôi."
+        ]
+    },
+    {
+        "name": "Bệnh dịch tả",
+        "species": [
+            "Lợn"
+        ],
+        "description": "Bệnh truyền nhiễm nguy hiểm do vi rút gây nên, tỉ lệ chết rất cao",
+        "causes": [
+            "Do vi rút ASFV gây ra, bệnh xảy ra ở mọi lứa tuổi, mọi loài lợn"
+        ],
+        "envfactors": [
+            
+        ],
+        "symptoms": [
+            "sốt",
+            "không ăn",
+            "mệt mỏi",
+            "sụt cân",
+            "đi lại khó khăn",
+            "thích nằm chỗ có bóng râm",
+            "đau vùng bụng",
+            "lưng cong",
+            "di chuyển bất thường",
+            "da đổi màu | vành tai, đuôi, cẳng chân, vùng ngực và bụng",
+            "thần kinh",
+            "khó thở",
+            "viêm mắt",
+            "nôn mửa",
+            "tiêu chảy",
+            "phân có chất nhầy và máu",
+            "chết | 1-3",
+            "sảy thai",
+            "chết | 6-45"
+        ],
+        "treatments": [
+            "Hiện nay chưa có vắc xin phòng bệnh hiệu quả và thuốc điều trị đặc hiệu cho bệnh dịch tả lợn"
+        ],
+        "prevention": [
+            "Hiện nay chưa có vắc xin phòng bệnh hiệu quả và thuốc điều trị đặc hiệu được bệnh Dịch tả lợn châu phi, vì vậy đối với người chăn nuôi giải pháp chăn nuôi an toàn sinh học, thực hiện các biện pháp phòng bệnh tổng hợp, đồng bộ, là giải pháp hữu hiệu duy nhất hiện nay đối với phòng, chống bệnh DTLCP. - Tăng cường chỉ đạo chăn nuôi an toàn sinh học, thực hành chăn nuôi tốt; xây dựng cơ sở, chuỗi cơ sở và vùng an toàn dịch bệnh.\n - Định kỳ tổ chức vệ sinh, khử trùng, tiêu độc tại các khu vực chăn nuôi, các chợ, điểm buôn bán, giết mổ lợn và các sản phẩm của lợn bằng vôi bột hoặc hóa chất; hằng ngày thực hiện vệ sinh, khử trùng tiêu độc sau mỗi buổi họp chợ, mỗi ca giết mổ lợn; vệ sinh, khử trùng, tiêu độc đối với người, phương tiện ra vào khu vực chăn nuôi theo đúng quy trình kỹ thuật chăn nuôi, vệ sinh phòng dịch. Tiêu diệt ve, ruồi, muỗi và các côn trùng khác.\n - Tiêm phòng đầy đủ vắc xin phòng bệnh cho lợn như: Vắcxin dịch tả lợn, Tụ huyết trùng, Tai xanh, Lở mồm long móng…cho từng loại lợn và từng lứa tuổi phù hợp.\n - Nghiêm cấm mọi hình thức vận chuyển, buôn bán, giết mổ, tiêu thụ lợn, sản phẩm của lợn không rõ nguồn gốc, lợn bị bệnh.\n - Tổ chức thông tin, tuyên truyền phổ biến rộng rãi đến tất cả thú y cơ sở, người chăn nuôi và toàn dân về bệnh DTLCP để tuyên truyền, đưa tin về tình hình dịch bệnh và các biện pháp phòng, chống bệnh DTLCP.\n - Tăng cường theo dõi, giám sát lâm sàng đối với các đàn lợn; kịp thời phát hiện, cách ly và lấy mẫu xét nghiệm đối với lợn bị bệnh, nghi bị bệnh.\n - Đàn lợn khi phát hiện nghi nhiễm, mắc bệnh Dịch tả lợn châu phi cần lấy mẫu xét nghiệm xác định nguyên nhân bệnh, nếu xác định dương tính, không thực hiện điều trị lợn bệnh, lợn nghi mắc bệnh; cần báo cáo ngay chính quyền địa phương và thú y cơ sở để tiêu hủy sớm toàn bộ đàn lợn, thực hiện vệ sinh, khử trùng tiêu độc, áp dụng các biện pháp an toàn sinh học."
+        ]
+    },
+    {
+        "name": "Bệnh lở mồm long móng",
+        "species": [
+            "Lợn"
+        ],
+        "description": "Bệnh truyền nhiễm nguy hiểm, không có thuốc chữa trị đặc hiệu",
+        "causes": [
+            "Do vi rút gây nên"
+        ],
+        "envfactors": [
             "thay đổi thời tiết"
         ],
-        "Symptoms": [
-            "6-48",
-            ""
+        "symptoms": [
+            "2-4",
+            "sốt cao",
+            "chảy dãi",
+            "mụn nước | móng chân, bàn chân, kẽ móng, sau đó phát triển thành mảng lớn, vỡ ra, tạo vết loét",
+            "mệt mỏi",
+            "ăn ít",
+            "di chuyển bằng đầu gối",
+            "xây xát đầu gối",
+            "sảy thai"
         ],
-        "Treatments": [
-            {}
+        "treatments": [
+            "Chưa có thuốc điều trị đặc hiệu, cần điều trị các mụn mủ, các vết loét để ngừa phụ nhiễm. Điều trị tại chỗ:\nRửa các vết loét ở miệng, lưỡi, chân, móng, bầu vú bằng một trong các dung dịch như nước muối, acid citric 1% hoặc thuốc tím 1%, phèn chua 2% (hoặc dùng khế, chanh vắt lấy nước, nhúng vào vải gạc sạch rồi rửa nhẹ lên vết loét ở miệng, lưỡi ngày 2 lần). Sau khi rửa sạch các mụn mủ ở vú, chân bằng nước muối, lau khô, rồi dùng thuốc Bio-Blue Spray để xịt vào vết thương.\nĐiều trị toàn thân:\nSử dụng B.Complex, Vitamin C để tăng cường sức đề kháng.\nĐiều trị nhiễm khuẩn thứ phát bằng một trong các kháng sinh như Penicillin. Amoxicillin, Lincomycin,… từ 3 – 5 ngày\nNếu thú bị suy nhược thì nên kết hợp truyền thêm Glucose 5%.\nNhốt thú ở chuồng sạch và khô ráo, nên có tấm lót để thú không bị đau chân.\nCho ăn thức ăn mềm để dễ nhai và dễ tiêu hóa.\nNếu điều trị đúng cách và chăm sóc tốt, thú sẽ lành bệnh sau 10 – 15 ngày."
         ],
-        "Prevention": []
+        "prevention": [
+            "Phòng bệnh bằng vắc-xin: Đối với heo con không có kháng thể LMLM hoặc từ mẹ không được tiêm phòng, tiêm phòng lần đầu vào lúc 2 tuần tuổi trở lên. Nếu thời gian nuôi thú hơn 6 tháng, tiêm 2 mũi cách nhau 4 -5 tuần. Với heo có kháng thể LMLM hoặc từ mẹ đã được tiêm vắc-xin LMLM, tiêm phòng mũi đầu vào lúc 2,5 tháng tuổi. Trong các vùng có nguy cơ nhiễm cao, tiêm toàn đàn vào lúc 2 tuần tuổi với heo từ mẹ chưa tiêm vắc-xin và 2 tháng với heo con từ mẹ đã được tiêm vắc-xin và nhắc lại sau 4 -5 tuần. Tái chủng 6 tháng một lần. \nHàng ngày vệ sinh, chuồng trại. \nPhát quang bụi rậm để xua đuổi côn trùng ngoài tự nhiên. \nĐịnh kỳ tiêu độc, khử trùng bằng thuốc sát trùng, rắc vôi bột tại các lối vào khu vực chăn nuôi, khu vực cống rãnh, nơi thoát nước thải."
+        ]
+    },
+    {
+        "name": "Bệnh đóng dấu lợn",
+        "species": [
+            "Lợn"
+        ],
+        "description": "Bệnh truyền nhiễm nguy hiểm",
+        "causes": [
+            "Do vi khuẩn Erysipelothiix Rhusiopathiae gây ra, còn được gọi là trực trùng thổ nhưỡng, có nhiều trong đất, nước, phân"
+        ],
+        "envfactors": [
+            "Điều kiện chuồng trại",
+            "Điều kiện vệ sinh",
+            "Điều kiện thức ăn",
+            "thay đổi thời tiết"
+        ],
+        "symptoms": [
+            "sốt",
+            "mệt mỏi",
+            "da trắng bệch",
+            "chết",
+            "không ăn",
+            "nôn mửa", 
+            "bí vệ sinh", 
+            "viêm mí mắt", 
+            "yếu chân và phần mông sau",
+            "đỏ ở khắp da | vùng lưng, vai và da mềm như bụng, bẹn háng, tai, cổ.",
+            "khó thở", 
+            "tim đập mạnh", 
+            "da đổi màu",
+            "nốt viêm loét hoại tử da | lưng, hai bên vai, mông và chân",
+            "da vảy nâu, dễ bong tróc",
+            "da bị tím tái | mõm, tai, bụng",
+            "đi lại khó khăn",
+            "dáng khom khom",
+            "mông cong lên"
+        ],
+        "treatments": [
+            "Thể quá cấp và cấp tính: cần dùng kháng huyết thanh hoặc kháng thể được sản xuất từ máu của ngựa, kết hợp với kháng sinh để điều trị mới thu được kết quả.\nKháng huyết thanh đóng dấu có thể tiêm dưới da, tiêm bắp hoặc tiêm ven với liều 1 - 1,5 ml/1kgP\nKháng sinh thường dùng là các loại có tác dụng chủ yếu vi khuẩn Gram dương là: Penicillin, Ampicillin, Amoxycillin, Cloxacillin, Ceftiofur, Fosfomycin, Gentamycin. Chúng có thể dùng riêng rẽ nhưng khi kết hợp thì hiệu quả điều trị tốt hơn nhiều.\nĐặc biệt các loại thuốc có tác dụng kéo dài đạt hiệu quả điều trị rất cao bệnh đóng dấu là: T. Amoxycol, T. Amoxigen, Vidan T, T. Enteron, T. Gastron, T. Diatrizon, Linco-Gen L. A. 15%, Macavet. Dùng tiêm bắp: 1ml/8- 10kgP/lần. Ngày tiêm 2 lần, tiêm 3- 4 ngày chắc chắn bệnh sẽ khỏi.\nKết quả điều trị sẽ rất cao nếu buổi sáng ta tiêm một loại thuốc, buổi chiều ta dùng loại khác theo những phác đồ sau:\nPhác đồ 1: Tiêm bắp:\nSáng: T.Gastron 1ml/10kgP\nChiều: T.enteron 1ml/10kgP\nPhác đồ 2: Tiêm bắp:\nSáng: Vidan.T 1ml/10kgP\nChiều: T.Amoxigen 1ml/10kgP\nThuốc dùng 3 ngày liên tục bệnh sẽ khỏi.\nPhác đồ 3:\nSáng: Macavet 1ml/10kgP\nChiều: Linco-Gen L.A 1ml/10kgP\nPhác đồ 4:\nSáng: Ceftiofur 1ml/12kgP\nChiều: Amoxigen 1ml/10kgP"        ],
+        "prevention": [
+            "Phòng bệnh bằng vắc xin được áp dụng riêng rẽ cho lợn thịt và lợn giống. Lợn cai sữa sẽ được tiêm lần 1 lúc 35-45 ngày tuổi và tiêm nhắc lại sau 2 tuần, miễn dịch kéo dài từ 3-6 tháng đủ cho một đời lợn thịt. Đối với lợn giống cần phải tiêm định kỳ 2-3 lần/ năm, lợn nái tiêm trước khi đẻ 15 ngày và lợn đực trước khi phối giống 15 ngày.\nPhòng bệnh bằng biện pháp vệ sinh thú y, các công tác vệ sinh trong chăn nuôi cần được áp dụng và thực hiện đầy đủ, thường xuyên và nghiêm túc."
+        ]
+    },
+    {
+        "name": "Bệnh sưng phù đầu",
+        "species": [
+            "Lợn"
+        ],
+        "description": "Bệnh nhiễm trùng huyết do vi khuẩn gây ra thường gặp ở lợn giai đoạn cai sữa và sau cai sữa 1-4 tuần.",
+        "causes": [
+            "Do vi khuẩn E. coli gây ra"
+        ],
+        "envfactors": [
+            "chuồng trại ẩm ướt",
+            "thay đổi thức ăn",
+            "thay đổi chuồng nuôi", 
+            "thời tiết bất lợi",
+            "nhiệt độ thay đổi",
+            "độ ẩm thay đổi"
+        ],
+        "symptoms": [
+            "chết nhanh",
+            "Phù | mí mắt, mặt, đầu",
+            "Tiếng kêu thay đổi",
+            "thần kinh",
+            "sốt nhẹ",
+            "tiêu chảy"
+        ],
+        "treatments": [
+            "Cần thiết nhất cắt giảm lượng thức ăn cho heo Tiêm lại kháng thể ecoli hoặc đa kháng thể cho heo Cho tổng đàn uống men lacto để cân bằng lại hệ vi sinh vật đường ruột Tăng cường miễn dịch tự nhiên cho lợn bằng cách trộn men tiêu hoá, amox-colis để phòng bệnh định kỳ vào thức ăn"
+        ],
+        "prevention": [
+            "Sử dụng vắc xin: Tiêm phòng cho heo nái mang thai ở tuần 12 và nhắc lại ở tuần 14 Tiêm phòng cho heo con từ 14-20 ngày tuổi Bổ sung kháng thể E. coli hoặc kháng thể đa giá Gamaglobulin Vệ sinh: vệ sinh chuồng trại, dụng cụ sạch sẽ, sát trùng đầy đủ. Đảm bảo nguồn thực phẩm nước uống của heo đúng theo quy chuẩn an toàn"
+        ]
+    },
+    {
+        "name": "Viêm nội tâm mạc cấp tính",
+        "species": [
+            "Bò"
+        ],
+        "description": "Viêm nội tâm mạc cấp tính ở bò, còn được gọi là Endocarditis acuta, là một bệnh thường gặp trong ngành chăn nuôi bò. Bệnh này xảy ra khi dạ dày và ruột của bò sản xuất quá nhiều axit, đặc biệt là axit lactic",
+        "causes": [
+            "Kế phát từ một số bệnh truyền nhiễm: Lở mồm long móng, viêm phế quản truyền nhiễm, đóng dấu lợn.",
+            "Quá trình viêm lan từ ổ viêm ở các cơ quan khác trong cơ thể như viêm họng, viêm tử cung, viêm khớp.",
+            "Kế phát từ một số bệnh ký sinh trùng đường máu như lê dạng trùng, tiên mao trùng.",
+            "Trúng độc một số hóa chất, do rối loạn quá trình trao đổi chất trong cơ thể."
+        ],
+        "envfactors": [
+
+        ],
+        "symptoms": [
+            "Triệu chứng làm sàng phụ thuộc vào vị trí viêm và tính chất viêm:",
+            "Gia súc sốt 40 - 41°C, ủ rũ, mệt mỏi, kém ăn hoặc bỏ ăn. Tim đập nhanh, sờ vào",
+            "vùng tim thấy có hiện tượng rung tim.",
+            "Nếu viêm ở cả tâm thất trái và tâm thất phải thì triệu chứng biểu hiện rõ hơn",
+            "viêm ở một bên.",
+            "Nếu viêm ở thể sùi van nhĩ thất làm trở ngại tuần hoàn nhĩ thất trái sẽ gây ứ huyết phổi, phù phổi, gia súc có triệu chứng khó thở.",
+            "Nếu viêm van nhĩ thất phải sẽ làm trở ngại tuần hoàn đến các cơ quan tiêu hóa (gan, lách, ruột), gây nên hiện tượng báng nước, gia súc bị phù.",
+            "Nếu có hiện tượng nhồi huyết thì tuỳ theo từng cơ quan trong cơ thể bị nhồi huyết mà gia súc có triệu chứng khác nhau. Ví dụ: Nếu nhồi máu ở gan sẽ có hiện tượng báng nước, phù thững; nếu nhồi huyết ở não sẽ gây bại liệt; nếu nhồi huyết ở tìm dễ làm cho gia súc chết đột ngột."
+        ],
+        "treatments": [
+            "Để gia súc nơi yên tĩnh, chăm sóc nuôi dưỡng tốt. Khi mới phát bệnh dùng nước đá chườm vào vùng tim.\nDùng thuốc đặc hiệu để điều trị nguyên nhân chính. Dùng thuốc đề phòng viêm lan và nhiễm trùng kế phát: cephacilin, gentamycin, lincocin.\nDùng thuốc an thần:\nBromua kali: Đại gia súc: 15 - 60 gam/con; tiểu gia súc: 10 - 20 gam/con\nChloralhydat: Đại gia súc: 10-15 gam/con; tiểu gia súc: 5-7 gam/con.\nDùng thuốc trợ sức, trợ lực, tăng cường sức đề kháng và giải độc:\nDung dịch glucoza 20%: Đại gia súc: 500ml; Tiểu gia súc: 300ml\nUrotropin 10%: Đại gia súc: 70ml; Tiều gia súc: 20ml\nVitamin C: 1 gam\nCafein natribenzoat: Đại gia súc: 15ml\nLong não: Tiểu gia súc: 10ml\nTiêm chậm vào tĩnh mạch ngày 1 lần.\nVới đại gia súc nếu viêm do kế phát từ thấp khớp có thể dùng thêm hỗn hợp\nCafein natri benzoat 20%: 10ml\nSalicinatnatri: 10 gam\nUrotropin 10%: 10ml\nNước cất: 100ml\nHòa đều, tiêm chậm vào tĩnh mạch ngày 1 lần."        ],
+        "prevention": [
+
+        ]
+    },
+    {
+        "name": "Bệnh chướng hơi dạ cỏ cấp tính",
+        "species": [
+            "Bò"
+        ],
+        "description": "Chướng hơi dạ cỏ là bệnh dạ cỏ chướng hơi phình to, chèn ép vào cơ hoành, làm trở ngại hô hấp và tuần hoàn. Bệnh thường gặp ở trâu, bò, dê, nhiều nhất vào vụ đông - xuân.",
+        "causes": [
+            "Do ăn những thức ăn dễ lên men sinh hơi (cỏ non chứa nhiều nước, cây họ đậu, cây ngô non), hoặc do gia súc ăn phải những thức ăn kém phẩm chất (thức ăn bị ôi thỉu, nấm, mốc).",
+            "Do kế phát từ các bệnh của hệ tiêu hóa như bệnh liệt dạ cỏ, viêm dạ tổ ong, liệt thực quản."
+        ],
+        "envfactors": [
+            "Do thay đổi mùa vụ, đặc biệt chuyển từ vụ đông sang vụ xuân, trâu bò nước ta hay mắc bệnh này.",
+            "Do gia súc làm việc quá mức, hoặc do thời tiết thay đổi đột ngột làm ảnh hưởng tới bộ máy tiêu hóa của gia súc."
+        ],
+        "symptoms": [
+            "Bệnh xảy ra rất nhanh. Có khi xảy ra ngay trên bãi chăn hoặc đang cày kéo. Con vật bồn chồn. Bụng càng ngày càng phình to ra. Con vật đau bụng. Đầu quay lại nhìn bụng, lưng cong. Con vật đứng dạng hai chân sau, nếu nằm thì chân thu vào bụng.",
+            "Bụng bên trái phình to, hõm hông bên trái căng phồng có khi cao hơn cột sống. Khi gõ vùng dạ cỏ thấy có âm trống. Sờ nắn vùng dạ cỏ thấy cũng giống như khi ấn tay vào quả bóng. Bỏ tay ra vết hằn ở da nhanh mất. Nghe nhu động dạ cỏ, lúc đầu tăng, sau đó mất hẳn, chỉ nghe thấy tiếng nổ lép bép do thức ăn tiếp tục lên men. Gia súc vã mồ hôi, ngừng nhai lại. Có hiện tượng khó thở. Tần số hô hấp tăng. Tuần hoàn bị rối loạn. Tĩnh mạch cổ phồng to. Tim đập nhanh (140 lần/phút), mạch yếu, huyết áp giảm. Bệnh nặng gia súc chết do ngạt thở, liệt tim và trúng độc."
+        ],
+        "treatments": [
+            "Nguyên tắc điều trị: Tìm mọi biện pháp làm thoát hơi trong dạ cỏ, ức chế hiện tượng lên men, tăng cường nhu động dạ cỏ đồng thời chú ý trợ tim, trợ sức cho con vật. Thoát hơi trong dạ cỏ: Dùng rơm chà sát vùng dạ cỏ, mỗi lần chà sát khoảng 20 phút, ngày chà sát 3 - 4 lần để kích thích nhu động dạ cỏ. Cho gia súc đứng ở tư thế lên dốc để dễ thở và dội nước lạnh vào nửa thân sau để kích thích nhu động dạ cỏ. Dùng tay kéo lưỡi ra nhịp nhàng để kích thích ợ hơi. Dùng nõn chuối đưa vào họng để kích thích ợ hơi. Thụt nước ấm vào trực tràng để kích thích trung tiện. Dùng ống thông dạ dày để thoát hơi ra. Ức chế sự lên men sinh hơi trong dạ cỏ. Dùng NH4OH 15 ml hoặc axit lactic 10 - 15 ml pha vào nước cho uống. Dùng 100 - 200 ml cồn hoà với vài củ tỏi giã nhỏ và với 500 ml nước, cho gia súc uống. Dùng MgSO4 hoặc Na2SO4: 200-300 gam hòa nhiều nước, cho uống 1 lần Nếu bệnh nặng, hơi không thoát ra được ta phải dùng troca chọc vào dạ cỏ để làm thoát hơi ra"
+        ],
+        "prevention": [
+            
+        ]
+    },
+    {
+        "name": "Bội thực dạ cỏ",
+        "species": [
+            "Bò"
+        ],
+        "description": "Trong dạ cỏ chứa nhiều thức ăn khó tiêu hóa làm cho thể tích dạ dày tăng lên gấp bội, vách dạ dày căng. Nếu thức ăn tích lại lâu trong dạ cỏ thường kế phát viêm ruột và gây rối loạn hô hấp, cơ thể bị nhiễm độc — con vật chết.Đây là bệnh trâu bò hay mắc (chiếm 40% trong các bệnh ở dạ dày bốn túi). Bệnh tiến triển chậm (thường xảy ra sau khi ăn từ 6 - 9 giờ).",
+        "causes": [
+            "Do ăn quá no: Trâu bò ăn quá no các loại thức ăn khô, thức ăn khi gặp nước dễ trương nở (như rơm, cỏ khô, cây họ đậu, bã đậu) hoặc do gia súc nhịn đói lâu ngày đột nhiên ăn no, ăn xong uống nhiều nước lạnh ngay đều có thể dẫn đến dạ cỏ bội thực. ",
+            "Do chăm sóc kém hoặc thay đổi thức ăn đột ngột (trâu bò cày kéo bị mắc bệnh do làm việc quá mệt nhọc, ăn xong đi làm ngay, bò sữa mắc bệnh do thiếu vận động). ",
+            "Do cơ thể gia súc suy yếu, bộ máy tiêu hoá hoạt động kém, hoặc do kế phát từ những bệnh khác như nghẽn dạ lá sách, liệt dạ cỏ, viêm dạ tổ ong do ngoại vật và dạ múi khế biến vị. ",
+            "Do kế phát từ một số bệnh truyền nhiễm (bệnh cúm, bệnh tụ huyết trùng,...)."
+        ],
+        "envfactors": [
+            
+        ],
+        "symptoms": [
+            "Bệnh xảy ra sau khi ăn từ 6 - 9 giờ. Triệu chứng lâm sàng thể hiện rõ:",
+            "Con vật giảm ăn hay không ăn, ngừng nhai lại, hơi ợ ra có mùi chua, hay chảy dãi, con vật đau bụng (khó chịu, đuôi quất mạnh vào thân, xoay quanh cọc buộc, lấy chân sau đạp bụng, đứng nằm không yên có khi chổng bốn vó giẫy giụa, khi dắt di thấy con vật cử động cứng nhắc, hai chân dạng ra.",
+            "Mé bụng trái con vật phình to, sờ nắn thấy chắc, ấn tay vào có dạng bột nhão, con vật đau, cho tay qua trực tràng sờ vào dạ cỏ thấy chắc như sờ vào túi bột, con vật rất khó chịu. ",
+            "Gõ vào vùng dạ cỏ thấy âm đục tương đối lấn lên vùng âm bùng hơi. Vùng âm đục tuyệt đối lớn và chiếm cả vùng âm đục tương đối. Tuy vậy, nếu con vật chướng hơi kế phát thì khi gõ vẫn có âm bùng hơi. ",
+            "Nghe thấy âm nhu động dạ cỏ giảm hay ngừng hẳn, nếu bệnh nặng thì vùng trái chướng to, con vật thở nhanh, nông, tim đập mạnh, chân đi loạng choạng, run rẩy, mệt mỏi, cũng có khi nằm mê mệt không muốn dậy."
+        ],
+        "treatments": [
+            "Nguyên tắc tắc điều trị: làm hồi phục và tăng cường nhu động dạ cỏ, tìm cách thải thức ăn tích lâu ngày trong dạ cỏ. Cho gia súc nhịn ăn 1 - 2 ngày (không hạn chế nước uống), tăng cường xoa bóp vùng dạ cỏ, dắt cho gia súc vận động để tăng cường cơ năng vận động của dạ cỏ. Những ngày sau cho gia súc ăn một ít thức ăn mềm, dễ tiêu và cho ăn làm nhiều lần trong ngày, đồng thời có thể thụt cho gia súc bằng nước ấm. Moi phân trong trực tràng và kích thích bàng quang cho con vật đi tiểu. Dùng thuốc tẩy trừ chất chứa trong dạ cỏ: Sulfat natri 300 - 500 g/con (trâu, bò); 50 - 100 g/con (bê, nghé); 20 - 50 g/con (dê, cừu). Hòa với nước sạch cho con vật uống 1 lần trong ngày đầu điều trị. Dùng thuốc tăng cường nhu động dạ cỏ: Pilocacpin 3% 5 - 10ml/con (trâu, bò); 3 - 5ml/con (bê, nghé); 2 - 3ml/con (dê, cừu). Tiêm bắp, ngày 1 lần Tăng cường tiêu hóa ở dạ cỏ: dùng HC1 (10 - 12ml nguyên chuẩn hòa với 1 lít nước). Cho con vật uống ngày 1 lần. Đề phòng thức ăn lên men trong dạ cỏ Ichthyol: trâu, bò (20 - 30g), dê, cừu, bê, nghé (1 - 2g). Cho uống ngày 1 lần. Hoặc dùng formol (15ml nguyên chuẩn hoà với 1 lít nước sạch) cho con vật uống: trâu, bò (1 lít/con); bê, nghé, dê (200 - 300ml/con). Cho uống ngày 1 lần. Hoặc dùng: cồn + tỏi; nước dưa chua, nước lá thị cho con vật uống."
+        ],
+        "prevention": [ 
+        ]
+    },
+    {
+        "name": "Bệnh Anthrax (nhiệt thán)",
+        "species": [
+            "Bò"
+        ],
+        "description": "Do trực khuẩn Gram dương Bacillus Anthracis gây ra. Có tới 13,8% số trâu, bò mắc bệnh Anthrax (bệnh nhiệt thán)",
+        "causes": [
+            "Vi khuẩn có khả năng sinh bào tử, khi gia súc mắc bệnh bị chết thì vi khuẩn này sẽ mau chóng bị tiêu diệt thông qua sự thối rữa ở gia súc không được mổ xác. Tuy nhiên vi khuẩn sẽ sinh bào tử khi xác gia súc chết vì bị bệnh được mổ và các chất có vi khuẩn tiếp xúc với không khí.",
+            "Bào tử sinh ra có sức đề kháng rất cao đối với môi trường ngoại cảnh và một số chất sát trùng, đặc biệt chúng có thể tồn tại trong đất nhiều năm."
+        ],
+        "envfactors": [
+            
+        ],
+        "symptoms": [
+            "Bệnh xảy ra mọi lứa tuổi của gia súc, thời gian ủ bệnh khoảng 1 – 2 tuần, với triệu chứng biểu hiện qua các thể sau:",
+            "Thể quá cấp tính: xảy ra ở thời gian đầu. Bệnh xảy ra nhanh, gia súc đột ngột run rẩy, hai bên má hơi sưng, khó thở, bỏ ăn và đổ mồ hôi, niêm mạc đỏ ứng hoặc tím bầm. Gia súc nhiễm bệnh sốt cao 40,5 – 42,5ºC, nghiến răng lè lưỡi, mắt đỏ, co giật, mê man, quỵ xuống. Ở âm hộ hay hậu môn có thể chảy máu, chết nhanh.",
+            "Thể cấp tính: Diễn biến bệnh khoảng 24 – 48 giờ với triệu chứng sốt cao 40 – 42ºC. Gia súc mệt mỏi, thở khó và nhanh, niêm mạc đỏ thẫm, tiêu chảy hoặc kiết, phân đen có lẫn máu, nước tiểu có máu. Xung huyết và xuất huyết niêm mạc bên ngoài, mồm mũi có bọt hồng lẫn máu, hầu, ngực bị sưng. Ở bò sữa có sự giảm sữa đột ngột. Trâu bò mang thai có thể bị sẩy, chết và máu chảy ra từ các lỗ tự nhiên. Tỷ lệ chết khoảng 80%.",
+            "Thể bán cấp tính: Bệnh tiến triển chậm hơn, gia súc sốt, ăn ít, những chỗ da mỏng sưng lên, niêm mạc mắt mũi, hậu môn đỏ, chảy máu mũi và mắt là triệu chứng duy nhất trước khi chết khoảng 2 – 3 ngày.",
+            "Thể ngoài da: Xuất huyết ở cổ. Ngực sưng và phù cục bộ, ban đầu đau, ung thối, sau thành mụn loét đỏ chảy nước màu vàng đỏ."
+
+        ],
+        "treatments": [
+            "Hiện nay ở Việt Nam khi gia súc mắc bệnh nhiệt thán ở thể nặng hầu như không có cách chữa trị cho con vật khỏi bệnh nên cần phải chú ý trong khâu phòng bệnh để tránh ảnh hưởng tới kinh tế của gia đình."
+        ],
+        "prevention": [
+            "Khi phát hiện gia súc bị bệnh thì phải thông báo tới cơ quan thú y để công bố dịch bệnh, kiểm soát dịch bệnh chặt chẽ, cách ly những con gia súc bị bệnh ra khỏi đàn, khi gia súc bị bệnh tuyệt đối không được mổ thịt và vận chuyển con vật qua nơi khác để tiêu thụ. Tiêu độc khử trùng chuồng trại bằng 1 trong các loại thuốc sát trùng đặc trị như: BIOKON, BIOXIDE. Những chuồng gia súc của nào bị nhiễm bệnh cần phải đốt hết rơm, phân gia súc và tiêu độc chuồng trại thật kỹ, nạo sạch lớp đất trên cùng đem chôn tiêu độc kỹ. Xác gia súc chết phải đem thiêu ở hố chôn và tro phải chôn sâu. Tuyệt đối không được mổ khám xác gia súc bị bệnh để tránh tình trạng bệnh lây lan. Bệnh nhiệt thán có thể lây lan sang cả con người nên những người không có trách nhiệm không được tiếp xúc với chuồng nuôi bị nhiễm bệnh, không được ăn thịt súc vật bị bệnh… nếu người đã tiếp xúc với gia súc bị bệnh phải sát trùng thật kỹ để tránh mang mầm bệnh ra bên ngoài. Có thể dùng vắc-xin để phòng bệnh cho gia súc, tốt nhất ở những vùng dịch hoặc những vùng đang có nguy cơ bị nhiễm dịch bệnh. Dùng vắc-xin nha bào nhiệt thán Pasteur để tiêm cho gia súc, sau thời gian 15 ngày vắc-xin này sẽ giúp cho gia súc có khả năng miễn dịch và thời gian hiệu lực kéo dài hơn 1 năm. Dùng vắc-xin nhược độc nha bào nhiệt thán để tiêm cho gia súc ở những vùng có dịch bệnh thường xuyên xảy ra. Một số điều cần chú ý khi tiêm vắc-xin cho gia súc Tiêm vắc-xin cũng có nhiều trường hợp khiến cho gia súc bị dị ứng, nếu như gia súc bị dị ứng nặng thì nên can thiệp bằng cách tiêm thêm kháng huyết thanh hoặc thuốc kháng sinh. Khi sử dụng vắc-xin nên tránh tình trạng thuốc bị rơi vãi, nếu thuốc sử dụng không hết không nên giữ lại mà phải đem đi tiêu hủy. Vắc-xin chỉ tiêm khi những con gia súc trong chuồng nuôi khỏe mạnh, đối với những con gia súc đang bị sốt hay có dấu hiệu mắc bệnh thì không được tiêm vắc-xin cho chúng. Điều trị gia súc mắc bệnh bằng huyết thanh và kháng sinh, việc điều trị chỉ đạt hiệu quả tốt khi mới phát hiện bệnh. Đối với những con gia súc mắc bệnh, tốt nhất phải cách ly chúng ra khỏi đàn càng sớm càng tốt. Tiến hành tiêu độc và tiêu hủy những con gia súc bị bệnh nặng. Vệ sinh phòng bệnh chặt chẽ theo hướng dẫn của cơ quan thú y để tránh mầm bệnh lây lan."
+        ]
+    },
+    {
+        "name": "Bệnh viêm ruột cata cấp tính",
+        "species": [
+            "Dê"
+        ],
+        "description": "",
+        "causes": [
+            "Do chất lượng thức ăn kém, thay đổi thức ăn đột ngột. Do đó làm ảnh hưởng tới tiêu hoá của con vật.",
+            "Do kế phát từ một số bệnh (như bệnh dịch tả, tụ huyết trùng, phó lao, sán lá gan, sán lá ruột, viêm gan, tắc dạ lá sách,...)."
+        ],
+        "envfactors": [
+            "Do thời tiết, khí hậu thay đổi đột ngột, hoặc gia súc bị lạnh đột ngột.",
+            "Do gia súc bị ngộ độc bởi các loại hoá chất, thuốc trừ sâu."
+        ],
+        "symptoms": [
+            "Con vật ăn kém hoặc không ăn, mệt mỏi, khát nước. Khi bệnh trở nên kịch phát con vật ủ rũ, sốt cao, mạch nhanh, run rẩy, vã mồ hôi và chết rất nhanh. Trước khi chết thân nhiệt giảm.",
+            "Con vật ỉa chảy nặng, phân lỏng như nước, màu đen, thối khẳm, có khi lẫn cả máu tươi, màng giả (do lớp niêm mạc ruột bong tróc), số lần đi ỉa trong ngày nhiều (hình 6.10). Ở chó và lợn còn có hiện tượng nôn mửa.",
+            "Do ỉa chảy mạnh, cơ thể bị mất nước và chất điện giải. Do vậy, trên lâm sàng thấy hố mắt trũng sâu, khoé mắt có rử, niêm mạc mắt hơi vàng, da khô, mất đàn tính, lông xù. Khi ỉa chảy nhiều, đến giai đoạn cuối cơ vòng hậu môn bị liệt nên phân tự động chảy ra ngoài, con vật nằm liệt, thân nhiệt hạ, sau đó con vật chết.",
+            "Kiểm tra nước tiểu có albumin niệu, lượng nước tiểu giảm, tỷ trọng nước tiểu tăng. Kiểm tra máu thấy số lượng hồng cầu, hàm lượng hemoglobin tăng, tỷ lệ bạch cầu đa nhân trung tính tăng."
+        ],
+        "treatments": [
+            "Nguyên tắc điều trị: bổ sung nước, chất điện giải và tăng cường thể lực cho con vật. thải trừ chất chứa trong dạ dày, ruột, bảo vệ niêm mạc đường tiêu hoá, ức chế sự lên men để đề phòng trúng độc. a. Hộ lý - Khi bệnh mới phát, cho gia súc nhịn ăn 1 - 2 ngày, sau đó cho ăn thức ăn dễ tiêu. Cho gia súc uống nước tự do (tốt nhất uống nước điện giải). - Thu dọn phân và chất thải, tẩy uế chuồng trại b. Dùng thuốc điều trị - Bổ sung nước và chất điện giải cho cơ thể: Dùng các dung dịch đẳng trương (Ringer lactat, dung dịch nước sinh lý, dung dịch glucoza đẳng trương,...). ﻿- Thải trừ chất chứa trong ruột: Dùng thuốc tẩy muối (magie sulfat, hoặc natri sulfat) - - Dùng Natri bicarbonat 2% để thụt rửa ruột - Dùng thuốc bảo vệ niêm mạc ruột: Cho uống nước cháo gạo nếp (sau khi uống thuốc rửa ruột) mỗi lần 2 - 3 lít, ngày uống 3 - 4 lần, hoặc dùng Natri bromua 40 - 50g trộn vào cháo hoặc cho uống. Trong trường hợp ỉa chảy lâu ngày và không phải mắc bệnh truyền nhiễm, cho con vật uống tanin (ngựa, bò từ 5 - 20g, lợn từ 2 - 5g, chó từ 0,1 - 0,5g) hoà với nước cho uống. Hoặc dùng các cây có chứa chất chát như búp sim, búp ổi, quả hồng xiêm xanh sắc đặc cho uống. - Dùng thuốc để ức chế lên men trong dạ dày và ruột: cho uống Ichthyol (ngựa: 10 - 15g; trâu bò: 10 - 20g; lợn: 0,5 - 1g). - Dùng kháng sinh để diệt vi khuẩn bội nhiễm đường ruột: Có thể dùng một trong các loại kháng sinh: + Sulfaguanidin: đại gia súc 20 - 40g; dê cừu 1 - 3g; chó 0,5 - 1g. + Streptomycin: 20 - 30mg/kg TT. Cho uống ngày 2 lần. + Kanamycin: 20 - 30mg/kg TT. Cho uống ngày 2 lần. + Gentamycin: trâu bò 5 - 10mg/kg TT; lợn, chó 10mg/kg TT. Tiêm liên tục 3 - 4 ngày. + Neomycin: 25 - 50mg/kg TT. Cho uống ngày 1 lần + Enrofloxacin, Norcoli Dùng thuốc giảm tiết dịch và co thắt dạ dày, ruột: + Dùng nước ấm thịt ruột. + Dùng atropin sunfat 0,1%: đại gia súc 10 - 15ml/con; tiểu gia súc 5 - 10ml/con; lợn, chó 1 - 3ml. Tiêm bắp ngày 1 lần."
+        ],
+        "prevention": [ 
+        ]
+    },
+    {
+        "name": "Bệnh cảm nắng",
+        "species": [
+            "Trâu"
+        ],
+        "description": "Bệnh thường xảy ra vào mùa hè, khi gia súc chăn thả dưới trời nắng to, ít gi ánh nắng mặt trời chiếu trực tiếp vào đỉnh đầu, gây sung huyết não và rối loạn tru khu điều hoà nhiệt, tuần hoàn và hô hấp.",
+        "causes": [
+            "Do chăn thả gia súc hoặc bắt gia súc làm việc dưới trời nắng to, nắng chiếu trực tiếp vào đỉnh đầu. Những gia súc quá béo hoặc ăn quá no khi tiếp xúc với nắng thì dễ bị cảm nắng."     
+        ],
+        "envfactors": [
+            
+        ],
+        "symptoms": [
+            "Bệnh mới phát con vật biểu hiện choáng váng, đi đứng xiêu vẹo, niêm mạc mắt tím bầm, vã mồ hôi. Chó và lợn bị bệnh có hiện tượng nôn mửa. Do ánh nắng chiếu lâu nên có hiện tượng viêm não và màng não, con vật điên cuồng và tỏ ra sợ hãi, mắt đỏ ngầu, mạch nhanh và yếu. Gia súc khó thở, đi không vững. Nếu bị bệnh nặng, con vật thở kiểu Cheyne - Stokes. Thân nhiệt tăng đến 40 - 41°C, da khô, đồng tử mắt mở rộng, sau thu hẹp lại. Cuối cùng mất phản xạ thần kinh và phản xạ toàn thân, con vật run rẩy, co giật rồi chết.",
+            "Khi mổ khám thấy não, màng não và hành tuỷ bị sung huyết. Xuất huyết nội, ngoại tâm mạc và phổi cũng bị xuất huyết."
+        ],
+        "treatments": [
+            "Đưa ngay con vật vào chỗ râm mát và thoáng khí.\nChườm nước lạnh lên vùng đầu của gia súc để làm giảm hiện tượng sung huyết não. Sau đó dội nước lạnh toàn thân.\nCó thể thụt nước lạnh vào trực tràng để làm giảm nhiệt độ của cơ thể.\nTăng cường tuần hoàn và hô hấp cho cơ thể:\nTiêm dưới da cafein 20%:\nTrâu, bò, ngựa: 2 - 4 gam\nDê, cừu, lợn: 0,5 - 1 gam\nChó: 0,1 - 0,2 gam\nNếu não bị sung huyết nặng thì phải trích máu ở tĩnh mạch cổ.\nCho uống thuốc hạ sốt: pyramidon, paracetamon...\nXoa bóp toàn thân cho máu lưu thông để chống sung huyết não.\nTrợ sức, trợ lực bằng glucoza 20 - 40%, tiêm vào tĩnh mạch cho gia súc."
+        ],
+        "prevention": [
+
+        ]
+    },
+    {
+        "name": "Bệnh cảm nóng",
+        "species": [
+            "Trâu"
+        ],
+        "description": "Bệnh xảy ra khi gia súc sống trong điều kiện khí hậu nóng, khô hoặc ẩm ướt, làm cho quá trình thải nhiệt của cơ thể giảm, gây rối loạn trung khu điều hoà thân nhiệt. Bệnh thường phát ra cùng với bệnh cảm nắng.",
+        "causes": [
+            "Gia súc quá béo hoặc lông quá dầy dễ mắc bệnh này."
+        ],
+        "envfactors": [
+            "Do khí hậu nóng bức, nhiệt độ của môi trường bên ngoài quá cao hoặc quá ẩm ướt làm ảnh hưởng tới quá trình thải nhiệt của cơ thể.",
+            "Do chuồng trại kém vệ sinh, gia súc lại bị nhốt chật chội. Do gia súc bị nhốt chật chội trong các phương tiện vận chuyển gia súc."
+        ],
+        "symptoms": [
+            "Con vật thở khó, toàn thân vã mồ hôi, mệt mỏi, niêm mạc tím bầm. Tim đập nhanh, mạch nẩy. Thân nhiệt tăng 40 - 41°C. Cơ nhai và cơ môi co giật, nôn mửa. Nếu môi trường bên ngoài quá nóng thì thân nhiệt con vật có thể lên đến 42 - 43°C, con vật điên cuồng, đồng tử mắt mở rộng, con vật co giật, hôn mê rồi chết. Khi chết con vật sùi bọt mép, có khi lẫn cả máu.",
+            "Mổ khám thấy máu khó đông, não và màng não sung huyết. Phổi cũng bị sung huyết hoặc phù, ngoại tâm mạc và phế mạc ứ huyết."
+
+        ],
+        "treatments": [
+            "Để gia súc ở nơi yên tĩnh và thoáng mát, tăng cường thoát nhiệt cho cơ thể. Chú ý để phòng tê liệt trung khu thần kinh.\nDùng nước lạnh đắp lên đầu và dội toàn thân cho gia súc.\nTiếp dung dịch nước sinh lý, dung dịch glucoza vào tĩnh mạch để bổ sung nước cho con vật.\nTiêm thuốc trợ tim: cafein, long não vào dưới da cho con vật.\nTrường hợp mạch quá căng ta phải trích huyết ở tĩnh mạch cổ."
+        ],
+        "prevention": [ 
+        ]
+    },
+    {
+        "name": "Bệnh vỡ vai",
+        "species": [
+            "Trâu"
+        ],
+        "description": "Vỡ vai thường phát sinh ở trâu bò cày kéo. Bệnh thường xảy ra sau những vụ làm đất cày bừa khẩn trương, gia súc làm việc quá sức.",
+        "causes": [
+            "Chủ yếu là do sự cọ xát của vai cày (ách) lên tổ chức vùng vai của trâu bò. Khi trâu, bò làm việc, con vật phải dùng một lực rất lớn và toàn bộ lực ấy dồn lên vai của nó, do đó tổ chức vùng vai của con vật sẽ bị vai (ách) đè nén, cọ xát rất mạnh. Nếu vai (ách) không phù hợp với vai con vật (quá chật hoặc quá rộng) thì khi con vật kéo cày, bừa hoặc kéo xe, vai (ách) sẽ day qua, day lại, cọ xát mạnh lên tổ chức vùng vai làm cho tổ chức này bị tổn thương.",
+            "Ngoài ra, vai (ách) còn được làm bằng gỗ chất lượng không tốt, bào không nhẵn cũng dễ làm tổn thương đến vai của con vật. Chỉ cần sây sát nhỏ cũng có thể làm vi khuẩn gây mủ xâm nhập vào làm cho vai con vật bị nhiễm trùng hóa mủ."            
+        ],
+        "envfactors": [
+            
+        ],
+        "symptoms": [
+            "Dạng 1: Tổ chức vùng vai của gia súc sau khi bị tổn thương xuất hiện viêm nhẹ, tổ chức dưới da tăng sinh, bị chai cứng lại. Lớp tổ chức thượng bì của da bị bong ra, lông rụng hết. Bề mặt lớp thượng bì bong có màu đỏ thẫm, trên có dịch thẩm suất thể tương dịch màu vàng trong suốt đọng lại thành giọt như giọt sương.",
+            "Dạng 2: Tổ chức vùng vai của con vật sau khi bị vai (ách) chèn ép cọ xát, da bị sây sát, vi khuẩn hóa mủ xâm nhập vào, trường hợp nhẹ các lỗ chân lông bị viêm hóa mủ, trường hợp nặng hình thành mụn nhọt hoặc viêm hóa mủ lan tràn ở các tổ chức dưới da.",
+            "Dạng 3: Khi tổ chức vùng vai con vật đã bị tổn thương ở dạng 1, nhưng ta vẫn bắt con vật làm việc nặng và kéo dài, tổ chức vùng vai sẽ bị tổn thương nặng, gây nên hiện tượng viêm nhiễm trầm trọng. Nhiệt độ cục bộ tăng cao, tổ chức cục bộ sưng to, nhiễm trùng hóa mủ kết hợp với tổ chức tăng sinh nên có khi sưng to bằng quả bóng và hình thành áp xe. Áp xe tự vỡ tại chỗ da mỏng nhất, mủ tích tụ trong bọc tạo thành lỗ dò, mủ chảy ra rất hôi thối, có khi lẫn cả tổ chức hoại tử màu máu cá."
+
+        ],
+        "treatments": [
+            "Trường hợp da ở vùng vai con vật bị sây sát, làm cho lớp biểu bì bong ra ta có thể dùng dung dịch Gentian violet hoặc Bleu methylen 2% trong cồn 90 để bôi lên vùng bệnh cho con vật.\nNếu vùng bệnh đã hình thành mụn nhọt, áp xe, lỗ dò thì điều trị theo cách điều trị các bệnh trên (xem phần điều trị mụn nhọt, áp xe, lỗ dò)."
+
+        ],
+        "prevention": [
+            "Không nên bắt trâu bò làm việc quá sức, cho ăn uống đầy đủ, nhất là trong thời vụ khẩn trương, vai (ách) phải vừa vai trâu, bò và giữ gìn sạch sẽ. Khi phát hiện vùng vai mới bị sây sát, phải cho gia súc nghỉ làm việc và điều trị kịp thời.\nNgười sử dụng gia súc phải có trình độ kỹ thuật tốt và quan tâm chăm sóc đến gia súc cũng có tác dụng phòng bệnh vỡ vai cho trâu bò."
+        ]
+    },
+    {
+        "name": "Bệnh ngộ độc",
+        "species": [
+            "Gà"
+        ],
+        "description": "Bệnh ngộ độc do nhiễm mặn, hoá chất, nấm mốc aflatoxin",
+        "causes": [
+            "Ngộ độc mặn: Gà cần duy trì cân bằng muối trong cơ thể. Sự tiếp xúc với lượng mặn quá mức có thể xảy ra khi thức ăn hoặc nguồn nước mà gà tiêu thụ chứa nhiều muối hơn cần. Nguyên nhân chính có thể bao gồm thức ăn mặn, nước mặn, hoặc tác động từ môi trường.",
+            "Ngộ độc hoá chất: Gà có thể bị nhiễm hoá chất độc hại thông qua tiếp xúc với các chất như thuốc trừ sâu, thuốc diệt cỏ hoặc các hoá chất khác được sử dụng trong quá trình chăm sóc gà hoặc trong môi trường sống của chúng.",
+            "Ngộ độc nấm mốc (Aflatoxin): Aflatoxin là một loại nấm mốc chủ yếu gây ngộ độc trong thức ăn và thức ăn của gà. Aflatoxin thường phát triển trong điều kiện ẩm ướt và nhiệt đới trong các loại thức ăn chứa hạt và ngô."
+           
+        ],
+        "envfactors": [
+            
+        ],
+        "symptoms": [
+            "Mệt mỏi và yếu đuối.",
+            "Thay đổi lối ăn: Gà có thể từ chối ăn hoặc ăn ít hơn.",
+            "Nôn mửa hoặc tiêu chảy.",
+            "Ngoại trừ hoặc tụt lông không bình thường.",
+            "Phân có thể bị thay đổi màu sắc và mùi."
+           
+        ],
+        "treatments": [
+            "Điều trị bệnh ngộ độc do mặn, hoá chất, nấm mốc cần được tiến hành dưới sự hướng dẫn của một bác sĩ thú y.\n - Thay đổi thức ăn để hạn chế tiếp xúc với mặn, hoá chất hoặc aflatoxin.\n - Hỗ trợ chức năng gan và dạ dày của gà bằng cách sử dụng thuốc được chỉ định bởi bác sĩ thú y.\n - Cung cấp chế độ chăm sóc tốt và duy trì vệ sinh sạch sẽ.\n Lưu ý rằng việc ngăn ngừa tốt hơn là điều quan trọng nhất để tránh bệnh ngộ độc này. Đảm bảo rằng thức ăn và nguồn nước cho gà không bị nhiễm mặn, hoá chất, hoặc nấm mốc là điều quan trọng để bảo vệ sức khỏe của đàn gà."
+        ],
+        "prevention": [ 
+        ]
+    },
+    {
+        "name": "Bệnh ORT (Ornithobacterium rhinotracheale)",
+        "species": [
+            "Gà"
+        ],
+        "description": "Bệnh ORT hay còn được gọi với những tên khác là bệnh viêm mũi, khí quản, phổi, túi khí, bệnh viêm phổi hóa mủ. Đây là bệnh khá phổ biến ở gia cầm, đặc biệt là ở gà. Điều trị bằng các thuốc kháng sinh thông thường như: Tylosin, Cephacilin, Enrocin…bệnh có giảm nhưng không đáng kể.",
+        "causes": [
+            "Bệnh ORT có thể gặp trên gà, gà tây ở mọi lứa tuổi, hay gặp nhất là ở lứa tuổi gà giò và gà lớn. Gà thịt thường mắc lúc 3 – 6 tuần, các loại gà khác thường từ 6 tuần tuổi trở lên.",
+            "Ở gà bệnh, vi khuẩn Ornithobacterium rhinotracheale thường có trong phổi; Túi khí, chất tiết của đường hô hấp như nước mũi, nước mắt; Dịch nhầy khí quản và đặc biệt có nhiều trong cục mủ ở hai phế quản gốc.",
+            "Bệnh lây truyền từ gà bệnh cho gà khỏe qua tiếp xúc trực tiếp. Gà bệnh hắt hơi làm chất tiết đường hô hấp chứa mầm bệnh bắn ra ngoài không khí, từ đó lây cho gà khỏe bằng đường hít thở. Ngoài ra, con đường lan truyền bằng gió, dụng cụ chăn nuôi, xe vận chuyển, động vật mang mầm bệnh và con người cũng đóng vai trò lớn trong sự truyền lây của bệnh ORT."
+            
+        ],
+        "envfactors": [
+            
+        ],
+        "symptoms": [
+            "ORT là bệnh hô hấp cấp tính, thời gian nung bệnh ngắn, 1 – 3 ngày.\nGiai đoạn đầu thường chỉ thấy gà bệnh có triệu chứng hen nhẹ, thở khò khè và đôi lúc hắt hơi, vảy mỏ.\nBệnh tiến triển rất nhanh, sau 1 – 2 ngày thấy gà giảm ăn, ủ rũ và ngày càng khó thở.\nÐặc biệt ở giai đoạn này có thể quan sát thấy gà bệnh há mỏ để thở, thở đớp khí, có tiếng rít và ngáp.\nSở dĩ gà có triệu chứng này là do bên trong khí quản và hai phế quản gốc có cục mủ bít kín khiến đường hô hấp hẹp đi nhiều, gây khó thở, dẫn tới chết.\nTỷ lệ mắc của bệnh ORT rất cao, 50 – 100%, tỷ lệ chết thường là 5 – 20%.\nThiệt hại chủ yếu do bệnh gây ra là làm cho gà gầy yếu, lớn chậm, tỷ lệ đồng đều kém, tăng cao tỷ lệ loại thải và chi phí chăn nuôi.\nBệnh thường ghép với một số bệnh khác như: Newcastle (gà rù), E.coli, CRD… làm biểu hiện của bệnh càng trầm trọng.\nGà khó thở, rướn cổ thở, ngáp gió, ho, lắc đầu, vẩy mỏ, khẹc, …\nGà sốt rất cao, ủ rũ, giảm ăn.\nChảy nước mắt mũi, sưng mặt."
+        ],
+        "treatments": [
+            "Bước 1: Điều trị triệu chứng, hạ sốt, kháng viêm, tan đàm, thông hô hấp...\nSputumiz: thành phần gồm Bromhexine, Prenisolone, Mentha piperita (tinh dầu bạc hà). Sputumiz có tác dụng tan đàm dễ thở, kháng viêm, tăng hiệu quả của kháng sinh\nPara C: thành phần gồm Paracetamol, Vitamin C, Sodium Cloride, Postassium Cloride. Para C có tác dụng giảm đau, hạ sốt, tăng sức kháng bệnh.\n2: Dùng kháng sinh đặc trị gồm nhóm CEFTIOFUR, LINCOMYCIN+SPECTINOMYCIN hoặc DOXYCYCLINE tiêu diệt, kiềm hãm mầm bệnh:\nNASHER FUR: thành phần CEFTIOFUR\nĐường cấp: tiêm\nLiều cấp : 1 ml / 10kg gà ( gà có trọng lượng trên 1kg)\n               1 ml / 5kg gà ( gà có trọng lượng dưới 1kg)\nNhịp cấp: 1 lần/ngày.\nThời gian cấp: 1-2 ngày\nKết hợp với hoạt chất anpha chymotrypsin để tăng hiệu quả điều trị của kháng sinh\nSong song với tiêm, chúng ta cần sử dùng phối hợp với kháng sinh đường uống.\nLINCOSPECMYCIN - 110: thành phần LINCOMYCINE+SPECTINOMYCIN\nĐường cấp: Uống\nLiều cấp: 1gram / 10 kg gà\nNhịp cấp: 2 lần / ngày.\nThời gian cấp: 5-7 ngày\nhoặc\nGIUSE 20: thành phần DOXYCYCLINE\nĐường cấp: Uống\nLiều cấp: 1gram / 10 kg gà\nNhịp cấp: 2 lần / ngày.\nThời gian cấp: 5-7 ngày\nBước 3: Hỗ trợ điều trị.\nSử dụng các sản phẩm chuyên biệt giúp tăng sức đề kháng, giải độc gan thận.\nNOVITECH YL: tăng sức đề kháng, giải độc gan\nASCOREQUIL: sản phẩm giải độc gan chuyên biệt\nRENAL CLEANER: sản phẩm giải độc thận chuyên biệt\nTrường hợp thể trạng gà yếu và có biểu hiện gan thận quá xấu, chúng ta nên tăng cường hỗ trợ điều trị trước khi sử dụng kháng sinh."
+        ],
+        "prevention": [
+            "Chưa có vaccine phòng bệnh ORT trên gà, để phòng bệnh hiệu quả chúng ta làm thật tốt các việc sau:\n- Thực hiện an toàn sinh học: phun sát trùng định kỳ, thực hiện cùng vào – cùng ra (all in – all out) trong cùng một chuồng nuôi.\n- Chú ý kiểm soát và quản lý tốt các yếu tố như mật độ nuôi, nhiệt độ, ẩm độ, tốc độ gió, bụi, khí NH3 và dinh dưỡng.\n- Tiêm phòng đầy đủ các vaccine đặc biệt là các bệnh do vi rút như APV, IB, ILT thì sẽ hạn chế  bệnh xảy ra hoặc bệnh xảy ra chỉ ở mức độ nhẹ và rất dễ điều trị."
+        ]
+    },
+    {
+        "name": "Bệnh CRD_Hen gà",
+        "species": [
+            "Gà"
+        ],
+        "description": "Bệnh hô hấp mãn tính CRD ở gà là bệnh rất phổ biến ở gia cầm. Gà có hiện tượng khó thở, thở khò khè (giống với triệu chứng của người bị hen nên gọi là bệnh hen gà). Bệnh CRD trên gà tuy không quá nghiêm trọng nhưng lại làm giảm sức đề kháng của vật nuôi, tạo điều kiện cho các vi khuẩn cơ hội tấn công gây bệnh kế phát. ",
+        "causes": [
+            "Bệnh CRD thường do viêm phổi do Mycoplasma gallisepticum (M. gallisepticum) gây ra. M. gallisepticum là một loại vi khuẩn gây nhiễm trùng đường hô hấp và dẫn đến viêm phổi ở gà."
+        ],
+        "envfactors": [
+            "Các yếu tố như quản lý kém về vệ sinh chuồng trại, tiếp xúc với các gà bị nhiễm bệnh, và áp lực môi trường có thể tạo điều kiện cho bệnh CRD phát triển."
+        ],
+        "symptoms": [
+            "Gà ăn ít: Nói chung gà đã mắc bệnh CRD hay là bệnh nào thì cũng đều giảm ăn, thậm chí bỏ ăn.",
+            "Viêm xoang mũi, chảy nước mũi: Đây là triệu chứng điển hình của bệnh CRD, bởi bản chất của bệnh CRD là vấn đề về hô hấp.",
+            "Thở khò khè: Khi phế quản có vấn đề thi thở khó khè là biểu hiện đầu tiên của bệnh CRD",
+            "Viêm kết mạc mắt, chảy nước mắt: Đây là triệu chứng khác biệt so với bệnh về hô hấp khác, do vậy khi thấy có triệu chứng này kèm theo sẽ chuẩn đoán bệnh CRD chính xác hơn.",
+            "Sưng mặt, ủ rũ, chậm lớn, gà giảm đẻ, tỷ lệ nở kém: Đây là các biểu hiện có tính chung chung, các bệnh về đường hô hấp khác đều thấy có."
+
+        ],
+        "treatments": [
+            "Sử dụng kháng sinh trộn: sử dụng các loại thuốc được thú ý chỉ định với liều lượng hợp lý trộn cùng với thức ăn của gà. Hoặc có thể dùng kháng sinh tiêm trong trường hợp bệnh nặng có ghép vi khuẩn cơ hội gây C.CRD\nPha nước cho uống:\nUniflox: 1ml/5-10kg thể trọng, ngày 1 lần, liên tục 5 – 7 ngày\nGiuse 200: 1g/10 – 20kg thể trọng, ngày 2 lần, liên tục 5 – 7 ngày\nTiêm bắp:\nUnispectin 15: 1ml/5kg thể trọng, ngày 1 lần, tiêm bắp liên tục 3 - 5 ngày\nKết hợp hỗ trợ khi có triệu chứng khó thở\nSputumiz: 1ml/1lít nước/5 kg thể trọng, uống liên tục 3 ngày.\nTăng cường dinh dưỡng và sức kháng bệnh\nVitamin AD3ECK: 1ml/5lít nước/25kg thể trọng, uống liên tục 3 ngày\nHoặc Anivitamino:  1g/5lít nước/25 kg thể trọng, uống liên tục 3 ngày"
+        ],
+        "prevention": [
+            "Bệnh CRD làm giảm năng suất chăn nuôi, thời gian điều trị kéo dài, tăng chi phí điều trị, ảnh hưởng trực tiếp đến hiệu quả kinh tế. Vì vậy, cần tuân thủ các biện pháp phòng bệnh nghiêm ngặt cho đàn gà. – Vệ sinh chuồng trại, vệ sinh máy ấp thật tốt bằng các loại thuốc sát trùng phù hợp.\nNuôi gà với mật độ vừa phải, cần lưu ý đến tiểu khi hậu chuồng nuôi, trong đó thông thoáng và mát là 2 yếu tố quan trọng, chuồng trại thiếu thông thoáng, nồng độ các loại khí độc như: NH3, H2S, Clor, CO cao, các khí này gây các tổn hại nhất định ở xoang mũi, thanh khí quản…. Sẽ tạo điệu kiện cho sự bùng nổ bệnh CRD và các bệnh hô hấp khác. – Trên đàn gà giống, thường xuyên tiến hành kiểm tra máu để loại thải các gà dương tính với bệnh CRD.\nCung cấp đầy đủ các loại vitamin nhất là vitamin A, vitamin C, các chất điện giải nhằm tăng cường sức đề kháng của đàn gà.\nSử dụng kháng sinh hoặc vaccin ngừa bệnh. Tuy nhiên việc tiêm phòng vaccin phỏng bệnh CRD đôi khi có thể làm cho đàn gà phát bệnh nếu trước đó đã bị nhiễm bệnh CRD.\nBệnh hen ở gà cần được phòng ngừa như sau:\nThực hiện công tác vệ sinh chuồng trại, rửa sạch các máng ăn, máng uống\nMật độ nuôi vừa phải, tránh các tác động trực tiếp từ các yếu tố thời tiết như gió mưa, nắng tác động xấu lên gà.\nSát trùng chuồng trại bằng các loại thuốc chuyên dùng\nTăng cường sức đề kháng trong gà bằng việc dùng các chất trợ sức như Vitamin, điện giải, cải thiện hiệu quả sử dụng thức ăn." 
+        ]
+    },
+    {
+        "name": "Bệnh giun chỉ",
+        "species": [
+            "Vịt"
+        ],
+        "description": "Vịt có thể mắc bệnh ở mọi lứa tuổi, tuy nhiên thường xuất hiện ở vịt đẻ 3 - 8 tuần tuổi. Tỷ lệ vịt nhiễm ở độ tuổi này có khi chiếm 60 - 80%. ",
+        "causes": [
+            "Bệnh do ký sinh trùng Avioserpen Taiwana gây ra. Đây là một loại ký sinh trùng khu trú dưới da cổ, hầu, đùi… của vịt tạo thành các khối u. Hình dạng của chúng giống như những sợi chỉ nhỏ dài khoảng 1,2 - 8 cm, ngang khoảng 0,08 - 0,15 mm, đằng trước và đằng sau thu nhỏ. Giun chỉ ký sinh trong mô dưới da, tập trung ở vùng dưới hai hàm dưới và gây viêm tạo thành các tổ chức với các mô xung quanh thành thực quản và dày lên như một khối u. Với mắt thường ta cũng dễ dàng quan sát thấy từ xa hoặc dùng tay nắn khu vực vùng giữa hai hàm dưới ta cũng có thể thấy cục cứng, có khi chúng chiếm hết cả vùng hầm dưới xuống đến cổ. "
+        ],
+        "envfactors": [
+            
+        ],
+        "symptoms": [
+            "Khi mới phát bệnh vịt có triệu chứng uể oải, chậm chạp và có những biểu hiện phù nề vùng đầu, sưng vùng trán, mắt, sau đó lan dần tới cổ, các bộ phận dưới da, hàm dưới chỗ cuống lưỡi. Sau đó trên da thấy có nhiều cục u nổi lên, chúng to dần tạo thành bướu, lúc đầu các u bướu xuất hiện đầu tiên ở hàm dưới, cổ, tiếp theo là ở hốc mắt, ống chân và một số vị trí khác trên cơ thể. Do các bướu ở hầu, cổ, hốc mắt cứ to dần nên thủy cầm khó thở, ăn uống khó, đi lại chậm chạp và gầy. ",
+            "Nếu bệnh xảy ra trên đàn vịt nhỏ, khối u to, rõ, trên diện rộng thì tỷ lệ chết sẽ cao. Đối với đàn vịt lớn hơn, mức độ khối u vừa phải cùng với sự can thiệp kịp thời thì tỷ lệ chết sẽ ít hơn. Với loại vịt choai đã lớn, có sức đề kháng tốt, các khối u có thể tự teo đi, tự khỏi bệnh, tuy nhiên mức độ sinh trưởng sẽ kém so với vịt cùng lứa không nhiễm bệnh."
+        ],
+        "treatments": [
+            "Cách chữa bệnh giun chỉ ở vịt rất đơn giản mà hiệu quả lại cao là tiêm vào ổ ký sinh trùng mỗi con 2ml dung dịch thuốc tím KmnO4 0,5%; dung dịch Iodine 1% hoặc dung dịch Natri Chloride NaCl 5%.\nKý sinh trùng sẽ chết và nốt sưng sẽ biến mất sau 7-10 ngày.\nCó thể chữa bằng các loại thuốc tẩy giun tròn thông thường khác như Mebendzol 10% dùng với liều 1g thuốc dùng cho 2kg thể trọng.\nLevamysol 7,5% tiêm dưới da 1ml/2kg thể trọng. Chích xung quanh túi giun hoặc tiêm thẳng vào ổ ký sinh trùng 1-2ml/con.\nCách chữa trị theo kinh nghiệm dân gian là mổ loại bỏ khối u và bóc tách hết tất cả ký sinh trùng, sau đó sát trùng tốt vết thương bằng các loại thuốc sát trùng và bột kháng sinh."
+
+        ],
+        "prevention": [ 
+        ]
+    },
+    {
+        "name": "Bệnh nấm phổi",
+        "species": [
+            "Vịt"
+        ],
+        "description": "Bệnh nấm phổi ở vịt gây ra bởi nấm Aspergillus flavus. Bệnh chỉ nhiễm qua đường hô hấp và biểu hiện cục bộ trong đường hô hấp, túi khí. Chuồng trại kém thông thoáng, độ ẩm cao là điều kiện thích hợp cho các bào tử nấm phát triển mạnh hoặc do thức ăn bị nhiễm nấm. Bệnh có thể truyền ngay từ trong khi ấp do trứng hoặc không đảm bảo vệ sinh, qua không khí bào tử nấm xâm nhập vào phổi và túi khí gia cầm. Bệnh thường phát ra trên vịt con, tỷ lệ chết cao đến 50%.",
+        "causes": [
+            "Bệnh nấm phổi ở vịt gây ra bởi nấm Aspergillus flavus. Bệnh chỉ nhiễm qua đường hô hấp và biểu hiện cục bộ trong đường hô hấp, túi khí. Chuồng trại kém thông thoáng, độ ẩm cao là điều kiện thích hợp cho các bào tử nấm phát triển mạnh hoặc do thức ăn bị nhiễm nấm. Bệnh có thể truyền ngay từ trong khi ấp do trứng hoặc không đảm bảo vệ sinh, qua không khí bào tử nấm xâm nhập vào phổi và túi khí gia cầm. Bệnh thường phát ra trên vịt con, tỷ lệ chết cao đến 50%."
+        ],
+        "envfactors": [
+            
+        ],
+        "symptoms": [
+            "Đối với vịt con bệnh thường biểu hiện ở thể quá cấp tính và cấp tính với những triệu chứng như: kém ăn, thở khó và nhanh, khi thở vịt vươn cổ dài, mũi chảy nước. Thân nhiệt tăng, con vật bơ phờ, ỉa phân rất hôi thối, vịt suy nhược nhanh và một số trường hợp vịt con có triệu chứng co giật. Một số con khác thì bị rối loạn tiêu hoá do độc tố của nấm tiết ra gây viêm ruột, chảy máu ruột, tiêu chảy, bại liệt.",
+            "Vịt lớn thường biểu hiện ở thể mạn tính, cơ thể suy yếu dần với triệu chứng: thở khó, thở nhanh, vịt biến ăn, khát nước dữ dội, thân nhiệt tăng, tiêu chảy. Vịt ủ rũ, thường túm tụm lại thành nhóm và nằm chồng lên nhau."
+        ],
+        "treatments": [
+            "Trị bệnh: Khi chăn nuôi vịt, cách ly vịt bị bệnh với vịt khoẻ, đồng thời bổ sung vitamin A vào thức ăn cho vịt. Khi vịt chưa bị bệnh thì dùng thuốc Vimetadin – 56 trộn vào thức ăn thường xuyên để phòng bệnh với liều lượng: 1g/kg thức ăn. Khi vịt bệnh trộn 2g/kg thức ăn. Kết hợp pha Vime – Iodine vào nước sạch cho vịt uống với liều 10ml/20; nước, dung dịch pha xong cho vịt uống trong vòng 24 giờ."
+        ],
+        "prevention": [ 
+            "Phòng bệnh: Không sử dụng thức ăn đã hỏng, củ, nhiễm nấm mốc. Cho vịt ăn khẩu phần cân đối các chất dinh dưỡng và vitamin. Chuồng trại phải luôn đảm bảo độ thông thoáng, khô ráo, sạch sẽ, chất độn chuồng phải định kỳ thay đổi. Nên sát trùng kho đựng trứng, chuồng, trại nuôi định kỳ bằng các loại thuốc sát trùng sau:\n+ Vimekon: 100g/20l nước, phun xịt khắp chuồng và vật nuôi.\n+ Vime – Iodine: 15ml/4l nước (đối với sát trùng chuồng, phương tiện vận chuyển, lò giết mổ) và 10ml/10 lít nước (sát trùng trứng).\n+ Vime – Protex: sát trùng chuồng trại là tốt nhất với liều 10ml/20l nước."
+        ]
     }
 ]
