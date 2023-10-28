@@ -6,15 +6,38 @@
                 "thời tiết thất thường",
                 "thời tiết không đẹp",
                 "chuyển mùa",
-                "giao mùa"
+                "giao mùa",
+                "thời tiết bất lợi"
             ],
             "general": "thay đổi thời tiết"
         },
         {
             "distinct": [
+                "nhiệt độ thời tiết",
+                "nhiệt độ thất thường",
+                "nhiệt độ không đẹp",
+                "chuyển mùa",
+                "giao mùa",
+                "nhiệt độ bất lợi"
+            ],
+            "general": "thay đổi nhiệt độ"
+        },
+        {
+            "distinct": [
+                "thay đổi độ ẩm",
+                "độ ẩm thất thường",
+                "độ ẩm không đẹp",
+                "mưa",
+                "nắng gắt",
+                "độ ẩm bất lợi"
+            ],
+            "general": "thay đổi độ ẩm"
+        },
+        {
+            "distinct": [
                 "nhiệt độ cao",
                 "nóng bức",
-                ""
+                "nắng gắt"
             ],
             "general": "nhiệt độ cao"
         },
@@ -31,7 +54,7 @@
             "distinct": [
                 "vận chuyển",
                 "chuyển chuồng",
-                ""
+                "thay đổi chuồng nuôi"
             ],
             "general": "vận chuyển"
         },
@@ -42,6 +65,65 @@
                 "hẹp"
             ],
             "general": "chật chội"
+        },
+        {
+            "distinct": [
+                "chuồng chại kém vệ sinh",
+                "chuồng trại bẩn",
+                "chuồng trại không dọn dẹp",
+                "chuồng trại bừa bãi",
+                "chuồng trại ẩm ướt"
+            ],
+            "general": "chuồng chại kém vệ sinh"
+        },
+        {
+            "distinct": [
+                "thực phẩm không đảm bảo",
+                "thực phẩm kém",
+                "thực phẩm bẩn",
+                "thực phẩm không phù hợp"
+            ],
+            "general": "thực phẩm không đảm bảo"
+        },
+        {
+            "distinct": [
+                "sốt cao"
+            ],
+            "general": "sốt cao"
+        },
+        {
+            "distinct": [
+                "run rẩy"
+            ],
+            "general": "run rẩy"
+        }
+        ,
+        {
+            "distinct": [
+                "sốt cao"
+            ],
+            "general": "sốt cao"
+        }
+        ,
+        {
+            "distinct": [
+                "sốt cao"
+            ],
+            "general": "sốt cao"
+        }
+        ,
+        {
+            "distinct": [
+                "sốt cao"
+            ],
+            "general": "sốt cao"
+        }
+        ,
+        {
+            "distinct": [
+                "sốt cao"
+            ],
+            "general": "sốt cao"
         }
     ],
     "poultry": [
@@ -51,9 +133,84 @@
                 "thời tiết thất thường",
                 "thời tiết không đẹp",
                 "chuyển mùa",
-                "giao mùa"
+                "giao mùa",
+                "thời tiết bất lợi"
             ],
             "general": "thay đổi thời tiết"
+        },
+        {
+            "distinct": [
+                "nhiệt độ thời tiết",
+                "nhiệt độ thất thường",
+                "nhiệt độ không đẹp",
+                "chuyển mùa",
+                "giao mùa",
+                "nhiệt độ bất lợi"
+            ],
+            "general": "thay đổi nhiệt độ"
+        },
+        {
+            "distinct": [
+                "thay đổi độ ẩm",
+                "độ ẩm thất thường",
+                "độ ẩm không đẹp",
+                "mưa",
+                "nắng gắt",
+                "độ ẩm bất lợi"
+            ],
+            "general": "thay đổi độ ẩm"
+        },
+        {
+            "distinct": [
+                "nhiệt độ cao",
+                "nóng bức",
+                "nắng gắt"
+            ],
+            "general": "nhiệt độ cao"
+        },
+        {
+            "distinct": [
+                "độ ẩm cao",
+                "nồm",
+                "ẩm",
+                "mưa"
+            ],
+            "general": "độ ẩm cao"
+        },
+        {
+            "distinct": [
+                "vận chuyển",
+                "chuyển chuồng",
+                "thay đổi chuồng nuôi"
+            ],
+            "general": "vận chuyển"
+        },
+        {
+            "distinct": [
+                "chật chội",
+                "bé",
+                "hẹp"
+            ],
+            "general": "chật chội"
+        },
+        {
+            "distinct": [
+                "chuồng chại kém vệ sinh",
+                "chuồng trại bẩn",
+                "chuồng trại không dọn dẹp",
+                "chuồng trại bừa bãi",
+                "chuồng trại ẩm ướt"
+            ],
+            "general": "chuồng chại kém vệ sinh"
+        },
+        {
+            "distinct": [
+                "thực phẩm không đảm bảo",
+                "thực phẩm kém",
+                "thực phẩm bẩn",
+                "thực phẩm không phù hợp"
+            ],
+            "general": "thực phẩm không đảm bảo"
         }
     ]
 }
