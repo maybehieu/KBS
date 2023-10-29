@@ -183,6 +183,8 @@ class DiseasesDiagnosis:
         # instance variables
         self.current_animal = ""
         self.current_species = ""
+        self.current_symptoms = []
+        self.current_envfacs = []
 
     def main_process(self):
         print("Bạn đã chọn sử dụng chức năng chẩn đoán bệnh thú y")
@@ -215,7 +217,7 @@ class DiseasesDiagnosis:
             f'Xác định thông tin ban đầu của con vật: {self.current_animal.capitalize()}, là {"Gia súc" if self.current_species == "cattle" else "Gia cầm"}'
         )
         # thực hiện hỏi yếu tố môi trường
-
+        
         # thực hiện hỏi triệu chứng
 
         # thực hiện tính toán tìm case
@@ -395,5 +397,8 @@ class MedicineInformation:
 
     def main_process(self):
         print("Bạn đã chọn sử dụng chức năng tìm kiếm thông tin thuốc thú y")
+        print(
+            "Đầu tiên, bạn có thể cho tôi biết tên loại thuốc bạn đang tìm kiếm là gì không?"
+        )
         pass
 
