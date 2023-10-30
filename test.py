@@ -30,13 +30,33 @@ def compute_tf(wordDict, doc):
     return tfDict
 
 
-def compute_idf(docList):
+# def compute_idf(docList):
+#     idfDict = {}
+#     N = len(docList)
+
+#     idfDict = dict.fromkeys(docList[0].keys(), 0)
+#     for word, val in idfDict.items():
+#         idfDict[word] = math.log10(N / (float(val) + 1))
+
+#     return idfDict
+
+
+def compute_idf(docList=[]):
     idfDict = {}
     N = len(docList)
-
+    
     idfDict = dict.fromkeys(docList[0].keys(), 0)
     for word, val in idfDict.items():
-        idfDict[word] = math.log10(N / (float(val) + 1))
+        count = 0
+        for _dict in docList:
+            try:
+                if _dict[word] > 0:
+                    count += 1
+            except:
+                pass
+        if count == 0:
+            count = 1
+        idfDict[word] = math.log(N / float(count))
 
     return idfDict
 
@@ -99,7 +119,7 @@ def process_tfidf(lst, query):
     for idx in range(len(lst)):
         tfList.append(compute_tf(wordDicts[idx], _lst[idx]))
     tfQuery = compute_tf(q_wordDict, _query)
-    idfs = compute_idf(tfList + [tfQuery])
+    idfs = compute_idf(wordDicts + [q_wordDict])
 
     tfidfList = []
     for idx in range(len(lst)):
@@ -110,9 +130,27 @@ def process_tfidf(lst, query):
 
     sims = [cosine_similarity(q_tfidf, s) for s in tfidfList]
 
-    for string, sim in zip(lst, sims):
+
+    return zip(lst, sims)
+
+
+def find_cate(z, *cates):
+    sort = sorted(z, key=lambda x: x[1], reverse=True)
+    s, sims = zip(*sort)
+
+    for string, sim in zip(s, sims):
         print(f'độ tương đồng giữa "{string}" và "{query}" là {sim:.4f}')
-    print(f"độ tương đồng tương đối: {sum(sims)}")
+    
+    top = s[:5]
+    max_match_count = 0
+    list_with_most_matches = None
+    for lst in cates:
+        match_count = len(set(top) & set(lst))
+        if match_count > max_match_count:
+            max_match_count = match_count
+            list_with_most_matches = lst
+
+    print(list_with_most_matches)
 
 
 def process_tfidf_joined(lst, query):
@@ -264,15 +302,16 @@ s3 = [
     "nắng gắt",
     "độ ẩm bất lợi",
 ]
-query = "thời tiết đang thay đổi khá thất thường"
+query = "giao mùa"
 
 # process_tfidf_joined(sentences, query)
 # process_tfidf_joined(s2, query)
 # process_tfidf_joined(s3, query)
 
-process_tfidf(sentences, query)
-process_tfidf(s2, query)
-process_tfidf(s3, query)
+z = process_tfidf(sentences + s2 + s3, query)
+print(find_cate(z, sentences, s2, s3))
+# process_tfidf(s2, query)
+# process_tfidf(s3, query)
 
 # process_lavenshtein(sentences, query)
 # process_jaccard(sentences, query)

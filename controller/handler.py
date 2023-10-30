@@ -1,5 +1,6 @@
 import json
-
+import math
+from utils import tokenizer
 
 def preprocess_animal_name(inp=""):
     convert = {
@@ -29,6 +30,75 @@ def get_similar_animals(inp=""):
     }
     return similar[inp]
 
+
+def string_preprocess(s=''):
+    s = s.lower()
+    return tokenizer(s)
+
+# tạo một dict với keys là các từ thuộc tập tổng các từ (toàn bộ doc) với value là số lần xuất hiện trong câu đầu vào
+def make_word_dict(all_word, doc=[]):
+    wordDict = dict.fromkeys(all_word, 0)
+    for word in doc:
+        try:
+            wordDict[word] += 1
+        except:
+            pass
+    return wordDict
+
+# tính toán giá trị term-frequency
+# tf(từ) = số lần xuất hiện của từ / tổng số từ (trong câu)
+def compute_tf(wordDict, doc=[]):
+    tfDict = {}
+    wordNum = len(doc)
+    for word, count in wordDict.items():
+        tfDict[word] = count / float(wordNum)
+    return tfDict
+
+# tính toán giá trị inverse document frequency
+# idf(từ) = log(số lượng văn bản / số lượng văn bản có chứa từ đó)
+def compute_idf(docList=[]):
+    idfDict = {}
+    N = len(docList)
+
+    idfDict = dict.fromkeys(docList[0].keys(), 0)
+    for word, val in idfDict.items():
+        count = 0
+        for dict in docList:
+            try:
+                if dict[word] > 0:
+                    count += 1
+            except: pass
+        if count == 0: count = 1
+        idfDict[word] = math.log(N / float(count))
+
+    return idfDict
+
+# tính toán giá trị tfidf
+# tfidf(từ) = tf * idf
+def compute_tfidf(tf, idf):
+    tfidf = {}
+    for word, val in tf.items():
+        tfidf[word] = val * idf[word]
+    return tfidf
+
+
+def cosine_similarity(tfidf_vector1, tfidf_vector2):
+    # tính tích vô hướng của 2 vector
+    dot_product = sum(
+        tfidf_vector1[term] * tfidf_vector2[term]
+        for term in tfidf_vector1
+        if term in tfidf_vector2
+    )
+
+    # tính toán chuẩn euclidean của 2 vector
+    magnitude1 = math.sqrt(sum(tfidf_vector1[term] ** 2 for term in tfidf_vector1))
+    magnitude2 = math.sqrt(sum(tfidf_vector2[term] ** 2 for term in tfidf_vector2))
+
+    # tính toán độ tương đồng cosine
+    if magnitude1 == 0 or magnitude2 == 0:
+        return 0
+    else:
+        return dot_product / (magnitude1 * magnitude2)
 class ChatbotController:
     def __init__(self) -> None:
         with open(r"database\cattle.json", "r", encoding="utf8") as f:
@@ -180,6 +250,15 @@ class DiseasesDiagnosis:
         self.agree_resp = ["đồng ý", "yes", "y", "dong y", "có", "co"]
         self.disagree_resp = ["không", "khong", "no", "kết thúc", "ket thuc"]
 
+        self.cattle_all_symenv = []
+        for obj in self.ref_dict['cattle']:
+            self.cattle_all_symenv.extend(obj['distinct'])
+        self.proc_c_all_symenv = [string_preprocess(sent) for sent in self.cattle_all_symenv]
+        self.poultry_all_symenv = []
+        for obj in self.ref_dict['poultry']:
+            self.cattle_all_symenv.extend(obj['distinct'])
+        self.proc_p_all_symenv = [string_preprocess(sent) for sent in self.poultry_all_symenv]
+
         # instance variables
         self.current_animal = ""
         self.current_species = ""
@@ -216,7 +295,12 @@ class DiseasesDiagnosis:
         print(
             f'Xác định thông tin ban đầu của con vật: {self.current_animal.capitalize()}, là {"Gia súc" if self.current_species == "cattle" else "Gia cầm"}'
         )
+        print('Tôi sẽ bắt đầu thực hiện việc tìm hiểu thông tin để chẩn đoán bệnh trên con vật bạn đang chọn. Lưu ý rằng với các triệu chứng, yếu tố khác nhau, '+
+              'bạn hãy ngăn cách chúng bằng dấu ";", và hãy chỉ đưa ra những triệu chứng, yếu tố được yêu cầu một cách ngắn gọn, trong mỗi câu trả lời để kết quả đạt được là tốt nhất')
+        
         # thực hiện hỏi yếu tố môi trường
+        print(f'Đầu tiên hãy bắt đầu với các yếu tố môi trường xung quanh vật nuôi của bạn')
+        weather_in = input(f'Thời tiết tại chỗ bạn đang như thế nào? (bình thường, thất thường, thay đổi,...) ')
         
         # thực hiện hỏi triệu chứng
 
@@ -241,6 +325,79 @@ class DiseasesDiagnosis:
         if any(word in inp for word in self.disagree_resp):
             return False
         return None
+    
+    def find_symenv_tfidf_based(self, inp):
+        if self.current_species == 'cattle':
+            lst = self.cattle_all_symenv
+            _lst = self.proc_c_all_symenv
+            objs = self.ref_dict['cattle']
+        if self.current_species == 'poultry':
+            lst = self.poultry_all_symenv
+            _lst = self.proc_p_all_symenv
+            objs = self.ref_dict['poultry']
+        
+        # lấy toàn bộ các từ
+        total = [word for sent in _lst for word in sent]
+        _inp = string_preprocess(inp)
+        total.extend(_inp)
+
+        # tạo ra một list các từ độc nhất
+        total = list(set(total))
+        a_worddict = [make_word_dict(total, sent) for sent in lst]
+        q_worddict = make_word_dict(total, _inp)
+
+        # tính toán tf
+        a_tfs = []
+        for idx in range(len(lst)):
+            a_tfs.append(compute_tf(a_worddict[idx], _lst[idx]))
+        tf = compute_tf(q_worddict, _inp)
+
+        # tính toán idf
+        idfs = compute_idf(a_tfs + [tf])
+
+        # tính toán tfidf
+        a_tfidfs = []
+        for idx in range(len(lst)):
+            a_tfidfs.append(compute_tfidf(a_tfs[idx], idfs))
+        q_tfidf = compute_tfidf(tf, idfs)
+
+        # tính toán tương đồng cosine giữa câu đầu vào và các câu có trong hệ thống
+        sims = [cosine_similarity(q_tfidf, tfidf) for tfidf in a_tfidfs]
+
+        # sắp xếp theo độ tương đồng cao nhất
+        sort = sorted(zip(lst, sims), key=lambda x: x[1], reverse=True)
+        lst, sims = zip(*sort)
+
+        # lấy ra 5 câu có độ tương đồng cao nhất
+        top = lst[:5]
+        max_match_count = 0
+        return_symenv = ''
+        for obj in objs:
+            match_count = len(set(top) & set(obj['distinct']))
+            if match_count > max_match_count:
+                max_match_count = match_count
+                return_symenv = obj['general']
+        
+        return return_symenv
+
+        
+    def find_symenv_string_based(self, inp=''):
+        if self.current_species == 'cattle':
+            lst = self.cattle_all_symenv
+            _lst = self.proc_c_all_symenv
+            objs = self.ref_dict['cattle']
+        if self.current_species == 'poultry':
+            lst = self.poultry_all_symenv
+            _lst = self.proc_p_all_symenv
+            objs = self.ref_dict['poultry']
+
+        for string in lst:
+            if inp.lower().strip() == string:
+                for obj in objs:
+                    if string in obj['distinct']:
+                        return obj['general']
+                    
+        return 'none'
 
 
 class DiseasesInformation:
