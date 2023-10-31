@@ -96,34 +96,440 @@
                 "run rẩy"
             ],
             "general": "run rẩy"
-        }
-        ,
+        },
         {
             "distinct": [
-                "sốt cao"
+                "chán ăn",
+                "không ăn",
+                "ăn ít",
+                "kém ăn"
             ],
-            "general": "sốt cao"
-        }
-        ,
+            "general": "chán ăn"
+        },
         {
             "distinct": [
-                "sốt cao"
+                "mệt mỏi",
+                "ủ rũ"
             ],
-            "general": "sốt cao"
-        }
-        ,
+            "general": "mệt mỏi"
+        },
         {
             "distinct": [
-                "sốt cao"
+                "da đổi màu",
+                "đỏ ở khắp da"
             ],
-            "general": "sốt cao"
-        }
-        ,
+            "general": "da đổi màu"
+        },
         {
             "distinct": [
-                "sốt cao"
+                "khó thở"
             ],
-            "general": "sốt cao"
+            "general": "khó thở"
+        },
+        {
+            "distinct": [
+                "sốt"
+            ],
+            "general": "sốt"
+        },
+        {
+            "distinct": [
+                "sụt cân",
+                "giảm cân"
+            ],
+            "general": "sụt cân"
+        },
+        {
+            "distinct": [
+                "nằm chỗ có bóng râm"
+            ],
+            "general": "nằm chỗ có bóng râm"
+        },
+        {
+            "distinct": [
+                "đau bụng",
+                "đau vùng bụng"
+            ],
+            "general": "đau bụng"
+        },
+        {
+            "distinct": [
+                "lưng cong"
+            ],
+            "general": "lưng cong"
+        },
+        {
+            "distinct": [
+                "di chuyển bất thường",
+                "di chuyển bằng đầu gối"
+            ],
+            "general": "di chuyển bất thường"
+        },
+        {
+            "distinct": [
+                "thần kinh",
+                "nghiến răng lè lưỡi"
+            ],
+            "general": "thần kinh"
+        },
+        {
+            "distinct": [
+                "nôn mửa"
+            ],
+            "general": "nôn mửa"
+        },
+        {
+            "distinct": [
+                "tiêu chảy"
+            ],
+            "general": "tiêu chảy"
+        },
+        {
+            "distinct": [
+                "phân lạ",
+                "phân có chất nhầy và máu"
+            ],
+            "general": "phân có chất nhầy và máu"
+        },
+        {
+            "distinct": [
+                "chết nhanh"
+            ],
+            "general": "chết nhanh"
+        },
+        {
+            "distinct": [
+                "chết"
+            ],
+            "general": "chết"
+        },
+        {
+            "distinct": [
+                "chết rất nhanh"
+            ],
+            "general": "chết rất nhanh"
+        },
+        {
+            "distinct": [
+                "sảy thai"
+            ],
+            "general": "sảy thai"
+        },
+        {
+            "distinct": [
+                "chảy dãi"
+            ],
+            "general": "chảy dãi"
+        },
+        {
+            "distinct": [
+                "mụn nước",
+                "bọng nước"
+            ],
+            "general": "mụn nước"
+        },
+        {
+            "distinct": [
+                "xây xát",
+                "xước"
+            ],
+            "general": "xây xát"
+        },
+        {
+            "distinct": [
+                "da trắng bệch"
+            ],
+            "general": "da trắng bệch"
+        },
+        {
+            "distinct": [
+                "viêm mí mắt",
+                "sưng mắt",
+                "viêm mắt",
+                "mắt đỏ"
+            ],
+            "general": "viêm mắt"
+        },
+        {
+            "distinct": [
+                "yếu chân và phần mông sau",
+                "quỵ xuống"
+            ],
+            "general": "quỵ xuống"
+        },
+        {
+            "distinct": [
+                "tim đập nhanh",
+                "tim đập mạnh"
+            ],
+            "general": "tim đập nhanh"
+        },
+        {
+            "distinct": [
+                "nốt viêm loét hoại tử da",
+                "mụn loét đỏ"
+            ],
+            "general": "nốt viêm loét hoại tử da"
+        },
+        {
+            "distinct": [
+                "da vảy nâu, dễ bong tróc",
+                "da đóng vảy"
+            ],
+            "general": "da vảy nâu, dễ bong tróc"
+        },
+        {
+            "distinct": [
+                "da bị tím tái",
+                "da bị thâm"
+            ],
+            "general": "da bị tím tái"
+        },
+        {
+            "distinct": [
+                "dáng khom khom"
+            ],
+            "general": "dáng khom khom"
+        },
+        {
+            "distinct": [
+                "mông cong lên"
+            ],
+            "general": "mông cong lên"
+        },
+        {
+            "distinct": [
+                "phù"
+            ],
+            "general": "phù"
+        },
+        {
+            "distinct": [
+                "tiếng kêu thay đổi"
+            ],
+            "general": "tiếng kêu thay đổi"
+        },
+        {
+            "distinct": [
+                "rung tim"
+            ],
+            "general": "rung tim"
+        },
+        {
+            "distinct": [
+                "bại liệt"
+            ],
+            "general": "bại liệt"
+        },
+        {
+            "distinct": [
+                "bồn chồn",
+                "lo lắng",
+                "sợ sệt"
+            ],
+            "general": "bồn chồn"
+        },
+        {
+            "distinct": [
+                "bụng phình to"
+            ],
+            "general": "bụng phình to"
+        },
+        {
+            "distinct": [
+                "đau bụng"
+            ],
+            "general": "đau bụng"
+        },
+        {
+            "distinct": [
+                "dạng hai chân sau",
+                "hai chân dạng ra"
+            ],
+            "general": "hai chân dạng ra"
+        },
+        {
+            "distinct": [
+                "hõm hông bên trái căng phồng"
+            ],
+            "general": "hõm hông bên trái căng phồng"
+        },
+        {
+            "distinct": [
+                "gõ vùng dạ cỏ thấy có âm trống"
+            ],
+            "general": "gõ vùng dạ cỏ thấy có âm trống"
+        },
+        {
+            "distinct": [
+                "vã mồ hôi",
+                "đổ mồ hôi"
+            ],
+            "general": "vã mồ hôi"
+        },
+        {
+            "distinct": [
+                "ngừng nhai lại",
+                "dừng nhai lại"
+            ],
+            "general": "ngừng nhai lại"
+        },
+        {
+            "distinct": [
+                "thở gấp",
+                "thở mạnh",
+                "thở nhanh"
+            ],
+            "general": "thở gấp"
+        },
+        {
+            "distinct": [
+                "hơi ợ ra có mùi chua"
+            ],
+            "general": "hơi ợ ra có mùi chua"
+        },
+        {
+            "distinct": [
+                "cử động khó khăn",
+                "cử động cứng ngắc",
+                "đi lại khó khăn",
+                "di chuyển khó khăn"
+            ],
+            "general": "cử động khó khăn"
+        },
+        {
+            "distinct": [
+                "sờ dạ cỏ như sờ túi bột"
+            ],
+            "general": "sờ dạ cỏ như sờ túi bột"
+        },
+        {
+            "distinct": [
+                "sưng"
+            ],
+            "general": "sưng"
+        },
+        {
+            "distinct": [
+                "co giật"
+            ],
+            "general": "co giật"
+        },
+        {
+            "distinct": [
+                "mê man",
+                "không tỉnh táo"
+            ],
+            "general": "mê man"
+        },
+        {
+            "distinct": [
+                "chảy máu"
+            ],
+            "general": "chảy máu"
+        },
+        {
+            "distinct": [
+                "nước tiểu có máu"
+            ],
+            "general": "nước tiểu có máu"
+        },
+        {
+            "distinct": [
+                "giảm sữa",
+                "ít sữa"
+            ],
+            "general": "giảm sữa"
+        },
+        {
+            "distinct": [
+                "khát nước"
+            ],
+            "general": "khát nước"
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
+        },
+        {
+            "distinct": [
+                ""
+            ],
+            "general": ""
         }
     ],
     "poultry": [
