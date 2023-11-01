@@ -85,8 +85,13 @@
         "symptoms": [
             "sốt cao",
             "chảy dãi",
+<<<<<<< HEAD
             "mụn nước",
             "viêm loét",
+=======
+            "mụn nước | móng chân, bàn chân, kẽ móng",
+            "viêm loét | móng chân, bàn chân, kẽ móng",
+>>>>>>> a68522d53063e5d5bd33c08cc53a597b5c51ead0
             "mệt mỏi",
             "chán ăn",
             "di chuyển bất thường",
@@ -126,7 +131,11 @@
             "khó thở",
             "tim đập nhanh",
             "da đổi màu",
+<<<<<<< HEAD
             "viêm loét",
+=======
+            "viêm loét | lưng, hai bên vai, mông và chân",
+>>>>>>> a68522d53063e5d5bd33c08cc53a597b5c51ead0
             "da vảy nâu, dễ bong tróc",
             "da bị tím tái",
             "đi lại khó khăn",
