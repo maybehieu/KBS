@@ -10,9 +10,7 @@
             "Ngộ độc hoá chất: Gà có thể bị nhiễm hoá chất độc hại thông qua tiếp xúc với các chất như thuốc trừ sâu, thuốc diệt cỏ hoặc các hoá chất khác được sử dụng trong quá trình chăm sóc gà hoặc trong môi trường sống của chúng.",
             "Ngộ độc nấm mốc (Aflatoxin): Aflatoxin là một loại nấm mốc chủ yếu gây ngộ độc trong thức ăn và thức ăn của gà. Aflatoxin thường phát triển trong điều kiện ẩm ướt và nhiệt đới trong các loại thức ăn chứa hạt và ngô."
         ],
-        "envfactors": [
-            
-        ],
+        "envfactors": [],
         "symptoms": [
             "mệt mỏi",
             "yếu đuối",
@@ -22,13 +20,11 @@
             "tiêu chảy",
             "rụng lông",
             "phân hôi thối"
-           
         ],
         "treatments": [
             "Điều trị bệnh ngộ độc do mặn, hoá chất, nấm mốc cần được tiến hành dưới sự hướng dẫn của một bác sĩ thú y.\n - Thay đổi thức ăn để hạn chế tiếp xúc với mặn, hoá chất hoặc aflatoxin.\n - Hỗ trợ chức năng gan và dạ dày của gà bằng cách sử dụng thuốc được chỉ định bởi bác sĩ thú y.\n - Cung cấp chế độ chăm sóc tốt và duy trì vệ sinh sạch sẽ.\n Lưu ý rằng việc ngăn ngừa tốt hơn là điều quan trọng nhất để tránh bệnh ngộ độc này. Đảm bảo rằng thức ăn và nguồn nước cho gà không bị nhiễm mặn, hoá chất, hoặc nấm mốc là điều quan trọng để bảo vệ sức khỏe của đàn gà."
         ],
-        "prevention": [ 
-        ]
+        "prevention": []
     },
     {
         "name": "Bệnh ORT (Ornithobacterium rhinotracheale)",
@@ -41,22 +37,20 @@
             "Ở gà bệnh, vi khuẩn Ornithobacterium rhinotracheale thường có trong phổi; Túi khí, chất tiết của đường hô hấp như nước mũi, nước mắt; Dịch nhầy khí quản và đặc biệt có nhiều trong cục mủ ở hai phế quản gốc.",
             "Bệnh lây truyền từ gà bệnh cho gà khỏe qua tiếp xúc trực tiếp. Gà bệnh hắt hơi làm chất tiết đường hô hấp chứa mầm bệnh bắn ra ngoài không khí, từ đó lây cho gà khỏe bằng đường hít thở. Ngoài ra, con đường lan truyền bằng gió, dụng cụ chăn nuôi, xe vận chuyển, động vật mang mầm bệnh và con người cũng đóng vai trò lớn trong sự truyền lây của bệnh ORT."
         ],
-        "envfactors": [
-            
-        ],
+        "envfactors": [],
         "symptoms": [
             "khó thở",
-            "hắt hơi", 
+            "hắt hơi",
             "vảy mỏ",
-            "kém ăn", 
-            "mệt mỏi", 
+            "kém ăn",
+            "mệt mỏi",
             "chết",
-            "sụt cân", 
+            "sụt cân",
             "lắc đầu",
-            "sốt cao", 
+            "sốt cao",
             "chảy nước mũi",
             "chảy nước mắt",
-            "sưng | mặt"
+            "sưng"
         ],
         "treatments": [
             "Bước 1: Điều trị triệu chứng, hạ sốt, kháng viêm, tan đàm, thông hô hấp...\nSputumiz: thành phần gồm Bromhexine, Prenisolone, Mentha piperita (tinh dầu bạc hà). Sputumiz có tác dụng tan đàm dễ thở, kháng viêm, tăng hiệu quả của kháng sinh\nPara C: thành phần gồm Paracetamol, Vitamin C, Sodium Cloride, Postassium Cloride. Para C có tác dụng giảm đau, hạ sốt, tăng sức kháng bệnh.\n2: Dùng kháng sinh đặc trị gồm nhóm CEFTIOFUR, LINCOMYCIN+SPECTINOMYCIN hoặc DOXYCYCLINE tiêu diệt, kiềm hãm mầm bệnh:\nNASHER FUR: thành phần CEFTIOFUR\nĐường cấp: tiêm\nLiều cấp : 1 ml / 10kg gà ( gà có trọng lượng trên 1kg)\n               1 ml / 5kg gà ( gà có trọng lượng dưới 1kg)\nNhịp cấp: 1 lần/ngày.\nThời gian cấp: 1-2 ngày\nKết hợp với hoạt chất anpha chymotrypsin để tăng hiệu quả điều trị của kháng sinh\nSong song với tiêm, chúng ta cần sử dùng phối hợp với kháng sinh đường uống.\nLINCOSPECMYCIN - 110: thành phần LINCOMYCINE+SPECTINOMYCIN\nĐường cấp: Uống\nLiều cấp: 1gram / 10 kg gà\nNhịp cấp: 2 lần / ngày.\nThời gian cấp: 5-7 ngày\nhoặc\nGIUSE 20: thành phần DOXYCYCLINE\nĐường cấp: Uống\nLiều cấp: 1gram / 10 kg gà\nNhịp cấp: 2 lần / ngày.\nThời gian cấp: 5-7 ngày\nBước 3: Hỗ trợ điều trị.\nSử dụng các sản phẩm chuyên biệt giúp tăng sức đề kháng, giải độc gan thận.\nNOVITECH YL: tăng sức đề kháng, giải độc gan\nASCOREQUIL: sản phẩm giải độc gan chuyên biệt\nRENAL CLEANER: sản phẩm giải độc thận chuyên biệt\nTrường hợp thể trạng gà yếu và có biểu hiện gan thận quá xấu, chúng ta nên tăng cường hỗ trợ điều trị trước khi sử dụng kháng sinh."
@@ -79,22 +73,20 @@
         ],
         "symptoms": [
             "chán ăn",
-            "viêm | xoang mũi", 
+            "viêm",
             "chảy nước mũi",
             "khó thở",
-            "viêm | kết mạc mắt", 
             "chảy nước mắt",
-            "sưng | mặt", 
-            "mệt mỏi", 
-            "chậm lớn", 
+            "sưng",
+            "mệt mỏi",
+            "chậm lớn",
             "giảm đẻ"
-
         ],
         "treatments": [
             "Sử dụng kháng sinh trộn: sử dụng các loại thuốc được thú ý chỉ định với liều lượng hợp lý trộn cùng với thức ăn của gà. Hoặc có thể dùng kháng sinh tiêm trong trường hợp bệnh nặng có ghép vi khuẩn cơ hội gây C.CRD\nPha nước cho uống:\nUniflox: 1ml/5-10kg thể trọng, ngày 1 lần, liên tục 5 – 7 ngày\nGiuse 200: 1g/10 – 20kg thể trọng, ngày 2 lần, liên tục 5 – 7 ngày\nTiêm bắp:\nUnispectin 15: 1ml/5kg thể trọng, ngày 1 lần, tiêm bắp liên tục 3 - 5 ngày\nKết hợp hỗ trợ khi có triệu chứng khó thở\nSputumiz: 1ml/1lít nước/5 kg thể trọng, uống liên tục 3 ngày.\nTăng cường dinh dưỡng và sức kháng bệnh\nVitamin AD3ECK: 1ml/5lít nước/25kg thể trọng, uống liên tục 3 ngày\nHoặc Anivitamino:  1g/5lít nước/25 kg thể trọng, uống liên tục 3 ngày"
         ],
         "prevention": [
-            "Bệnh CRD làm giảm năng suất chăn nuôi, thời gian điều trị kéo dài, tăng chi phí điều trị, ảnh hưởng trực tiếp đến hiệu quả kinh tế. Vì vậy, cần tuân thủ các biện pháp phòng bệnh nghiêm ngặt cho đàn gà. – Vệ sinh chuồng trại, vệ sinh máy ấp thật tốt bằng các loại thuốc sát trùng phù hợp.\nNuôi gà với mật độ vừa phải, cần lưu ý đến tiểu khi hậu chuồng nuôi, trong đó thông thoáng và mát là 2 yếu tố quan trọng, chuồng trại thiếu thông thoáng, nồng độ các loại khí độc như: NH3, H2S, Clor, CO cao, các khí này gây các tổn hại nhất định ở xoang mũi, thanh khí quản…. Sẽ tạo điệu kiện cho sự bùng nổ bệnh CRD và các bệnh hô hấp khác. – Trên đàn gà giống, thường xuyên tiến hành kiểm tra máu để loại thải các gà dương tính với bệnh CRD.\nCung cấp đầy đủ các loại vitamin nhất là vitamin A, vitamin C, các chất điện giải nhằm tăng cường sức đề kháng của đàn gà.\nSử dụng kháng sinh hoặc vaccin ngừa bệnh. Tuy nhiên việc tiêm phòng vaccin phỏng bệnh CRD đôi khi có thể làm cho đàn gà phát bệnh nếu trước đó đã bị nhiễm bệnh CRD.\nBệnh hen ở gà cần được phòng ngừa như sau:\nThực hiện công tác vệ sinh chuồng trại, rửa sạch các máng ăn, máng uống\nMật độ nuôi vừa phải, tránh các tác động trực tiếp từ các yếu tố thời tiết như gió mưa, nắng tác động xấu lên gà.\nSát trùng chuồng trại bằng các loại thuốc chuyên dùng\nTăng cường sức đề kháng trong gà bằng việc dùng các chất trợ sức như Vitamin, điện giải, cải thiện hiệu quả sử dụng thức ăn." 
+            "Bệnh CRD làm giảm năng suất chăn nuôi, thời gian điều trị kéo dài, tăng chi phí điều trị, ảnh hưởng trực tiếp đến hiệu quả kinh tế. Vì vậy, cần tuân thủ các biện pháp phòng bệnh nghiêm ngặt cho đàn gà. – Vệ sinh chuồng trại, vệ sinh máy ấp thật tốt bằng các loại thuốc sát trùng phù hợp.\nNuôi gà với mật độ vừa phải, cần lưu ý đến tiểu khi hậu chuồng nuôi, trong đó thông thoáng và mát là 2 yếu tố quan trọng, chuồng trại thiếu thông thoáng, nồng độ các loại khí độc như: NH3, H2S, Clor, CO cao, các khí này gây các tổn hại nhất định ở xoang mũi, thanh khí quản…. Sẽ tạo điệu kiện cho sự bùng nổ bệnh CRD và các bệnh hô hấp khác. – Trên đàn gà giống, thường xuyên tiến hành kiểm tra máu để loại thải các gà dương tính với bệnh CRD.\nCung cấp đầy đủ các loại vitamin nhất là vitamin A, vitamin C, các chất điện giải nhằm tăng cường sức đề kháng của đàn gà.\nSử dụng kháng sinh hoặc vaccin ngừa bệnh. Tuy nhiên việc tiêm phòng vaccin phỏng bệnh CRD đôi khi có thể làm cho đàn gà phát bệnh nếu trước đó đã bị nhiễm bệnh CRD.\nBệnh hen ở gà cần được phòng ngừa như sau:\nThực hiện công tác vệ sinh chuồng trại, rửa sạch các máng ăn, máng uống\nMật độ nuôi vừa phải, tránh các tác động trực tiếp từ các yếu tố thời tiết như gió mưa, nắng tác động xấu lên gà.\nSát trùng chuồng trại bằng các loại thuốc chuyên dùng\nTăng cường sức đề kháng trong gà bằng việc dùng các chất trợ sức như Vitamin, điện giải, cải thiện hiệu quả sử dụng thức ăn."
         ]
     },
     {
@@ -106,27 +98,23 @@
         "causes": [
             "Bệnh do ký sinh trùng Avioserpen Taiwana gây ra. Đây là một loại ký sinh trùng khu trú dưới da cổ, hầu, đùi… của vịt tạo thành các khối u. Hình dạng của chúng giống như những sợi chỉ nhỏ dài khoảng 1,2 - 8 cm, ngang khoảng 0,08 - 0,15 mm, đằng trước và đằng sau thu nhỏ. Giun chỉ ký sinh trong mô dưới da, tập trung ở vùng dưới hai hàm dưới và gây viêm tạo thành các tổ chức với các mô xung quanh thành thực quản và dày lên như một khối u. Với mắt thường ta cũng dễ dàng quan sát thấy từ xa hoặc dùng tay nắn khu vực vùng giữa hai hàm dưới ta cũng có thể thấy cục cứng, có khi chúng chiếm hết cả vùng hầm dưới xuống đến cổ. "
         ],
-        "envfactors": [
-            
-        ],
+        "envfactors": [],
         "symptoms": [
-            "mệt mỏi", 
+            "mệt mỏi",
             "chậm chạp",
-            "phù | đầu", 
-            "sưng | trán, mắt, cổ, da, hàm dưới",
-            "bướu |  hàm dưới, cổ, hốc mắt, ống chân",
-            "khó thở", 
-            "chán ăn", 
+            "phù",
+            "sưng",
+            "bướu",
+            "khó thở",
+            "chán ăn",
             "sụt cân",
             "chết",
             "giảm đẻ"
         ],
         "treatments": [
             "Cách chữa bệnh giun chỉ ở vịt rất đơn giản mà hiệu quả lại cao là tiêm vào ổ ký sinh trùng mỗi con 2ml dung dịch thuốc tím KmnO4 0,5%; dung dịch Iodine 1% hoặc dung dịch Natri Chloride NaCl 5%.\nKý sinh trùng sẽ chết và nốt sưng sẽ biến mất sau 7-10 ngày.\nCó thể chữa bằng các loại thuốc tẩy giun tròn thông thường khác như Mebendzol 10% dùng với liều 1g thuốc dùng cho 2kg thể trọng.\nLevamysol 7,5% tiêm dưới da 1ml/2kg thể trọng. Chích xung quanh túi giun hoặc tiêm thẳng vào ổ ký sinh trùng 1-2ml/con.\nCách chữa trị theo kinh nghiệm dân gian là mổ loại bỏ khối u và bóc tách hết tất cả ký sinh trùng, sau đó sát trùng tốt vết thương bằng các loại thuốc sát trùng và bột kháng sinh."
-
         ],
-        "prevention": [ 
-        ]
+        "prevention": []
     },
     {
         "name": "Bệnh nấm phổi",
@@ -137,21 +125,19 @@
         "causes": [
             "Bệnh nấm phổi ở vịt gây ra bởi nấm Aspergillus flavus. Bệnh chỉ nhiễm qua đường hô hấp và biểu hiện cục bộ trong đường hô hấp, túi khí. Chuồng trại kém thông thoáng, độ ẩm cao là điều kiện thích hợp cho các bào tử nấm phát triển mạnh hoặc do thức ăn bị nhiễm nấm. Bệnh có thể truyền ngay từ trong khi ấp do trứng hoặc không đảm bảo vệ sinh, qua không khí bào tử nấm xâm nhập vào phổi và túi khí gia cầm. Bệnh thường phát ra trên vịt con, tỷ lệ chết cao đến 50%."
         ],
-        "envfactors": [
-            
-        ],
+        "envfactors": [],
         "symptoms": [
-            "chán ăn", 
+            "chán ăn",
             "khó thở",
             "thở gấp",
             "chảy nước mũi",
-            "thân nhiệt tăng", 
-            "mệt mỏi", 
-            "phân hôi thối", 
+            "thân nhiệt tăng",
+            "mệt mỏi",
+            "phân hôi thối",
             "sụt cân",
             "co giật",
-            "viêm | ruột", 
-            "tiêu chảy", 
+            "viêm",
+            "tiêu chảy",
             "bại liệt",
             "khát nước",
             "nằm chồng lên nhau"
@@ -159,7 +145,7 @@
         "treatments": [
             "Trị bệnh: Khi chăn nuôi vịt, cách ly vịt bị bệnh với vịt khoẻ, đồng thời bổ sung vitamin A vào thức ăn cho vịt.\nKhi vịt chưa bị bệnh thì dùng thuốc Vimetadin – 56 trộn vào thức ăn thường xuyên để phòng bệnh với liều lượng: 1g/kg thức ăn. Khi vịt bệnh trộn 2g/kg thức ăn.\nKết hợp pha Vime – Iodine vào nước sạch cho vịt uống với liều 10ml/20; nước, dung dịch pha xong cho vịt uống trong vòng 24 giờ."
         ],
-        "prevention": [ 
+        "prevention": [
             "Phòng bệnh: Không sử dụng thức ăn đã hỏng, củ, nhiễm nấm mốc. Cho vịt ăn khẩu phần cân đối các chất dinh dưỡng và vitamin. Chuồng trại phải luôn đảm bảo độ thông thoáng, khô ráo, sạch sẽ, chất độn chuồng phải định kỳ thay đổi. Nên sát trùng kho đựng trứng, chuồng, trại nuôi định kỳ bằng các loại thuốc sát trùng sau:\n+ Vimekon: 100g/20l nước, phun xịt khắp chuồng và vật nuôi.\n+ Vime – Iodine: 15ml/4l nước (đối với sát trùng chuồng, phương tiện vận chuyển, lò giết mổ) và 10ml/10 lít nước (sát trùng trứng).\n+ Vime – Protex: sát trùng chuồng trại là tốt nhất với liều 10ml/20l nước."
         ]
     }

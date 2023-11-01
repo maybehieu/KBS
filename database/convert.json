@@ -119,7 +119,18 @@
     {
         "distinct": [
             "da đổi màu",
-            "đỏ ở khắp da"
+            "đỏ ở khắp da",
+            "vành tai đổi màu",
+            "đuôi đổi màu",
+            "cẳng chân đổi màu",
+            "đổi màu ở vùng ngực",
+            "bụng đổi màu",
+            "da có màu lạ",
+            "vành tai có màu lạ",
+            "đuôi có màu lạ",
+            "cẳng chân có màu lạ",
+            "có màu lạ ở vùng ngực",
+            "bụng có màu lạ"
         ],
         "general": "da đổi màu"
     },
@@ -224,7 +235,8 @@
     },
     {
         "distinct": [
-            "chết nhanh"
+            "chết nhanh",
+            "chết từ 1 đến 3 ngày"
         ],
         "general": "chết nhanh"
     },
@@ -258,14 +270,21 @@
         "distinct": [
             "mụn nước",
             "bọng nước",
-            "mụn nhọt"
+            "mụn nhọt",
+            "mụn ở móng chân",
+            "nổi mụn ở bàn chân",
+            "nổi mụn ở kẽ móng"
         ],
         "general": "mụn nước"
     },
     {
         "distinct": [
             "xây xát",
-            "xước"
+            "xước",
+            "xây xước",
+            "trầy xước",
+            "trầy xước trên da",
+            "xây xát đầu gối"
         ],
         "general": "xây xát"
     },
@@ -302,9 +321,15 @@
     {
         "distinct": [
             "nốt viêm loét hoại tử da",
-            "mụn loét đỏ"
+            "mụn loét đỏ",
+            "viêm loét",
+            "viêm loét trên da",
+            "vết loét",
+            "loét trên lưng",
+            "viêm loét hai bên vai",
+            "viêm loét ở mông"
         ],
-        "general": "nốt viêm loét hoại tử da"
+        "general": "viêm loét"
     },
     {
         "distinct": [
@@ -316,7 +341,11 @@
     {
         "distinct": [
             "da bị tím tái",
-            "da bị thâm"
+            "da bị thâm",
+            "tím tái ở mõm",
+            "tím tái ở mồm",
+            "tím tái ở tai",
+            "tím tái ở bụng"
         ],
         "general": "da bị tím tái"
     },
@@ -334,7 +363,11 @@
     },
     {
         "distinct": [
-            "phù"
+            "phù",
+            "phồng",
+            "phù ở mí mắt",
+            "phù ở mặt",
+            "phù ở đầu"
         ],
         "general": "phù"
     },
@@ -442,13 +475,20 @@
     {
         "distinct": [
             "sưng",
-            "sưng tấy"
+            "sưng tấy",
+            "sưng má",
+            "sưng hầu",
+            "sưng ngực",
+            "sưng mắt"
         ],
         "general": "sưng"
     },
     {
         "distinct": [
-            "co giật"
+            "co giật",
+            "co giật ở cơ nhai",
+            "co giật ở cơ môi",
+            "co giật ở cơ nhai và cơ môi"
         ],
         "general": "co giật"
     },
@@ -461,7 +501,13 @@
     },
     {
         "distinct": [
-            "chảy máu"
+            "chảy máu",
+            "chảy máu âm hộ",
+            "chảy máu hậu môn",
+            "chảy máu mồm",
+            "chảy máu mũi",
+            "chảy máu mắt",
+            "chảy máu cổ"
         ],
         "general": "chảy máu"
     },
@@ -554,7 +600,9 @@
     {
         "distinct": [
             "viêm",
-            "ửng đỏ"
+            "ửng đỏ",
+            "viêm vai",
+            "viêm xoang mũi"
         ],
         "general": "viêm"
     },
@@ -572,7 +620,9 @@
     },
     {
         "distinct": [
-            "viêm hóa mủ"
+            "viêm hóa mủ",
+            "viêm mủ lỗ chân lông",
+            "mủ ở lỗ chân lông"
         ],
         "general": "viêm hóa mủ"
     },
@@ -639,7 +689,11 @@
     },
     {
         "distinct": [
-            "bướu"
+            "bướu",
+            "cục bướu",
+            "bướu hàm dưới",
+            "bướu cổ",
+            "bướu ống chân"
         ],
         "general": "bướu"
     },

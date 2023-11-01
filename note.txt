@@ -28,3 +28,5 @@
     - các triệu chứng có thuộc tính (hẹp, chật chội) nên để thêm từ nó phụ thuộc vào -> chuồng nuôi chật chội, ...
     - cải thiện thêm các triệu chứng dị dị (ít distinct)
     - thực phẩm + thức ăn + thêm các trường hợp đặc thù (uống nước ao tù, thực phẩm hết hạn, ôi thiu,...)
+    - đảm bảo chính tả
+    - tránh trùng các triệu chứng giữa các case khác nhau
