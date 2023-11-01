@@ -21,7 +21,7 @@
             "nôn mửa",
             "tiêu chảy",
             "rụng lông",
-            "phân thay đổi màu sắc và mùi."
+            "phân hôi thối"
            
         ],
         "treatments": [
@@ -45,22 +45,18 @@
             
         ],
         "symptoms": [
-            "hen nhẹ", 
-            "thở khò khè",
+            "khó thở",
             "hắt hơi", 
             "vảy mỏ",
             "kém ăn", 
-            "mệt mỏi",
-            "khó thở",
-            "há mỏ để thở", 
-            "thở đớp khí", 
+            "mệt mỏi", 
             "chết",
-            "gầy yếu", 
-            "lớn chậm", 
+            "sụt cân", 
             "lắc đầu",
             "sốt cao", 
-            "chảy nước mắt mũi", 
-            "sưng mặt"
+            "chảy nước mũi",
+            "chảy nước mắt",
+            "sưng | mặt"
         ],
         "treatments": [
             "Bước 1: Điều trị triệu chứng, hạ sốt, kháng viêm, tan đàm, thông hô hấp...\nSputumiz: thành phần gồm Bromhexine, Prenisolone, Mentha piperita (tinh dầu bạc hà). Sputumiz có tác dụng tan đàm dễ thở, kháng viêm, tăng hiệu quả của kháng sinh\nPara C: thành phần gồm Paracetamol, Vitamin C, Sodium Cloride, Postassium Cloride. Para C có tác dụng giảm đau, hạ sốt, tăng sức kháng bệnh.\n2: Dùng kháng sinh đặc trị gồm nhóm CEFTIOFUR, LINCOMYCIN+SPECTINOMYCIN hoặc DOXYCYCLINE tiêu diệt, kiềm hãm mầm bệnh:\nNASHER FUR: thành phần CEFTIOFUR\nĐường cấp: tiêm\nLiều cấp : 1 ml / 10kg gà ( gà có trọng lượng trên 1kg)\n               1 ml / 5kg gà ( gà có trọng lượng dưới 1kg)\nNhịp cấp: 1 lần/ngày.\nThời gian cấp: 1-2 ngày\nKết hợp với hoạt chất anpha chymotrypsin để tăng hiệu quả điều trị của kháng sinh\nSong song với tiêm, chúng ta cần sử dùng phối hợp với kháng sinh đường uống.\nLINCOSPECMYCIN - 110: thành phần LINCOMYCINE+SPECTINOMYCIN\nĐường cấp: Uống\nLiều cấp: 1gram / 10 kg gà\nNhịp cấp: 2 lần / ngày.\nThời gian cấp: 5-7 ngày\nhoặc\nGIUSE 20: thành phần DOXYCYCLINE\nĐường cấp: Uống\nLiều cấp: 1gram / 10 kg gà\nNhịp cấp: 2 lần / ngày.\nThời gian cấp: 5-7 ngày\nBước 3: Hỗ trợ điều trị.\nSử dụng các sản phẩm chuyên biệt giúp tăng sức đề kháng, giải độc gan thận.\nNOVITECH YL: tăng sức đề kháng, giải độc gan\nASCOREQUIL: sản phẩm giải độc gan chuyên biệt\nRENAL CLEANER: sản phẩm giải độc thận chuyên biệt\nTrường hợp thể trạng gà yếu và có biểu hiện gan thận quá xấu, chúng ta nên tăng cường hỗ trợ điều trị trước khi sử dụng kháng sinh."
@@ -82,14 +78,13 @@
             "chuồng trại kém vệ sinh"
         ],
         "symptoms": [
-            "kém ăn",
-            "bỏ ăn",
-            "viêm xoang mũi", 
+            "chán ăn",
+            "viêm | xoang mũi", 
             "chảy nước mũi",
-            "thở khò khè",
-            "viêm kết mạc mắt", 
+            "khó thở",
+            "viêm | kết mạc mắt", 
             "chảy nước mắt",
-            "sưng mặt", 
+            "sưng | mặt", 
             "mệt mỏi", 
             "chậm lớn", 
             "giảm đẻ"
@@ -117,13 +112,12 @@
         "symptoms": [
             "mệt mỏi", 
             "chậm chạp",
-            "phù nề | đầu", 
+            "phù | đầu", 
             "sưng | trán, mắt, cổ, da, hàm dưới",
-            "cục u nổi lên", 
             "bướu |  hàm dưới, cổ, hốc mắt, ống chân",
             "khó thở", 
-            "ăn uống khó", 
-            "gầy",
+            "chán ăn", 
+            "sụt cân",
             "chết",
             "giảm đẻ"
         ],
@@ -147,22 +141,19 @@
             
         ],
         "symptoms": [
-            "kém ăn", 
-            "thở khó",
-            "thở gấp", 
-            "mũi chảy nước",
+            "chán ăn", 
+            "khó thở",
+            "thở gấp",
+            "chảy nước mũi",
             "thân nhiệt tăng", 
             "mệt mỏi", 
             "phân hôi thối", 
-            "suy nhược nhanh",
+            "sụt cân",
             "co giật",
-            "viêm ruột", 
-            "chảy máu ruột", 
+            "viêm | ruột", 
             "tiêu chảy", 
             "bại liệt",
-            "kém ăn", 
             "khát nước",
-            "thân nhiệt tăng",
             "nằm chồng lên nhau"
         ],
         "treatments": [

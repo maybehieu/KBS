@@ -130,7 +130,11 @@
             "distinct": [
                 "khó thở",
                 "thở hổn hển",
-                "thở bằng miệng"
+                "thở bằng miệng",
+                "hen nhẹ",
+                "thở khò khè",
+                "há mỏ để thở",
+                "thở đớp khí"
             ],
             "general": "khó thở"
         },
@@ -147,7 +151,9 @@
                 "giảm cân",
                 "sụt kí",
                 "gầy",
-                "hao cân"
+                "hao cân",
+                "gầy yếu",
+                "suy nhược"
             ],
             "general": "sụt cân"
         },
@@ -174,14 +180,18 @@
             "distinct": [
                 "di chuyển bất thường",
                 "di chuyển bằng đầu gối",
-                "đi lại khó khăn"
+                "đi lại khó khăn",
+                "đi đứng xiêu vẹo",
+                "chậm chạp"
             ],
             "general": "di chuyển bất thường"
         },
         {
             "distinct": [
                 "thần kinh",
-                "nghiến răng lè lưỡi"
+                "nghiến răng lè lưỡi",
+                "điên cuồng",
+                "mắt đỏ ngầu"
             ],
             "general": "thần kinh"
         },
@@ -193,16 +203,27 @@
         },
         {
             "distinct": [
-                "tiêu chảy"
+                "tiêu chảy",
+                "phân lỏng như nước",
+                "phân tự động chảy ra ngoài"
             ],
             "general": "tiêu chảy"
         },
         {
             "distinct": [
                 "phân lạ",
-                "phân có chất nhầy và máu"
+                "phân có chất nhầy và máu",
+                "phân có máu"
             ],
-            "general": "phân có chất nhầy và máu"
+            "general": "phân có máu"
+        },
+        {
+            "distinct": [
+                "phân hôi thối",
+                "phân đen, thối khẳm",
+                "phân thay đổi màu sắc và mùi"
+            ],
+            "general": "phân hôi thối"
         },
         {
             "distinct": [
@@ -239,7 +260,8 @@
         {
             "distinct": [
                 "mụn nước",
-                "bọng nước"
+                "bọng nước",
+                "mụn nhọt"
             ],
             "general": "mụn nước"
         },
@@ -261,7 +283,8 @@
                 "viêm mí mắt",
                 "sưng mắt",
                 "viêm mắt",
-                "mắt đỏ"
+                "mắt đỏ",
+                "niêm mạc mắt tím bầm"
             ],
             "general": "viêm mắt"
         },
@@ -332,7 +355,8 @@
         },
         {
             "distinct": [
-                "bại liệt"
+                "bại liệt",
+                "nằm liệt"
             ],
             "general": "bại liệt"
         },
@@ -340,7 +364,8 @@
             "distinct": [
                 "bồn chồn",
                 "lo lắng",
-                "sợ sệt"
+                "sợ sệt",
+                "tỏ ra sợ hãi"
             ],
             "general": "bồn chồn"
         },
@@ -461,6 +486,116 @@
                 "khát nước"
             ],
             "general": "khát nước"
+        },
+        {
+            "distinct": [
+                "hố mắt trũng sâu"
+            ],
+            "general": "hố mắt trũng sâu"
+        },
+        {
+            "distinct": [
+                "khoé mắt có rử"
+            ],
+            "general": "khoé mắt có rử"
+        },
+        {
+            "distinct": [
+                "da khô"
+            ],
+            "general": "da khô"
+        },
+        {
+            "distinct": [
+                "lông xù"
+            ],
+            "general": "lông xù"
+        },
+        {
+            "distinct": [
+                "choáng váng"
+            ],
+            "general": "choáng váng"
+        },
+        {
+            "distinct": [
+                "thở kiểu Cheyne - Stokes"
+            ],
+            "general": "thở kiểu Cheyne - Stokes"
+        },
+        {
+            "distinct": [
+                "thân nhiệt tăng"
+            ],
+            "general": "thân nhiệt tăng"
+        },
+        {
+            "distinct": [
+                "đồng tử mắt mở rộng"
+            ],
+            "general": "đồng tử mắt mở rộng"
+        },
+        {
+            "distinct": [
+                "mất phản xạ"
+            ],
+            "general": "mất phản xạ"
+        },
+        {
+            "distinct": [
+                "hôn mê",
+                "bất tỉnh"
+            ],
+            "general": "hôn mê"
+        },
+        {
+            "distinct": [
+                "sùi bọt mép"
+            ],
+            "general": "sùi bọt mép"
+        },
+        {
+            "distinct": [
+                "viêm",
+                "ửng đỏ"
+            ],
+            "general": "viêm"
+        },
+        {
+            "distinct": [
+                "rụng lông"
+            ],
+            "general": "rụng lông"
+        },
+        {
+            "distinct": [
+                "tương dịch màu vàng trong suốt đọng lại"
+            ],
+            "general": "tương dịch màu vàng trong suốt đọng lại"
+        },
+        {
+            "distinct": [
+                "viêm hóa mủ"
+            ],
+            "general": "viêm hóa mủ"
+        },
+        {
+            "distinct": [
+                "nhiệt độ cục bộ tăng cao"
+            ],
+            "general": "nhiệt độ cục bộ tăng cao"
+        },
+        {
+            "distinct": [
+                "nhiễm trùng"
+            ],
+            "general": "nhiễm trùng"
+        },
+        {
+            "distinct": [
+                "mưng mủ"
+            ],
+            "general": "mưng mủ"
         }
     ],
     "poultry": [
@@ -548,6 +683,61 @@
                 "thực phẩm không phù hợp"
             ],
             "general": "thực phẩm không đảm bảo"
+        },
+        {
+            "distinct": [
+                "hắt hơi"
+            ],
+            "general": "hắt hơi"
+        },
+        {
+            "distinct": [
+                "vảy mỏ"
+            ],
+            "general": "vảy mỏ"
+        },
+        {
+            "distinct": [
+                "lắc đầu"
+            ],
+            "general": "lắc đầu"
+        },
+        {
+            "distinct": [
+                "chảy nước mũi"
+            ],
+            "general": "chảy nước mũi"
+        },
+        {
+            "distinct": [
+                "chảy nước mắt"
+            ],
+            "general": "chảy nước mắt"
+        },
+        {
+            "distinct": [
+                "chậm lớn"
+            ],
+            "general": "chậm lớn"
+        },
+        {
+            "distinct": [
+                "giảm đẻ",
+                "giảm sinh"
+            ],
+            "general": "giảm đẻ"
+        },
+        {
+            "distinct": [
+                "bướu"
+            ],
+            "general": "bướu"
+        },
+        {
+            "distinct": [
+                "nằm chồng lên nhau"
+            ],
+            "general": "nằm chồng lên nhau"
         }
     ]
 }

@@ -60,7 +60,7 @@
             "viêm mắt",
             "nôn mửa",
             "tiêu chảy",
-            "phân có chất nhầy và máu",
+            "phân có máu",
             "chết nhanh | 1-3",
             "sảy thai",
             "chết | 6-45"
@@ -303,7 +303,7 @@
             "chết nhanh",
             "mệt mỏi",
             "tiêu chảy",
-            "phân có chất nhầy và máu",
+            "phân có máu",
             "nước tiểu có máu",
             "chảy máu | mồm, mũi, mắt, cổ",
             "sưng | hầu, ngực",
@@ -338,25 +338,19 @@
             "mệt mỏi",
             "khát nước", 
             "sốt",
-            "mạch nhanh",
             "run rẩy",
             "vã mồ hôi",
             "chết rất nhanh",
             "thân nhiệt giảm",
-            "ỉa chảy nặng",
-            "phân lỏng như nước",
+            "tiêu chảy",
             "phân đen, thối khẳm",
-            "phân lẫn máu",
+            "phân có máu",
             "nôn mửa",
             "hố mắt trũng sâu",
             "khoé mắt có rử",
-            "niêm mạc mắt vàng",
             "da khô",
             "lông xù",
-            "phân tự động chảy ra ngoài",
-            "nằm liệt",
-            "hồng cầu tăng",
-            "hàm lượng hemoglobin tăng"
+            "nằm liệt"
         ],
         "treatments": [
             "Nguyên tắc điều trị: bổ sung nước, chất điện giải và tăng cường thể lực cho con vật. thải trừ chất chứa trong dạ dày, ruột, bảo vệ niêm mạc đường tiêu hoá, ức chế sự lên men để đề phòng trúng độc. \na. Hộ lý - Khi bệnh mới phát, cho gia súc nhịn ăn 1 - 2 ngày, sau đó cho ăn thức ăn dễ tiêu. Cho gia súc uống nước tự do (tốt nhất uống nước điện giải). - Thu dọn phân và chất thải, tẩy uế chuồng trại \nb. Dùng thuốc điều trị - Bổ sung nước và chất điện giải cho cơ thể: Dùng các dung dịch đẳng trương (Ringer lactat, dung dịch nước sinh lý, dung dịch glucoza đẳng trương,...). \n  Thải trừ chất chứa trong ruột: Dùng thuốc tẩy muối (magie sulfat, hoặc natri sulfat) \nDùng Natri bicarbonat 2% để thụt rửa ruột - Dùng thuốc bảo vệ niêm mạc ruột: Cho uống nước cháo gạo nếp (sau khi uống thuốc rửa ruột) mỗi lần 2 - 3 lít, ngày uống 3 - 4 lần, hoặc dùng Natri bromua 40 - 50g trộn vào cháo hoặc cho uống. \nTrong trường hợp ỉa chảy lâu ngày và không phải mắc bệnh truyền nhiễm, cho con vật uống tanin (ngựa, bò từ 5 - 20g, lợn từ 2 - 5g, chó từ 0,1 - 0,5g) hoà với nước cho uống. Hoặc dùng các cây có chứa chất chát như búp sim, búp ổi, quả hồng xiêm xanh sắc đặc cho uống. \nDùng thuốc để ức chế lên men trong dạ dày và ruột: cho uống Ichthyol (ngựa: 10 - 15g; trâu bò: 10 - 20g; lợn: 0,5 - 1g). \nDùng kháng sinh để diệt vi khuẩn bội nhiễm đường ruột: Có thể dùng một trong các loại kháng sinh: + Sulfaguanidin: đại gia súc 20 - 40g; dê cừu 1 - 3g; chó 0,5 - 1g. + Streptomycin: 20 - 30mg/kg TT. Cho uống ngày 2 lần. + Kanamycin: 20 - 30mg/kg TT. Cho uống ngày 2 lần. + Gentamycin: trâu bò 5 - 10mg/kg TT; lợn, chó 10mg/kg TT. Tiêm liên tục 3 - 4 ngày. + Neomycin: 25 - 50mg/kg TT. Cho uống ngày 1 lần + Enrofloxacin, Norcoli \nDùng thuốc giảm tiết dịch và co thắt dạ dày, ruột: + Dùng nước ấm thịt ruột. + Dùng atropin sunfat 0,1%: đại gia súc 10 - 15ml/con; tiểu gia súc 5 - 10ml/con; lợn, chó 1 - 3ml. Tiêm bắp ngày 1 lần."        ],
@@ -379,25 +373,21 @@
         ],
         "symptoms": [
             "choáng váng",
-            "đi đứng xiêu vẹo",
-            "niêm mạc mắt tím bầm",
+            "di chuyển bất thường",
+            "viêm mắt",
             "vã mồ hôi",
             "nôn mửa",
-            "điên cuồng",
-            "tỏ ra sợ hãi",
-            "mắt đỏ ngầu",
-            "mạch nhanh và yếu",
+            "thần kinh",
+            "bồn chồn",
             "khó thở",
-            "đi không vững",
             "thở kiểu Cheyne - Stokes",
-            "Thân nhiệt tăng",
+            "thân nhiệt tăng",
             "da khô",
             "đồng tử mắt mở rộng",
             "mất phản xạ",
             "run rẩy",
             "co giật",
-            "chết",
-            "xuất huyết | nội, ngoại tâm mạc, phổi"
+            "chết"
         ],
         "treatments": [
             "Đưa ngay con vật vào chỗ râm mát và thoáng khí.\nChườm nước lạnh lên vùng đầu của gia súc để làm giảm hiện tượng sung huyết não. Sau đó dội nước lạnh toàn thân.\nCó thể thụt nước lạnh vào trực tràng để làm giảm nhiệt độ của cơ thể.\nTăng cường tuần hoàn và hô hấp cho cơ thể:\nTiêm dưới da cafein 20%:\nTrâu, bò, ngựa: 2 - 4 gam\nDê, cừu, lợn: 0,5 - 1 gam\nChó: 0,1 - 0,2 gam\nNếu não bị sung huyết nặng thì phải trích máu ở tĩnh mạch cổ.\nCho uống thuốc hạ sốt: pyramidon, paracetamon...\nXoa bóp toàn thân cho máu lưu thông để chống sung huyết não.\nTrợ sức, trợ lực bằng glucoza 20 - 40%, tiêm vào tĩnh mạch cho gia súc."
@@ -413,7 +403,7 @@
         ],
         "description": "Bệnh xảy ra khi gia súc sống trong điều kiện khí hậu nóng, khô hoặc ẩm ướt, làm cho quá trình thải nhiệt của cơ thể giảm, gây rối loạn trung khu điều hoà thân nhiệt. Bệnh thường phát ra cùng với bệnh cảm nắng.",
         "causes": [
-            "Gia súc quá béo hoặc lông quá dầy dễ mắc bệnh này."
+            "Gia súc quá béo hoặc lông quá dầy dễ mắc bệnh này"
         ],
         "envfactors": [
             "nhiệt độ cao",
@@ -424,21 +414,16 @@
             "khó thở",
             "vã mồ hôi",
             "mệt mỏi",
-            "niêm mạc tím bầm",
+            "viêm mắt",
             "tim đập nhanh",
-            "mạch nẩy",
             "thân nhiệt tăng",
-            "cơ nhai và cơ môi co giật",
+            "co giật | cơ nhai và cơ môi",
             "nôn mửa",
-            "điên cuồng", 
+            "thần kinh", 
             "đồng tử mắt mở rộng", 
-            "co giật", 
             "hôn mê",
             "chết",
-            "sùi bọt mép",
-            "máu khó đông",
-            "sung huyết | não, màng não, phổi"
-
+            "sùi bọt mép"
         ],
         "treatments": [
             "Để gia súc ở nơi yên tĩnh và thoáng mát, tăng cường thoát nhiệt cho cơ thể. Chú ý để phòng tê liệt trung khu thần kinh.\nDùng nước lạnh đắp lên đầu và dội toàn thân cho gia súc.\nTiếp dung dịch nước sinh lý, dung dịch glucoza vào tĩnh mạch để bổ sung nước cho con vật.\nTiêm thuốc trợ tim: cafein, long não vào dưới da cho con vật.\nTrường hợp mạch quá căng ta phải trích huyết ở tĩnh mạch cổ."
@@ -460,22 +445,16 @@
             
         ],
         "symptoms": [
-            "viêm nhẹ | vai",
-            "thượng bì của da bị bong ra",
+            "viêm | vai",
+            "da bị bong ra",
             "rụng lông",
-            "thượng bì bong có màu đỏ thẫm", 
-            "có dịch thẩm suất thể tương dịch màu vàng trong suốt đọng lại thành giọt như giọt sương",
-            "lỗ chân lông bị viêm hóa mủ", 
-            "mụn nhọt",
-            "viêm hóa mủ",
-            "viêm nhiễm trầm trọng",
-            "Nhiệt độ cục bộ tăng cao", 
-            "tổ chức cục bộ sưng to", 
-            "nhiễm trùng hóa mủ",
-            "hình thành áp xe",
-            "mủ tích tụ trong bọc tạo thành lỗ dò", 
-            "mủ chảy ra rất hôi thối"
-
+            "tương dịch màu vàng trong suốt đọng lại",
+            "viêm hóa mủ | lỗ chân lông", 
+            "mụn nước",
+            "nhiệt độ cục bộ tăng cao", 
+            "sưng", 
+            "nhiễm trùng",
+            "mưng mủ"
         ],
         "treatments": [
             "Trường hợp da ở vùng vai con vật bị sây sát, làm cho lớp biểu bì bong ra ta có thể dùng dung dịch Gentian violet hoặc Bleu methylen 2% trong cồn 90 để bôi lên vùng bệnh cho con vật.\nNếu vùng bệnh đã hình thành mụn nhọt, áp xe, lỗ dò thì điều trị theo cách điều trị các bệnh trên (xem phần điều trị mụn nhọt, áp xe, lỗ dò)."
