@@ -68,20 +68,25 @@
         },
         {
             "distinct": [
-                "chuồng chại kém vệ sinh",
+                "chuồng trại kém vệ sinh",
                 "chuồng trại bẩn",
                 "chuồng trại không dọn dẹp",
                 "chuồng trại bừa bãi",
                 "chuồng trại ẩm ướt"
             ],
-            "general": "chuồng chại kém vệ sinh"
+            "general": "chuồng trại kém vệ sinh"
         },
         {
             "distinct": [
                 "thực phẩm không đảm bảo",
                 "thực phẩm kém",
                 "thực phẩm bẩn",
-                "thực phẩm không phù hợp"
+                "thực phẩm không phù hợp",
+                "thức ăn không đảm bảo",
+                "thức ăn kém",
+                "thức ăn bẩn",
+                "thức ăn không phù hợp",
+                "nước ao tù"
             ],
             "general": "thực phẩm không đảm bảo"
         },
@@ -109,7 +114,8 @@
         {
             "distinct": [
                 "mệt mỏi",
-                "ủ rũ"
+                "ủ rũ",
+                "uể oải"
             ],
             "general": "mệt mỏi"
         },
@@ -122,20 +128,26 @@
         },
         {
             "distinct": [
-                "khó thở"
+                "khó thở",
+                "thở hổn hển",
+                "thở bằng miệng"
             ],
             "general": "khó thở"
         },
         {
             "distinct": [
-                "sốt"
+                "sốt",
+                "không sốt"
             ],
             "general": "sốt"
         },
         {
             "distinct": [
                 "sụt cân",
-                "giảm cân"
+                "giảm cân",
+                "sụt kí",
+                "gầy",
+                "hao cân"
             ],
             "general": "sụt cân"
         },
@@ -161,7 +173,8 @@
         {
             "distinct": [
                 "di chuyển bất thường",
-                "di chuyển bằng đầu gối"
+                "di chuyển bằng đầu gối",
+                "đi lại khó khăn"
             ],
             "general": "di chuyển bất thường"
         },
@@ -205,7 +218,8 @@
         },
         {
             "distinct": [
-                "chết rất nhanh"
+                "chết rất nhanh",
+                "đột tử"
             ],
             "general": "chết rất nhanh"
         },
@@ -217,7 +231,8 @@
         },
         {
             "distinct": [
-                "chảy dãi"
+                "chảy dãi",
+                "có nước dãi"
             ],
             "general": "chảy dãi"
         },
@@ -392,7 +407,6 @@
             "distinct": [
                 "cử động khó khăn",
                 "cử động cứng ngắc",
-                "đi lại khó khăn",
                 "di chuyển khó khăn"
             ],
             "general": "cử động khó khăn"
@@ -405,7 +419,8 @@
         },
         {
             "distinct": [
-                "sưng"
+                "sưng",
+                "sưng tấy"
             ],
             "general": "sưng"
         },
@@ -446,90 +461,6 @@
                 "khát nước"
             ],
             "general": "khát nước"
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
-        },
-        {
-            "distinct": [
-                ""
-            ],
-            "general": ""
         }
     ],
     "poultry": [
