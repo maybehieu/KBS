@@ -300,13 +300,37 @@ class DiseasesDiagnosis:
         
         # thực hiện hỏi yếu tố môi trường
         print(f'Đầu tiên hãy bắt đầu với các yếu tố môi trường xung quanh vật nuôi của bạn')
-        weather_in = input(f'Thời tiết tại chỗ bạn đang như thế nào? (bình thường, thất thường, thay đổi,...) ')
-        
+        self.get_envfac(f'Thời tiết tại chỗ bạn đang như thế nào? (bình thường, thất thường, thay đổi,...)')
+        self.get_envfac('Nhiệt độ xung quanh khu vực chuồng của vật nuôi trong thời gian gần nhất như thế nào? (cao, thấp, thất thường,...)')
+        self.get_envfac('Điều kiện chuồng nuôi của con vật hiện tại như thế nào? (sạch sẽ, bẩn, chật hẹp, ...)')
+        self.get_envfac('Thức ăn của con vật có đảm bảo không? (uống nước ao tù, thức ăn để lâu, thức ăn công nghiệp, ...)')
         # thực hiện hỏi triệu chứng
-
+        self.get_symp('Con vật có dấu hiệu uể oải, khác so với ngày thường không? (bình thường, năng động, uể oải, ủ rũ, ...)')
+        self.get_symp('Con vật có dấu hiệu bất thường gì có thể nhìn được bằng mắt thường không? (chấm đỏ trên da, mắt đỏ, sổ mũi, ...)')
+        self.get_symp('Con vật có ăn uống như bình thường không? (chán ăn, ăn bình thường, ...)')
+        self.get_symp('Con vật có triệu chứng sốt không? (không, sốt nhẹ, sốt cao, sốt li bì, ...)')
         # thực hiện tính toán tìm case
 
         # tiền xử lý
+
+
+    def get_envfac(self, msg=''):
+        weather_in = input(msg + ' ')
+        # tách dữ liệu đầu vào nếu cần
+        weather_in = weather_in.split(';')
+        for data in weather_in:
+            weather_get = self.find_symenv_tfidf_based(data)
+            print(f'debug: người dùng nhập "{weather_in}", hệ thống trả về "{weather_get}"')
+            self.current_envfacs += weather_get
+
+    def get_symp(self, msg=''):
+        symp_in = input(msg)
+        # tách dữ liệu đầu vào nếu cần
+        symp_in = symp_in.split(';')
+        for data in symp_in:
+            symp_out = self.find_symenv_tfidf_based(data)
+            print(f'debug: người dùng nhập "{symp_in}", hệ thống trả về "{symp_out}"')
+            self.current_envfacs += symp_out
 
     def check_species_db(self, inp=""):
         if inp in self.cattle_species:
