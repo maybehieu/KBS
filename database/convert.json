@@ -302,9 +302,10 @@
     {
         "distinct": [
             "nốt viêm loét hoại tử da",
-            "mụn loét đỏ"
+            "mụn loét đỏ",
+            "viêm loét"
         ],
-        "general": "nốt viêm loét hoại tử da"
+        "general": "viêm loét"
     },
     {
         "distinct": [
