@@ -478,8 +478,7 @@
             "sưng tấy",
             "sưng má",
             "sưng hầu",
-            "sưng ngực",
-            "sưng mắt"
+            "sưng ngực"
         ],
         "general": "sưng"
     },
@@ -571,6 +570,12 @@
             "thân nhiệt tăng"
         ],
         "general": "thân nhiệt tăng"
+    },
+    {
+        "distinct": [
+            "thân nhiệt tăng"
+        ],
+        "general": "thân nhiệt giảm"
     },
     {
         "distinct": [
@@ -702,5 +707,12 @@
             "nằm chồng lên nhau"
         ],
         "general": "nằm chồng lên nhau"
+    },
+    {
+        "distinct":[
+            "yếu ớt",
+            "yếu đuối"
+        ],
+        "general": "yếu ớt"
     }
 ]

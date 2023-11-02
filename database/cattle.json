@@ -85,13 +85,8 @@
         "symptoms": [
             "sốt cao",
             "chảy dãi",
-<<<<<<< HEAD
             "mụn nước",
             "viêm loét",
-=======
-            "mụn nước | móng chân, bàn chân, kẽ móng",
-            "viêm loét | móng chân, bàn chân, kẽ móng",
->>>>>>> a68522d53063e5d5bd33c08cc53a597b5c51ead0
             "mệt mỏi",
             "chán ăn",
             "di chuyển bất thường",
@@ -131,11 +126,7 @@
             "khó thở",
             "tim đập nhanh",
             "da đổi màu",
-<<<<<<< HEAD
             "viêm loét",
-=======
-            "viêm loét | lưng, hai bên vai, mông và chân",
->>>>>>> a68522d53063e5d5bd33c08cc53a597b5c51ead0
             "da vảy nâu, dễ bong tróc",
             "da bị tím tái",
             "đi lại khó khăn",
@@ -195,7 +186,7 @@
         ],
         "envfactors": [],
         "symptoms": [
-            "sốt",
+            "sốt cao",
             "mệt mỏi",
             "chán ăn",
             "tim đập nhanh",
@@ -235,7 +226,8 @@
             "khó thở",
             "thở gấp",
             "tim đập nhanh",
-            "chết"
+            "chết",
+            "gõ vùng dạ cỏ thấy âm trống"
         ],
         "treatments": [
             "Nguyên tắc điều trị: Tìm mọi biện pháp làm thoát hơi trong dạ cỏ, ức chế hiện tượng lên men, tăng cường nhu động dạ cỏ đồng thời chú ý trợ tim, trợ sức cho con vật. Thoát hơi trong dạ cỏ:\nDùng rơm chà sát vùng dạ cỏ, mỗi lần chà sát khoảng 20 phút, ngày chà sát 3 - 4 lần để kích thích nhu động dạ cỏ.\nCho gia súc đứng ở tư thế lên dốc để dễ thở và dội nước lạnh vào nửa thân sau để kích thích nhu động dạ cỏ.\nDùng tay kéo lưỡi ra nhịp nhàng để kích thích ợ hơi.\nDùng nõn chuối đưa vào họng để kích thích ợ hơi.\nThụt nước ấm vào trực tràng để kích thích trung tiện.\nDùng ống thông dạ dày để thoát hơi ra.\nỨc chế sự lên men sinh hơi trong dạ cỏ.\nDùng NH4OH 15 ml hoặc axit lactic 10 - 15 ml pha vào nước cho uống.\nDùng 100 - 200 ml cồn hoà với vài củ tỏi giã nhỏ và với 500 ml nước, cho gia súc uống.\nDùng MgSO4 hoặc Na2SO4: 200-300 gam hòa nhiều nước, cho uống 1 lần\nNếu bệnh nặng, hơi không thoát ra được ta phải dùng troca chọc vào dạ cỏ để làm thoát hơi ra"
@@ -440,7 +432,7 @@
             "tương dịch màu vàng trong suốt đọng lại",
             "viêm hóa mủ",
             "mụn nước",
-            "nhiệt độ cục bộ tăng cao",
+            "thân nhiệt tăng",
             "sưng",
             "nhiễm trùng",
             "mưng mủ"
