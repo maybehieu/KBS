@@ -12,20 +12,20 @@
            
         ],
         "envfactors": [
-            
+            "Môi trường Ẩm Ướt",
+            "Chất Thải và Phân Gà Tập Trung",
+            "Môi Trường Ô Nhiễm",
+            "Thức ăn không sạch"
         ],
         "symptoms": [
-            "Mệt mỏi và yếu đuối.",
-            "Thay đổi lối ăn: Gà có thể từ chối ăn hoặc ăn ít hơn.",
-            "Nôn mửa hoặc tiêu chảy.",
-            "Ngoại trừ hoặc tụt lông không bình thường.",
-            "Phân có thể bị thay đổi màu sắc và mùi."
+            "- Mệt mỏi và yếu đuối. - Thay đổi lối ăn: Gà có thể từ chối ăn hoặc ăn ít hơn. - Nôn mửa hoặc tiêu chảy. - Ngoại trừ hoặc tụt lông không bình thường. - Phân có thể bị thay đổi màu sắc và mùi."
            
         ],
         "treatments": [
             "Điều trị bệnh ngộ độc do mặn, hoá chất, nấm mốc cần được tiến hành dưới sự hướng dẫn của một bác sĩ thú y.\n - Thay đổi thức ăn để hạn chế tiếp xúc với mặn, hoá chất hoặc aflatoxin.\n - Hỗ trợ chức năng gan và dạ dày của gà bằng cách sử dụng thuốc được chỉ định bởi bác sĩ thú y.\n - Cung cấp chế độ chăm sóc tốt và duy trì vệ sinh sạch sẽ.\n Lưu ý rằng việc ngăn ngừa tốt hơn là điều quan trọng nhất để tránh bệnh ngộ độc này. Đảm bảo rằng thức ăn và nguồn nước cho gà không bị nhiễm mặn, hoá chất, hoặc nấm mốc là điều quan trọng để bảo vệ sức khỏe của đàn gà."
         ],
         "prevention": [ 
+            "Vệ Sinh Chuồng Trại: Giữ cho chuồng trại luôn sạch sẽ và khô ráo. Định kỳ làm vệ sinh chuồng, loại bỏ phân và các chất thải hữu cơ. Tránh để phân và chất thải gây ô nhiễm môi trường.\nQuản Lý Thức Ăn và Nước Uống: Đảm bảo rằng gà được cung cấp thức ăn sạch sẽ và không nhiễm bệnh. Sử dụng thức ăn chất lượng tốt và tránh cho gà ăn từ nguồn không rõ nguồn gốc. Đảm bảo nước uống cho gà là sạch sẽ và an toàn.\nKiểm Soát Côn Trùng và Động Vật Gần Gũi: Tiêu diệt côn trùng như muỗi, ve, châu chấu, v.v., để ngăn chặn chúng làm vật trung gian lây truyền bệnh. Ngăn chặn sự tiếp xúc với các động vật hoang dã có thể mang theo vi khuẩn hoặc tác nhân gây nhiễm trùng.\nTiêm Phòng và Sức Khỏe: Tuân thủ chương trình tiêm phòng định kỳ dựa trên hướng dẫn của bác sĩ thú y. Theo dõi sức khỏe của gà thường xuyên để phát hiện sớm các dấu hiệu của bệnh và xử lý kịp thời.\nGiữ Gìn Vệ Sinh Cá Nhân: Đeo bảo hộ và rửa tay thường xuyên khi tiếp xúc với gà, đặc biệt khi có các vết thương trên tay.\nQuản Lý Đàn Gà: Tách riêng gà mắc bệnh hoặc có dấu hiệu nhiễm trùng để ngăn chặn sự lây lan trong đàn. Giữ khoảng cách an toàn giữa các đàn gà để ngăn chặn lây nhiễm.\nKiểm Soát Môi Trường: Giữ cho môi trường sống của gà khô ráo và thoáng mát. Tránh các tình huống gây căng thẳng cho gà, vì căng thẳng có thể làm giảm hệ miễn dịch và tăng nguy cơ nhiễm bệnh"          
         ]
     },
     {
@@ -41,10 +41,11 @@
             
         ],
         "envfactors": [
-            
+            "Chất Lượng Không Tốt của Chuồng Trại: Chuồng trại không sạch sẽ, ẩm ướt, và không được làm vệ sinh định kỳ tạo điều kiện cho vi khuẩn ORT phát triển.",
+            "Quản Lý Thức Ăn và Nước Uống: Sử dụng thức ăn và nước uống không đảm bảo vệ sinh có thể chứa vi khuẩn ORT. Nước uống nếu không được lọc hoặc không đủ sạch sẽ cũng có thể là nguồn lây nhiễm"
         ],
         "symptoms": [
-            "ORT là bệnh hô hấp cấp tính, thời gian nung bệnh ngắn, 1 – 3 ngày.\nGiai đoạn đầu thường chỉ thấy gà bệnh có triệu chứng hen nhẹ, thở khò khè và đôi lúc hắt hơi, vảy mỏ.\nBệnh tiến triển rất nhanh, sau 1 – 2 ngày thấy gà giảm ăn, ủ rũ và ngày càng khó thở.\nÐặc biệt ở giai đoạn này có thể quan sát thấy gà bệnh há mỏ để thở, thở đớp khí, có tiếng rít và ngáp.\nSở dĩ gà có triệu chứng này là do bên trong khí quản và hai phế quản gốc có cục mủ bít kín khiến đường hô hấp hẹp đi nhiều, gây khó thở, dẫn tới chết.\nTỷ lệ mắc của bệnh ORT rất cao, 50 – 100%, tỷ lệ chết thường là 5 – 20%.\nThiệt hại chủ yếu do bệnh gây ra là làm cho gà gầy yếu, lớn chậm, tỷ lệ đồng đều kém, tăng cao tỷ lệ loại thải và chi phí chăn nuôi.\nBệnh thường ghép với một số bệnh khác như: Newcastle (gà rù), E.coli, CRD… làm biểu hiện của bệnh càng trầm trọng.\nGà khó thở, rướn cổ thở, ngáp gió, ho, lắc đầu, vẩy mỏ, khẹc, …\nGà sốt rất cao, ủ rũ, giảm ăn.\nChảy nước mắt mũi, sưng mặt."
+            "ORT là bệnh hô hấp cấp tính, thời gian nung bệnh ngắn, 1 – 3 ngày. Giai đoạn đầu thường chỉ thấy gà bệnh có triệu chứng hen nhẹ, thở khò khè và đôi lúc hắt hơi, vảy mỏ. Bệnh tiến triển rất nhanh, sau 1 – 2 ngày thấy gà giảm ăn, ủ rũ và ngày càng khó thở. Ðặc biệt ở giai đoạn này có thể quan sát thấy gà bệnh há mỏ để thở, thở đớp khí, có tiếng rít và ngáp. Sở dĩ gà có triệu chứng này là do bên trong khí quản và hai phế quản gốc có cục mủ bít kín khiến đường hô hấp hẹp đi nhiều, gây khó thở, dẫn tới chết. Tỷ lệ mắc của bệnh ORT rất cao, 50 – 100%, tỷ lệ chết thường là 5 – 20%. Thiệt hại chủ yếu do bệnh gây ra là làm cho gà gầy yếu, lớn chậm, tỷ lệ đồng đều kém, tăng cao tỷ lệ loại thải và chi phí chăn nuôi. Bệnh thường ghép với một số bệnh khác như: Newcastle (gà rù), E.coli, CRD… làm biểu hiện của bệnh càng trầm trọng. Gà khó thở, rướn cổ thở, ngáp gió, ho, lắc đầu, vẩy mỏ, khẹc, … Gà sốt rất cao, ủ rũ, giảm ăn. Chảy nước mắt mũi, sưng mặt."
         ],
         "treatments": [
             "Bước 1: Điều trị triệu chứng, hạ sốt, kháng viêm, tan đàm, thông hô hấp...\nSputumiz: thành phần gồm Bromhexine, Prenisolone, Mentha piperita (tinh dầu bạc hà). Sputumiz có tác dụng tan đàm dễ thở, kháng viêm, tăng hiệu quả của kháng sinh\nPara C: thành phần gồm Paracetamol, Vitamin C, Sodium Cloride, Postassium Cloride. Para C có tác dụng giảm đau, hạ sốt, tăng sức kháng bệnh.\n2: Dùng kháng sinh đặc trị gồm nhóm CEFTIOFUR, LINCOMYCIN+SPECTINOMYCIN hoặc DOXYCYCLINE tiêu diệt, kiềm hãm mầm bệnh:\nNASHER FUR: thành phần CEFTIOFUR\nĐường cấp: tiêm\nLiều cấp : 1 ml / 10kg gà ( gà có trọng lượng trên 1kg)\n               1 ml / 5kg gà ( gà có trọng lượng dưới 1kg)\nNhịp cấp: 1 lần/ngày.\nThời gian cấp: 1-2 ngày\nKết hợp với hoạt chất anpha chymotrypsin để tăng hiệu quả điều trị của kháng sinh\nSong song với tiêm, chúng ta cần sử dùng phối hợp với kháng sinh đường uống.\nLINCOSPECMYCIN - 110: thành phần LINCOMYCINE+SPECTINOMYCIN\nĐường cấp: Uống\nLiều cấp: 1gram / 10 kg gà\nNhịp cấp: 2 lần / ngày.\nThời gian cấp: 5-7 ngày\nhoặc\nGIUSE 20: thành phần DOXYCYCLINE\nĐường cấp: Uống\nLiều cấp: 1gram / 10 kg gà\nNhịp cấp: 2 lần / ngày.\nThời gian cấp: 5-7 ngày\nBước 3: Hỗ trợ điều trị.\nSử dụng các sản phẩm chuyên biệt giúp tăng sức đề kháng, giải độc gan thận.\nNOVITECH YL: tăng sức đề kháng, giải độc gan\nASCOREQUIL: sản phẩm giải độc gan chuyên biệt\nRENAL CLEANER: sản phẩm giải độc thận chuyên biệt\nTrường hợp thể trạng gà yếu và có biểu hiện gan thận quá xấu, chúng ta nên tăng cường hỗ trợ điều trị trước khi sử dụng kháng sinh."
@@ -66,12 +67,7 @@
             "Các yếu tố như quản lý kém về vệ sinh chuồng trại, tiếp xúc với các gà bị nhiễm bệnh, và áp lực môi trường có thể tạo điều kiện cho bệnh CRD phát triển."
         ],
         "symptoms": [
-            "Gà ăn ít: Nói chung gà đã mắc bệnh CRD hay là bệnh nào thì cũng đều giảm ăn, thậm chí bỏ ăn.",
-            "Viêm xoang mũi, chảy nước mũi: Đây là triệu chứng điển hình của bệnh CRD, bởi bản chất của bệnh CRD là vấn đề về hô hấp.",
-            "Thở khò khè: Khi phế quản có vấn đề thi thở khó khè là biểu hiện đầu tiên của bệnh CRD",
-            "Viêm kết mạc mắt, chảy nước mắt: Đây là triệu chứng khác biệt so với bệnh về hô hấp khác, do vậy khi thấy có triệu chứng này kèm theo sẽ chuẩn đoán bệnh CRD chính xác hơn.",
-            "Sưng mặt, ủ rũ, chậm lớn, gà giảm đẻ, tỷ lệ nở kém: Đây là các biểu hiện có tính chung chung, các bệnh về đường hô hấp khác đều thấy có."
-
+            "Gà ăn ít: Nói chung gà đã mắc bệnh CRD hay là bệnh nào thì cũng đều giảm ăn, thậm chí bỏ ăn. Viêm xoang mũi, chảy nước mũi: Đây là triệu chứng điển hình của bệnh CRD, bởi bản chất của bệnh CRD là vấn đề về hô hấp. Thở khò khè: Khi phế quản có vấn đề thi thở khó khè là biểu hiện đầu tiên của bệnh CRD Viêm kết mạc mắt, chảy nước mắt: Đây là triệu chứng khác biệt so với bệnh về hô hấp khác, do vậy khi thấy có triệu chứng này kèm theo sẽ chuẩn đoán bệnh CRD chính xác hơn. Sưng mặt, ủ rũ, chậm lớn, gà giảm đẻ, tỷ lệ nở kém: Đây là các biểu hiện có tính chung chung, các bệnh về đường hô hấp khác đều thấy có."
         ],
         "treatments": [
             "Sử dụng kháng sinh trộn: sử dụng các loại thuốc được thú ý chỉ định với liều lượng hợp lý trộn cùng với thức ăn của gà. Hoặc có thể dùng kháng sinh tiêm trong trường hợp bệnh nặng có ghép vi khuẩn cơ hội gây C.CRD\nPha nước cho uống:\nUniflox: 1ml/5-10kg thể trọng, ngày 1 lần, liên tục 5 – 7 ngày\nGiuse 200: 1g/10 – 20kg thể trọng, ngày 2 lần, liên tục 5 – 7 ngày\nTiêm bắp:\nUnispectin 15: 1ml/5kg thể trọng, ngày 1 lần, tiêm bắp liên tục 3 - 5 ngày\nKết hợp hỗ trợ khi có triệu chứng khó thở\nSputumiz: 1ml/1lít nước/5 kg thể trọng, uống liên tục 3 ngày.\nTăng cường dinh dưỡng và sức kháng bệnh\nVitamin AD3ECK: 1ml/5lít nước/25kg thể trọng, uống liên tục 3 ngày\nHoặc Anivitamino:  1g/5lít nước/25 kg thể trọng, uống liên tục 3 ngày"
@@ -90,17 +86,19 @@
             "Bệnh do ký sinh trùng Avioserpen Taiwana gây ra. Đây là một loại ký sinh trùng khu trú dưới da cổ, hầu, đùi… của vịt tạo thành các khối u. Hình dạng của chúng giống như những sợi chỉ nhỏ dài khoảng 1,2 - 8 cm, ngang khoảng 0,08 - 0,15 mm, đằng trước và đằng sau thu nhỏ. Giun chỉ ký sinh trong mô dưới da, tập trung ở vùng dưới hai hàm dưới và gây viêm tạo thành các tổ chức với các mô xung quanh thành thực quản và dày lên như một khối u. Với mắt thường ta cũng dễ dàng quan sát thấy từ xa hoặc dùng tay nắn khu vực vùng giữa hai hàm dưới ta cũng có thể thấy cục cứng, có khi chúng chiếm hết cả vùng hầm dưới xuống đến cổ. "
         ],
         "envfactors": [
-            
+            "Môi Trường Ẩm Ướt và Ô Nhiễm: Môi trường nuôi gà ẩm ướt, có nhiều phân và chất thải hữu cơ, cùng với sự ô nhiễm từ phân gà và nước uống bẩn có thể tạo điều kiện lý tưởng cho sự phát triển của giun sán.",
+            "Thức Ăn Ô Nhiễm: Sử dụng thức ăn bẩn hoặc ô nhiễm, đặc biệt là thức ăn chứa phân hoặc các chất hữu cơ không được xử lý đúng cách, có thể chứa trữ trứng giun sán.",
+            "Không Duy Trì Vệ Sinh Chuồng Trại Đúng Cách: Không làm vệ sinh chuồng trại định kỳ và không loại bỏ phân gà một cách sạch sẽ cũng là yếu tố góp phần vào việc phát triển của giun sán."
         ],
         "symptoms": [
-            "Khi mới phát bệnh vịt có triệu chứng uể oải, chậm chạp và có những biểu hiện phù nề vùng đầu, sưng vùng trán, mắt, sau đó lan dần tới cổ, các bộ phận dưới da, hàm dưới chỗ cuống lưỡi. Sau đó trên da thấy có nhiều cục u nổi lên, chúng to dần tạo thành bướu, lúc đầu các u bướu xuất hiện đầu tiên ở hàm dưới, cổ, tiếp theo là ở hốc mắt, ống chân và một số vị trí khác trên cơ thể. Do các bướu ở hầu, cổ, hốc mắt cứ to dần nên thủy cầm khó thở, ăn uống khó, đi lại chậm chạp và gầy. ",
-            "Nếu bệnh xảy ra trên đàn vịt nhỏ, khối u to, rõ, trên diện rộng thì tỷ lệ chết sẽ cao. Đối với đàn vịt lớn hơn, mức độ khối u vừa phải cùng với sự can thiệp kịp thời thì tỷ lệ chết sẽ ít hơn. Với loại vịt choai đã lớn, có sức đề kháng tốt, các khối u có thể tự teo đi, tự khỏi bệnh, tuy nhiên mức độ sinh trưởng sẽ kém so với vịt cùng lứa không nhiễm bệnh."
+            "Khi mới phát bệnh vịt có triệu chứng uể oải, chậm chạp và có những biểu hiện phù nề vùng đầu, sưng vùng trán, mắt, sau đó lan dần tới cổ, các bộ phận dưới da, hàm dưới chỗ cuống lưỡi. Sau đó trên da thấy có nhiều cục u nổi lên, chúng to dần tạo thành bướu, lúc đầu các u bướu xuất hiện đầu tiên ở hàm dưới, cổ, tiếp theo là ở hốc mắt, ống chân và một số vị trí khác trên cơ thể. Do các bướu ở hầu, cổ, hốc mắt cứ to dần nên thủy cầm khó thở, ăn uống khó, đi lại chậm chạp và gầy. Nếu bệnh xảy ra trên đàn vịt nhỏ, khối u to, rõ, trên diện rộng thì tỷ lệ chết sẽ cao. Đối với đàn vịt lớn hơn, mức độ khối u vừa phải cùng với sự can thiệp kịp thời thì tỷ lệ chết sẽ ít hơn. Với loại vịt choai đã lớn, có sức đề kháng tốt, các khối u có thể tự teo đi, tự khỏi bệnh, tuy nhiên mức độ sinh trưởng sẽ kém so với vịt cùng lứa không nhiễm bệnh."
         ],
         "treatments": [
             "Cách chữa bệnh giun chỉ ở vịt rất đơn giản mà hiệu quả lại cao là tiêm vào ổ ký sinh trùng mỗi con 2ml dung dịch thuốc tím KmnO4 0,5%; dung dịch Iodine 1% hoặc dung dịch Natri Chloride NaCl 5%.\nKý sinh trùng sẽ chết và nốt sưng sẽ biến mất sau 7-10 ngày.\nCó thể chữa bằng các loại thuốc tẩy giun tròn thông thường khác như Mebendzol 10% dùng với liều 1g thuốc dùng cho 2kg thể trọng.\nLevamysol 7,5% tiêm dưới da 1ml/2kg thể trọng. Chích xung quanh túi giun hoặc tiêm thẳng vào ổ ký sinh trùng 1-2ml/con.\nCách chữa trị theo kinh nghiệm dân gian là mổ loại bỏ khối u và bóc tách hết tất cả ký sinh trùng, sau đó sát trùng tốt vết thương bằng các loại thuốc sát trùng và bột kháng sinh."
 
         ],
         "prevention": [ 
+            "Vệ Sinh Chuồng Trại: Giữ cho chuồng trại luôn sạch sẽ và khô ráo.\nĐịnh kỳ làm vệ sinh chuồng, loại bỏ phân và các chất thải hữu cơ.\nTránh để phân gà chất lởm vào chuồng.\nKiểm Soát Thức Ăn và Nước Uống: Đảm bảo vịt được cung cấp thức ăn sạch sẽ và không nhiễm bệnh.\nSử dụng thức ăn chất lượng tốt và tránh cho vịt ăn từ nguồn không rõ nguồn gốc.\nĐảm bảo nước uống cho vịt là sạch sẽ và an toàn.\nKiểm Soát Côn Trùng và Động Vật Gần Gũi: Tiêu diệt côn trùng như muỗi, ve, châu chấu để ngăn chặn chúng làm vật trung gian lây truyền bệnh.\nNgăn chặn sự tiếp xúc với các động vật gần gũi có thể mang theo giun sán.\nTiêm Phòng và Sức Khỏe: Tuân thủ chương trình tiêm phòng định kỳ dựa trên hướng dẫn của bác sĩ thú y.\nTheo dõi sức khỏe của vịt thường xuyên để phát hiện sớm các dấu hiệu của bệnh và xử lý kịp thời.\nGiữ Gìn Vệ Sinh Cá Nhân: Đeo bảo hộ và rửa tay thường xuyên khi tiếp xúc với vịt, đặc biệt khi có các vết thương trên tay.\nQuản Lý Đàn Vịt: Tách riêng vịt mắc bệnh hoặc có dấu hiệu nhiễm trùng để ngăn chặn sự lây lan trong đàn.\nGiữ khoảng cách an toàn giữa các đàn vịt để ngăn chặn lây nhiễm.\nKiểm Soát Môi Trường: Giữ cho môi trường sống của vịt khô ráo và thoáng mát.\nTránh các tình huống gây căng thẳng cho vịt, vì căng thẳng có thể làm giảm hệ miễn dịch và tăng nguy cơ nhiễm bệnh.\n"
         ]
     },
     {
@@ -113,11 +111,11 @@
             "Bệnh nấm phổi ở vịt gây ra bởi nấm Aspergillus flavus. Bệnh chỉ nhiễm qua đường hô hấp và biểu hiện cục bộ trong đường hô hấp, túi khí. Chuồng trại kém thông thoáng, độ ẩm cao là điều kiện thích hợp cho các bào tử nấm phát triển mạnh hoặc do thức ăn bị nhiễm nấm. Bệnh có thể truyền ngay từ trong khi ấp do trứng hoặc không đảm bảo vệ sinh, qua không khí bào tử nấm xâm nhập vào phổi và túi khí gia cầm. Bệnh thường phát ra trên vịt con, tỷ lệ chết cao đến 50%."
         ],
         "envfactors": [
-            
+            "Độ Ẩm Cao: Môi trường ẩm ướt là môi trường lý tưởng cho vi khuẩn và nấm mọc phát triển. Để ngăn chặn bệnh nấm phổi, giữ cho môi trường xung quanh vịt khô ráo.",
+            "Vệ sinh chuồng trại không sạch sẽ"
         ],
         "symptoms": [
-            "Đối với vịt con bệnh thường biểu hiện ở thể quá cấp tính và cấp tính với những triệu chứng như: kém ăn, thở khó và nhanh, khi thở vịt vươn cổ dài, mũi chảy nước. Thân nhiệt tăng, con vật bơ phờ, ỉa phân rất hôi thối, vịt suy nhược nhanh và một số trường hợp vịt con có triệu chứng co giật. Một số con khác thì bị rối loạn tiêu hoá do độc tố của nấm tiết ra gây viêm ruột, chảy máu ruột, tiêu chảy, bại liệt.",
-            "Vịt lớn thường biểu hiện ở thể mạn tính, cơ thể suy yếu dần với triệu chứng: thở khó, thở nhanh, vịt biến ăn, khát nước dữ dội, thân nhiệt tăng, tiêu chảy. Vịt ủ rũ, thường túm tụm lại thành nhóm và nằm chồng lên nhau."
+            "Đối với vịt con bệnh thường biểu hiện ở thể quá cấp tính và cấp tính với những triệu chứng như: kém ăn, thở khó và nhanh, khi thở vịt vươn cổ dài, mũi chảy nước. Thân nhiệt tăng, con vật bơ phờ, ỉa phân rất hôi thối, vịt suy nhược nhanh và một số trường hợp vịt con có triệu chứng co giật. Một số con khác thì bị rối loạn tiêu hoá do độc tố của nấm tiết ra gây viêm ruột, chảy máu ruột, tiêu chảy, bại liệt. Vịt lớn thường biểu hiện ở thể mạn tính, cơ thể suy yếu dần với triệu chứng: thở khó, thở nhanh, vịt biến ăn, khát nước dữ dội, thân nhiệt tăng, tiêu chảy. Vịt ủ rũ, thường túm tụm lại thành nhóm và nằm chồng lên nhau."
         ],
         "treatments": [
             "Trị bệnh: Khi chăn nuôi vịt, cách ly vịt bị bệnh với vịt khoẻ, đồng thời bổ sung vitamin A vào thức ăn cho vịt. Khi vịt chưa bị bệnh thì dùng thuốc Vimetadin – 56 trộn vào thức ăn thường xuyên để phòng bệnh với liều lượng: 1g/kg thức ăn. Khi vịt bệnh trộn 2g/kg thức ăn. Kết hợp pha Vime – Iodine vào nước sạch cho vịt uống với liều 10ml/20; nước, dung dịch pha xong cho vịt uống trong vòng 24 giờ."

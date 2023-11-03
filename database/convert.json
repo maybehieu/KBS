@@ -57,11 +57,14 @@
     },
     {
         "distinct": [
-            "chật chội",
-            "bé",
-            "hẹp"
+            "không gian chật chội",
+            "không gian bé",
+            "không gian hẹp",
+            "chuồng nuôi chật chội",
+            "chuồng nuôi bé",
+            "chuồng nuôi hẹp"
         ],
-        "general": "chật chội"
+        "general": "chuồng nuôi chật chội"
     },
     {
         "distinct": [
@@ -75,6 +78,14 @@
     },
     {
         "distinct": [
+            "đất nhiễm bệnh",
+            "đất ngập mặn",
+            "đất không đảm bảo"
+        ],
+        "general": "đất nhiễm bệnh"
+    },
+    {
+        "distinct": [
             "thực phẩm không đảm bảo",
             "thực phẩm kém",
             "thực phẩm bẩn",
@@ -82,10 +93,28 @@
             "thức ăn không đảm bảo",
             "thức ăn kém",
             "thức ăn bẩn",
+            "thức ăn không sạch",
             "thức ăn không phù hợp",
-            "nước ao tù"
+            "nước ao tù",
+            "thay đổi đột ngột chế độ ăn",
+            "nước bị ô nhiễm hoặc chứa các chất độc hại"
         ],
-        "general": "thực phẩm không đảm bảo"
+        "general": "thức ăn không đảm bảo"
+    },
+    {
+        "distinct": [
+            "dụng cụ y tế không đảm bảo",
+            "dụng cụ y tế kém",
+            "dụng cụ y tế bẩn",
+            "dụng cụ y tế không phù hợp"
+        ],
+        "general": "dụng cụ y tế không đảm bảo"
+    },
+    {
+        "distinct": [
+            "thiếu nước"
+        ],
+        "general": "thiếu nước"
     },
     {
         "distinct": [
