@@ -1,9 +1,592 @@
 [
     {
-        "Name": "",
-        "Type": [],
-        "Diseases": [],
-        "Effects": [],
-        "Uses": []
-    }
+        "name": "SHOTAPEN LA",
+        "type": ["Thuốc tiêm"],
+        "diseases": ["Nhiễm trùng viêm nhiễm","Bệnh tụ huyết trùng"],
+        "effects": ["Trị nhiễm trùng", "Giảm viêm", "Giảm đau"]
+    },
+    {
+        "name": "AMPI-KANA",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm trùng do vi khuẩn","Bệnh tụ huyết trùng"],
+        "effects": ["Tiêu diệt hoặc ức chế sự phát triển của vi khuẩn."]
+    },
+    {
+        "name": "HAMMOGEN",
+        "type": ["Chất bảo vệ niêm mạc dạ dày và ruột"],
+        "diseases": ["Bệnh dạ dày", "Bệnh ruột","Bệnh tụ huyết trùng"],
+        "effects": ["Bảo vệ niêm mạc dạ dày và ruột", "Giảm tiết dịch và co thắt dạ dày, ruột"]
+    },
+    {
+        "name": "Gentamox Injection",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm khuẩn do vi khuẩn","Bệnh tụ huyết trùng"],
+        "effects": ["Chống lại nhiễm khuẩn do vi khuẩn", "Ức chế sự phát triển của vi khuẩn"]
+    },        
+    {
+        "name": "MACAVET",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm trùng nội tiết", "Viêm nhiễm ngoại tiết","Bệnh tụ huyết trùng"],
+        "effects": ["Diệt khuẩn", "Giảm viêm", "Hỗ trợ điều trị nhiễm trùng"]
+    },
+    {
+        "name": "LINSPEC",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm trùng nhiễm khuẩn","Bệnh tụ huyết trùng"],
+        "effects": ["Diệt vi khuẩn, ức chế sự phát triển của vi khuẩn gây nhiễm trùng"]
+    },
+    {
+        "name": "Vitamin B-Complex",
+        "type": ["Thực phẩm chức năng"],
+        "diseases": ["Bệnh tụ huyết trùng","Bệnh lở mồm long móng"],
+        "effects": ["Hỗ trợ chức năng thần kinh", "Tăng cường sức kháng", "Cải thiện sức khỏe da", "Hỗ trợ quá trình trao đổi chất"]
+    },
+    {
+        "name": "CATOSAL",
+        "type": ["Thuốc tiêm"],
+        "diseases": ["Bệnh thiếu máu", "Bệnh do thiếu vitamin B12","Bệnh tụ huyết trùng"],
+        "effects": ["Hỗ trợ tăng cường hồng cầu và giúp điều trị các bệnh do thiếu máu hoặc vitamin B12."]
+    },
+    {
+        "name": "CATOVET",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Nhiễm khuẩn đường tiêu hóa", "Nhiễm khuẩn hô hấp","Bệnh tụ huyết trùng"],
+        "effects": ["Diệt khuẩn", "Giảm sưng viêm", "Làm giảm triệu chứng bệnh"]
+    },
+    {
+        "name": "ANAZIN C",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm khuẩn", "Viêm họng", "Sốt", "Các bệnh nhiễm trùng","Bệnh tụ huyết trùng"],
+        "effects": ["Diệt khuẩn", "Giảm viêm", "Hỗ trợ giảm sốt"]
+    },
+    {
+        "name": "MG 200 Premix",
+        "type": ["Thuốc trộn vào thức ăn"],
+        "diseases": ["Bệnh tụ huyết trùng"],
+        "effects": ["Chống bệnh coccidiosis", "Tăng cường sức kháng của gia súc", "Cải thiện tăng trọng và hiệu suất chăn nuôi"]
+    },
+    {
+        "name": "Penicillin",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Bệnh lở mồm long móng","Bệnh đóng dấu lợn"],
+        "effects": ["Loại bỏ và ngăn chặn sự phát triển của vi khuẩn gây bệnh trong trường hợp nhiễm trùng bởi bệnh lở mồm long móng hoặc đóng dấu lợn."]
+    },
+    {
+        "name": "Amoxicillin",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Bệnh lở mồm long móng","Bệnh đóng dấu lợn"],
+        "effects": ["Amoxicillin là một loại kháng sinh phổ rộng thường được sử dụng để điều trị các bệnh do vi khuẩn gây ra. Trong trường hợp bệnh lở mồm long móng, Amoxicillin có thể được sử dụng để kiểm soát và loại bỏ vi khuẩn gây bệnh."]
+    },
+    {
+        "name": "Lincomycin",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Bệnh lở mồm long móng","Bệnh đóng dấu lợn"],
+        "effects": ["Lincomycin là một loại kháng sinh được sử dụng để chữa bệnh lở mồm long móng ở gia súc hoặc đóng dấu lợn. Nó hoạt động bằng cách ức chế sự phát triển của vi khuẩn gây bệnh trong hệ tiêu hóa của động vật. Lincomycin giúp kiểm soát và điều trị bệnh lở mồm long móng, giúp gia súc phục hồi sức kháng bệnh và ngăn ngừa sự lây lan của bệnh."]
+    },
+    {
+        "name": "T. Amoxycol",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm khuẩn","Bệnh đóng dấu lợn"],
+        "effects": ["Diệt khuẩn, ngăn ngừa sự phát triển của vi khuẩn"]
+    },
+    {
+        "name": "Amoxigen",
+        "type": ["Kháng sinh"],
+        "diseases": ["Nhiễm khuẩn","Bệnh đóng dấu lợn"],
+        "effects": ["Diệt vi khuẩn", "Trị nhiễm khuẩn", "Giảm viêm"]
+    },
+    {
+        "name": "Vidan T",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Bệnh nhiễm trùng đường tiêu hóa","Bệnh đóng dấu lợn"],
+        "effects": ["Giúp giảm triệu chứng đau bên trong và tiêu chảy"]
+    },
+    {
+        "name": "T Enteron",
+        "type": ["Thuốc tiêu hóa"],
+        "diseases": ["Rối loạn tiêu hóa","Bệnh đóng dấu lợn"],
+        "effects": ["Giúp làm dịu triệu chứng rối loạn tiêu hóa"]
+    },
+    {
+        "name": "Gastron T",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Bệnh dạ dày", "Bệnh tiêu hóa","Bệnh đóng dấu lợn"],
+        "effects": ["Giảm triệu chứng đau dạ dày", "Làm dịu viêm loét dạ dày", "Kháng vi khuẩn dạ dày"]
+    },
+    {
+        "name": "Diatrizon",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Rối loạn tiêu hóa", "Viêm đại tràng", "Tiêu chảy","Bệnh đóng dấu lợn"],
+        "effects": [
+            "Giảm triệu chứng rối loạn tiêu hóa",
+            "Giảm viêm nhiễm đại tràng",
+            "Ức chế triệu chứng tiêu chảy"
+        ]
+    },
+    {
+        "name": "Linco-Gen L.A. 15%",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm khuẩn nhiễm trùng","Bệnh đóng dấu lợn"],
+        "effects": ["Diệt vi khuẩn", "Giảm viêm nhiễm"]
+    },
+    {
+        "name": "Macavet",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Các bệnh do ký sinh trùng", "Bệnh tiêu chảy ở gia súc","Bệnh đóng dấu lợn"],
+        "effects": ["Diệt ký sinh trùng", "Giảm triệu chứng tiêu chảy", "Bảo vệ sức khỏe của gia súc"]
+    },
+    {
+        "name": "Amox-Colis",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm khuẩn tiêu hóa","Bệnh sưng phù đầu"],
+        "effects": ["Diệt vi khuẩn trong tiêu hóa"]
+    },
+    {
+        "name": "Sputumiz",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Các bệnh về đường hô hấp","Bệnh ORT"],
+        "effects": ["Giảm triệu chứng ho, làm dịu đường hô hấp"]
+    },
+    {
+        "name": "Para C",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm khuẩn nội tiết","Bệnh ORT"],
+        "effects": ["Ngăn chặn sự phát triển của vi khuẩn", "Giảm triệu chứng bệnh"]
+    },
+    {
+        "name": "CEFTIOFUR",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm trùng viêm nhiễm khuẩn","Bệnh ORT"],
+        "effects": ["Triệt hạ và ngăn ngừng sự phát triển của vi khuẩn gây nhiễm trùng"]
+    },
+    {
+        "name": "LINCOMYCIN+SPECTINOMYCIN",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm khuẩn","Bệnh ORT"],
+        "effects": ["Chống lại vi khuẩn, giảm triệu chứng nhiễm trùng"]
+    },
+    {
+        "name": "DOXYCYCLINE",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm khuẩn, viêm nhiễm khuẩn","Bệnh ORT"],
+        "effects": ["Chống vi khuẩn, ngừng sự phát triển của vi khuẩn, điều trị các bệnh nhiễm khuẩn"]
+    },
+    {
+        "name": "NOVITECH YL",
+        "type": ["Thực phẩm bảo vệ sức khỏe"],
+        "diseases": ["Bệnh ORT"],
+        "effects": [
+            "Hỗ trợ tăng cường sức khỏe",
+            "Cung cấp dưỡng chất",
+            "Hỗ trợ hệ thống miễn dịch"
+        ]
+    },
+    {
+        "name": "ASCOREQUIL",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Bệnh ORT"],
+        "effects": ["Giải độc gan"]
+    },
+    {
+        "name": "RENAL CLEANER",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Bệnh về thận", "Sỏi thận", "Viêm nhiễm thận","Bệnh ORT"],
+        "effects": ["Giúp làm sạch thận", "Hỗ trợ trong việc loại bỏ sỏi thận", "Giảm viêm nhiễm thận"]
+    },
+    {
+        "name": "Uniflox",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm khuẩn nội tiết","Bệnh CRD_Hen gà"],
+        "effects": ["Loại bỏ vi khuẩn gây nhiễm khuẩn, giúp điều trị các bệnh nhiễm khuẩn"]
+    },
+    {
+        "name": "Giuse 200",
+        "type": ["Thuốc chữa bệnh"],
+        "diseases": ["Bệnh tiêu chảy","Bệnh CRD_Hen gà"],
+        "effects": ["Ngừng tiêu chảy, bảo vệ niêm mạc đường tiêu hoá"]
+    },
+    {
+        "name": "Unispectin 15",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm khuẩn","Bệnh CRD_Hen gà"],
+        "effects": ["Trị nhiễm khuẩn"]
+    },
+    {
+        "name": "Sputumiz",
+        "type": ["Thuốc ho", "Dung dịch"],
+        "diseases": ["Các bệnh về đường hô hấp","Bệnh CRD_Hen gà"],
+        "effects": ["Giảm triệu chứng ho", "Làm loãng đờm, dễ thải ra", "Giúp giảm đau họng"]
+    },
+    {
+        "name": "Vitamin AD3ECK",
+        "type": ["Vitamin"],
+        "diseases": ["Bệnh CRD_Hen gà"],
+        "effects": ["Cung cấp vitamin A, D3, E, C, và K cho cơ thể."]
+    },
+    {
+        "name": "Anivitamino",
+        "type": ["Thuốc thú y"],
+        "diseases": ["Các bệnh liên quan đến viêm nhiễm, thiếu hụt vitamin","Bệnh CRD_Hen gà"],
+        "effects": ["Bổ sung vitamin cho động vật", "Tăng cường sức kháng, tăng cường sức kháng đối với các bệnh nhiễm trùng và viêm nhiễm"]
+    },
+    {
+        "name": "Mebendazol 10%",
+        "type": ["Thuốc trị sán, giun"],
+        "diseases": ["Sán lá gan, giun đũa","Bệnh giun chỉ"],
+        "effects": ["Loại bỏ và ngăn ngừa sự phát triển của sán lá gan và giun đũa trong cơ thể gia súc."]
+    },
+    {
+        "name": "Levamysol 7,5%",
+        "type": ["Thuốc sát khuẩn"],
+        "diseases": ["Nhiễm khuẩn đường tiêu hóa","Bệnh giun chỉ"],
+        "effects": ["Diệt khuẩn", "Tăng sức đề kháng", "Giảm viêm nhiễm"]
+    },
+    {
+        "name": "Vimekon",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm trùng nhiễm khuẩn","Bệnh nấm phổi"],
+        "effects": ["Diệt vi khuẩn", "Ngăn chặn sự phát triển của vi khuẩn", "Giảm triệu chứng nhiễm trùng"]
+    },
+    {
+        "name": "Vime - Iodine",
+        "type": ["Thuốc sát khuẩn"],
+        "diseases": ["Nhiễm khuẩn, nhiễm trùng ngoại da","Bệnh nấm phổi"],
+        "effects": ["Sát trùng", "Kháng khuẩn", "Giúp làm sạch vết thương"]
+    },
+    {
+        "name": "Vime - Protex",
+        "type": ["Thực phẩm chức năng"],
+        "diseases": ["Bệnh nấm phổi"],
+        "effects": ["Hỗ trợ tiêu hóa, tăng cường hệ miễn dịch"]
+    },
+    {
+        "name": "Bleu Methylen",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Vỡ vai"],
+        "effects": ["Giảm đau", "Giảm viêm", "Hỗ trợ làm lành vết thương"]
+    },
+    {
+        "name": "Gentian Violet",
+        "type": ["Thuốc sát khuẩn"],
+        "diseases": ["Vỡ vai"],
+        "effects": ["Chống viêm", "Diệt khuẩn", "Giúp làm lành vết thương"]
+    },
+    {
+        "name": "Paracetamol",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["bệnh cảm nắng"],
+        "effects": ["Giảm đau", "Hạ sốt", "Giảm viêm"]
+    },
+    {
+        "name": "Pyramidon",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["bệnh cảm nắng"],
+        "effects": ["Giảm viêm", "Giảm đau", "Hạ sốt"]
+    },
+    {
+        "name": "Cafein 20",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Viêm ruột cấp tính", "bệnh cảm nắng", "bệnh cảm nóng"],
+        "effects": [
+            "Giảm viêm và sưng tại khu vực viêm ruột",
+            "Giảm đau và cảm giác khó chịu",
+            "Kích thích tiêu hóa và giúp giảm triệu chứng như tiêu chảy hoặc táo bón",
+            "Tăng cường sức đề kháng của cơ thể",
+            "Giúp giảm căng thẳng và căng thẳng tinh thần, cải thiện tâm trạng"
+        ]
+    },
+    
+    {
+        "name": "Atropin Sulfat 0,1%",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": [
+            "Giảm cảm giác đau và viêm nhiễm trong trường hợp viêm ruột cấp tính",
+            "Giãn cơ thể trơn và giảm tiết mồ hôi, giúp giảm tiểu tiện và tiêu chảy",
+            "Giảm tiết chất nhầy trong miệng và họng, giúp giảm các triệu chứng như ho và đau họng",
+            "Hỗ trợ điều trị và giảm cảm giác buồn nôn và nôn mửa do viêm ruột"
+        ]
+    },
+    
+    {
+        "name": "Norcoli",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": ["Giảm viêm", "Giảm đau", "Hỗ trợ phục hồi niêm mạc ruột"]
+    },
+    {
+        "name": "Enrofloxacin",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": ["Diệt khuẩn", "Giảm viêm", "Giảm đau"]
+    },
+    {
+        "name": "Neomycin",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": [
+            "Neomycin là một loại thuốc kháng sinh thuộc nhóm aminoglycosides, được sử dụng để chống lại các vi khuẩn gây nên viêm ruột cấp tính.",
+            "Thuốc Neomycin hoạt động bằng cách ngăn chặn sự phát triển và sinh sản của vi khuẩn trong đường ruột, giúp giảm viêm nhiễm và triệu chứng của bệnh viêm ruột.",
+            "Ngoài ra, Neomycin cũng có thể được sử dụng trong các trường hợp sau khi phẫu thuật để ngăn ngừa nhiễm trùng.",
+            "Tuy nhiên, việc sử dụng Neomycin cần được hướng dẫn và giám sát chặt chẽ bởi bác sĩ, vì sử dụng không đúng cách có thể gây ra các tác dụng phụ và làm tăng khả năng phát triển của vi khuẩn kháng thuốc."
+        ]
+    },
+    {
+        "name": "Gentamycin",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": ["Diệt vi khuẩn"]
+    },
+    {
+        "name": "Kanamycin",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": ["Diệt khuẩn"]
+    },
+    {
+        "name": "Streptomycin",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": ["Diệt khuẩn"]
+    },
+    
+    {
+        "name": "Sulfaguanidin",
+        "type": ["Thuốc sát khuẩn"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": [
+            "Sulfaguanidin là một loại thuốc kháng khuẩn được sử dụng trong điều trị viêm ruột cấp tính.",
+            "Thuốc này hoạt động bằng cách ngăn chặn sự phát triển và sinh sản của vi khuẩn gây viêm ruột, giúp giảm triệu chứng và tăng cường quá trình phục hồi của đường ruột.",
+            "Sulfaguanidin có khả năng tiêu diệt các vi khuẩn gây viêm ruột, giúp giảm viêm, đau và tiêu chảy, giúp bệnh nhân hồi phục nhanh chóng.",
+            "Thuốc cũng giúp ngăn chặn vi khuẩn từ việc lây lan sang các vùng đường ruột khác, ngăn ngừa viêm nhiễm lan rộng và giảm nguy cơ tái phát bệnh."
+        ]
+    },
+    
+    {
+        "name": "Ichthyol",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": ["Giảm viêm", "Giảm đau", "Hỗ trợ quá trình điều trị"]
+    },
+    
+    {
+        "name": "Búp sim, búp ổi, quả hồng xiêm xanh",
+        "type": ["Thảo dược"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": ["Chữa trị viêm ruột cấp tính"]
+    },
+    {
+        "name": "Tanin",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": ["Giảm viêm", "Giảm đau", "Chống oxi hóa"]
+    },
+    {
+        "name": "Natri bromua",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": [
+        "Giảm viêm và đau trong trường hợp viêm ruột cấp tính",
+        "Ngăn chặn co thắt cơ bị và giúp giảm đau",
+        "Làm giảm sưng, đỏ và nhiệt ở vùng viêm",
+        "Giúp cải thiện tình trạng sức khỏe tổng thể của người bệnh"
+        ]
+    },
+    {
+        "name": "Nước cháo gạo nếp",
+        "type": ["Đồ ăn"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": ["Giảm viêm", "Dễ tiêu hóa", "Cung cấp năng lượng"]
+    },
+    {
+        "name": "Natri bicarbonat 2%",
+        "type": ["Hóa chất y tế"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": [
+            "Giảm viêm và sưng ở niêm mạc ruột",
+            "Giảm cảm giác đau và khó chịu ở vùng dạ dày và ruột non",
+            "Giúp ổn định hệ thống pH trong dạ dày và ruột non",
+            "Hỗ trợ quá trình tiêu hóa và hấp thụ chất dinh dưỡng",
+            "Giảm nguy cơ tái phát viêm ruột sau khi điều trị"
+        ]
+    },
+    {
+        "name": "Thuốc tẩy muối",
+        "type": ["Thuốc sát khuẩn"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": ["Giảm viêm", "Làm giảm các triệu chứng viêm ruột", "Giúp cải thiện tình trạng sức khỏe của người bệnh"]
+    },
+    {
+        "name": "Dung dịch đẳng trương",
+        "type": ["Dung dịch"],
+        "diseases": ["Viêm ruột cấp tính"],
+        "effects": [
+            "Giảm viêm nhiễm trong đường ruột",
+            "Giảm đau và khó chịu ở vùng bụng dưới",
+            "Giảm tiêu chảy và tiêu hóa không đều",
+            "Cải thiện tình trạng sức khỏe tổng thể",
+            "Ngăn chặn vi khuẩn gây viêm ruột phát triển"
+        ]
+    },
+    
+    {
+        "name": "BIOXIDE",
+        "type": ["Thuốc sát khuẩn"],
+        "diseases": ["Anthrax"],
+        "effects": ["Diệt khuẩn", "Ngừa lây truyền bệnh"]
+    },
+    {
+        "name": "BIOKON",
+        "type": ["Thuốc sát khuẩn"],
+        "diseases": ["Anthrax"],
+        "effects": ["Chống lại vi khuẩn gây bệnh Anthrax"]
+    },
+    {
+        "name": "Cồn + Tỏi; Nước Dưa Chua, Nước Lá Thị",
+        "type": ["Thảo dược"],
+        "diseases": ["Bệnh bội thực", "Dạ dày", "Cỏ"],
+        "effects": ["Giảm viêm", "Kháng vi khuẩn", "Làm dịu dạ dày"]
+    },
+    {
+        "name": "Formol",
+        "type": ["Hóa chất y tế"],
+        "diseases": ["Bệnh bội thực dạ cỏ"],
+        "effects": ["Giảm viêm", "Giảm đau", "Tiêu diệt vi khuẩn"]
+    },
+    
+    {
+        "name": "Ichthyol",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Bội thực dạ cỏ"],
+        "effects": ["Giảm viêm", "Giảm đau", "Kháng vi khuẩn"]
+    },
+    {
+        "name": "HC1",
+        "type": ["Thuốc Truyền Thống"],
+        "diseases": ["Bệnh bội thực dạ cỏ"],
+        "effects": ["Giảm triệu chứng", "Cải thiện tiêu hóa"]
+    },
+    {
+        "name": "Pilocarpine",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Bệnh bội thực dạ cỏ"],
+        "effects": ["Giảm triệu chứng bệnh bội thực dạ cỏ, giúp cải thiện sự linh hoạt của thị lực"]
+    },
+    
+    {
+        "name": "Sulfat natri",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Bệnh bội thực dạ cỏ"],
+        "effects": ["Giảm triệu chứng", "Kiểm soát bội thực dạ cỏ"]
+    },
+    
+    {
+        "name": "MgSO4 và Na2SO4",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Chướng hơi dạ cỏ cấp tính"],
+        "effects": [
+            "Giảm viêm nhiễm trong dạ dày và ruột non",
+            "Giảm triệu chứng đầy hơi, buồn nôn và nôn mửa",
+            "Giúp cải thiện tiêu hóa và hấp thụ chất dinh dưỡng",
+            "Nguyên lý hoạt động bằng cách cân bằng hàm lượng chất khoáng trong cơ thể",
+            "Tăng cường sức khỏe của niêm mạc dạ dày và ruột non",
+            "Giảm triệu chứng chướng hơi dạ cỏ như đau rát, khó chịu, và sưng"
+        ]
+    },
+    {
+        "name": "100 - 200 ml cồn hoà với vài củ tỏi giã nhỏ và với 500 ml nước",
+        "type": ["Dung dịch chữa bệnh"],
+        "diseases": ["Chướng hơi dạ cỏ cấp tính"],
+        "effects": ["Giảm triệu chứng", "Giảm viêm nhiễm", "Kháng vi khuẩn"]
+    },
+    {
+        "name": "NH4OH 15 ml hoặc axit lactic 10 - 15 ml pha vào nước",
+        "type": ["Phương pháp hóa học"],
+        "diseases": ["Chướng hơi dạ cỏ cấp tính"],
+        "effects": [
+            "Giảm triệu chứng chướng hơi dạ cỏ cấp tính",
+            "Giúp làm giảm đau và khó chịu trong dạ dày",
+            "Cải thiện tình trạng tiêu hóa"
+        ]
+    },
+    {
+        "name": "Urotropin 10%",
+        "type": ["Thuốc sát khuẩn"],
+        "diseases": ["Nhiễm trùng đường tiểu", "Viêm nội mạc cấp tính"],
+        "effects": ["Tiêu diệt vi khuẩn", "Giảm triệu chứng viêm nhiễm", "Ngừa tái phát nhiễm trùng"]
+    },
+    
+    {
+        "name": "Salicinatnatri",
+        "type": ["Thuốc điều trị"],
+        "diseases": ["Đau nhức cơ bắp", "Viêm khớp", "Sưng", "Sốt", "Viêm nội mạc cấp tính"],
+        "effects": ["Giảm đau", "Giảm viêm", "Hạ sốt"]
+    },
+    {
+        "name": "Cafein natri benzoat 20%",
+        "type": ["Thuốc"],
+        "diseases": ["Mệt mỏi", "Buồn ngủ", "Viêm nội mạc cấp tính"],
+        "effects": ["Tăng cường tinh thần", "Giảm cảm giác mệt mỏi", "Tránh buồn ngủ"]
+    },
+    {
+        "name": "Long Não",
+        "type": ["Thuốc Trị Liệu"],
+        "diseases": ["Bệnh Long Não", "Các Rối Loạn Thần Kinh", "Viêm nội mạc cấp tính", "bệnh cảm nóng", "bệnh cảm nắng"],
+        "effects": ["Giảm triệu chứng như run, co giật", "Tăng khả năng tập trung và ghi nhớ", "Ổn định tâm trạng và giảm căng thẳng"]
+    },
+    {
+        "name": "Cafein Natribenzoat",
+        "type": ["Thuốc"],
+        "diseases": ["Viêm nội mạc cấp tính"],
+        "effects": ["Cải thiện tinh thần tỉnh táo", "Giảm mệt mỏi", "Tăng cường tập trung"]
+    },
+    
+    {
+        "name": "Vitamin C",
+        "type": ["Vitamin"],
+        "diseases": ["Cảm lạnh", "Scurvy", "Viêm nội mạc cấp tính"],
+        "effects": ["Tăng cường hệ thống miễn dịch", "Hỗ trợ sức khỏe của da", "Giảm nguy cơ mắc bệnh tim mạch", "Hỗ trợ quá trình hấp thụ sắt", "Giảm triệu chứng cảm lạnh"]
+    },
+    
+    {
+        "name": "Dung dịch glucoza 20%",
+        "type": ["Dung dịch"],
+        "diseases": ["Viêm nội mạc cấp tính", "bệnh cảm nắng", "bệnh cảm nóng"],
+        "effects": ["Nâng cao nồng độ đường huyết"]
+    },
+    {
+        "name": "Chloralhydrate",
+        "type": ["Thuốc an thần"],
+        "diseases": ["Lo lắng", "Rối loạn thực quản giấc ngủ", "Viêm nội tâm mạc cấp tính"],
+        "effects": ["Gây buồn ngủ", "Làm giảm lo lắng", "Kích thích giấc ngủ"]
+    },
+    {
+        "name": "Bromua kali",
+        "type": ["Thuốc dùng trong y học"],
+        "diseases": ["Rối loạn giấc ngủ", "Bệnh tim", "Lo âu", "Viêm nội tâm mạc cấp tính"],
+        "effects": ["Giảm triệu chứng rối loạn giấc ngủ", "Giúp kiểm soát bệnh tim", "Giảm triệu chứng lo âu"]
+    },
+    {
+        "name": "Lincocin",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Nhiễm trùng viêm nhiễm", "Viêm nội tâm mạc cấp tính"],
+        "effects": ["Diệt khuẩn", "Giảm viêm", "Chống viêm nhiễm"]
+    },
+    {
+        "name": "Gentamycin",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Bacterial infections", "Viêm nội tâm mạc cấp tính"],
+        "effects": ["Kích thích sự hình thành của protein trong vi khuẩn, làm chậm quá trình phát triển của vi khuẩn và gây chết vi khuẩn."]
+    },
+    {
+        "name": "Cephacilin",
+        "type": ["Thuốc kháng sinh"],
+        "diseases": ["Viêm nội tâm mạc cấp tính"],
+        "effects": [
+            "Cephacilin là một loại kháng sinh thuộc nhóm cephalosporin, được sử dụng để điều trị các bệnh nhiễm trùng do vi khuẩn.",
+            "Thuốc này hoạt động bằng cách ngăn chặn sự phát triển và sự lan truyền của vi khuẩn trong cơ thể.",
+            "Trong trường hợp của Viêm nội tâm mạc cấp tính, Cephacilin có thể được sử dụng để giảm viêm nhiễm và ngăn chặn vi khuẩn xâm nhập vào nội tâm mạc, giúp giảm nguy cơ tổn thương tim mạch và làm giảm triệu chứng của bệnh.",
+            "Tuy nhiên, việc sử dụng Cephacilin cần được hướng dẫn và giám sát chặt chẽ bởi các chuyên gia y tế để đảm bảo liều lượng đúng và tránh các tác dụng phụ không mong muốn."
+        ]
+    }   
 ]
