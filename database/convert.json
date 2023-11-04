@@ -112,19 +112,34 @@
     },
     {
         "distinct": [
-            "thiếu nước"
+            "thiếu nước",
+            "khô hạn",
+            "cạn",
+            "khô cằn",
+            "hạn hán",
+            "Cạn kiệt nước",
+            "nghèo nước",
+            "nước ít",
+            "cằn cỗi"
         ],
         "general": "thiếu nước"
     },
     {
         "distinct": [
-            "sốt cao"
+            "sốt cao",
+            "nhiệt đới",
+            "phát sốt",
+            "nhiệt độ cơ thể rất cao",
+            "nóng ran",
+            "sốt 40 độ C"
         ],
         "general": "sốt cao"
     },
     {
         "distinct": [
-            "run rẩy"
+            "run rẩy",
+            "lẩy bẩy",
+            "lập cập"
         ],
         "general": "run rẩy"
     },
@@ -178,7 +193,9 @@
     {
         "distinct": [
             "sốt",
-            "không sốt"
+            "không sốt",
+            "nóng",
+            "nhiệt độ cơ thể cao"
         ],
         "general": "sốt"
     },
@@ -196,7 +213,8 @@
     },
     {
         "distinct": [
-            "nằm chỗ có bóng râm"
+            "nằm chỗ có bóng râm",
+            "nghỉ chỗ râm mát"
         ],
         "general": "nằm chỗ có bóng râm"
     },
@@ -209,7 +227,8 @@
     },
     {
         "distinct": [
-            "lưng cong"
+            "lưng cong",
+            "lưng không thẳng"
         ],
         "general": "lưng cong"
     },
@@ -234,7 +253,12 @@
     },
     {
         "distinct": [
-            "nôn mửa"
+            "nôn mửa",
+            "nôn trớ",
+            "buồn nôn",
+            "thốc tháo",
+            "tháo huyết",
+            "mửa chảy"
         ],
         "general": "nôn mửa"
     },
@@ -250,7 +274,8 @@
         "distinct": [
             "phân lạ",
             "phân có chất nhầy và máu",
-            "phân có máu"
+            "phân có máu",
+            "đi ngoài ra máu"
         ],
         "general": "phân có máu"
     },
@@ -284,14 +309,18 @@
     },
     {
         "distinct": [
-            "sảy thai"
+            "sảy thai",
+            "sinh non"
         ],
         "general": "sảy thai"
     },
     {
         "distinct": [
             "chảy dãi",
-            "có nước dãi"
+            "có nước dãi",
+            "rỏ dãi",
+            "nhễu",
+            "nhể"
         ],
         "general": "chảy dãi"
     },
@@ -319,7 +348,9 @@
     },
     {
         "distinct": [
-            "da trắng bệch"
+            "da trắng bệch",
+            "da trắng bạch",
+            "da trắng pha lẫn xanh"
         ],
         "general": "da trắng bệch"
     },
@@ -343,7 +374,9 @@
     {
         "distinct": [
             "tim đập nhanh",
-            "tim đập mạnh"
+            "tim đập mạnh",
+            "tim đập liên hồi",
+            "tim đập loạn xạ"
         ],
         "general": "tim đập nhanh"
     },
@@ -363,7 +396,8 @@
     {
         "distinct": [
             "da vảy nâu, dễ bong tróc",
-            "da đóng vảy"
+            "da đóng vảy",
+            "tróc da"
         ],
         "general": "da vảy nâu, dễ bong tróc"
     },
@@ -402,7 +436,11 @@
     },
     {
         "distinct": [
-            "tiếng kêu thay đổi"
+            "tiếng kêu thay đổi",
+            "tiếng kêu lạ",
+            "âm thanh khác đi",
+            "âm thanh biến đổi",
+            "âm thanh dị thường"
         ],
         "general": "tiếng kêu thay đổi"
     },
@@ -415,7 +453,12 @@
     {
         "distinct": [
             "bại liệt",
-            "nằm liệt"
+            "nằm liệt",
+            "tàn tật",
+            "không thể di chuyển",
+            "tàn phế",
+            "mất khả năng vận động",
+            "yếu đuối"
         ],
         "general": "bại liệt"
     },
@@ -424,52 +467,65 @@
             "bồn chồn",
             "lo lắng",
             "sợ sệt",
-            "tỏ ra sợ hãi"
+            "tỏ ra sợ hãi",
+            "bất an"
         ],
         "general": "bồn chồn"
     },
     {
         "distinct": [
-            "bụng phình to"
+            "bụng phình to",
+            "căng trướng bụng",
+            "bụng nở to"
         ],
         "general": "bụng phình to"
     },
     {
         "distinct": [
-            "đau bụng"
+            "đau bụng",
+            "bụng khó chịu"
         ],
         "general": "đau bụng"
     },
     {
         "distinct": [
             "dạng hai chân sau",
-            "hai chân dạng ra"
+            "hai chân dạng ra",
+            "hai chân bạnh ra",
+            "hai chân chìa ra"
         ],
         "general": "hai chân dạng ra"
     },
     {
         "distinct": [
-            "hõm hông bên trái căng phồng"
+            "hõm hông bên trái căng phồng",
+            "hõm hông bên trái phình ra"
         ],
         "general": "hõm hông bên trái căng phồng"
     },
     {
         "distinct": [
-            "gõ vùng dạ cỏ thấy có âm trống"
+            "gõ vùng dạ cỏ thấy có âm trống",
+            "gõ vùng dạ cỏ phát ra âm thanh",
+            "gõ vùng dạ cỏ phát ra tiếng"
         ],
         "general": "gõ vùng dạ cỏ thấy có âm trống"
     },
     {
         "distinct": [
             "vã mồ hôi",
-            "đổ mồ hôi"
+            "đổ mồ hôi",
+            "toát mồ hôi",
+            "mồ hôi tuôn",
+            "mồ hôi đầm đìa"
         ],
         "general": "vã mồ hôi"
     },
     {
         "distinct": [
             "ngừng nhai lại",
-            "dừng nhai lại"
+            "dừng nhai lại",
+            "không nhai lại nữa"
         ],
         "general": "ngừng nhai lại"
     },
@@ -483,7 +539,8 @@
     },
     {
         "distinct": [
-            "hơi ợ ra có mùi chua"
+            "hơi ợ ra có mùi chua",
+            "ợ ra mùi lạ"
         ],
         "general": "hơi ợ ra có mùi chua"
     },
@@ -523,7 +580,9 @@
     {
         "distinct": [
             "mê man",
-            "không tỉnh táo"
+            "không tỉnh táo",
+            "bất tỉnh",
+            "vô thức"
         ],
         "general": "mê man"
     },
@@ -541,50 +600,67 @@
     },
     {
         "distinct": [
-            "nước tiểu có máu"
+            "nước tiểu có máu",
+            "tiểu ra máu",
+            "xuất huyết đường tiểu"
         ],
         "general": "nước tiểu có máu"
     },
     {
         "distinct": [
             "giảm sữa",
-            "ít sữa"
+            "ít sữa",
+            "nghèo sữa",
+            "không có sữa"
         ],
         "general": "giảm sữa"
     },
     {
         "distinct": [
-            "khát nước"
+            "khát nước",
+            "muốn uống nước",
+            "cần nước",
+            "khô cổ",
+            "khô họng"
         ],
         "general": "khát nước"
     },
     {
         "distinct": [
-            "hố mắt trũng sâu"
+            "hố mắt trũng sâu",
+            "hốc mắt sâu",
+            "hốc mắt trũng"
         ],
         "general": "hố mắt trũng sâu"
     },
     {
         "distinct": [
-            "khoé mắt có rử"
+            "khoé mắt có rử",
+            "khóe mắt có gèn",
+            "có gỉ mắt"
         ],
         "general": "khoé mắt có rử"
     },
     {
         "distinct": [
-            "da khô"
+            "da khô",
+            "da nhăn",
+            "da thiếu nước"
         ],
         "general": "da khô"
     },
     {
         "distinct": [
-            "lông xù"
+            "lông xù",
+            "lông rối",
+            "lông dựng"
         ],
         "general": "lông xù"
     },
     {
         "distinct": [
-            "choáng váng"
+            "choáng váng",
+            "xây xẩm"
         ],
         "general": "choáng váng"
     },
@@ -596,25 +672,37 @@
     },
     {
         "distinct": [
-            "thân nhiệt tăng"
+            "thân nhiệt tăng",
+            "nhiệt độ cơ thể tăng",
+            "cơ thể nóng lên",
+            "cơ thể ấm hơn"
         ],
         "general": "thân nhiệt tăng"
     },
     {
         "distinct": [
-            "thân nhiệt tăng"
+            "thân nhiệt tăng",
+            "nhiệt độ cơ thể giảm",
+            "thân nhiệt giảm",
+            "cơ thể lạnh đi",
+            "cơ thể lạnh buốt"
         ],
         "general": "thân nhiệt giảm"
     },
     {
         "distinct": [
-            "đồng tử mắt mở rộng"
+            "đồng tử mắt mở rộng",
+            "đồng tử mắt to ra",
+            "con ngươi nở to"
         ],
         "general": "đồng tử mắt mở rộng"
     },
     {
         "distinct": [
-            "mất phản xạ"
+            "mất phản xạ",
+            "vô tri",
+            "không phản ứng",
+            "bất động"
         ],
         "general": "mất phản xạ"
     },
@@ -627,7 +715,8 @@
     },
     {
         "distinct": [
-            "sùi bọt mép"
+            "sùi bọt mép",
+            "miệng sủi bọt"
         ],
         "general": "sùi bọt mép"
     },
@@ -642,7 +731,10 @@
     },
     {
         "distinct": [
-            "rụng lông"
+            "rụng lông",
+            "lông rơi rụng",
+            "ít lông",
+            "thưa lông"
         ],
         "general": "rụng lông"
     },
@@ -656,7 +748,8 @@
         "distinct": [
             "viêm hóa mủ",
             "viêm mủ lỗ chân lông",
-            "mủ ở lỗ chân lông"
+            "mủ ở lỗ chân lông",
+            "viêm dẫn đến sưng mủ"
         ],
         "general": "viêm hóa mủ"
     },
@@ -668,19 +761,24 @@
     },
     {
         "distinct": [
-            "nhiễm trùng"
+            "nhiễm trùng",
+            "nhiễm khuẩn"
         ],
         "general": "nhiễm trùng"
     },
     {
         "distinct": [
-            "mưng mủ"
+            "mưng mủ",
+            "sưng viêm",
+            "bọng nước"
         ],
         "general": "mưng mủ"
     },
     {
         "distinct": [
-            "hắt hơi"
+            "hắt hơi",
+            "hắt xì",
+            "cơm muỗi"
         ],
         "general": "hắt hơi"
     },
@@ -692,32 +790,45 @@
     },
     {
         "distinct": [
-            "lắc đầu"
+            "lắc đầu",
+            "ngoe nguẩy đầu",
+            "lắc lư đầu"
         ],
         "general": "lắc đầu"
     },
     {
         "distinct": [
-            "chảy nước mũi"
+            "chảy nước mũi",
+            "mũi rỉ nước",
+            "có gỉ mũi",
+            "mũi chảy thòng lòng",
+            "sổ mũi"
         ],
         "general": "chảy nước mũi"
     },
     {
         "distinct": [
-            "chảy nước mắt"
+            "chảy nước mắt",
+            "rơi nước mắt",
+            "mắt chảy nước"
         ],
         "general": "chảy nước mắt"
     },
     {
         "distinct": [
-            "chậm lớn"
+            "chậm lớn",
+            "chậm phát triển",
+            "khả năng phát triển kém",
+            "kém phát triển"
         ],
         "general": "chậm lớn"
     },
     {
         "distinct": [
             "giảm đẻ",
-            "giảm sinh"
+            "giảm sinh",
+            "khả năng sinh đẻ kém",
+            "khó sinh đẻ"
         ],
         "general": "giảm đẻ"
     },
@@ -733,14 +844,17 @@
     },
     {
         "distinct": [
-            "nằm chồng lên nhau"
+            "nằm chồng lên nhau",
+            "đè lên nhau",
+            "sáp lên nhau"
         ],
         "general": "nằm chồng lên nhau"
     },
     {
         "distinct":[
             "yếu ớt",
-            "yếu đuối"
+            "yếu đuối",
+            "sức khỏe yếu"
         ],
         "general": "yếu ớt"
     }
