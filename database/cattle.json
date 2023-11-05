@@ -1,6 +1,6 @@
 [
     {
-        "name": "Bệnh tụ huyết trùng",
+        "name": "Tụ huyết trùng",
         "species": [
             "lợn",
             "trâu",
@@ -33,7 +33,7 @@
         ]
     },
     {
-        "name": "Bệnh dịch tả",
+        "name": "Dịch tả",
         "species": [
             "Lợn"
         ],
@@ -42,7 +42,7 @@
             "Do vi rút ASFV gây ra, bệnh xảy ra ở mọi lứa tuổi, mọi loài lợn"
         ],
         "envfactors": [
-            "chuồng trại kém vệ sinh", 
+            "chuồng trại kém vệ sinh",
             "thức ăn không đảm bảo"
         ],
         "symptoms": [
@@ -74,7 +74,7 @@
         ]
     },
     {
-        "name": "Bệnh lở mồm long móng",
+        "name": "Lở mồm long móng",
         "species": [
             "Lợn"
         ],
@@ -104,7 +104,7 @@
         ]
     },
     {
-        "name": "Bệnh đóng dấu lợn",
+        "name": "Đóng dấu lợn",
         "species": [
             "Lợn"
         ],
@@ -144,7 +144,7 @@
         ]
     },
     {
-        "name": "Bệnh sưng phù đầu",
+        "name": "Sưng phù đầu",
         "species": [
             "Lợn"
         ],
@@ -210,7 +210,7 @@
         ]
     },
     {
-        "name": "Bệnh chướng hơi dạ cỏ cấp tính",
+        "name": "Chướng hơi dạ cỏ cấp tính",
         "species": [
             "Bò"
         ],
@@ -284,7 +284,7 @@
         ]
     },
     {
-        "name": "Bệnh Anthrax (nhiệt thán)",
+        "name": "Anthrax (nhiệt thán)",
         "species": [
             "Bò"
         ],
@@ -331,7 +331,7 @@
         ]
     },
     {
-        "name": "Bệnh viêm ruột cata cấp tính",
+        "name": "Viêm ruột cata cấp tính",
         "species": [
             "Dê"
         ],
@@ -370,7 +370,7 @@
         ]
     },
     {
-        "name": "Bệnh cảm nắng",
+        "name": "Cảm nắng",
         "species": [
             "Lợn",
             "Bò",
@@ -412,7 +412,7 @@
         ]
     },
     {
-        "name": "Bệnh cảm nóng",
+        "name": "Cảm nóng",
         "species": [
             "Trâu"
         ],
@@ -448,7 +448,7 @@
         ]
     },
     {
-        "name": "Bệnh vỡ vai",
+        "name": "Vỡ vai",
         "species": [
             "Trâu"
         ],
@@ -457,8 +457,7 @@
             "Chủ yếu là do sự cọ xát của vai cày (ách) lên tổ chức vùng vai của trâu bò. Khi trâu, bò làm việc, con vật phải dùng một lực rất lớn và toàn bộ lực ấy dồn lên vai của nó, do đó tổ chức vùng vai của con vật sẽ bị vai (ách) đè nén, cọ xát rất mạnh. Nếu vai (ách) không phù hợp với vai con vật (quá chật hoặc quá rộng) thì khi con vật kéo cày, bừa hoặc kéo xe, vai (ách) sẽ day qua, day lại, cọ xát mạnh lên tổ chức vùng vai làm cho tổ chức này bị tổn thương.",
             "Ngoài ra, vai (ách) còn được làm bằng gỗ chất lượng không tốt, bào không nhẵn cũng dễ làm tổn thương đến vai của con vật. Chỉ cần sây sát nhỏ cũng có thể làm vi khuẩn gây mủ xâm nhập vào làm cho vai con vật bị nhiễm trùng hóa mủ."
         ],
-        "envfactors": [
-        ],
+        "envfactors": [],
         "symptoms": [
             "viêm",
             "da bị bong ra",

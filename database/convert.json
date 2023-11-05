@@ -193,7 +193,7 @@
     {
         "distinct": [
             "sốt",
-            "không sốt",
+            "sốt nhẹ",
             "nóng",
             "nhiệt độ cơ thể cao"
         ],
@@ -851,7 +851,7 @@
         "general": "nằm chồng lên nhau"
     },
     {
-        "distinct":[
+        "distinct": [
             "yếu ớt",
             "yếu đuối",
             "sức khỏe yếu"
