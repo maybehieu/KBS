@@ -115,10 +115,12 @@
         "envfactors": [
             "chuồng trại kém vệ sinh",
             "thức ăn không đảm bảo",
-            "thay đổi thời tiết"
+            "thay đổi thời tiết",
+            "vận chuyển",
+            "nhiệt độ cao"
         ],
         "symptoms": [
-            "sốt",
+            "sốt cao",
             "mệt mỏi",
             "da trắng bệch",
             "chết",
@@ -134,7 +136,8 @@
             "da bị tím tái",
             "đi lại khó khăn",
             "dáng khom khom",
-            "mông cong lên"
+            "mông cong lên",
+            "bí đái ỉa"
         ],
         "treatments": [
             "Thể quá cấp và cấp tính: cần dùng kháng huyết thanh hoặc kháng thể được sản xuất từ máu của ngựa, kết hợp với kháng sinh để điều trị mới thu được kết quả.\nKháng huyết thanh đóng dấu có thể tiêm dưới da, tiêm bắp hoặc tiêm ven với liều 1 - 1,5 ml/1kgP\nKháng sinh thường dùng là các loại có tác dụng chủ yếu vi khuẩn Gram dương là: Penicillin, Ampicillin, Amoxycillin, Cloxacillin, Ceftiofur, Fosfomycin, Gentamycin. Chúng có thể dùng riêng rẽ nhưng khi kết hợp thì hiệu quả điều trị tốt hơn nhiều.\nĐặc biệt các loại thuốc có tác dụng kéo dài đạt hiệu quả điều trị rất cao bệnh đóng dấu là: T. Amoxycol, T. Amoxigen, Vidan T, T. Enteron, T. Gastron, T. Diatrizon, Linco-Gen L. A. 15%, Macavet. Dùng tiêm bắp: 1ml/8- 10kgP/lần. Ngày tiêm 2 lần, tiêm 3- 4 ngày chắc chắn bệnh sẽ khỏi.\nKết quả điều trị sẽ rất cao nếu buổi sáng ta tiêm một loại thuốc, buổi chiều ta dùng loại khác theo những phác đồ sau:\nPhác đồ 1: Tiêm bắp:\nSáng: T.Gastron 1ml/10kgP\nChiều: T.enteron 1ml/10kgP\nPhác đồ 2: Tiêm bắp:\nSáng: Vidan.T 1ml/10kgP\nChiều: T.Amoxigen 1ml/10kgP\nThuốc dùng 3 ngày liên tục bệnh sẽ khỏi.\nPhác đồ 3:\nSáng: Macavet 1ml/10kgP\nChiều: Linco-Gen L.A 1ml/10kgP\nPhác đồ 4:\nSáng: Ceftiofur 1ml/12kgP\nChiều: Amoxigen 1ml/10kgP"
@@ -166,7 +169,9 @@
             "tiếng kêu thay đổi",
             "thần kinh",
             "sốt",
-            "tiêu chảy"
+            "tiêu chảy",
+            "phân có máu",
+            "phân hôi thối"
         ],
         "treatments": [
             "Cần thiết nhất cắt giảm lượng thức ăn cho heo Tiêm lại kháng thể ecoli hoặc đa kháng thể cho heo Cho tổng đàn uống men lacto để cân bằng lại hệ vi sinh vật đường ruột Tăng cường miễn dịch tự nhiên cho lợn bằng cách trộn men tiêu hoá, amox-colis để phòng bệnh định kỳ vào thức ăn"
@@ -178,7 +183,7 @@
     {
         "name": "Viêm nội tâm mạc cấp tính",
         "species": [
-            "Bò"
+            "Bò", "Lợn"
         ],
         "description": "Viêm nội tâm mạc cấp tính ở bò, còn được gọi là Endocarditis acuta, là một bệnh thường gặp trong ngành chăn nuôi bò. Bệnh này xảy ra khi dạ dày và ruột của bò sản xuất quá nhiều axit, đặc biệt là axit lactic",
         "causes": [
@@ -212,7 +217,7 @@
     {
         "name": "Chướng hơi dạ cỏ cấp tính",
         "species": [
-            "Bò"
+            "Bò", "Trâu", "Dê"
         ],
         "description": "Chướng hơi dạ cỏ là bệnh dạ cỏ chướng hơi phình to, chèn ép vào cơ hoành, làm trở ngại hô hấp và tuần hoàn. Bệnh thường gặp ở trâu, bò, dê, nhiều nhất vào vụ đông - xuân.",
         "causes": [
@@ -220,7 +225,8 @@
             "Do kế phát từ các bệnh của hệ tiêu hóa như bệnh liệt dạ cỏ, viêm dạ tổ ong, liệt thực quản."
         ],
         "envfactors": [
-            "thay đổi thời tiết"
+            "thay đổi thời tiết",
+            "thức ăn không đảm bảo"
         ],
         "symptoms": [
             "bồn chồn",
@@ -235,7 +241,8 @@
             "thở gấp",
             "tim đập nhanh",
             "chết",
-            "gõ vùng dạ cỏ thấy âm trống"
+            "gõ vùng dạ cỏ thấy âm trống",
+            "dạ cỏ căng như bóng"
         ],
         "treatments": [
             "Nguyên tắc điều trị: Tìm mọi biện pháp làm thoát hơi trong dạ cỏ, ức chế hiện tượng lên men, tăng cường nhu động dạ cỏ đồng thời chú ý trợ tim, trợ sức cho con vật. Thoát hơi trong dạ cỏ:\nDùng rơm chà sát vùng dạ cỏ, mỗi lần chà sát khoảng 20 phút, ngày chà sát 3 - 4 lần để kích thích nhu động dạ cỏ.\nCho gia súc đứng ở tư thế lên dốc để dễ thở và dội nước lạnh vào nửa thân sau để kích thích nhu động dạ cỏ.\nDùng tay kéo lưỡi ra nhịp nhàng để kích thích ợ hơi.\nDùng nõn chuối đưa vào họng để kích thích ợ hơi.\nThụt nước ấm vào trực tràng để kích thích trung tiện.\nDùng ống thông dạ dày để thoát hơi ra.\nỨc chế sự lên men sinh hơi trong dạ cỏ.\nDùng NH4OH 15 ml hoặc axit lactic 10 - 15 ml pha vào nước cho uống.\nDùng 100 - 200 ml cồn hoà với vài củ tỏi giã nhỏ và với 500 ml nước, cho gia súc uống.\nDùng MgSO4 hoặc Na2SO4: 200-300 gam hòa nhiều nước, cho uống 1 lần\nNếu bệnh nặng, hơi không thoát ra được ta phải dùng troca chọc vào dạ cỏ để làm thoát hơi ra"
@@ -247,7 +254,7 @@
     {
         "name": "Bội thực dạ cỏ",
         "species": [
-            "Bò"
+            "Bò", "Trâu"
         ],
         "description": "Trong dạ cỏ chứa nhiều thức ăn khó tiêu hóa làm cho thể tích dạ dày tăng lên gấp bội, vách dạ dày căng. Nếu thức ăn tích lại lâu trong dạ cỏ thường kế phát viêm ruột và gây rối loạn hô hấp, cơ thể bị nhiễm độc — con vật chết.Đây là bệnh trâu bò hay mắc (chiếm 40% trong các bệnh ở dạ dày bốn túi). Bệnh tiến triển chậm (thường xảy ra sau khi ăn từ 6 - 9 giờ).",
         "causes": [
@@ -333,7 +340,7 @@
     {
         "name": "Viêm ruột cata cấp tính",
         "species": [
-            "Dê"
+            "Dê", "Bò", "Lợn"
         ],
         "description": "",
         "causes": [
@@ -341,7 +348,8 @@
             "Do kế phát từ một số bệnh (như bệnh dịch tả, tụ huyết trùng, phó lao, sán lá gan, sán lá ruột, viêm gan, tắc dạ lá sách,...)."
         ],
         "envfactors": [
-            "thay đổi thời tiết"
+            "thay đổi thời tiết",
+            "thức ăn không đảm bảo"
         ],
         "symptoms": [
             "chán ăn",
@@ -353,7 +361,7 @@
             "chết rất nhanh",
             "thân nhiệt giảm",
             "tiêu chảy",
-            "phân đen, thối khẳm",
+            "phân hôi thối",
             "phân có máu",
             "nôn mửa",
             "hố mắt trũng sâu",
@@ -402,7 +410,7 @@
             "mất phản xạ",
             "run rẩy",
             "co giật",
-            "chết"
+            "chết rất nhanh"
         ],
         "treatments": [
             "Đưa ngay con vật vào chỗ râm mát và thoáng khí.\nChườm nước lạnh lên vùng đầu của gia súc để làm giảm hiện tượng sung huyết não. Sau đó dội nước lạnh toàn thân.\nCó thể thụt nước lạnh vào trực tràng để làm giảm nhiệt độ của cơ thể.\nTăng cường tuần hoàn và hô hấp cho cơ thể:\nTiêm dưới da cafein 20%:\nTrâu, bò, ngựa: 2 - 4 gam\nDê, cừu, lợn: 0,5 - 1 gam\nChó: 0,1 - 0,2 gam\nNếu não bị sung huyết nặng thì phải trích máu ở tĩnh mạch cổ.\nCho uống thuốc hạ sốt: pyramidon, paracetamon...\nXoa bóp toàn thân cho máu lưu thông để chống sung huyết não.\nTrợ sức, trợ lực bằng glucoza 20 - 40%, tiêm vào tĩnh mạch cho gia súc."

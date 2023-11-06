@@ -72,7 +72,8 @@
             "chuồng trại bẩn",
             "chuồng trại không dọn dẹp",
             "chuồng trại bừa bãi",
-            "chuồng trại ẩm ướt"
+            "chuồng trại ẩm ướt",
+            "chuồng trại ngột ngạt"
         ],
         "general": "chuồng trại kém vệ sinh"
     },
@@ -283,7 +284,8 @@
         "distinct": [
             "phân hôi thối",
             "phân đen, thối khẳm",
-            "phân thay đổi màu sắc và mùi"
+            "phân thay đổi màu sắc và mùi",
+            "phân hôi tanh"
         ],
         "general": "phân hôi thối"
     },
@@ -476,7 +478,8 @@
         "distinct": [
             "bụng phình to",
             "căng trướng bụng",
-            "bụng nở to"
+            "bụng nở to",
+            "bụng trương to"
         ],
         "general": "bụng phình to"
     },
@@ -857,5 +860,20 @@
             "sức khỏe yếu"
         ],
         "general": "yếu ớt"
+    },
+    {
+        "distinct": [
+            "bí đái",
+            "bí ỉa",
+            "bí đá ỉa"
+        ],
+        "general": "bí đái ỉa"
+    },
+    {
+        "distinct": [
+            "dạ cỏ căng như bóng",
+            "dạ cỏ căng"
+        ],
+        "general": "dạ cỏ căng như bóng"
     }
 ]
