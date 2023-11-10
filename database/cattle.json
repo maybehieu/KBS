@@ -48,14 +48,14 @@
         "symptoms": [
             ["sốt"],
             ["chán ăn"],
-            ["mệt mỏi"],
+            ["mệt mỏi","lười vận động, ủ rũ, nằm chồng đống"],
             ["sụt cân"],
             ["cử động khó khăn"],
             ["nằm chỗ có bóng râm"],
             ["đau bụng"],
             ["lưng cong"],
             ["di chuyển bất thường"],
-            ["da đổi màu"],
+            ["da đổi màu","vùng da trắng như vành tai, đuôi, cẳng chân, vùng ngực và bụng chuyển đỏ hoặc màu sẫm xanh tím"],
             ["thần kinh"],
             ["khó thở"],
             ["viêm mắt"],
@@ -89,12 +89,12 @@
         "symptoms": [
             ["sốt cao"],
             ["chảy dãi"],
-            ["mụn nước"],
+            ["mụn nước","mụn ở vùng quanh móng chân, bàn chân, kẽ móng, sau đó phát triển thành mảng lớn, vỡ ra, tạo vết loét"],
             ["viêm loét"],
             ["mệt mỏi"],
             ["chán ăn"],
-            ["di chuyển bất thường"],
-            ["xây xát"],
+            ["di chuyển bất thường","di chuyển bằng đầu gối"],
+            ["xây xát","xây xát đầu gối"],
             ["sảy thai"]
         ],
         "treatments": [
@@ -131,10 +131,10 @@
             ["quỵ xuống"],
             ["khó thở"],
             ["tim đập nhanh"],
-            ["da đổi màu"],
-            ["viêm loét"],
+            ["da đổi màu","xuất hiện từng đám đỏ ở khắp da (vùng lưng, vai và da mềm như bụng, bẹn háng, tai, cổ,...)"],
+            ["viêm loét","Các nốt loét da có hình vuông, hình bình hành, hình thoi, ít khi có hình tròn"],
             ["da vảy nâu, dễ bong tróc"],
-            ["da bị tím tái"],
+            ["da bị tím tái","da phần mõm, tai, bụng bị tím tái do lợn bị viêm tim"],
             ["đi lại khó khăn"],
             ["dáng khom khom"],
             ["mông cong lên"],
@@ -166,12 +166,12 @@
         ],
         "symptoms": [
             ["chết nhanh"],
-            ["phù"],
-            ["tiếng kêu thay đổi"],
-            ["thần kinh"],
+            ["phù","phù mí mắt có trước, sau đó xuất hiện phù mặt, phù đầu"],
+            ["tiếng kêu thay đổi","tiếng kêu khác, lạ do phù vùng hầu chèn ép vào dây thanh quản"],
+            ["thần kinh","mất thăng bằng, đi lảo đảo, ngã, liệt, lúc gần chết có hiện tượng co giật bơi chèo"],
             ["sốt"],
             ["tiêu chảy"],
-            ["phân có máu"],
+            ["phân có máu","phân lỏng có màu vàng xám hoặc trắng, có chất nhầy, lẫn máu"],
             ["phân hôi thối"]
         ],
         "treatments": [
@@ -204,8 +204,8 @@
             ["tim đập nhanh"],
             ["rung tim"],
             ["khó thở"],
-            ["phù"],
-            ["bại liệt"],
+            ["phù","nhồi máu ở gan sẽ có hiện tượng báng nước, phù thững"],
+            ["bại liệt","nhồi huyết ở não sẽ gây bại liệt"],
             ["chết rất nhanh"]            
         ],
         "treatments": [
@@ -234,7 +234,7 @@
             ["bụng phình to"],
             ["đau bụng"],
             ["lưng cong"],
-            ["hai chân dạng ra"],
+            ["hai chân dạng ra","con vật đứng dạng hai chân sau, nếu nằm thì chân thu vào bụng"],
             ["hõm hông bên trái căng phồng"],
             ["vã mồ hôi"],
             ["ngừng nhai lại"],
@@ -274,15 +274,15 @@
             ["ngừng nhai lại"],
             ["hơi ợ ra có mùi chua"],
             ["chảy dãi"],
-            ["đau bụng"],
+            ["đau bụng","khó chịu, đuôi quất mạnh vào thân"],
             ["cử động khó khăn"],
             ["hai chân dạng ra"],
             ["bụng phình to"],
             ["sờ dạ cỏ như sờ túi bột"],
-            ["thở gấp"],
+            ["thở gấp","thở nhanh, nông"],
             ["tim đập nhanh"],
             ["run rẩy"],
-            ["mệt mỏi"]
+            ["mệt mỏi","nằm mê mệt không muốn dậy"]
         ],
         "treatments": [
             "Nguyên tắc điều trị: làm hồi phục và tăng cường nhu động dạ cỏ, tìm cách thải thức ăn tích lâu ngày trong dạ cỏ. Cho gia súc nhịn ăn 1 - 2 ngày (không hạn chế nước uống), tăng cường xoa bóp vùng dạ cỏ, dắt cho gia súc vận động để tăng cường cơ năng vận động của dạ cỏ. Những ngày sau cho gia súc ăn một ít thức ăn mềm, dễ tiêu và cho ăn làm nhiều lần trong ngày, đồng thời có thể thụt cho gia súc bằng nước ấm. Moi phân trong trực tràng và kích thích bàng quang cho con vật đi tiểu. Dùng thuốc tẩy trừ chất chứa trong dạ cỏ: Sulfat natri 300 - 500 g/con (trâu, bò); 50 - 100 g/con (bê, nghé); 20 - 50 g/con (dê, cừu). Hòa với nước sạch cho con vật uống 1 lần trong ngày đầu điều trị. Dùng thuốc tăng cường nhu động dạ cỏ: Pilocacpin 3% 5 - 10ml/con (trâu, bò); 3 - 5ml/con (bê, nghé); 2 - 3ml/con (dê, cừu). Tiêm bắp, ngày 1 lần Tăng cường tiêu hóa ở dạ cỏ: dùng HC1 (10 - 12ml nguyên chuẩn hòa với 1 lít nước). Cho con vật uống ngày 1 lần. Đề phòng thức ăn lên men trong dạ cỏ Ichthyol: trâu, bò (20 - 30g), dê, cừu, bê, nghé (1 - 2g). Cho uống ngày 1 lần. Hoặc dùng formol (15ml nguyên chuẩn hoà với 1 lít nước sạch) cho con vật uống: trâu, bò (1 lít/con); bê, nghé, dê (200 - 300ml/con). Cho uống ngày 1 lần. Hoặc dùng: cồn + tỏi; nước dưa chua, nước lá thị cho con vật uống."
@@ -314,7 +314,7 @@
             ["chán ăn"],
             ["vã mồ hôi"],
             ["sốt"],
-            ["thần kinh"],
+            ["thần kinh","nghiến răng lè lưỡi, mắt đỏ, co giật, mê man, quỵ xuống"],
             ["viêm mắt"],
             ["co giật"],
             ["mê man"],
@@ -324,12 +324,12 @@
             ["tiêu chảy"],
             ["phân có máu"],
             ["nước tiểu có máu"],
-            ["chảy máu"],
-            ["sưng"],
+            ["chảy máu","mồm mũi có bọt hồng lẫn máu","chảy máu mũi và mắt"],
+            ["sưng","hầu, ngực bị sưng"],
             ["giảm sữa"],
             ["sẩy thai"],
             ["chết"],
-            ["nốt viêm loét hoại tử da"]    
+            ["nốt viêm loét hoại tử da","mụn loét đỏ chảy nước màu vàng đỏ"]    
         ],
         "treatments": [
             "Hiện nay ở Việt Nam khi gia súc mắc bệnh nhiệt thán ở thể nặng hầu như không có cách chữa trị cho con vật khỏi bệnh nên cần phải chú ý trong khâu phòng bệnh để tránh ảnh hưởng tới kinh tế của gia đình."
@@ -363,7 +363,7 @@
             ["thân nhiệt giảm"],
             ["tiêu chảy"],
             ["phân hôi thối"],
-            ["phân có máu"],
+            ["phân có máu","phân lỏng như nước, màu đen, có khi lẫn cả máu tươi"],
             ["nôn mửa"],
             ["hố mắt trũng sâu"],
             ["khoé mắt có rử"],
@@ -397,17 +397,17 @@
         ],
         "symptoms": [
             ["choáng váng"],
-            ["di chuyển bất thường"],
-            ["viêm mắt"],
+            ["di chuyển bất thường","đi đứng xiêu vẹo"],
+            ["viêm mắt","niêm mạc mắt tím bầm"],
             ["vã mồ hôi"],
             ["nôn mửa"],
-            ["thần kinh"],
+            ["thần kinh"," điên cuồng và tỏ ra sợ hãi, mắt đỏ ngầu"],
             ["bồn chồn"],
             ["khó thở"],
             ["thở kiểu Cheyne - Stokes"],
             ["thân nhiệt tăng"],
             ["da khô"],
-            ["đồng tử mắt mở rộng"],
+            ["đồng tử mắt mở rộng","đồng tử mắt mở rộng, sau thu hẹp lại"],
             ["mất phản xạ"],
             ["run rẩy"],
             ["co giật"],
@@ -438,16 +438,16 @@
             ["khó thở"],
             ["vã mồ hôi"],
             ["mệt mỏi"],
-            ["viêm mắt"],
+            ["viêm mắt","niêm mạc tím bầm"],
             ["tim đập nhanh"],
             ["thân nhiệt tăng"],
-            ["co giật"],
+            ["co giật","cơ nhai và cơ môi co giật"],
             ["nôn mửa"],
-            ["thần kinh"],
+            ["thần kinh","điên cuồng, co giật"],
             ["đồng tử mắt mở rộng"],
             ["hôn mê"],
             ["chết"],
-            ["sùi bọt mép"]
+            ["sùi bọt mép","sùi bọt mép, có khi lẫn cả máu"]
         ],
         "treatments": [
             "Để gia súc ở nơi yên tĩnh và thoáng mát, tăng cường thoát nhiệt cho cơ thể. Chú ý để phòng tê liệt trung khu thần kinh.\nDùng nước lạnh đắp lên đầu và dội toàn thân cho gia súc.\nTiếp dung dịch nước sinh lý, dung dịch glucoza vào tĩnh mạch để bổ sung nước cho con vật.\nTiêm thuốc trợ tim: cafein, long não vào dưới da cho con vật.\nTrường hợp mạch quá căng ta phải trích huyết ở tĩnh mạch cổ."
@@ -468,16 +468,16 @@
         ],
         "envfactors": [],
         "symptoms": [
-            ["viêm"],
+            ["viêm","tổ chức vùng vai sau khi bị tổn thương xuất hiện viêm nhẹ"],
             ["da bị bong ra"],
             ["rụng lông"],
-            ["tương dịch màu vàng trong suốt đọng lại"],
-            ["viêm hóa mủ"],
+            ["tương dịch màu vàng trong suốt đọng lại","dịch thẩm suất thể tương dịch màu vàng trong suốt đọng lại thành giọt như giọt sương"],
+            ["viêm hóa mủ","da bị sây sát, vi khuẩn hóa mủ xâm nhập vào, nhẹ các lỗ chân lông bị viêm hóa mủ"],
             ["mụn nước"],
             ["thân nhiệt tăng"],
-            ["sưng"],
-            ["nhiễm trùng"],
-            ["mưng mủ"]            
+            ["sưng","tổ chức cục bộ sưng to, hình thành áp xe"],
+            ["nhiễm trùng","ap xe tự vỡ tại chỗ da mỏng nhất, mủ tích tụ trong bọc tạo thành lỗ dò"],
+            ["mưng mủ","mủ chảy ra rất hôi thối, có khi lẫn cả tổ chức hoại tử màu máu cá"]            
         ],
         "treatments": [
             "Trường hợp da ở vùng vai con vật bị sây sát, làm cho lớp biểu bì bong ra ta có thể dùng dung dịch Gentian violet hoặc Bleu methylen 2% trong cồn 90 để bôi lên vùng bệnh cho con vật.\nNếu vùng bệnh đã hình thành mụn nhọt, áp xe, lỗ dò thì điều trị theo cách điều trị các bệnh trên (xem phần điều trị mụn nhọt, áp xe, lỗ dò)."

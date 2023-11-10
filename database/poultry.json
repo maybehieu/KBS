@@ -18,7 +18,7 @@
         "symptoms": [
             ["mệt mỏi"],
             ["yếu ớt"],
-            ["chán ăn"],
+            ["chán ăn","từ chối ăn hoặc ăn ít hơn"],
             ["nôn mửa"],
             ["tiêu chảy"],
             ["rụng lông"],
@@ -48,18 +48,18 @@
             "thức ăn không đảm bảo"
         ],
         "symptoms": [
-            ["khó thở"],
+            ["khó thở","hen nhẹ, thở khò khè","thở đớp khí, có tiếng rít và ngáp"],
             ["hắt hơi"],
             ["vảy mỏ"],
             ["chán ăn"],
             ["mệt mỏi"],
             ["chết"],
-            ["sụt cân"],
+            ["sụt cân","gầy yếu, lớn chậm, tỷ lệ đồng đều kém, tăng cao tỷ lệ loại thải"],
             ["lắc đầu"],
             ["sốt cao"],
             ["chảy nước mũi"],
             ["chảy nước mắt"],
-            ["sưng"]            
+            ["sưng", "sưng mặt"]            
         ],
         "treatments": [
             "Bước 1: Điều trị triệu chứng, hạ sốt, kháng viêm, tan đàm, thông hô hấp...\nSputumiz: thành phần gồm Bromhexine, Prenisolone, Mentha piperita (tinh dầu bạc hà). Sputumiz có tác dụng tan đàm dễ thở, kháng viêm, tăng hiệu quả của kháng sinh\nPara C: thành phần gồm Paracetamol, Vitamin C, Sodium Cloride, Postassium Cloride. Para C có tác dụng giảm đau, hạ sốt, tăng sức kháng bệnh.\n2: Dùng kháng sinh đặc trị gồm nhóm CEFTIOFUR, LINCOMYCIN+SPECTINOMYCIN hoặc DOXYCYCLINE tiêu diệt, kiềm hãm mầm bệnh:\nNASHER FUR: thành phần CEFTIOFUR\nĐường cấp: tiêm\nLiều cấp : 1 ml / 10kg gà ( gà có trọng lượng trên 1kg)\n               1 ml / 5kg gà ( gà có trọng lượng dưới 1kg)\nNhịp cấp: 1 lần/ngày.\nThời gian cấp: 1-2 ngày\nKết hợp với hoạt chất anpha chymotrypsin để tăng hiệu quả điều trị của kháng sinh\nSong song với tiêm, chúng ta cần sử dùng phối hợp với kháng sinh đường uống.\nLINCOSPECMYCIN - 110: thành phần LINCOMYCINE+SPECTINOMYCIN\nĐường cấp: Uống\nLiều cấp: 1gram / 10 kg gà\nNhịp cấp: 2 lần / ngày.\nThời gian cấp: 5-7 ngày\nhoặc\nGIUSE 20: thành phần DOXYCYCLINE\nĐường cấp: Uống\nLiều cấp: 1gram / 10 kg gà\nNhịp cấp: 2 lần / ngày.\nThời gian cấp: 5-7 ngày\nBước 3: Hỗ trợ điều trị.\nSử dụng các sản phẩm chuyên biệt giúp tăng sức đề kháng, giải độc gan thận.\nNOVITECH YL: tăng sức đề kháng, giải độc gan\nASCOREQUIL: sản phẩm giải độc gan chuyên biệt\nRENAL CLEANER: sản phẩm giải độc thận chuyên biệt\nTrường hợp thể trạng gà yếu và có biểu hiện gan thận quá xấu, chúng ta nên tăng cường hỗ trợ điều trị trước khi sử dụng kháng sinh."
@@ -82,11 +82,11 @@
         ],
         "symptoms": [
             ["chán ăn"],
-            ["viêm"],
+            ["viêm","viêm xoang mũi"],
             ["chảy nước mũi"],
-            ["khó thở"],
+            ["khó thở","thở khò khè"],
             ["chảy nước mắt"],
-            ["sưng"],
+            ["sưng","sưng mặt"],
             ["mệt mỏi"],
             ["chậm lớn"],
             ["giảm đẻ"]            
@@ -114,10 +114,10 @@
         ],
         "symptoms": [
             ["mệt mỏi"],
-            ["di chuyển bất thường"],
-            ["phù"],
-            ["sưng"],
-            ["bướu"],
+            ["di chuyển bất thường","chậm chạp"],
+            ["phù","phù nề vùng đầu"],
+            ["sưng","sưng vùng trán, mắt, sau đó lan dần tới cổ"],
+            ["bướu"," u bướu xuất hiện đầu tiên ở hàm dưới, cổ, tiếp theo là ở hốc mắt, ống chân"],
             ["khó thở"],
             ["chán ăn"],
             ["sụt cân"],
@@ -146,19 +146,19 @@
         ],
         "symptoms": [
             ["chán ăn"],
-            ["khó thở"],
+            ["khó thở","khi thở vươn cổ dài"],
             ["thở gấp"],
             ["chảy nước mũi"],
             ["thân nhiệt tăng"],
-            ["mệt mỏi"],
+            ["mệt mỏi","bơ phờ"],
             ["phân hôi thối"],
             ["sụt cân"],
-            ["co giật"],
-            ["viêm"],
+            ["co giật","suy nhược nhanh và một số trường hợp có triệu chứng co giật"],
+            ["viêm","viêm ruột, chảy máu ruột"],
             ["tiêu chảy"],
             ["bại liệt"],
             ["khát nước"],
-            ["nằm chồng lên nhau"]            
+            ["nằm chồng lên nhau","ủ rũ, thường túm tụm lại thành nhóm và nằm chồng lên nhau"]            
         ],
         "treatments": [
             "Trị bệnh: Khi chăn nuôi vịt, cách ly vịt bị bệnh với vịt khoẻ, đồng thời bổ sung vitamin A vào thức ăn cho vịt.\nKhi vịt chưa bị bệnh thì dùng thuốc Vimetadin – 56 trộn vào thức ăn thường xuyên để phòng bệnh với liều lượng: 1g/kg thức ăn. Khi vịt bệnh trộn 2g/kg thức ăn.\nKết hợp pha Vime – Iodine vào nước sạch cho vịt uống với liều 10ml/20; nước, dung dịch pha xong cho vịt uống trong vòng 24 giờ."
