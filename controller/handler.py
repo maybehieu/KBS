@@ -143,7 +143,8 @@ class Disease:
         self.index = index
 
         self.all_envsym = []
-        self.all_envsym = self.environment_factors + self.symptoms
+        # self.all_envsym = self.environment_factors + self.symptoms
+        self.all_envsym = [[i] for i in self.environment_factors] + self.symptoms
 
     def init_temp(self, env=[], sym=[]):
         self.environment_factors = env
@@ -153,13 +154,25 @@ class Disease:
     def update_temp(self, envsym=[]):
         self.all_envsym.extend(envsym)
 
-    def get_envsym_not_appear_weight_based(self, asked=[""]):
+    def get_sym_from_key(self, key=""):
+        for _sym in self.symptoms:
+            if _sym[0] == key:
+                return _sym
+        return None
+
+    def get_envsym_not_appear_weight_based(self, asked=[[""]]):
         ret = []
         for key in self.weight:
-            if key not in asked:
+            sym_env = self.get_sym_from_key(key)
+            if sym_env is not None and sym_env not in asked:
+                ret.append((key, self.weight[key]))
+            elif sym_env is None and [key] not in asked:
                 ret.append((key, self.weight[key]))
         ret = sorted(ret, key=lambda x: x[1], reverse=True)
-        return ret[0][0] if len(ret) > 0 else "none"
+        if len(ret) > 0:
+            if self.get_sym_from_key(ret[0][0]) is not None:
+                return self.get_sym_from_key(ret[0][0])
+        return [ret[0][0]] if len(ret) > 0 else "none"
 
     def process_symptoms(self):
         pass
@@ -324,6 +337,7 @@ class DiseasesDiagnosis:
             "lý tưởng",
             "rộng rãi",
             "thoáng mát",
+            "sạch sẽ",
         ]
         self.cbr_threshold = 0.7
         self.match_threshold = 0.9
@@ -376,6 +390,37 @@ class DiseasesDiagnosis:
         # chẩn đoán bệnh
         self.diagnosed_disease = self.diagnose()
         # tương tác xử lý thông tin cho người dùng
+        self.support_user()
+
+    def support_user(self):
+        print(
+            f'Xác định được bệnh mà con vật của bạn đang gặp phải là bệnh "{self.diagnosed_disease.name}"\n'
+            f"Các thông tin cơ bản của bệnh bao gồm:\n"
+        )
+        self.diagnosed_disease.print_basic()
+        print(
+            "Các chức năng khả dụng hiện tại:\n"
+            "1. Nêu nguyên nhân bệnh\n"
+            "2. Nêu các triệu chứng của bệnh\n"
+            "3. Nêu cách phòng bệnh\n"
+            "4. Nêu cách chữa bệnh\n"
+            "0. Kết thúc trò chuyện\n"
+        )
+        opts = [0, 1, 2, 3, 4]
+        state = False
+        while True:
+            u_in = input("Vui lòng nhập lựa chọn của bạn: ")
+            while True:
+                try:
+                    u_in = int(u_in)
+                    if u_in not in opts:
+                        print("Vui lòng chỉ chọn các lựa chọn phía trên")
+                        break
+                except:
+                    print("Vui lòng sử dụng số khi bạn lựa chọn chức năng muốn sử dụng")
+                    break
+            if not state:
+                continue
 
     def diagnose(self):
         print(
@@ -419,9 +464,12 @@ class DiseasesDiagnosis:
         # thực hiện tính toán tìm case
         temp_disease = Disease()
         temp_disease.init_temp(self.current_envfacs, self.current_symptoms)
-        comparison_diseases = (
-            self.cattle if self.current_species == "cattle" else self.poultry
-        )
+        if self.current_species != "none":
+            comparison_diseases = (
+                self.cattle if self.current_species == "cattle" else self.poultry
+            )
+        else:
+            comparison_diseases = {**self.cattle, **self.poultry}
         disease_similarities = (
             []
         )  # format: ((bệnh đang được chẩn đoán, bệnh đã có trong hệ tri thức), độ tương đồng)
@@ -433,7 +481,8 @@ class DiseasesDiagnosis:
         disease_similarities = sorted(
             disease_similarities, key=lambda x: x[1], reverse=True
         )
-
+        print("debug, thông tin sử dụng trong bệnh")
+        print(temp_disease.all_envsym)
         print("debug, danh sách các bệnh và độ tương đồng: ")
         for d in disease_similarities:
             print(f"query: {d[0][0].name}, db: {d[0][1].name}, sim: {d[1]}")
@@ -451,17 +500,22 @@ class DiseasesDiagnosis:
         cnt = 0
         sim = []
         while cnt < 2:
+            print("debug, thông tin trong bệnh đang được chẩn đoán")
+            print(diag.all_envsym)
+            print("debug, thông tin đã được hỏi")
+            print(asked)
             sim = []
             # tìm triệu chứng có trọng số cao nhất trong mỗi bệnh
             for disease in potential:
                 _envsym = disease.get_envsym_not_appear_weight_based(asked)
                 if _envsym == "none":
                     continue
-                if _envsym in asked or _envsym in diag.all_envsym:
+                # if _envsym in asked or _envsym[0] in diag.all_envsym:
+                if _envsym in asked:
                     continue
                 # thực hiện hỏi
                 if self.get_yesno_envsym(_envsym):
-                    diag.all_envsym.append(_envsym)
+                    diag.all_envsym.append(_envsym[0])
                 asked.append(_envsym)
             # tính toán lại độ tương đồng
             for disease in potential:
@@ -482,9 +536,22 @@ class DiseasesDiagnosis:
         _in = _in.split(";")
         for data in _in:
             _out, _data = self.find_symenv_tfidf_based(data)
+            # tiền xử lý dữ liệu đầu vào
+            # KHÔNG bỏ qua triệu chứng nếu trong câu chứa cả từ phủ định và tích cực (không + sạch sẽ -> không sạch sẽ)
+            if any(neutral in _data for neutral in self.neutral_words) and any(
+                negative in _data for negative in self.disagree_resp
+            ):
+                print(
+                    f"debug: xuất hiện case nega-neutral, double check dữ liệu: {data} -> {_data}"
+                )
+                pass
             # bỏ qua triệu chứng nếu xuất hiện các từ 'trung hoà' trong dữ liệu nhập vào của người dùng
-            if any(neutral in _data for neutral in self.neutral_words):
+            elif any(neutral in _data for neutral in self.neutral_words):
                 print(f"debug: xuất hiện neutral trong {data}, bỏ qua triệu chứng")
+                continue
+            # bỏ qua triệu chứng nếu xuất hiện từ 'không' trong dữ liệu nhập vào (không sốt)
+            elif any(negative in _data for negative in self.disagree_resp):
+                print(f"debug: xuất hiện negative trong {data}, bỏ qua triệu chứng")
                 continue
             print(f'debug: người dùng nhập "{data}", hệ thống trả về "{_out}"')
             if _out == "none":
@@ -500,10 +567,20 @@ class DiseasesDiagnosis:
                 self.current_symptoms.append(_out)
             self.current_envsyms.append(_out)
 
-    def get_yesno_envsym(self, envsym=""):
+    def get_yesno_envsym(self, envsym=[]):
         # in lưu ý
+        ques = ""
+        sup = ""
         print("Đây là câu hỏi trả lời dạng có/ không")
-        _in = input(f'Con vật của bạn có triệu chứng "{envsym}" không? ')
+        if len(envsym) > 1:
+            ques = envsym[0]
+            sup = envsym[1]
+            _in = input(
+                f'Con vật của bạn có triệu chứng "{ques}" không? ("{ques}" thường có các biểu hiện như {sup})\n'
+            )
+        else:
+            ques = envsym[0]
+            _in = input(f'Con vật của bạn có triệu chứng "{ques}" không? ')
         return self.check_user_agree(_in)
 
     def get_timebased_envsym(self, msg=""):
@@ -518,7 +595,7 @@ class DiseasesDiagnosis:
     def calculate_cbr(self, query=Disease(), compare=Disease()):
         dsum = 0.0
         _sum = 0.0
-        for key in compare.all_envsym:
+        for key in compare.weight:
             try:
                 if key in query.all_envsym and key in compare.weight:
                     dsum += float(compare.weight[key])

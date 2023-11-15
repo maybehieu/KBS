@@ -60,9 +60,11 @@
             "không gian chật chội",
             "không gian bé",
             "không gian hẹp",
+            "không gian chật hẹp",
             "chuồng nuôi chật chội",
             "chuồng nuôi bé",
-            "chuồng nuôi hẹp"
+            "chuồng nuôi hẹp",
+            "chuồng nuôi chật hẹp"
         ],
         "general": "chuồng nuôi chật chội"
     },
