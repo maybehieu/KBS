@@ -75,7 +75,13 @@
             "chuồng trại không dọn dẹp",
             "chuồng trại bừa bãi",
             "chuồng trại ẩm ướt",
-            "chuồng trại ngột ngạt"
+            "chuồng trại ngột ngạt",
+            "chuồng nuôi kém vệ sinh",
+            "chuồng nuôi bẩn",
+            "chuồng nuôi không dọn dẹp",
+            "chuồng nuôi bừa bãi",
+            "chuồng nuôi ẩm ướt",
+            "chuồng nuôi ngột ngạt"
         ],
         "general": "chuồng trại kém vệ sinh"
     },

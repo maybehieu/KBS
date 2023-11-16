@@ -124,6 +124,7 @@ class Disease:
         },
         index=-1,
         w={"": {"": 0.0}},
+        c=[{}],
     ) -> None:
         self.name = j["name"]
         self.species = j["species"]
@@ -145,6 +146,14 @@ class Disease:
         self.all_envsym = []
         # self.all_envsym = self.environment_factors + self.symptoms
         self.all_envsym = [[i] for i in self.environment_factors] + self.symptoms
+        try:
+            self.medicine = [
+                m for m in c for s in self.treatments if m["name"].lower() in s.lower()
+            ]
+        except:
+            # print(self.treatments)
+            pass
+        # print(f"disease: {self.name}, medicine used: {self.medicine}")
 
     def init_temp(self, env=[], sym=[]):
         self.environment_factors = env
@@ -174,6 +183,11 @@ class Disease:
                 return self.get_sym_from_key(ret[0][0])
         return [ret[0][0]] if len(ret) > 0 else "none"
 
+    def print_medicine_props(self, index):
+        prop = self.medicine[index]
+        print(f"Tên thuốc: {prop['name']}")
+        print(f"Loại thuốc: {prop['type']}")
+        print(f"Công dụng thông thường: {' ,'.join(prop['effects'])}")
     def process_symptoms(self):
         pass
 
@@ -187,20 +201,23 @@ class Disease:
         print(self.description)
 
     def print_causes(self):
-        print(self.causes)
+        for s in self.causes: print(s)
 
     def print_environment_factors(self):
-        print(self.environment_factors)
+        for s in self.environment_factors: print(s)
 
     def print_symptoms(self):
-        print(self.symptoms)
+        for s in self.symptoms: print(s)
 
     def print_treatments(self):
-        print(self.treatments)
+        for s in self.treatments: print(s)
 
     def print_prevention(self):
-        print(self.prevention)
+        for s in self.prevention: print(s)
 
+    def print_medicine_name(self):
+        for index, item in enumerate(self.medicine):
+            print(f"{index}. {item['name']}")
     def get_index(self):
         return self.index
 
@@ -218,25 +235,25 @@ class Disease:
 class ChatbotController:
     def __init__(self) -> None:
         print("Đang khởi tạo hệ thống...")
-        with open(r"database\cattle.json", "r", encoding="utf8") as f:
+        with open(r"database/cattle.json", "r", encoding="utf8") as f:
             self.cattle_database = json.loads(f.read())
-        with open(r"database\poultry.json", "r", encoding="utf8") as f:
+        with open(r"database/poultry.json", "r", encoding="utf8") as f:
             self.poultry_database = json.loads(f.read())
-        with open(r"database\medicine.json", "r", encoding="utf8") as f:
+        with open(r"database/medicine.json", "r", encoding="utf8") as f:
             self.medicine_database = json.loads(f.read())
-        with open(r"database\convert.json", "r", encoding="utf8") as f:
+        with open(r"database/convert.json", "r", encoding="utf8") as f:
             self.generalized_database = json.loads(f.read())
-        with open(r"database\r_cattle.json", "r", encoding="utf8") as f:
+        with open(r"database/r_cattle.json", "r", encoding="utf8") as f:
             self.r_cattle_database = json.loads(f.read())
-        with open(r"database\r_poultry.json", "r", encoding="utf8") as f:
+        with open(r"database/r_poultry.json", "r", encoding="utf8") as f:
             self.r_poultry_database = json.loads(f.read())
-        with open(r"database\weights.json", "r", encoding="utf8") as f:
+        with open(r"database/weights.json", "r", encoding="utf8") as f:
             self.weights = json.loads(f.read())
+
         # options for user
         self.convo_options = [
             "1. Chẩn đoán bệnh thú y dựa theo triệu chứng",
             "2. Tìm kiếm thông tin về bệnh thú y",
-            "3. Tìm kiếm thông tin về thuốc thú y",
         ]
 
         # init logic controller
@@ -247,6 +264,7 @@ class ChatbotController:
             self.r_poultry_database,
             self.generalized_database,
             self.weights,
+            self.medicine_database,
         )
         self.disease = DiseasesInformation(
             self.cattle_database,
@@ -255,7 +273,6 @@ class ChatbotController:
             self.r_poultry_database,
             self.generalized_database,
         )
-        # self.medicine = MedicineInformation()
 
     def main_process(self):
         # loop every process until special condition (user asks to stop)
@@ -269,9 +286,6 @@ class ChatbotController:
             elif u_input == 2:
                 # self.get_disease_information()
                 self.disease.main_process()
-            elif u_input == 3:
-                # self.get_medicine_information()
-                self.medicine.main_process()
             elif u_input == 0:
                 self.print_end_convo()
                 break
@@ -296,15 +310,6 @@ class ChatbotController:
             if user_input.lower() in end_convo_words:
                 return 0
 
-    def symptom_based_diagnose(self):
-        pass
-
-    def get_disease_information(self):
-        print("2")
-
-    def get_medicine_information(self):
-        print("3")
-
 
 class DiseasesDiagnosis:
     def __init__(
@@ -315,13 +320,16 @@ class DiseasesDiagnosis:
         r_poultry_db,
         generalized_db,
         a_weights,
+        a_medicines,
     ) -> None:
         # global variables
         self.cattle = [
-            Disease(j, index, a_weights) for index, j in enumerate(cattle_db)
+            Disease(j, index, a_weights, a_medicines)
+            for index, j in enumerate(cattle_db)
         ]
         self.poultry = [
-            Disease(j, index, a_weights) for index, j in enumerate(poultry_db)
+            Disease(j, index, a_weights, a_medicines)
+            for index, j in enumerate(poultry_db)
         ]
         self.r_cattle = r_cattle_db
         self.r_poultry = r_poultry_db
@@ -338,6 +346,7 @@ class DiseasesDiagnosis:
             "rộng rãi",
             "thoáng mát",
             "sạch sẽ",
+            'tốt'
         ]
         self.cbr_threshold = 0.7
         self.match_threshold = 0.9
@@ -353,7 +362,7 @@ class DiseasesDiagnosis:
         self.current_symptoms = []
         self.current_envfacs = []
         self.current_envsyms = []
-        self.diagnosed_disease = None
+        self.diagnosed_disease = Disease()
 
         print("Core Diagnose done")
 
@@ -391,8 +400,11 @@ class DiseasesDiagnosis:
         self.diagnosed_disease = self.diagnose()
         # tương tác xử lý thông tin cho người dùng
         self.support_user()
+        print("Cảm ơn bạn đã sử dụng dịch vụ")
 
     def support_user(self):
+        print("Lưu ý rằng mọi thông tin được cung cấp dưới đây nhằm việc TƯ VẤN và HỖ TRỢ, để đạt được kết quả mong muốn và tránh những chuyện ngoài ý muốn, vui lòng "
+              "nhờ đến sự trợ giúp của các chuyên gia, bác sĩ thú y có trình độ.")
         print(
             f'Xác định được bệnh mà con vật của bạn đang gặp phải là bệnh "{self.diagnosed_disease.name}"\n'
             f"Các thông tin cơ bản của bệnh bao gồm:\n"
@@ -407,20 +419,46 @@ class DiseasesDiagnosis:
             "0. Kết thúc trò chuyện\n"
         )
         opts = [0, 1, 2, 3, 4]
+        s_opts = ['nguyên nhân', 'triệu chứng', 'phòng bệnh', 'chữa bệnh', 'kết thúc']
         state = False
         while True:
             u_in = input("Vui lòng nhập lựa chọn của bạn: ")
-            while True:
-                try:
-                    u_in = int(u_in)
-                    if u_in not in opts:
-                        print("Vui lòng chỉ chọn các lựa chọn phía trên")
-                        break
-                except:
-                    print("Vui lòng sử dụng số khi bạn lựa chọn chức năng muốn sử dụng")
-                    break
-            if not state:
-                continue
+            try:
+                u_in = int(u_in)
+                if u_in not in opts:
+                    print("Vui lòng chỉ chọn các lựa chọn phía trên")
+                    continue
+            except:
+                if not any([word in u_in.lower() for word in s_opts]):
+                    print("Vui lòng chỉ chọn các lựa chọn phía trên")
+                    continue
+
+            if u_in == 1 or u_in.lower() == 'nguyên nhân':
+                self.diagnosed_disease.print_causes()
+            elif u_in == 2 or u_in.lower() == 'triệu chứng':
+                self.diagnosed_disease.print_symptoms()
+            elif u_in == 3 or u_in.lower() == 'phòng bệnh':
+                self.diagnosed_disease.print_prevention()
+            elif u_in == 4 or u_in.lower() == 'chữa bệnh':
+                self.diagnosed_disease.print_treatments()
+                if len(self.diagnosed_disease.medicine) > 0:
+                    print(
+                        f"Trong khi chữa trị bệnh {self.diagnosed_disease.name}, hệ thống có khuyến nghị sử dụng vài loại thuốc, "
+                        f"bạn có muốn biết công dụng của từng loại thuốc này không?"
+                    )
+                    if not self.check_user_agree(input()): continue
+                    print(f'Dưới đây là danh sách các loại thuốc được khuyến nghị sử dụng khi điều trị bệnh {self.diagnosed_disease.name}')
+                    print('Nhập 0 nếu bạn muốn dừng việc tìm hiểu các loại thuốc')
+                    self.diagnosed_disease.print_medicine_name()
+                    while True:
+                        try:
+                            u_in = int(input('Số thứ tự thuốc: '))
+                            self.diagnosed_disease.print_medicine_props(u_in)
+                        except:
+                            break
+            elif u_in == 0 or u_in.lower() == 'kết thúc':
+                break
+
 
     def diagnose(self):
         print(
@@ -433,21 +471,25 @@ class DiseasesDiagnosis:
             f"Đầu tiên hãy bắt đầu với các yếu tố môi trường xung quanh vật nuôi của bạn"
         )
         self.get_envsym(
-            f"Thời tiết tại chỗ bạn đang như thế nào? (bình thường, thất thường, thay đổi,...)"
+            f"Thời tiết tại chỗ bạn đang như thế nào? (bình thường, thất thường, thay đổi,...)",
+            context='thời tiết'
         )
         self.get_envsym(
-            "Nhiệt độ xung quanh khu vực chuồng của vật nuôi trong thời gian gần nhất như thế nào? (cao, thấp, thất thường,...)"
+            "Nhiệt độ xung quanh khu vực chuồng của vật nuôi trong thời gian gần nhất như thế nào? (cao, thấp, thất thường,...)",
+            context='nhiệt độ'
         )
         self.get_envsym(
-            "Điều kiện chuồng nuôi của con vật hiện tại như thế nào? (sạch sẽ, bẩn, chật hẹp, ...)"
+            "Điều kiện chuồng nuôi của con vật hiện tại như thế nào? (sạch sẽ, bẩn, chật hẹp, ...)",
+            context='chuồng nuôi'
         )
         self.get_envsym(
-            "Thức ăn của con vật có đảm bảo không? (uống nước ao tù, thức ăn để lâu, thức ăn công nghiệp, ...)"
+            "Thức ăn của con vật có đảm bảo không? (uống nước ao tù, thức ăn để lâu, thức ăn công nghiệp, ...)",
+            context='thức ăn'
         )
         # thực hiện hỏi triệu chứng
         self.get_envsym(
             "Con vật có dấu hiệu uể oải, khác so với ngày thường không? (bình thường, năng động, uể oải, ủ rũ, ...)",
-            mode="sym",
+            mode="sym"
         )
         self.get_envsym(
             "Con vật có dấu hiệu bất thường gì có thể nhìn được bằng mắt thường không? (chấm đỏ trên da, mắt đỏ, sổ mũi, ...)",
@@ -513,6 +555,8 @@ class DiseasesDiagnosis:
                 # if _envsym in asked or _envsym[0] in diag.all_envsym:
                 if _envsym in asked:
                     continue
+                if _envsym[0] in diag.all_envsym and len(_envsym) < 2:
+                    continue
                 # thực hiện hỏi
                 if self.get_yesno_envsym(_envsym):
                     diag.all_envsym.append(_envsym[0])
@@ -530,11 +574,14 @@ class DiseasesDiagnosis:
         # trả về case có giá trị tương đồng cao nhất
         return sim[0][0][1]
 
-    def get_envsym(self, msg="", mode="env"):
+    def get_envsym(self, msg="", mode="env", context=''):
         _in = input(msg + ": ")
         # tách dữ liệu đầu vào nếu cần
         _in = _in.split(";")
         for data in _in:
+            # thêm 'context' của câu hỏi vào câu trả lời của người dùng nếu chưa có để tăng tính chính xác
+            if context not in data:
+                data = context + ' ' + data
             _out, _data = self.find_symenv_tfidf_based(data)
             # tiền xử lý dữ liệu đầu vào
             # KHÔNG bỏ qua triệu chứng nếu trong câu chứa cả từ phủ định và tích cực (không + sạch sẽ -> không sạch sẽ)
@@ -678,6 +725,8 @@ class DiseasesDiagnosis:
         # loại bỏ các phần tử có độ tương đồng bằng 0
         for string, score in sort:
             if score == 1.0:
+                top.append(string)
+                top_score.append(score)
                 top.append(string)
                 top_score.append(score)
             if score > 0.0:
