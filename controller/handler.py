@@ -1,7 +1,7 @@
 import json
 import math
 
-from controller.utils import tokenizer
+from controller.utils import tokenizer, removeDupListDict
 
 
 def preprocess_animal_name(inp=""):
@@ -188,6 +188,7 @@ class Disease:
         print(f"Tên thuốc: {prop['name']}")
         print(f"Loại thuốc: {prop['type']}")
         print(f"Công dụng thông thường: {' ,'.join(prop['effects'])}")
+
     def process_symptoms(self):
         pass
 
@@ -201,23 +202,29 @@ class Disease:
         print(self.description)
 
     def print_causes(self):
-        for s in self.causes: print(s)
+        for s in self.causes:
+            print(s)
 
     def print_environment_factors(self):
-        for s in self.environment_factors: print(s)
+        for s in self.environment_factors:
+            print(s)
 
     def print_symptoms(self):
-        for s in self.symptoms: print(s)
+        for s in self.symptoms:
+            print(s)
 
     def print_treatments(self):
-        for s in self.treatments: print(s)
+        for s in self.treatments:
+            print(s)
 
     def print_prevention(self):
-        for s in self.prevention: print(s)
+        for s in self.prevention:
+            print(s)
 
     def print_medicine_name(self):
         for index, item in enumerate(self.medicine):
             print(f"{index}. {item['name']}")
+
     def get_index(self):
         return self.index
 
@@ -346,7 +353,7 @@ class DiseasesDiagnosis:
             "rộng rãi",
             "thoáng mát",
             "sạch sẽ",
-            'tốt'
+            "tốt",
         ]
         self.cbr_threshold = 0.7
         self.match_threshold = 0.9
@@ -403,8 +410,10 @@ class DiseasesDiagnosis:
         print("Cảm ơn bạn đã sử dụng dịch vụ")
 
     def support_user(self):
-        print("Lưu ý rằng mọi thông tin được cung cấp dưới đây nhằm việc TƯ VẤN và HỖ TRỢ, để đạt được kết quả mong muốn và tránh những chuyện ngoài ý muốn, vui lòng "
-              "nhờ đến sự trợ giúp của các chuyên gia, bác sĩ thú y có trình độ.")
+        print(
+            "Lưu ý rằng mọi thông tin được cung cấp dưới đây nhằm việc TƯ VẤN và HỖ TRỢ, để đạt được kết quả mong muốn và tránh những chuyện ngoài ý muốn, vui lòng "
+            "nhờ đến sự trợ giúp của các chuyên gia, bác sĩ thú y có trình độ."
+        )
         print(
             f'Xác định được bệnh mà con vật của bạn đang gặp phải là bệnh "{self.diagnosed_disease.name}"\n'
             f"Các thông tin cơ bản của bệnh bao gồm:\n"
@@ -419,7 +428,7 @@ class DiseasesDiagnosis:
             "0. Kết thúc trò chuyện\n"
         )
         opts = [0, 1, 2, 3, 4]
-        s_opts = ['nguyên nhân', 'triệu chứng', 'phòng bệnh', 'chữa bệnh', 'kết thúc']
+        s_opts = ["nguyên nhân", "triệu chứng", "phòng bệnh", "chữa bệnh", "kết thúc"]
         state = False
         while True:
             u_in = input("Vui lòng nhập lựa chọn của bạn: ")
@@ -433,32 +442,62 @@ class DiseasesDiagnosis:
                     print("Vui lòng chỉ chọn các lựa chọn phía trên")
                     continue
 
-            if u_in == 1 or u_in.lower() == 'nguyên nhân':
+            if u_in == 1:
                 self.diagnosed_disease.print_causes()
-            elif u_in == 2 or u_in.lower() == 'triệu chứng':
+            elif u_in == 2:
                 self.diagnosed_disease.print_symptoms()
-            elif u_in == 3 or u_in.lower() == 'phòng bệnh':
+            elif u_in == 3:
                 self.diagnosed_disease.print_prevention()
-            elif u_in == 4 or u_in.lower() == 'chữa bệnh':
+            elif u_in == 4:
                 self.diagnosed_disease.print_treatments()
                 if len(self.diagnosed_disease.medicine) > 0:
                     print(
                         f"Trong khi chữa trị bệnh {self.diagnosed_disease.name}, hệ thống có khuyến nghị sử dụng vài loại thuốc, "
                         f"bạn có muốn biết công dụng của từng loại thuốc này không?"
                     )
-                    if not self.check_user_agree(input()): continue
-                    print(f'Dưới đây là danh sách các loại thuốc được khuyến nghị sử dụng khi điều trị bệnh {self.diagnosed_disease.name}')
-                    print('Nhập 0 nếu bạn muốn dừng việc tìm hiểu các loại thuốc')
+                    if not self.check_user_agree(input()):
+                        continue
+                    print(
+                        f"Dưới đây là danh sách các loại thuốc được khuyến nghị sử dụng khi điều trị bệnh {self.diagnosed_disease.name}"
+                    )
+                    print("Nhập 0 nếu bạn muốn dừng việc tìm hiểu các loại thuốc")
                     self.diagnosed_disease.print_medicine_name()
                     while True:
                         try:
-                            u_in = int(input('Số thứ tự thuốc: '))
+                            u_in = int(input("Số thứ tự thuốc: "))
                             self.diagnosed_disease.print_medicine_props(u_in)
                         except:
                             break
-            elif u_in == 0 or u_in.lower() == 'kết thúc':
+            elif u_in == 0:
                 break
-
+            elif u_in.lower() == "nguyên nhân":
+                self.diagnosed_disease.print_causes()
+            elif u_in.lower() == "triệu chứng":
+                self.diagnosed_disease.print_symptoms()
+            elif u_in.lower() == "phòng bệnh":
+                self.diagnosed_disease.print_prevention()
+            elif u_in.lower() == "chữa bệnh":
+                self.diagnosed_disease.print_treatments()
+                if len(self.diagnosed_disease.medicine) > 0:
+                    print(
+                        f"Trong khi chữa trị bệnh {self.diagnosed_disease.name}, hệ thống có khuyến nghị sử dụng vài loại thuốc, "
+                        f"bạn có muốn biết công dụng của từng loại thuốc này không?"
+                    )
+                    if not self.check_user_agree(input()):
+                        continue
+                    print(
+                        f"Dưới đây là danh sách các loại thuốc được khuyến nghị sử dụng khi điều trị bệnh {self.diagnosed_disease.name}"
+                    )
+                    print("Nhập 0 nếu bạn muốn dừng việc tìm hiểu các loại thuốc")
+                    self.diagnosed_disease.print_medicine_name()
+                    while True:
+                        try:
+                            u_in = int(input("Số thứ tự thuốc: "))
+                            self.diagnosed_disease.print_medicine_props(u_in)
+                        except:
+                            break
+            elif u_in.lower() == "kết thúc":
+                break
 
     def diagnose(self):
         print(
@@ -472,24 +511,24 @@ class DiseasesDiagnosis:
         )
         self.get_envsym(
             f"Thời tiết tại chỗ bạn đang như thế nào? (bình thường, thất thường, thay đổi,...)",
-            context='thời tiết'
+            context="thời tiết",
         )
         self.get_envsym(
             "Nhiệt độ xung quanh khu vực chuồng của vật nuôi trong thời gian gần nhất như thế nào? (cao, thấp, thất thường,...)",
-            context='nhiệt độ'
+            context="nhiệt độ",
         )
         self.get_envsym(
             "Điều kiện chuồng nuôi của con vật hiện tại như thế nào? (sạch sẽ, bẩn, chật hẹp, ...)",
-            context='chuồng nuôi'
+            context="chuồng nuôi",
         )
         self.get_envsym(
             "Thức ăn của con vật có đảm bảo không? (uống nước ao tù, thức ăn để lâu, thức ăn công nghiệp, ...)",
-            context='thức ăn'
+            context="thức ăn",
         )
         # thực hiện hỏi triệu chứng
         self.get_envsym(
             "Con vật có dấu hiệu uể oải, khác so với ngày thường không? (bình thường, năng động, uể oải, ủ rũ, ...)",
-            mode="sym"
+            mode="sym",
         )
         self.get_envsym(
             "Con vật có dấu hiệu bất thường gì có thể nhìn được bằng mắt thường không? (chấm đỏ trên da, mắt đỏ, sổ mũi, ...)",
@@ -574,14 +613,14 @@ class DiseasesDiagnosis:
         # trả về case có giá trị tương đồng cao nhất
         return sim[0][0][1]
 
-    def get_envsym(self, msg="", mode="env", context=''):
+    def get_envsym(self, msg="", mode="env", context=""):
         _in = input(msg + ": ")
         # tách dữ liệu đầu vào nếu cần
         _in = _in.split(";")
         for data in _in:
             # thêm 'context' của câu hỏi vào câu trả lời của người dùng nếu chưa có để tăng tính chính xác
             if context not in data:
-                data = context + ' ' + data
+                data = context + " " + data
             _out, _data = self.find_symenv_tfidf_based(data)
             # tiền xử lý dữ liệu đầu vào
             # KHÔNG bỏ qua triệu chứng nếu trong câu chứa cả từ phủ định và tích cực (không + sạch sẽ -> không sạch sẽ)
@@ -797,6 +836,7 @@ class DiseasesInformation:
         self.current_animal = input().lower()
         # tiền xử lý tên con vật
         self.current_animal = preprocess_animal_name(self.current_animal)
+        print(f'debug, con vật nhận được: {self.current_animal}')
         # kiểm tra tên con vật trong cơ sở dữ liệu
         self.current_species = self.check_species_db(self.current_animal)
         if self.current_species == "none":
@@ -849,9 +889,7 @@ class DiseasesInformation:
                 break
             # check index
             while True:
-                if int(u_in) > len(self.current_avail_diseases) or int(u_in) < len(
-                    self.current_avail_diseases
-                ):
+                if int(u_in) > len(self.current_avail_diseases) or int(u_in) < 0:
                     u_in = input(
                         "Vui lòng chỉ nhập những số thứ tự tôi đã liệt kê ở trên :(: )"
                     )
@@ -911,9 +949,9 @@ class DiseasesInformation:
 
     def get_avail_diseases(self):
         if self.current_species == "cattle":
-            return self.find_diseases_animal_based(self.current_animal, self.r_cattle)
+            return self.find_diseases_animal_based([self.current_animal], self.r_cattle)
         if self.current_species == "poultry":
-            return self.find_diseases_animal_based(self.current_animal, self.r_poultry)
+            return self.find_diseases_animal_based([self.current_animal], self.r_poultry)
         return self.find_diseases_animal_based(
             self.current_similar_animals, self.r_cattle + self.r_poultry
         )
@@ -924,8 +962,10 @@ class DiseasesInformation:
         for disease in diseases:
             for name in a_names:
                 if name.lower() in disease["species"]:
-                    ret.append(disease)
-        return list(set(ret))
+                    if disease not in ret:
+                        ret.append(disease)
+
+        return ret
 
     def check_user_agree(self, inp=""):
         if inp in self.agree_resp:

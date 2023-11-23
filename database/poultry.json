@@ -2,7 +2,7 @@
     {
         "name": "Ngộ độc",
         "species": [
-            "Gà"
+            "gà"
         ],
         "description": "Bệnh ngộ độc do nhiễm mặn, hoá chất, nấm mốc aflatoxin",
         "causes": [
@@ -16,13 +16,28 @@
             "thức ăn không đảm bảo"
         ],
         "symptoms": [
-            ["mệt mỏi"],
-            ["yếu ớt"],
-            ["chán ăn","từ chối ăn hoặc ăn ít hơn"],
-            ["nôn mửa"],
-            ["tiêu chảy"],
-            ["rụng lông"],
-            ["phân hôi thối"]            
+            [
+                "mệt mỏi"
+            ],
+            [
+                "yếu ớt"
+            ],
+            [
+                "chán ăn",
+                "từ chối ăn hoặc ăn ít hơn"
+            ],
+            [
+                "nôn mửa"
+            ],
+            [
+                "tiêu chảy"
+            ],
+            [
+                "rụng lông"
+            ],
+            [
+                "phân hôi thối"
+            ]
         ],
         "treatments": [
             "Điều trị bệnh ngộ độc do mặn, hoá chất, nấm mốc cần được tiến hành dưới sự hướng dẫn của một bác sĩ thú y.\n - Thay đổi thức ăn để hạn chế tiếp xúc với mặn, hoá chất hoặc aflatoxin.\n - Hỗ trợ chức năng gan và dạ dày của gà bằng cách sử dụng thuốc được chỉ định bởi bác sĩ thú y.\n - Cung cấp chế độ chăm sóc tốt và duy trì vệ sinh sạch sẽ.\n Lưu ý rằng việc ngăn ngừa tốt hơn là điều quan trọng nhất để tránh bệnh ngộ độc này. Đảm bảo rằng thức ăn và nguồn nước cho gà không bị nhiễm mặn, hoá chất, hoặc nấm mốc là điều quan trọng để bảo vệ sức khỏe của đàn gà."
@@ -34,7 +49,7 @@
     {
         "name": "ORT",
         "species": [
-            "Gà"
+            "gà"
         ],
         "description": "Bệnh ORT hay còn được gọi với những tên khác là bệnh viêm mũi, khí quản, phổi, túi khí, bệnh viêm phổi hóa mủ. Đây là bệnh khá phổ biến ở gia cầm, đặc biệt là ở gà. Điều trị bằng các thuốc kháng sinh thông thường như: Tylosin, Cephacilin, Enrocin…bệnh có giảm nhưng không đáng kể.",
         "causes": [
@@ -48,18 +63,46 @@
             "thức ăn không đảm bảo"
         ],
         "symptoms": [
-            ["khó thở","hen nhẹ, thở khò khè","thở đớp khí, có tiếng rít và ngáp"],
-            ["hắt hơi"],
-            ["vảy mỏ"],
-            ["chán ăn"],
-            ["mệt mỏi"],
-            ["chết"],
-            ["sụt cân","gầy yếu, lớn chậm, tỷ lệ đồng đều kém, tăng cao tỷ lệ loại thải"],
-            ["lắc đầu"],
-            ["sốt cao"],
-            ["chảy nước mũi"],
-            ["chảy nước mắt"],
-            ["sưng", "sưng mặt"]            
+            [
+                "khó thở",
+                "hen nhẹ, thở khò khè",
+                "thở đớp khí, có tiếng rít và ngáp"
+            ],
+            [
+                "hắt hơi"
+            ],
+            [
+                "vảy mỏ"
+            ],
+            [
+                "chán ăn"
+            ],
+            [
+                "mệt mỏi"
+            ],
+            [
+                "chết"
+            ],
+            [
+                "sụt cân",
+                "gầy yếu, lớn chậm, tỷ lệ đồng đều kém, tăng cao tỷ lệ loại thải"
+            ],
+            [
+                "lắc đầu"
+            ],
+            [
+                "sốt cao"
+            ],
+            [
+                "chảy nước mũi"
+            ],
+            [
+                "chảy nước mắt"
+            ],
+            [
+                "sưng",
+                "sưng mặt"
+            ]
         ],
         "treatments": [
             "Bước 1: Điều trị triệu chứng, hạ sốt, kháng viêm, tan đàm, thông hô hấp...\nSputumiz: thành phần gồm Bromhexine, Prenisolone, Mentha piperita (tinh dầu bạc hà). Sputumiz có tác dụng tan đàm dễ thở, kháng viêm, tăng hiệu quả của kháng sinh\nPara C: thành phần gồm Paracetamol, Vitamin C, Sodium Cloride, Postassium Cloride. Para C có tác dụng giảm đau, hạ sốt, tăng sức kháng bệnh.\n2: Dùng kháng sinh đặc trị gồm nhóm CEFTIOFUR, LINCOMYCIN+SPECTINOMYCIN hoặc DOXYCYCLINE tiêu diệt, kiềm hãm mầm bệnh:\nNASHER FUR: thành phần CEFTIOFUR\nĐường cấp: tiêm\nLiều cấp : 1 ml / 10kg gà ( gà có trọng lượng trên 1kg)\n               1 ml / 5kg gà ( gà có trọng lượng dưới 1kg)\nNhịp cấp: 1 lần/ngày.\nThời gian cấp: 1-2 ngày\nKết hợp với hoạt chất anpha chymotrypsin để tăng hiệu quả điều trị của kháng sinh\nSong song với tiêm, chúng ta cần sử dùng phối hợp với kháng sinh đường uống.\nLINCOSPECMYCIN - 110: thành phần LINCOMYCINE+SPECTINOMYCIN\nĐường cấp: Uống\nLiều cấp: 1gram / 10 kg gà\nNhịp cấp: 2 lần / ngày.\nThời gian cấp: 5-7 ngày\nhoặc\nGIUSE 20: thành phần DOXYCYCLINE\nĐường cấp: Uống\nLiều cấp: 1gram / 10 kg gà\nNhịp cấp: 2 lần / ngày.\nThời gian cấp: 5-7 ngày\nBước 3: Hỗ trợ điều trị.\nSử dụng các sản phẩm chuyên biệt giúp tăng sức đề kháng, giải độc gan thận.\nNOVITECH YL: tăng sức đề kháng, giải độc gan\nASCOREQUIL: sản phẩm giải độc gan chuyên biệt\nRENAL CLEANER: sản phẩm giải độc thận chuyên biệt\nTrường hợp thể trạng gà yếu và có biểu hiện gan thận quá xấu, chúng ta nên tăng cường hỗ trợ điều trị trước khi sử dụng kháng sinh."
@@ -71,7 +114,7 @@
     {
         "name": "Hen gà",
         "species": [
-            "Gà"
+            "gà"
         ],
         "description": "Bệnh hô hấp mãn tính CRD ở gà là bệnh rất phổ biến ở gia cầm. Gà có hiện tượng khó thở, thở khò khè (giống với triệu chứng của người bị hen nên gọi là bệnh hen gà). Bệnh CRD trên gà tuy không quá nghiêm trọng nhưng lại làm giảm sức đề kháng của vật nuôi, tạo điều kiện cho các vi khuẩn cơ hội tấn công gây bệnh kế phát. ",
         "causes": [
@@ -81,15 +124,36 @@
             "chuồng trại kém vệ sinh"
         ],
         "symptoms": [
-            ["chán ăn"],
-            ["viêm","viêm xoang mũi"],
-            ["chảy nước mũi"],
-            ["khó thở","thở khò khè"],
-            ["chảy nước mắt"],
-            ["sưng","sưng mặt"],
-            ["mệt mỏi"],
-            ["chậm lớn"],
-            ["giảm đẻ"]            
+            [
+                "chán ăn"
+            ],
+            [
+                "viêm",
+                "viêm xoang mũi"
+            ],
+            [
+                "chảy nước mũi"
+            ],
+            [
+                "khó thở",
+                "thở khò khè"
+            ],
+            [
+                "chảy nước mắt"
+            ],
+            [
+                "sưng",
+                "sưng mặt"
+            ],
+            [
+                "mệt mỏi"
+            ],
+            [
+                "chậm lớn"
+            ],
+            [
+                "giảm đẻ"
+            ]
         ],
         "treatments": [
             "Sử dụng kháng sinh trộn: sử dụng các loại thuốc được thú ý chỉ định với liều lượng hợp lý trộn cùng với thức ăn của gà. Hoặc có thể dùng kháng sinh tiêm trong trường hợp bệnh nặng có ghép vi khuẩn cơ hội gây C.CRD\nPha nước cho uống:\nUniflox: 1ml/5-10kg thể trọng, ngày 1 lần, liên tục 5 – 7 ngày\nGiuse 200: 1g/10 – 20kg thể trọng, ngày 2 lần, liên tục 5 – 7 ngày\nTiêm bắp:\nUnispectin 15: 1ml/5kg thể trọng, ngày 1 lần, tiêm bắp liên tục 3 - 5 ngày\nKết hợp hỗ trợ khi có triệu chứng khó thở\nSputumiz: 1ml/1lít nước/5 kg thể trọng, uống liên tục 3 ngày.\nTăng cường dinh dưỡng và sức kháng bệnh\nVitamin AD3ECK: 1ml/5lít nước/25kg thể trọng, uống liên tục 3 ngày\nHoặc Anivitamino:  1g/5lít nước/25 kg thể trọng, uống liên tục 3 ngày"
@@ -101,7 +165,7 @@
     {
         "name": "Giun chỉ",
         "species": [
-            "Vịt"
+            "vịt"
         ],
         "description": "Vịt có thể mắc bệnh ở mọi lứa tuổi, tuy nhiên thường xuất hiện ở vịt đẻ 3 - 8 tuần tuổi. Tỷ lệ vịt nhiễm ở độ tuổi này có khi chiếm 60 - 80%. ",
         "causes": [
@@ -113,16 +177,40 @@
             "thức ăn không đảm bảo"
         ],
         "symptoms": [
-            ["mệt mỏi"],
-            ["di chuyển bất thường","chậm chạp"],
-            ["phù","phù nề vùng đầu"],
-            ["sưng","sưng vùng trán, mắt, sau đó lan dần tới cổ"],
-            ["bướu"," u bướu xuất hiện đầu tiên ở hàm dưới, cổ, tiếp theo là ở hốc mắt, ống chân"],
-            ["khó thở"],
-            ["chán ăn"],
-            ["sụt cân"],
-            ["chết"],
-            ["giảm đẻ"]            
+            [
+                "mệt mỏi"
+            ],
+            [
+                "di chuyển bất thường",
+                "chậm chạp"
+            ],
+            [
+                "phù",
+                "phù nề vùng đầu"
+            ],
+            [
+                "sưng",
+                "sưng vùng trán, mắt, sau đó lan dần tới cổ"
+            ],
+            [
+                "bướu",
+                " u bướu xuất hiện đầu tiên ở hàm dưới, cổ, tiếp theo là ở hốc mắt, ống chân"
+            ],
+            [
+                "khó thở"
+            ],
+            [
+                "chán ăn"
+            ],
+            [
+                "sụt cân"
+            ],
+            [
+                "chết"
+            ],
+            [
+                "giảm đẻ"
+            ]
         ],
         "treatments": [
             "Cách chữa bệnh giun chỉ ở vịt rất đơn giản mà hiệu quả lại cao là tiêm vào ổ ký sinh trùng mỗi con 2ml dung dịch thuốc tím KmnO4 0,5%; dung dịch Iodine 1% hoặc dung dịch Natri Chloride NaCl 5%.\nKý sinh trùng sẽ chết và nốt sưng sẽ biến mất sau 7-10 ngày.\nCó thể chữa bằng các loại thuốc tẩy giun tròn thông thường khác như Mebendzol 10% dùng với liều 1g thuốc dùng cho 2kg thể trọng.\nLevamysol 7,5% tiêm dưới da 1ml/2kg thể trọng. Chích xung quanh túi giun hoặc tiêm thẳng vào ổ ký sinh trùng 1-2ml/con.\nCách chữa trị theo kinh nghiệm dân gian là mổ loại bỏ khối u và bóc tách hết tất cả ký sinh trùng, sau đó sát trùng tốt vết thương bằng các loại thuốc sát trùng và bột kháng sinh."
@@ -134,7 +222,7 @@
     {
         "name": "Nấm phổi",
         "species": [
-            "Vịt"
+            "vịt"
         ],
         "description": "Bệnh nấm phổi là căn bệnh thường gặp trong chăn nuôi ngan, vịt. Bệnh thường nhầm lẫn với bệnh dường hô hấp (CRD) và bệnh E.coli thể viêm túi khí. Bệnh dễ xảy ra do chuồng trại kém thông thoáng, ẩm độ cao là những điều kiện thích hợp để bệnh phát sinh. Bệnh xảy ra do vịt nuốt phải bào tử nấm, vào cơ thể gây ra các nốt hay những mảng trong phổi và các túi khí.",
         "causes": [
@@ -145,20 +233,53 @@
             "chuồng trại kém vệ sinh"
         ],
         "symptoms": [
-            ["chán ăn"],
-            ["khó thở","khi thở vươn cổ dài"],
-            ["thở gấp"],
-            ["chảy nước mũi"],
-            ["thân nhiệt tăng"],
-            ["mệt mỏi","bơ phờ"],
-            ["phân hôi thối"],
-            ["sụt cân"],
-            ["co giật","suy nhược nhanh và một số trường hợp có triệu chứng co giật"],
-            ["viêm","viêm ruột, chảy máu ruột"],
-            ["tiêu chảy"],
-            ["bại liệt"],
-            ["khát nước"],
-            ["nằm chồng lên nhau","ủ rũ, thường túm tụm lại thành nhóm và nằm chồng lên nhau"]            
+            [
+                "chán ăn"
+            ],
+            [
+                "khó thở",
+                "khi thở vươn cổ dài"
+            ],
+            [
+                "thở gấp"
+            ],
+            [
+                "chảy nước mũi"
+            ],
+            [
+                "thân nhiệt tăng"
+            ],
+            [
+                "mệt mỏi",
+                "bơ phờ"
+            ],
+            [
+                "phân hôi thối"
+            ],
+            [
+                "sụt cân"
+            ],
+            [
+                "co giật",
+                "suy nhược nhanh và một số trường hợp có triệu chứng co giật"
+            ],
+            [
+                "viêm",
+                "viêm ruột, chảy máu ruột"
+            ],
+            [
+                "tiêu chảy"
+            ],
+            [
+                "bại liệt"
+            ],
+            [
+                "khát nước"
+            ],
+            [
+                "nằm chồng lên nhau",
+                "ủ rũ, thường túm tụm lại thành nhóm và nằm chồng lên nhau"
+            ]
         ],
         "treatments": [
             "Trị bệnh: Khi chăn nuôi vịt, cách ly vịt bị bệnh với vịt khoẻ, đồng thời bổ sung vitamin A vào thức ăn cho vịt.\nKhi vịt chưa bị bệnh thì dùng thuốc Vimetadin – 56 trộn vào thức ăn thường xuyên để phòng bệnh với liều lượng: 1g/kg thức ăn. Khi vịt bệnh trộn 2g/kg thức ăn.\nKết hợp pha Vime – Iodine vào nước sạch cho vịt uống với liều 10ml/20; nước, dung dịch pha xong cho vịt uống trong vòng 24 giờ."
