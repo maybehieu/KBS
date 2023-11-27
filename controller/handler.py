@@ -580,6 +580,9 @@ class DiseasesDiagnosis:
         asked = []
         cnt = 0
         sim = []
+        print('Tiếp theo, tôi sẽ thực hiện hỏi thêm các triệu chứng về con bệnh, nếu trong quá trình hỏi bạn không biết '
+              'triệu chứng đang được hỏi là gì, hoặc cần biết thêm thông tin, bạn có thể hỏi thông tin bằng những cú pháp như:')
+        print('"thêm thông tin", "triệu chứng này có nghĩa là gì", "triệu chứng này có biểu hiện như nào", ...')
         while cnt < 2:
             print("debug, thông tin trong bệnh đang được chẩn đoán")
             print(diag.all_envsym)
@@ -667,6 +670,7 @@ class DiseasesDiagnosis:
         else:
             ques = envsym[0]
             _in = input(f'Con vật của bạn có triệu chứng "{ques}" không? ')
+
         return self.check_user_agree(_in)
 
     def get_timebased_envsym(self, msg=""):
@@ -711,6 +715,10 @@ class DiseasesDiagnosis:
         if any(word in inp for word in self.disagree_resp):
             return False
         return None
+
+    def check_user_ask_symptom(self, inp=''):
+        pass
+
 
     def find_symenv_tfidf_based(self, inp):
         lst = self.all_symenv
