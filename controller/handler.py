@@ -1,7 +1,7 @@
 import json
 import math
 
-from controller.utils import tokenizer, removeDupListDict
+from controller.utils import tokenizer
 
 
 def preprocess_animal_name(inp=""):
@@ -580,9 +580,13 @@ class DiseasesDiagnosis:
         asked = []
         cnt = 0
         sim = []
-        print('Tiếp theo, tôi sẽ thực hiện hỏi thêm các triệu chứng về con bệnh, nếu trong quá trình hỏi bạn không biết '
-              'triệu chứng đang được hỏi là gì, hoặc cần biết thêm thông tin, bạn có thể hỏi thông tin bằng những cú pháp như:')
-        print('"thêm thông tin", "triệu chứng này có nghĩa là gì", "triệu chứng này có biểu hiện như nào", ...')
+        print(
+            "Tiếp theo, tôi sẽ thực hiện hỏi thêm các triệu chứng về con bệnh, nếu trong quá trình hỏi bạn không biết "
+            "triệu chứng đang được hỏi là gì, hoặc cần biết thêm thông tin, bạn có thể hỏi thông tin bằng những cú pháp như:"
+        )
+        print(
+            '"thêm thông tin", "triệu chứng này có nghĩa là gì", "triệu chứng này có biểu hiện như nào", "(tên triệu chứng) nghĩa là gì" ...'
+        )
         while cnt < 2:
             print("debug, thông tin trong bệnh đang được chẩn đoán")
             print(diag.all_envsym)
@@ -664,13 +668,24 @@ class DiseasesDiagnosis:
         if len(envsym) > 1:
             ques = envsym[0]
             sup = envsym[1]
-            _in = input(
-                f'Con vật của bạn có triệu chứng "{ques}" không? ("{ques}" thường có các biểu hiện như {sup})\n'
-            )
         else:
             ques = envsym[0]
-            _in = input(f'Con vật của bạn có triệu chứng "{ques}" không? ')
-
+        _in = input(
+            f'Con vật của bạn có triệu chứng "{ques}" không? ("{ques}" thường có các biểu hiện như {sup})\n'
+        )
+        _in = input(f'Con vật của bạn có triệu chứng "{ques}" không? ')
+        # kiểm tra người dùng có hỏi thêm thông tin về triệu chứng bệnh không
+        if self.check_user_ask_symptom(inp=_in, asked_sym=ques):
+            if sup != "":
+                print(f'Triệu chứng "{ques}" thường có các biểu hiện như: {sup}')
+            else:
+                print(
+                    f'Triệu chứng "{ques}" có ý nghĩa như trên mặt chữ hoặc cơ sở dữ liệu của tôi'
+                    f"đang gặp khó khăn để lấy câu giải thích cho bạn"
+                )
+            _in = input(
+                f'Vậy, con vật của bạn hiện có đang có triệu chứng "{ques}" không?'
+            )
         return self.check_user_agree(_in)
 
     def get_timebased_envsym(self, msg=""):
@@ -716,9 +731,19 @@ class DiseasesDiagnosis:
             return False
         return None
 
-    def check_user_ask_symptom(self, inp=''):
-        pass
-
+    def check_user_ask_symptom(self, inp="", asked_sym=""):
+        phrases = [
+            "nghĩa là",
+            "như thế nào",
+            "thêm thông tin",
+            "biểu hiện",
+            "ví dụ",
+        ]  # có thể bổ sung thêm
+        if any([p in inp.lower().strip() for p in phrases]):
+            return True
+        if asked_sym in inp.lower().strip():
+            return True
+        return False
 
     def find_symenv_tfidf_based(self, inp):
         lst = self.all_symenv
@@ -844,7 +869,7 @@ class DiseasesInformation:
         self.current_animal = input().lower()
         # tiền xử lý tên con vật
         self.current_animal = preprocess_animal_name(self.current_animal)
-        print(f'debug, con vật nhận được: {self.current_animal}')
+        print(f"debug, con vật nhận được: {self.current_animal}")
         # kiểm tra tên con vật trong cơ sở dữ liệu
         self.current_species = self.check_species_db(self.current_animal)
         if self.current_species == "none":
@@ -959,7 +984,9 @@ class DiseasesInformation:
         if self.current_species == "cattle":
             return self.find_diseases_animal_based([self.current_animal], self.r_cattle)
         if self.current_species == "poultry":
-            return self.find_diseases_animal_based([self.current_animal], self.r_poultry)
+            return self.find_diseases_animal_based(
+                [self.current_animal], self.r_poultry
+            )
         return self.find_diseases_animal_based(
             self.current_similar_animals, self.r_cattle + self.r_poultry
         )
