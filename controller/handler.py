@@ -356,7 +356,7 @@ class DiseasesDiagnosis:
             "tốt",
         ]
         self.cbr_threshold = 0.7
-        self.match_threshold = 0.9
+        self.match_threshold = 1000
 
         self.all_symenv = []
         for obj in self.ref_dict:
@@ -568,7 +568,7 @@ class DiseasesDiagnosis:
         for d in disease_similarities:
             print(f"query: {d[0][0].name}, db: {d[0][1].name}, sim: {d[1]}")
         # chọn ra n case có độ tương đồng cao nhất, thực hiện hỏi thêm triệu chứng nếu cần
-        top = disease_similarities[:5]
+        top = disease_similarities[:7]
         if top[0][1] >= self.match_threshold:
             return top[0][0][1]
         # chẩn đoán sâu
@@ -580,6 +580,13 @@ class DiseasesDiagnosis:
         asked = []
         cnt = 0
         sim = []
+        ret = None
+        # asked += (
+        #     ["sốt", "sốt cao"]
+        #     if "sốt" in diag.all_envsym or "sốt cao" in diag.all_envsym
+        #     else []
+        # )   # bỏ qua việc hỏi lại sốt và sốt cao
+
         print(
             "Tiếp theo, tôi sẽ thực hiện hỏi thêm các triệu chứng về con bệnh, nếu trong quá trình hỏi bạn không biết "
             "triệu chứng đang được hỏi là gì, hoặc cần biết thêm thông tin, bạn có thể hỏi thông tin bằng những cú pháp như:"
@@ -587,7 +594,7 @@ class DiseasesDiagnosis:
         print(
             '"thêm thông tin", "triệu chứng này có nghĩa là gì", "triệu chứng này có biểu hiện như nào", "(tên triệu chứng) nghĩa là gì" ...'
         )
-        while cnt < 2:
+        while cnt < 3:
             print("debug, thông tin trong bệnh đang được chẩn đoán")
             print(diag.all_envsym)
             print("debug, thông tin đã được hỏi")
@@ -617,8 +624,36 @@ class DiseasesDiagnosis:
             if sim[0][1] > self.match_threshold:
                 return sim[0][0][1]
             cnt += 1
+        ret = sim[0][0][1]
+        # thực hiện hỏi người dùng triệu chứng ngoài
+        u_in = input(
+            "Con vật của bạn có xuất hiện triệu chứng nào chưa được hỏi không? Nếu có, hãy cung cấp các triệu chứng được phân cách "
+            "bởi dấu ';', tôi sẽ thực hiện cập nhật chúng vào hệ thống. Nếu không, nhập 'không' hoặc bấm Enter để lấy kết quả bệnh chẩn đoán\n"
+        )
+        add_info = u_in.split(";")
+        if len(add_info) >= 2:
+            f_sim = []
+
+            _add = self.process_addition_sym(add_info)
+            print(f"debug, thông tin lấy thêm được từ prompt của người dùng: {_add}")
+            diag.all_envsym.append(_add)
+            # tính toán lại độ tương đồng
+            for disease in potential:
+                f_sim.append(((diag, disease), self.calculate_cbr(diag, disease)))
+            f_sim = sorted(f_sim, key=lambda x: x[1], reverse=True)
+            print("debug, danh sách các bệnh và độ tương đồng: ")
+            for d in f_sim:
+                print(f"query: {d[0][0].name}, db: {d[0][1].name}, sim: {d[1]}")
+            if f_sim[0][1] > self.match_threshold:
+                return f_sim[0][0][1]
+            ret = f_sim[0][0][1]
+
+        elif not self.check_user_agree(u_in):
+            print("Đang hoàn tất quá trình chẩn đoán...")
+            pass
+
         # trả về case có giá trị tương đồng cao nhất
-        return sim[0][0][1]
+        return ret
 
     def get_envsym(self, msg="", mode="env", context=""):
         _in = input(msg + ": ")
@@ -660,6 +695,35 @@ class DiseasesDiagnosis:
                 self.current_symptoms.append(_out)
             self.current_envsyms.append(_out)
 
+    def process_addition_sym(self, syms=[""]):
+        ret = []
+        for data in syms:
+            _out, _data = self.find_symenv_tfidf_based(data)
+            # tiền xử lý dữ liệu đầu vào
+            # KHÔNG bỏ qua triệu chứng nếu trong câu chứa cả từ phủ định và tích cực (không + sạch sẽ -> không sạch sẽ)
+            if any(neutral in _data for neutral in self.neutral_words) and any(
+                negative in _data for negative in self.disagree_resp
+            ):
+                print(
+                    f"debug: xuất hiện case nega-neutral, double check dữ liệu: {data} -> {_data}"
+                )
+                pass
+            # bỏ qua triệu chứng nếu xuất hiện các từ 'trung hoà' trong dữ liệu nhập vào của người dùng
+            elif any(neutral in _data for neutral in self.neutral_words):
+                print(f"debug: xuất hiện neutral trong {data}, bỏ qua triệu chứng")
+                continue
+            # bỏ qua triệu chứng nếu xuất hiện từ 'không' trong dữ liệu nhập vào (không sốt)
+            elif any(negative in _data for negative in self.disagree_resp):
+                print(f"debug: xuất hiện negative trong {data}, bỏ qua triệu chứng")
+                continue
+            print(f'debug: người dùng nhập "{data}", hệ thống trả về "{_out}"')
+            if _out != "none":
+                ret.append(_out)
+        return ret
+
+    def check_potential_diff(self, potentials=[Disease()]):
+        pass
+
     def get_yesno_envsym(self, envsym=[]):
         # in lưu ý
         ques = ""
@@ -670,9 +734,6 @@ class DiseasesDiagnosis:
             sup = envsym[1]
         else:
             ques = envsym[0]
-        _in = input(
-            f'Con vật của bạn có triệu chứng "{ques}" không? ("{ques}" thường có các biểu hiện như {sup})\n'
-        )
         _in = input(f'Con vật của bạn có triệu chứng "{ques}" không? ')
         # kiểm tra người dùng có hỏi thêm thông tin về triệu chứng bệnh không
         if self.check_user_ask_symptom(inp=_in, asked_sym=ques):
@@ -711,7 +772,8 @@ class DiseasesDiagnosis:
                 # print(query.all_envsym, compare.all_envsym, compare.weight)
         if _sum == 0.0:
             return 0.0
-        return dsum / _sum
+        # return dsum / _sum
+        return dsum
 
     def check_species_db(self, inp=""):
         if inp in self.cattle_species:
@@ -738,6 +800,7 @@ class DiseasesDiagnosis:
             "thêm thông tin",
             "biểu hiện",
             "ví dụ",
+            "là gì",
         ]  # có thể bổ sung thêm
         if any([p in inp.lower().strip() for p in phrases]):
             return True

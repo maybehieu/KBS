@@ -326,13 +326,13 @@
         ]
     },
     {
-        "name": "Viêm nội tâm mạc cấp tính",
+        "name": "Viêm nội mạc cấp tính",
         "species": [
             "bò",
             "dê",
             "lợn"
         ],
-        "description": "Viêm nội tâm mạc cấp tính ở bò, còn được gọi là Endocarditis acuta, là một bệnh thường gặp trong ngành chăn nuôi bò. Bệnh này xảy ra khi dạ dày và ruột của bò sản xuất quá nhiều axit, đặc biệt là axit lactic",
+        "description": "Viêm nội mạc cấp tính ở bò, còn được gọi là Endocarditis acuta, là một bệnh thường gặp trong ngành chăn nuôi bò. Bệnh này xảy ra khi dạ dày và ruột của bò sản xuất quá nhiều axit, đặc biệt là axit lactic",
         "causes": [
             "Kế phát từ một số bệnh truyền nhiễm: Lở mồm long móng, viêm phế quản truyền nhiễm, đóng dấu lợn.",
             "Quá trình viêm lan từ ổ viêm ở các cơ quan khác trong cơ thể như viêm họng, viêm tử cung, viêm khớp.",
