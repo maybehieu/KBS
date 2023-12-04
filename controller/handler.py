@@ -502,9 +502,23 @@ class DiseasesDiagnosis:
     def diagnose(self):
         print(
             "Tôi sẽ bắt đầu thực hiện việc tìm hiểu thông tin để chẩn đoán bệnh trên con vật bạn đang chọn. Lưu ý rằng với các triệu chứng, yếu tố khác nhau, "
-            + 'bạn hãy ngăn cách chúng bằng dấu ";", và hãy chỉ đưa ra những triệu chứng, yếu tố được yêu cầu một cách ngắn gọn, trong mỗi câu trả lời để kết quả đạt được là tốt nhất'
+            + 'bạn hãy ngăn cách chúng bằng dấu ";", và hãy chỉ đưa ra những triệu chứng, yếu tố được yêu cầu một cách ngắn gọn trong mỗi câu trả lời để kết quả đạt được là tốt nhất'
         )
+        print("Bạn muốn đưa toàn bộ thông tin có về con bệnh trong một lần hay thực hiện quá trình hỏi bệnh bình thường? Lưu ý rằng "
+              "kết quả chẩn đoán thông qua quá trình hỏi bệnh sẽ có độ tin cậy cao hơn")
+        u_in = input()
+        # kiểm tra
+        if any([s in u_in.lower().strip() for s in ["toàn bộ"]]):
+            _disease = self.one_step_diagnose()
+        if any([s in u_in.lower().strip() for s in ["chẩn đoán"]]):
+            _disease = self.step_based_diagnose()
+        else:
+            print('Xin lỗi, tôi không hiểu câu trả lời của bạn, hệ thống sẽ mặc định chẩn đoán bệnh theo phương pháp hỏi bệnh')
+            _disease = self.step_based_diagnose()
+        return _disease
 
+    def step_based_diagnose(self):
+        print('Bạn đã lựa chọn chẩn đoán theo phương pháp hỏi bệnh')
         # thực hiện hỏi yếu tố môi trường
         print(
             f"Đầu tiên hãy bắt đầu với các yếu tố môi trường xung quanh vật nuôi của bạn"
@@ -550,7 +564,7 @@ class DiseasesDiagnosis:
                 self.cattle if self.current_species == "cattle" else self.poultry
             )
         else:
-            comparison_diseases = {**self.cattle, **self.poultry}
+            comparison_diseases = (self.cattle + self.poultry)
         disease_similarities = (
             []
         )  # format: ((bệnh đang được chẩn đoán, bệnh đã có trong hệ tri thức), độ tương đồng)
@@ -574,6 +588,82 @@ class DiseasesDiagnosis:
         # chẩn đoán sâu
         top = [item[0][1] for item in top]
         return self.further_diagnose(diag=temp_disease, potential=top)
+
+    def one_step_diagnose(self):
+        print('Bạn đã lựa chọn chẩn đoán bệnh nhanh')
+        print('Lưu ý, để hệ thống hoạt động chính xác nhất, vui lòng cung cấp thông tin theo đúng câu hỏi, '
+              'phân cách các thông tin khác nhau bằng dấu ";"')
+        print('Đầu tiên, bạn có thể cung cấp các thông tin về môi trường chăn nuôi của con bệnh?')
+        while True:
+            u_in = input()
+            # kiểm tra nếu người dùng thắc mắc
+            if any([s in u_in.lower().strip() for s in ["là như nào", "như thế nào", "là gì"]]):
+                print('Các thông tin về môi trường chăn nuôi có thể bao gồm như chuồng nuôi, thời tiết, nhiệt độ, thức ăn, ...')
+            if any([s in u_in.lower().strip() for s in ["ví dụ"]]):
+                print('Ví dụ về các thông tin môi trường: "chuồng nuôi chật hẹp; nước ao tù đọng; thời tiết thất thường; ..."')
+                continue
+            _in = u_in.split(';')
+            _in = [s for s in _in if s != '']
+            if len(_in) >= 1:
+                for i in _in: self.get_envsym(_in=i)
+                break
+        print('Tiếp theo, bạn hãy cung cấp các thông tin về triệu chứng có trên con bệnh')
+        while True:
+            u_in = input()
+            # kiểm tra nếu người dùng thắc mắc
+            if any([s in u_in.lower().strip() for s in ["là như nào", "như thế nào", "là gì"]]):
+                print('Các thông tin về triệu chứng của con bệnh có thể bao gồm các biểu hiện có thể thấy được bằng mắt thường như các'
+                      ' triệu chứng ngoài da, sưng tấy hoặc các triệu chứng về hoạt động, sinh lý của con bệnh như di chuyển khó khăn, run rẩy, ...')
+            if any([s in u_in.lower().strip() for s in ["ví dụ"]]):
+                print('Ví dụ về các triệu chứng điển hình: "viêm loét ngoài da; run rẩy; di chuyển khó khăn; sưng tấy; sốt; phù; chảy máu"')
+                continue
+            _in = u_in.split(';')
+            _in = [s for s in _in if s != '']
+            if len(_in) >= 1:
+                for i in _in: self.get_envsym(mode="sym", _in=i)
+                break
+        # thực hiện tính toán tìm case
+        temp_disease = Disease()
+        temp_disease.init_temp(self.current_envfacs, self.current_symptoms)
+        if self.current_species != "none":
+            comparison_diseases = (
+                self.cattle if self.current_species == "cattle" else self.poultry
+            )
+        else:
+            comparison_diseases = (self.cattle + self.poultry)
+        disease_similarities = (
+            []
+        )  # format: ((bệnh đang được chẩn đoán, bệnh đã có trong hệ tri thức), độ tương đồng)
+        # so sánh với các case đã có sẵn trong hệ tri thức
+        for d in comparison_diseases:
+            disease_similarities.append(
+                ((temp_disease, d), self.calculate_cbr(temp_disease, d))
+            )
+        disease_similarities = sorted(
+            disease_similarities, key=lambda x: x[1], reverse=True
+        )
+        print("debug, thông tin sử dụng trong bệnh")
+        print(temp_disease.all_envsym)
+        print("debug, danh sách các bệnh và độ tương đồng: ")
+        for d in disease_similarities:
+            print(f"query: {d[0][0].name}, db: {d[0][1].name}, sim: {d[1]}")
+        # chọn ra n case có độ tương đồng cao nhất, thực hiện hỏi thêm triệu chứng nếu cần
+        top = disease_similarities[:7]
+        if top[0][1] >= self.match_threshold:
+            return top[0][0][1]
+        # chẩn đoán sâu
+        top = [item[0][1] for item in top]
+        # cảnh báo người dùng nếu số lượng triệu chứng quá ít
+        if len(self.current_symptoms) <= 5:
+            print('Số lượng thông tin bạn cung cấp có thể không đủ để hệ thống có thể cho bạn kết quả chẩn đoán '
+                  'chính xác hơn.')
+        u_in = input('Bạn có muốn thực hiện thêm việc chẩn đoán sâu không? ')
+        if self.check_user_agree(u_in):
+            return self.further_diagnose(diag=temp_disease, potential=top)
+        else:
+            return top
+
+
 
     def further_diagnose(self, diag=Disease(), potential=[Disease()]):
         # thực hiện hỏi một triệu chứng có trọng số cao nhất ở mỗi bệnh, lặp lại cho đến khi độ tương đồng với bệnh chẩn đoán vượt ngưỡng
@@ -655,8 +745,9 @@ class DiseasesDiagnosis:
         # trả về case có giá trị tương đồng cao nhất
         return ret
 
-    def get_envsym(self, msg="", mode="env", context=""):
-        _in = input(msg + ": ")
+    def get_envsym(self, msg="", mode="env", context="", _in=""):
+        if _in == "":
+            _in = input(msg + ": ")
         # tách dữ liệu đầu vào nếu cần
         _in = _in.split(";")
         for data in _in:
@@ -666,9 +757,8 @@ class DiseasesDiagnosis:
             _out, _data = self.find_symenv_tfidf_based(data)
             # tiền xử lý dữ liệu đầu vào
             # KHÔNG bỏ qua triệu chứng nếu trong câu chứa cả từ phủ định và tích cực (không + sạch sẽ -> không sạch sẽ)
-            if any(neutral in _data for neutral in self.neutral_words) and any(
-                negative in _data for negative in self.disagree_resp
-            ):
+            if (any(neutral in _data for neutral in self.neutral_words) and
+                any(negative in _data for negative in self.disagree_resp)):
                 print(
                     f"debug: xuất hiện case nega-neutral, double check dữ liệu: {data} -> {_data}"
                 )
@@ -688,16 +778,28 @@ class DiseasesDiagnosis:
                 )
                 return self.get_envsym(msg, mode)
 
+            # kiểm tra lại dữ liệu đầu vào
+            _smatch = self.find_symenv_string_based(data)
+            if _smatch != "none":
+                _out = _smatch
+                print(f'debug: tìm được 100% match từ "{data}", trả về "{_out}"')
             # lưu kết quả
             if mode == "env":
-                self.current_envfacs.append(_out)
+                if _out not in self.current_envfacs:
+                    self.current_envfacs.append(_out)
             elif mode == "sym":
-                self.current_symptoms.append(_out)
-            self.current_envsyms.append(_out)
+                if _out not in self.current_symptoms:
+                    self.current_symptoms.append(_out)
+            if _out not in self.current_envsyms:
+                self.current_envsyms.append(_out)
 
     def process_addition_sym(self, syms=[""]):
         ret = []
         for data in syms:
+            _out = self.find_symenv_string_based(data)
+            if _out != "none":
+                ret.append(_out)
+                continue
             _out, _data = self.find_symenv_tfidf_based(data)
             # tiền xử lý dữ liệu đầu vào
             # KHÔNG bỏ qua triệu chứng nếu trong câu chứa cả từ phủ định và tích cực (không + sạch sẽ -> không sạch sẽ)
@@ -808,6 +910,7 @@ class DiseasesDiagnosis:
             return True
         return False
 
+
     def find_symenv_tfidf_based(self, inp):
         lst = self.all_symenv
         _lst = self.proc_all_symenv
@@ -891,12 +994,18 @@ class DiseasesDiagnosis:
         _lst = self.proc_all_symenv
         objs = self.ref_dict
 
-        for string in lst:
-            if inp.lower().strip() == string:
-                for obj in objs:
-                    if string in obj["distinct"]:
-                        return obj["general"]
+        # for string in lst:
+        #     if inp.lower().strip() == string:
+        #         for obj in objs:
+        #             if string in obj["distinct"]:
+        #                 print('found')
+        #                 return obj["general"]
 
+        for obj in objs:
+            print(obj['distinct'])
+            if any([inp.lower().strip() == s.lower().strip() for s in obj["distinct"]]):
+                print('found')
+                return obj["general"]
         return "none"
 
 
