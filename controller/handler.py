@@ -187,7 +187,7 @@ class Disease:
         prop = self.medicine[index]
         print(f"Tên thuốc: {prop['name']}")
         print(f"Loại thuốc: {prop['type']}")
-        print(f"Công dụng thông thường: {' ,'.join(prop['effects'])}")
+        print(f"Công dụng thông thường: {prop['effects']}")
 
     def process_symptoms(self):
         pass
@@ -223,7 +223,7 @@ class Disease:
 
     def print_medicine_name(self):
         for index, item in enumerate(self.medicine):
-            print(f"{index}. {item['name']}")
+            print(f"{index + 1}. {item['name']}")
 
     def get_index(self):
         return self.index
@@ -286,11 +286,19 @@ class ChatbotController:
         while True:
             self.print_start_convo()
             u_input = input()
+            str_input = u_input
             u_input = self.check_master_convo(u_input)
-            if u_input == 1:
+            if u_input == 1 or any(
+                [s.lower().strip() in str_input.lower().strip() for s in ["chẩn đoán"]]
+            ):
                 # self.symptom_based_diagnose()
                 self.diagnose.main_process()
-            elif u_input == 2:
+            elif u_input == 2 or any(
+                [
+                    s.lower().strip() in str_input.lower().strip()
+                    for s in ["tìm kiếm", "tra cứu"]
+                ]
+            ):
                 # self.get_disease_information()
                 self.disease.main_process()
             elif u_input == 0:
@@ -408,6 +416,15 @@ class DiseasesDiagnosis:
         # tương tác xử lý thông tin cho người dùng
         self.support_user()
         print("Cảm ơn bạn đã sử dụng dịch vụ")
+        self.reset_iter()
+
+    def reset_iter(self):
+        self.current_animal = ""
+        self.current_species = ""
+        self.current_symptoms = []
+        self.current_envfacs = []
+        self.current_envsyms = []
+        self.diagnosed_disease = Disease()
 
     def support_user(self):
         print(
@@ -464,7 +481,9 @@ class DiseasesDiagnosis:
                     self.diagnosed_disease.print_medicine_name()
                     while True:
                         try:
-                            u_in = int(input("Số thứ tự thuốc: "))
+                            u_in = int(input("Số thứ tự thuốc: ")) - 1
+                            if u_in == 0:
+                                break
                             self.diagnosed_disease.print_medicine_props(u_in)
                         except:
                             break
@@ -492,7 +511,9 @@ class DiseasesDiagnosis:
                     self.diagnosed_disease.print_medicine_name()
                     while True:
                         try:
-                            u_in = int(input("Số thứ tự thuốc: "))
+                            u_in = int(input("Số thứ tự thuốc: ")) - 1
+                            if u_in == 0:
+                                break
                             self.diagnosed_disease.print_medicine_props(u_in)
                         except:
                             break
@@ -504,21 +525,25 @@ class DiseasesDiagnosis:
             "Tôi sẽ bắt đầu thực hiện việc tìm hiểu thông tin để chẩn đoán bệnh trên con vật bạn đang chọn. Lưu ý rằng với các triệu chứng, yếu tố khác nhau, "
             + 'bạn hãy ngăn cách chúng bằng dấu ";", và hãy chỉ đưa ra những triệu chứng, yếu tố được yêu cầu một cách ngắn gọn trong mỗi câu trả lời để kết quả đạt được là tốt nhất'
         )
-        print("Bạn muốn đưa toàn bộ thông tin có về con bệnh trong một lần hay thực hiện quá trình hỏi bệnh bình thường? Lưu ý rằng "
-              "kết quả chẩn đoán thông qua quá trình hỏi bệnh sẽ có độ tin cậy cao hơn")
+        print(
+            "Bạn muốn đưa toàn bộ thông tin có về con bệnh trong một lần hay thực hiện quá trình hỏi bệnh bình thường? Lưu ý rằng "
+            "kết quả chẩn đoán thông qua quá trình hỏi bệnh sẽ có độ tin cậy cao hơn"
+        )
         u_in = input()
         # kiểm tra
         if any([s in u_in.lower().strip() for s in ["toàn bộ"]]):
             _disease = self.one_step_diagnose()
-        if any([s in u_in.lower().strip() for s in ["chẩn đoán"]]):
+        elif any([s in u_in.lower().strip() for s in ["chẩn đoán"]]):
             _disease = self.step_based_diagnose()
         else:
-            print('Xin lỗi, tôi không hiểu câu trả lời của bạn, hệ thống sẽ mặc định chẩn đoán bệnh theo phương pháp hỏi bệnh')
+            print(
+                "Xin lỗi, tôi không hiểu câu trả lời của bạn, hệ thống sẽ mặc định chẩn đoán bệnh theo phương pháp hỏi bệnh"
+            )
             _disease = self.step_based_diagnose()
         return _disease
 
     def step_based_diagnose(self):
-        print('Bạn đã lựa chọn chẩn đoán theo phương pháp hỏi bệnh')
+        print("Bạn đã lựa chọn chẩn đoán theo phương pháp hỏi bệnh")
         # thực hiện hỏi yếu tố môi trường
         print(
             f"Đầu tiên hãy bắt đầu với các yếu tố môi trường xung quanh vật nuôi của bạn"
@@ -564,7 +589,7 @@ class DiseasesDiagnosis:
                 self.cattle if self.current_species == "cattle" else self.poultry
             )
         else:
-            comparison_diseases = (self.cattle + self.poultry)
+            comparison_diseases = self.cattle + self.poultry
         disease_similarities = (
             []
         )  # format: ((bệnh đang được chẩn đoán, bệnh đã có trong hệ tri thức), độ tương đồng)
@@ -590,37 +615,65 @@ class DiseasesDiagnosis:
         return self.further_diagnose(diag=temp_disease, potential=top)
 
     def one_step_diagnose(self):
-        print('Bạn đã lựa chọn chẩn đoán bệnh nhanh')
-        print('Lưu ý, để hệ thống hoạt động chính xác nhất, vui lòng cung cấp thông tin theo đúng câu hỏi, '
-              'phân cách các thông tin khác nhau bằng dấu ";"')
-        print('Đầu tiên, bạn có thể cung cấp các thông tin về môi trường chăn nuôi của con bệnh?')
+        print("Bạn đã lựa chọn chẩn đoán bệnh nhanh")
+        print(
+            "Lưu ý, để hệ thống hoạt động chính xác nhất, vui lòng cung cấp thông tin theo đúng câu hỏi, "
+            'phân cách các thông tin khác nhau bằng dấu ";"'
+        )
+        print(
+            "Đầu tiên, bạn có thể cung cấp các thông tin về môi trường chăn nuôi của con bệnh?"
+        )
         while True:
             u_in = input()
             # kiểm tra nếu người dùng thắc mắc
-            if any([s in u_in.lower().strip() for s in ["là như nào", "như thế nào", "là gì"]]):
-                print('Các thông tin về môi trường chăn nuôi có thể bao gồm như chuồng nuôi, thời tiết, nhiệt độ, thức ăn, ...')
-            if any([s in u_in.lower().strip() for s in ["ví dụ"]]):
-                print('Ví dụ về các thông tin môi trường: "chuồng nuôi chật hẹp; nước ao tù đọng; thời tiết thất thường; ..."')
+            if any(
+                [
+                    s in u_in.lower().strip()
+                    for s in ["là như nào", "như thế nào", "là gì"]
+                ]
+            ):
+                print(
+                    "Các thông tin về môi trường chăn nuôi có thể bao gồm như chuồng nuôi, thời tiết, nhiệt độ, thức ăn, ..."
+                )
                 continue
-            _in = u_in.split(';')
-            _in = [s for s in _in if s != '']
+            if any([s in u_in.lower().strip() for s in ["ví dụ"]]):
+                print(
+                    'Ví dụ về các thông tin môi trường: "chuồng nuôi chật hẹp; nước ao tù đọng; thời tiết thất thường; ..."'
+                )
+                continue
+            _in = u_in.split(";")
+            _in = [s for s in _in if s != ""]
             if len(_in) >= 1:
-                for i in _in: self.get_envsym(_in=i)
+                for i in _in:
+                    self.get_envsym(_in=i)
                 break
-        print('Tiếp theo, bạn hãy cung cấp các thông tin về triệu chứng có trên con bệnh')
+        print(
+            "Tiếp theo, bạn hãy cung cấp các thông tin về triệu chứng có trên con bệnh"
+        )
         while True:
             u_in = input()
             # kiểm tra nếu người dùng thắc mắc
-            if any([s in u_in.lower().strip() for s in ["là như nào", "như thế nào", "là gì"]]):
-                print('Các thông tin về triệu chứng của con bệnh có thể bao gồm các biểu hiện có thể thấy được bằng mắt thường như các'
-                      ' triệu chứng ngoài da, sưng tấy hoặc các triệu chứng về hoạt động, sinh lý của con bệnh như di chuyển khó khăn, run rẩy, ...')
-            if any([s in u_in.lower().strip() for s in ["ví dụ"]]):
-                print('Ví dụ về các triệu chứng điển hình: "viêm loét ngoài da; run rẩy; di chuyển khó khăn; sưng tấy; sốt; phù; chảy máu"')
+            if any(
+                [
+                    s in u_in.lower().strip()
+                    for s in ["là như nào", "như thế nào", "là gì"]
+                ]
+            ):
+                print(
+                    "Các thông tin về triệu chứng của con bệnh có thể bao gồm các biểu hiện có thể thấy được bằng mắt thường như các"
+                    " triệu chứng ngoài da, sưng tấy hoặc các triệu chứng về hoạt động, sinh lý của con bệnh như di chuyển khó khăn, run rẩy, ..."
+                )
                 continue
-            _in = u_in.split(';')
-            _in = [s for s in _in if s != '']
+            if any([s in u_in.lower().strip() for s in ["ví dụ"]]):
+                print(
+                    'Ví dụ về các triệu chứng điển hình: "viêm loét ngoài da; run rẩy; di chuyển khó khăn; sưng tấy; sốt; phù; chảy máu"'
+                )
+                continue
+            _in = u_in.split(";")
+            _in = [s for s in _in if s != ""]
             if len(_in) >= 1:
-                for i in _in: self.get_envsym(mode="sym", _in=i)
+                for i in _in:
+                    self.get_envsym(mode="sym", _in=i)
                 break
         # thực hiện tính toán tìm case
         temp_disease = Disease()
@@ -630,7 +683,7 @@ class DiseasesDiagnosis:
                 self.cattle if self.current_species == "cattle" else self.poultry
             )
         else:
-            comparison_diseases = (self.cattle + self.poultry)
+            comparison_diseases = self.cattle + self.poultry
         disease_similarities = (
             []
         )  # format: ((bệnh đang được chẩn đoán, bệnh đã có trong hệ tri thức), độ tương đồng)
@@ -655,15 +708,15 @@ class DiseasesDiagnosis:
         top = [item[0][1] for item in top]
         # cảnh báo người dùng nếu số lượng triệu chứng quá ít
         if len(self.current_symptoms) <= 5:
-            print('Số lượng thông tin bạn cung cấp có thể không đủ để hệ thống có thể cho bạn kết quả chẩn đoán '
-                  'chính xác hơn.')
-        u_in = input('Bạn có muốn thực hiện thêm việc chẩn đoán sâu không? ')
+            print(
+                "Số lượng thông tin bạn cung cấp có thể không đủ để hệ thống có thể cho bạn kết quả chẩn đoán "
+                "chính xác hơn."
+            )
+        u_in = input("Bạn có muốn thực hiện thêm việc chẩn đoán sâu không? ")
         if self.check_user_agree(u_in):
             return self.further_diagnose(diag=temp_disease, potential=top)
         else:
-            return top
-
-
+            return top[0]
 
     def further_diagnose(self, diag=Disease(), potential=[Disease()]):
         # thực hiện hỏi một triệu chứng có trọng số cao nhất ở mỗi bệnh, lặp lại cho đến khi độ tương đồng với bệnh chẩn đoán vượt ngưỡng
@@ -684,7 +737,7 @@ class DiseasesDiagnosis:
         print(
             '"thêm thông tin", "triệu chứng này có nghĩa là gì", "triệu chứng này có biểu hiện như nào", "(tên triệu chứng) nghĩa là gì" ...'
         )
-        while cnt < 3:
+        while cnt < 2:
             print("debug, thông tin trong bệnh đang được chẩn đoán")
             print(diag.all_envsym)
             print("debug, thông tin đã được hỏi")
@@ -757,8 +810,9 @@ class DiseasesDiagnosis:
             _out, _data = self.find_symenv_tfidf_based(data)
             # tiền xử lý dữ liệu đầu vào
             # KHÔNG bỏ qua triệu chứng nếu trong câu chứa cả từ phủ định và tích cực (không + sạch sẽ -> không sạch sẽ)
-            if (any(neutral in _data for neutral in self.neutral_words) and
-                any(negative in _data for negative in self.disagree_resp)):
+            if any(neutral in _data for neutral in self.neutral_words) and any(
+                negative in _data for negative in self.disagree_resp
+            ):
                 print(
                     f"debug: xuất hiện case nega-neutral, double check dữ liệu: {data} -> {_data}"
                 )
@@ -773,10 +827,15 @@ class DiseasesDiagnosis:
                 continue
             print(f'debug: người dùng nhập "{data}", hệ thống trả về "{_out}"')
             if _out == "none":
-                print(
-                    f"Hệ thống không thể nhận dạng được câu trả lời bạn đưa ra ({data}), vui lòng thử lại"
-                )
-                return self.get_envsym(msg, mode)
+                if _in == "":
+                    print(
+                        f"Hệ thống không thể nhận dạng được câu trả lời bạn đưa ra ({data}), vui lòng thử lại"
+                    )
+                    return self.get_envsym(msg, mode)
+                else:
+                    print(
+                        f"Hệ thống không thể nhận dạng được câu trả lời bạn đưa ra ({data})"
+                    )
 
             # kiểm tra lại dữ liệu đầu vào
             _smatch = self.find_symenv_string_based(data)
@@ -910,7 +969,6 @@ class DiseasesDiagnosis:
             return True
         return False
 
-
     def find_symenv_tfidf_based(self, inp):
         lst = self.all_symenv
         _lst = self.proc_all_symenv
@@ -1002,9 +1060,9 @@ class DiseasesDiagnosis:
         #                 return obj["general"]
 
         for obj in objs:
-            print(obj['distinct'])
             if any([inp.lower().strip() == s.lower().strip() for s in obj["distinct"]]):
-                print('found')
+                return obj["general"]
+            if any([s.lower().strip() in inp.lower().strip() for s in obj["distinct"]]):
                 return obj["general"]
         return "none"
 
