@@ -346,6 +346,7 @@ class DiseasesDiagnosis:
             Disease(j, index, a_weights, a_medicines)
             for index, j in enumerate(poultry_db)
         ]
+        self.avg_weights = self.calculate_avg_weights(a_weights)
         self.r_cattle = r_cattle_db
         self.r_poultry = r_poultry_db
         self.ref_dict = generalized_db
@@ -918,6 +919,19 @@ class DiseasesDiagnosis:
         _in = input(msg + ": ")
         _in = _in.split("-")
 
+    def calculate_avg_weights(self, weights):
+        from collections import defaultdict
+
+        val_count = defaultdict(lambda: {"total": 0, "count": 0})
+        for _dict in weights:
+            for key, value in _dict.items():
+                val_count[key]["total"] += float(value)
+                val_count[key]["count"] += 1
+        avg_weight = {
+            key: values["total"] / values["count"] for key, values in val_count.items()
+        }
+        return avg_weight
+
     # trả về độ tương đồng giữa case hiện tại và case có trong hệ tri thức
     def calculate_cbr(self, query=Disease(), compare=Disease()):
         dsum = 0.0
@@ -926,15 +940,16 @@ class DiseasesDiagnosis:
             try:
                 if key in query.all_envsym and key in compare.weight:
                     dsum += float(compare.weight[key])
-                _sum += float(compare.weight[key])
+                # _sum += float(compare.weight[key])
+                _sum += float(self.avg_weights[key])
             except:
                 pass
                 # print(key)
                 # print(query.all_envsym, compare.all_envsym, compare.weight)
         if _sum == 0.0:
             return 0.0
-        # return dsum / _sum
-        return dsum
+        return dsum / _sum
+        # return dsum
 
     def check_species_db(self, inp=""):
         if inp in self.cattle_species:
