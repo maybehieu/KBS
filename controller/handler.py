@@ -365,7 +365,7 @@ class DiseasesDiagnosis:
             "tốt",
         ]
         self.cbr_threshold = 0.7
-        self.match_threshold = 1000
+        self.match_threshold = 0.75
 
         self.all_symenv = []
         for obj in self.ref_dict:
