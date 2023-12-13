@@ -923,13 +923,14 @@ class DiseasesDiagnosis:
         from collections import defaultdict
 
         val_count = defaultdict(lambda: {"total": 0, "count": 0})
-        for _dict in weights:
-            for key, value in _dict.items():
+        for disease, weight in weights.items():
+            for key, value in weight.items():
                 val_count[key]["total"] += float(value)
                 val_count[key]["count"] += 1
         avg_weight = {
             key: values["total"] / values["count"] for key, values in val_count.items()
         }
+        print(avg_weight)
         return avg_weight
 
     # trả về độ tương đồng giữa case hiện tại và case có trong hệ tri thức
