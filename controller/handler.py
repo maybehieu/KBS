@@ -534,7 +534,7 @@ class DiseasesDiagnosis:
         # kiểm tra
         if any([s in u_in.lower().strip() for s in ["toàn bộ"]]):
             _disease = self.one_step_diagnose()
-        elif any([s in u_in.lower().strip() for s in ["chẩn đoán"]]):
+        elif any([s in u_in.lower().strip() for s in ["chẩn đoán", "bình thường"]]):
             _disease = self.step_based_diagnose()
         else:
             print(
@@ -754,8 +754,13 @@ class DiseasesDiagnosis:
                     continue
                 if _envsym[0] in diag.all_envsym and len(_envsym) < 2:
                     continue
+                need_explain = False
+                for _q in asked:
+                    if _envsym[0] == _q[0]:
+                        need_explain = True
+                        break
                 # thực hiện hỏi
-                if self.get_yesno_envsym(_envsym):
+                if self.get_yesno_envsym(_envsym, need_explain):
                     diag.all_envsym.append(_envsym[0])
                 asked.append(_envsym)
             # tính toán lại độ tương đồng
@@ -886,7 +891,7 @@ class DiseasesDiagnosis:
     def check_potential_diff(self, potentials=[Disease()]):
         pass
 
-    def get_yesno_envsym(self, envsym=[]):
+    def get_yesno_envsym(self, envsym=[], explain=False):
         # in lưu ý
         ques = ""
         sup = ""
@@ -896,7 +901,12 @@ class DiseasesDiagnosis:
             sup = envsym[1]
         else:
             ques = envsym[0]
-        _in = input(f'Con vật của bạn có triệu chứng "{ques}" không? ')
+        msg = ''
+        if explain:
+            msg = f'Con vật của bạn có triệu chứng "{ques}" không? ("{ques}" thường có các biểu hiện như {sup}) '
+        else:
+            msg = f'Con vật của bạn có triệu chứng "{ques}" không? '
+        _in = input(msg)
         # kiểm tra người dùng có hỏi thêm thông tin về triệu chứng bệnh không
         if self.check_user_ask_symptom(inp=_in, asked_sym=ques):
             if sup != "":
