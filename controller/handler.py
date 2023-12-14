@@ -361,8 +361,9 @@ class DiseasesDiagnosis:
             "lý tưởng",
             "rộng rãi",
             "thoáng mát",
-            "sạch sẽ",
+            "sạch",
             "tốt",
+            "sạch sẽ",
         ]
         self.cbr_threshold = 0.7
         self.match_threshold = 0.75
@@ -482,10 +483,10 @@ class DiseasesDiagnosis:
                     self.diagnosed_disease.print_medicine_name()
                     while True:
                         try:
-                            u_in = int(input("Số thứ tự thuốc: ")) - 1
+                            u_in = int(input("Số thứ tự thuốc: "))
                             if u_in == 0:
                                 break
-                            self.diagnosed_disease.print_medicine_props(u_in)
+                            self.diagnosed_disease.print_medicine_props(u_in - 1)
                         except:
                             break
             elif u_in == 0:
@@ -512,10 +513,10 @@ class DiseasesDiagnosis:
                     self.diagnosed_disease.print_medicine_name()
                     while True:
                         try:
-                            u_in = int(input("Số thứ tự thuốc: ")) - 1
+                            u_in = int(input("Số thứ tự thuốc: "))
                             if u_in == 0:
                                 break
-                            self.diagnosed_disease.print_medicine_props(u_in)
+                            self.diagnosed_disease.print_medicine_props(u_in - 1)
                         except:
                             break
             elif u_in.lower() == "kết thúc":
@@ -810,44 +811,47 @@ class DiseasesDiagnosis:
         # tách dữ liệu đầu vào nếu cần
         _in = _in.split(";")
         for data in _in:
+            skip_check = False
+            _out = ''
             # thêm 'context' của câu hỏi vào câu trả lời của người dùng nếu chưa có để tăng tính chính xác
             if context not in data:
                 data = context + " " + data
-            _out, _data = self.find_symenv_tfidf_based(data)
-            # tiền xử lý dữ liệu đầu vào
-            # KHÔNG bỏ qua triệu chứng nếu trong câu chứa cả từ phủ định và tích cực (không + sạch sẽ -> không sạch sẽ)
-            if any(neutral in _data for neutral in self.neutral_words) and any(
-                negative in _data for negative in self.disagree_resp
-            ):
-                print(
-                    f"debug: xuất hiện case nega-neutral, double check dữ liệu: {data} -> {_data}"
-                )
-                pass
-            # bỏ qua triệu chứng nếu xuất hiện các từ 'trung hoà' trong dữ liệu nhập vào của người dùng
-            elif any(neutral in _data for neutral in self.neutral_words):
-                print(f"debug: xuất hiện neutral trong {data}, bỏ qua triệu chứng")
-                continue
-            # bỏ qua triệu chứng nếu xuất hiện từ 'không' trong dữ liệu nhập vào (không sốt)
-            elif any(negative in _data for negative in self.disagree_resp):
-                print(f"debug: xuất hiện negative trong {data}, bỏ qua triệu chứng")
-                continue
-            print(f'debug: người dùng nhập "{data}", hệ thống trả về "{_out}"')
-            if _out == "none":
-                if _in == "":
-                    print(
-                        f"Hệ thống không thể nhận dạng được câu trả lời bạn đưa ra ({data}), vui lòng thử lại"
-                    )
-                    return self.get_envsym(msg, mode)
-                else:
-                    print(
-                        f"Hệ thống không thể nhận dạng được câu trả lời bạn đưa ra ({data})"
-                    )
-
             # kiểm tra lại dữ liệu đầu vào
             _smatch = self.find_symenv_string_based(data)
             if _smatch != "none":
                 _out = _smatch
+                skip_check = True
                 print(f'debug: tìm được 100% match từ "{data}", trả về "{_out}"')
+            if not skip_check:
+                _out, _data = self.find_symenv_tfidf_based(data)
+                # tiền xử lý dữ liệu đầu vào
+                # KHÔNG bỏ qua triệu chứng nếu trong câu chứa cả từ phủ định và tích cực (không + sạch sẽ -> không sạch sẽ)
+                if any(neutral in _data for neutral in self.neutral_words) and any(
+                    negative in _data for negative in self.disagree_resp
+                ):
+                    print(
+                        f"debug: xuất hiện case nega-neutral, double check dữ liệu: {data} -> {_data}"
+                    )
+                    pass
+                # bỏ qua triệu chứng nếu xuất hiện các từ 'trung hoà' trong dữ liệu nhập vào của người dùng
+                elif any(neutral in _data for neutral in self.neutral_words):
+                    print(f"debug: xuất hiện neutral trong {data}, bỏ qua triệu chứng")
+                    continue
+                # bỏ qua triệu chứng nếu xuất hiện từ 'không' trong dữ liệu nhập vào (không sốt)
+                elif any(negative in _data for negative in self.disagree_resp):
+                    print(f"debug: xuất hiện negative trong {data}, bỏ qua triệu chứng")
+                    continue
+                print(f'debug: người dùng nhập "{data}", hệ thống trả về "{_out}"')
+                if _out == "none":
+                    if _in == "":
+                        print(
+                            f"Hệ thống không thể nhận dạng được câu trả lời bạn đưa ra ({data}), vui lòng thử lại"
+                        )
+                        return self.get_envsym(msg, mode)
+                    else:
+                        print(
+                            f"Hệ thống không thể nhận dạng được câu trả lời bạn đưa ra ({data})"
+                        )
             # lưu kết quả
             if mode == "env":
                 if _out not in self.current_envfacs:
@@ -901,7 +905,7 @@ class DiseasesDiagnosis:
             sup = envsym[1]
         else:
             ques = envsym[0]
-        msg = ''
+        msg = ""
         if explain:
             msg = f'Con vật của bạn có triệu chứng "{ques}" không? ("{ques}" thường có các biểu hiện như {sup}) '
         else:
