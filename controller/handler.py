@@ -533,7 +533,7 @@ class DiseasesDiagnosis:
         )
         u_in = input()
         # kiểm tra
-        if any([s in u_in.lower().strip() for s in ["toàn bộ"]]):
+        if any([s in u_in.lower().strip() for s in ["toàn bộ", "nhanh"]]):
             _disease = self.one_step_diagnose()
         elif any([s in u_in.lower().strip() for s in ["chẩn đoán", "bình thường"]]):
             _disease = self.step_based_diagnose()
@@ -812,7 +812,7 @@ class DiseasesDiagnosis:
         _in = _in.split(";")
         for data in _in:
             skip_check = False
-            _out = ''
+            _out = ""
             # thêm 'context' của câu hỏi vào câu trả lời của người dùng nếu chưa có để tăng tính chính xác
             if context not in data:
                 data = context + " " + data
@@ -951,7 +951,7 @@ class DiseasesDiagnosis:
     def calculate_cbr(self, query=Disease(), compare=Disease()):
         dsum = 0.0
         _sum = 0.0
-        for key in compare.weight:
+        for key in query.all_envsym:
             try:
                 if key in query.all_envsym and key in compare.weight:
                     dsum += float(compare.weight[key])
