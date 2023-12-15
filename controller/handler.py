@@ -242,6 +242,7 @@ class Disease:
 class ChatbotController:
     def __init__(self) -> None:
         print("Đang khởi tạo hệ thống...")
+        # đọc dữ liệu từ các file trên máy tính và ghi vào bộ nhớ chương trình
         with open(r"database/cattle.json", "r", encoding="utf8") as f:
             self.cattle_database = json.loads(f.read())
         with open(r"database/poultry.json", "r", encoding="utf8") as f:
@@ -264,6 +265,7 @@ class ChatbotController:
         ]
 
         # init logic controller
+        # khởi tạo module chẩn đoán bệnh
         self.diagnose = DiseasesDiagnosis(
             self.cattle_database,
             self.poultry_database,
@@ -273,6 +275,7 @@ class ChatbotController:
             self.weights,
             self.medicine_database,
         )
+        # khởi tạo module tìm kiếm bệnh
         self.disease = DiseasesInformation(
             self.cattle_database,
             self.poultry_database,
@@ -281,17 +284,23 @@ class ChatbotController:
             self.generalized_database,
         )
 
+    # tiến trình chatbot
     def main_process(self):
         # loop every process until special condition (user asks to stop)
         while True:
             self.print_start_convo()
+            # tương tác người dùng chọn module sử dụng
             u_input = input()
             str_input = u_input
             u_input = self.check_master_convo(u_input)
             if u_input == 1 or any(
-                [s.lower().strip() in str_input.lower().strip() for s in ["chẩn đoán"]]
+                [
+                    s.lower().strip() in str_input.lower().strip()
+                    for s in ["chẩn đoán", "hỏi bệnh"]
+                ]
             ):
                 # self.symptom_based_diagnose()
+                # module chẩn đoán
                 self.diagnose.main_process()
             elif u_input == 2 or any(
                 [
@@ -300,6 +309,7 @@ class ChatbotController:
                 ]
             ):
                 # self.get_disease_information()
+                # module tìm kiếm bệnh
                 self.disease.main_process()
             elif u_input == 0:
                 self.print_end_convo()
@@ -388,10 +398,13 @@ class DiseasesDiagnosis:
         print(
             "Đầu tiên, có thể cho tôi biết con vật mà bạn đang cần chẩn đoán bệnh? (VD: lợn, bò, gà...)"
         )
+        # chọn con vật
         self.current_animal = input().lower()
+        # kiểm tra con vật có trong hệ thống không
         self.current_animal = preprocess_animal_name(self.current_animal)
+        # lấy giống loài
         self.current_species = self.check_species_db(self.current_animal)
-        # warn user
+        # warn user/ hỏi người dùng
         if self.current_species == "none":
             print(
                 "Loài vật bạn cần chẩn đoán không có dữ liệu trong cơ sở dữ liệu chúng tôi, nhưng tôi sẽ cố hết sức để giúp đỡ bạn trong khả năng của mình"
@@ -418,6 +431,7 @@ class DiseasesDiagnosis:
         # tương tác xử lý thông tin cho người dùng
         self.support_user()
         print("Cảm ơn bạn đã sử dụng dịch vụ")
+        # reset lần hỏi bệnh
         self.reset_iter()
 
     def reset_iter(self):
@@ -647,7 +661,9 @@ class DiseasesDiagnosis:
             _in = [s for s in _in if s != ""]
             if len(_in) >= 1:
                 for i in _in:
-                    self.get_envsym(_in=i)
+                    self.get_envsym(
+                        _in=i, msg="Các thông tin về môi trường chăn nuôi của con bệnh?"
+                    )
                 break
         print(
             "Tiếp theo, bạn hãy cung cấp các thông tin về triệu chứng có trên con bệnh"
@@ -675,8 +691,52 @@ class DiseasesDiagnosis:
             _in = [s for s in _in if s != ""]
             if len(_in) >= 1:
                 for i in _in:
-                    self.get_envsym(mode="sym", _in=i)
+                    self.get_envsym(
+                        mode="sym",
+                        _in=i,
+                        msg="Các triệu chứng xuất hiện trên con bệnh?",
+                    )
                 break
+        # cảnh báo người dùng nếu số lượng triệu chứng quá ít
+        if len(self.current_symptoms) <= 5:
+            print(
+                "Số lượng thông tin bạn cung cấp có thể không đủ để hệ thống có thể cho bạn kết quả chẩn đoán "
+                "chính xác hơn."
+            )
+            u_in = input(
+                "Bạn có muốn cung cấp thêm các triệu chứng trên con bệnh không?"
+            )
+            if self.check_user_agree(u_in):
+                while True:
+                    u_in = input("Các triệu chứng trên con bệnh: ")
+                    # kiểm tra nếu người dùng thắc mắc
+                    if any(
+                        [
+                            s in u_in.lower().strip()
+                            for s in ["là như nào", "như thế nào", "là gì"]
+                        ]
+                    ):
+                        print(
+                            "Các thông tin về triệu chứng của con bệnh có thể bao gồm các biểu hiện có thể thấy được bằng mắt thường như các"
+                            " triệu chứng ngoài da, sưng tấy hoặc các triệu chứng về hoạt động, sinh lý của con bệnh như di chuyển khó khăn, run rẩy, ..."
+                        )
+                        continue
+                    if any([s in u_in.lower().strip() for s in ["ví dụ"]]):
+                        print(
+                            'Ví dụ về các triệu chứng điển hình: "viêm loét ngoài da; run rẩy; di chuyển khó khăn; sưng tấy; sốt; phù; chảy máu"'
+                        )
+                        continue
+                    _in = u_in.split(";")
+                    _in = [s for s in _in if s != ""]
+                    if len(_in) >= 1:
+                        for i in _in:
+                            self.get_envsym(
+                                mode="sym",
+                                _in=i,
+                                msg="Các triệu chứng xuất hiện trên con bệnh?",
+                            )
+                        break
+
         # thực hiện tính toán tìm case
         temp_disease = Disease()
         temp_disease.init_temp(self.current_envfacs, self.current_symptoms)
@@ -708,12 +768,6 @@ class DiseasesDiagnosis:
             return top[0][0][1]
         # chẩn đoán sâu
         top = [item[0][1] for item in top]
-        # cảnh báo người dùng nếu số lượng triệu chứng quá ít
-        if len(self.current_symptoms) <= 5:
-            print(
-                "Số lượng thông tin bạn cung cấp có thể không đủ để hệ thống có thể cho bạn kết quả chẩn đoán "
-                "chính xác hơn."
-            )
         u_in = input("Bạn có muốn thực hiện thêm việc chẩn đoán sâu không? ")
         if self.check_user_agree(u_in):
             return self.further_diagnose(diag=temp_disease, potential=top)
@@ -781,7 +835,7 @@ class DiseasesDiagnosis:
             "bởi dấu ';', tôi sẽ thực hiện cập nhật chúng vào hệ thống. Nếu không, nhập 'không' hoặc bấm Enter để lấy kết quả bệnh chẩn đoán\n"
         )
         add_info = u_in.split(";")
-        if len(add_info) >= 2:
+        if len(add_info) >= 1:
             f_sim = []
 
             _add = self.process_addition_sym(add_info)
@@ -823,7 +877,7 @@ class DiseasesDiagnosis:
                 skip_check = True
                 print(f'debug: tìm được 100% match từ "{data}", trả về "{_out}"')
             if not skip_check:
-                _out, _data = self.find_symenv_tfidf_based(data)
+                _out, _data = self.find_symenv_search_based(data)
                 # tiền xử lý dữ liệu đầu vào
                 # KHÔNG bỏ qua triệu chứng nếu trong câu chứa cả từ phủ định và tích cực (không + sạch sẽ -> không sạch sẽ)
                 if any(neutral in _data for neutral in self.neutral_words) and any(
@@ -852,6 +906,7 @@ class DiseasesDiagnosis:
                         print(
                             f"Hệ thống không thể nhận dạng được câu trả lời bạn đưa ra ({data})"
                         )
+                        return self.get_envsym(msg, mode)
             # lưu kết quả
             if mode == "env":
                 if _out not in self.current_envfacs:
@@ -869,7 +924,7 @@ class DiseasesDiagnosis:
             if _out != "none":
                 ret.append(_out)
                 continue
-            _out, _data = self.find_symenv_tfidf_based(data)
+            _out, _data = self.find_symenv_search_based(data)
             # tiền xử lý dữ liệu đầu vào
             # KHÔNG bỏ qua triệu chứng nếu trong câu chứa cả từ phủ định và tích cực (không + sạch sẽ -> không sạch sẽ)
             if any(neutral in _data for neutral in self.neutral_words) and any(
@@ -999,7 +1054,7 @@ class DiseasesDiagnosis:
             return True
         return False
 
-    def find_symenv_tfidf_based(self, inp):
+    def find_symenv_search_based(self, inp):
         lst = self.all_symenv
         _lst = self.proc_all_symenv
         objs = self.ref_dict
@@ -1050,7 +1105,7 @@ class DiseasesDiagnosis:
         top, top_score = [], []
         # loại bỏ các phần tử có độ tương đồng bằng 0
         for string, score in sort:
-            if score == 1.0:
+            if score >= 0.75:
                 top.append(string)
                 top_score.append(score)
                 top.append(string)
