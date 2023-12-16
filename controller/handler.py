@@ -136,7 +136,9 @@ class Disease:
         try:
             self.weight = w[self.name]
         except:
-            print(f"Không tìm thấy trọng số của bệnh {self.name}")
+            # debug
+            # print(f"Không tìm thấy trọng số của bệnh {self.name}")
+            pass
         # will be redefined
         self.environment_factors = j["envfactors"]
         self.symptoms = j["symptoms"]
@@ -374,6 +376,7 @@ class DiseasesDiagnosis:
             "sạch",
             "tốt",
             "sạch sẽ",
+            "đảm bảo"
         ]
         self.cbr_threshold = 0.7
         self.match_threshold = 0.75
@@ -423,7 +426,12 @@ class DiseasesDiagnosis:
                 print("Xin cảm ơn!")
                 return
         # continue
-        print(
+        if self.current_species == "none":
+            print(
+            f'Xác định thông tin ban đầu của con vật: {self.current_animal.capitalize()}'
+        )
+        else:
+            print(
             f'Xác định thông tin ban đầu của con vật: {self.current_animal.capitalize()}, là {"Gia súc" if self.current_species == "cattle" else "Gia cầm"}'
         )
         # chẩn đoán bệnh
@@ -617,15 +625,15 @@ class DiseasesDiagnosis:
         disease_similarities = sorted(
             disease_similarities, key=lambda x: x[1], reverse=True
         )
-        print("debug, thông tin sử dụng trong bệnh")
-        print(temp_disease.all_envsym)
-        print("debug, danh sách các bệnh và độ tương đồng: ")
-        for d in disease_similarities:
-            print(f"query: {d[0][0].name}, db: {d[0][1].name}, sim: {d[1]}")
+        # print("debug, thông tin sử dụng trong bệnh")
+        # print(temp_disease.all_envsym)
+        # print("debug, danh sách các bệnh và độ tương đồng: ")
+        # for d in disease_similarities:
+        #     print(f"query: {d[0][0].name}, db: {d[0][1].name}, sim: {d[1]}")
         # chọn ra n case có độ tương đồng cao nhất, thực hiện hỏi thêm triệu chứng nếu cần
         top = disease_similarities[:7]
-        if top[0][1] >= self.match_threshold:
-            return top[0][0][1]
+        # if top[0][1] >= self.match_threshold:
+        #     return top[0][0][1]
         # chẩn đoán sâu
         top = [item[0][1] for item in top]
         return self.further_diagnose(diag=temp_disease, potential=top)
@@ -757,11 +765,11 @@ class DiseasesDiagnosis:
         disease_similarities = sorted(
             disease_similarities, key=lambda x: x[1], reverse=True
         )
-        print("debug, thông tin sử dụng trong bệnh")
-        print(temp_disease.all_envsym)
-        print("debug, danh sách các bệnh và độ tương đồng: ")
-        for d in disease_similarities:
-            print(f"query: {d[0][0].name}, db: {d[0][1].name}, sim: {d[1]}")
+        # print("debug, thông tin sử dụng trong bệnh")
+        # print(temp_disease.all_envsym)
+        # print("debug, danh sách các bệnh và độ tương đồng: ")
+        # for d in disease_similarities:
+        #     print(f"query: {d[0][0].name}, db: {d[0][1].name}, sim: {d[1]}")
         # chọn ra n case có độ tương đồng cao nhất, thực hiện hỏi thêm triệu chứng nếu cần
         top = disease_similarities[:7]
         if top[0][1] >= self.match_threshold:
@@ -794,10 +802,10 @@ class DiseasesDiagnosis:
             '"thêm thông tin", "triệu chứng này có nghĩa là gì", "triệu chứng này có biểu hiện như nào", "(tên triệu chứng) nghĩa là gì" ...'
         )
         while cnt < 2:
-            print("debug, thông tin trong bệnh đang được chẩn đoán")
-            print(diag.all_envsym)
-            print("debug, thông tin đã được hỏi")
-            print(asked)
+            # print("debug, thông tin trong bệnh đang được chẩn đoán")
+            # print(diag.all_envsym)
+            # print("debug, thông tin đã được hỏi")
+            # print(asked)
             sim = []
             # tìm triệu chứng có trọng số cao nhất trong mỗi bệnh
             for disease in potential:
@@ -822,9 +830,9 @@ class DiseasesDiagnosis:
             for disease in potential:
                 sim.append(((diag, disease), self.calculate_cbr(diag, disease)))
             sim = sorted(sim, key=lambda x: x[1], reverse=True)
-            print("debug, danh sách các bệnh và độ tương đồng: ")
-            for d in sim:
-                print(f"query: {d[0][0].name}, db: {d[0][1].name}, sim: {d[1]}")
+            # print("debug, danh sách các bệnh và độ tương đồng: ")
+            # for d in sim:
+            #     print(f"query: {d[0][0].name}, db: {d[0][1].name}, sim: {d[1]}")
             if sim[0][1] > self.match_threshold:
                 return sim[0][0][1]
             cnt += 1
@@ -839,15 +847,15 @@ class DiseasesDiagnosis:
             f_sim = []
 
             _add = self.process_addition_sym(add_info)
-            print(f"debug, thông tin lấy thêm được từ prompt của người dùng: {_add}")
-            diag.all_envsym.append(_add)
+            # print(f"debug, thông tin lấy thêm được từ prompt của người dùng: {_add}")
+            # diag.all_envsym.append(_add)
             # tính toán lại độ tương đồng
             for disease in potential:
                 f_sim.append(((diag, disease), self.calculate_cbr(diag, disease)))
             f_sim = sorted(f_sim, key=lambda x: x[1], reverse=True)
-            print("debug, danh sách các bệnh và độ tương đồng: ")
-            for d in f_sim:
-                print(f"query: {d[0][0].name}, db: {d[0][1].name}, sim: {d[1]}")
+            # print("debug, danh sách các bệnh và độ tương đồng: ")
+            # for d in f_sim:
+            #     print(f"query: {d[0][0].name}, db: {d[0][1].name}, sim: {d[1]}")
             if f_sim[0][1] > self.match_threshold:
                 return f_sim[0][0][1]
             ret = f_sim[0][0][1]
@@ -875,7 +883,7 @@ class DiseasesDiagnosis:
             if _smatch != "none":
                 _out = _smatch
                 skip_check = True
-                print(f'debug: tìm được 100% match từ "{data}", trả về "{_out}"')
+                # print(f'debug: tìm được 100% match từ "{data}", trả về "{_out}"')
             if not skip_check:
                 _out, _data = self.find_symenv_search_based(data)
                 # tiền xử lý dữ liệu đầu vào
@@ -883,19 +891,19 @@ class DiseasesDiagnosis:
                 if any(neutral in _data for neutral in self.neutral_words) and any(
                     negative in _data for negative in self.disagree_resp
                 ):
-                    print(
-                        f"debug: xuất hiện case nega-neutral, double check dữ liệu: {data} -> {_data}"
-                    )
+                    # print(
+                    #     f"debug: xuất hiện case nega-neutral, double check dữ liệu: {data} -> {_data}"
+                    # )
                     pass
                 # bỏ qua triệu chứng nếu xuất hiện các từ 'trung hoà' trong dữ liệu nhập vào của người dùng
                 elif any(neutral in _data for neutral in self.neutral_words):
-                    print(f"debug: xuất hiện neutral trong {data}, bỏ qua triệu chứng")
+                    # print(f"debug: xuất hiện neutral trong {data}, bỏ qua triệu chứng")
                     continue
                 # bỏ qua triệu chứng nếu xuất hiện từ 'không' trong dữ liệu nhập vào (không sốt)
                 elif any(negative in _data for negative in self.disagree_resp):
-                    print(f"debug: xuất hiện negative trong {data}, bỏ qua triệu chứng")
+                    # print(f"debug: xuất hiện negative trong {data}, bỏ qua triệu chứng")
                     continue
-                print(f'debug: người dùng nhập "{data}", hệ thống trả về "{_out}"')
+                # print(f'debug: người dùng nhập "{data}", hệ thống trả về "{_out}"')
                 if _out == "none":
                     if _in == "":
                         print(
@@ -930,19 +938,19 @@ class DiseasesDiagnosis:
             if any(neutral in _data for neutral in self.neutral_words) and any(
                 negative in _data for negative in self.disagree_resp
             ):
-                print(
-                    f"debug: xuất hiện case nega-neutral, double check dữ liệu: {data} -> {_data}"
-                )
+                # print(
+                #     f"debug: xuất hiện case nega-neutral, double check dữ liệu: {data} -> {_data}"
+                # )
                 pass
             # bỏ qua triệu chứng nếu xuất hiện các từ 'trung hoà' trong dữ liệu nhập vào của người dùng
             elif any(neutral in _data for neutral in self.neutral_words):
-                print(f"debug: xuất hiện neutral trong {data}, bỏ qua triệu chứng")
+                # print(f"debug: xuất hiện neutral trong {data}, bỏ qua triệu chứng")
                 continue
             # bỏ qua triệu chứng nếu xuất hiện từ 'không' trong dữ liệu nhập vào (không sốt)
             elif any(negative in _data for negative in self.disagree_resp):
-                print(f"debug: xuất hiện negative trong {data}, bỏ qua triệu chứng")
+                # print(f"debug: xuất hiện negative trong {data}, bỏ qua triệu chứng")
                 continue
-            print(f'debug: người dùng nhập "{data}", hệ thống trả về "{_out}"')
+            # print(f'debug: người dùng nhập "{data}", hệ thống trả về "{_out}"')
             if _out != "none":
                 ret.append(_out)
         return ret
@@ -1119,8 +1127,8 @@ class DiseasesDiagnosis:
             return "none", _inp
 
         # debug
-        for sentence, score in zip(top, top_score):
-            print(f"độ tương đồng giữa query và {sentence}: {score}")
+        # for sentence, score in zip(top, top_score):
+        #     print(f"độ tương đồng giữa query và {sentence}: {score}")
 
         max_match_count = 0
         return_symenv = ""
@@ -1184,7 +1192,7 @@ class DiseasesInformation:
         self.current_animal = input().lower()
         # tiền xử lý tên con vật
         self.current_animal = preprocess_animal_name(self.current_animal)
-        print(f"debug, con vật nhận được: {self.current_animal}")
+        # print(f"debug, con vật nhận được: {self.current_animal}")
         # kiểm tra tên con vật trong cơ sở dữ liệu
         self.current_species = self.check_species_db(self.current_animal)
         if self.current_species == "none":
